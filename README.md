@@ -86,7 +86,7 @@ This allows conditional logic for whether a location should be accessible. For i
 ##### Item Object, Parent Object, and Folder Path
 These three fields uniquely identify every location in the game. They are derived from game object names and field values from the game's code. Using these values, the randomizer client can identify the right named location to track.
 
-To find these values, you can use (REF_Inspect)[https://github.com/FuzzyGamesOn/REF_Inspect] and interact with the locations normally.
+To find these values, you can use [REF_Inspect](https://github.com/FuzzyGamesOn/REF_Inspect) and interact with the locations normally.
 
 ##### Force Item
 This is an optional field and only included on some item entries. In some cases, we want to force a specific item to be placed at a specific location for a specific campaign, so we use this option and provide the name of the item to place.
@@ -134,9 +134,9 @@ Some important fields to note:
 ##### Location ID, Map ID, and Item Object
 These fields all uniquely identify a typewriter by field values and game object names from the game's code.
 
-To find these values, you can use (REF_Inspect)[https://github.com/FuzzyGamesOn/REF_Inspect] and interact with the typewriters normally.
+To find these values, you can use [REF_Inspect](https://github.com/FuzzyGamesOn/REF_Inspect) and interact with the typewriters normally.
 
 ##### Player Position
 This field specifies the x/y/z (Vector3) location that the player should be teleported to when using the typewriter. Typically, you'd want this to be fairly close to the typewriter, or at least nearby in the same room.
 
-To find a usable value for this, you can use (REF_Inspect)[https://github.com/FuzzyGamesOn/REF_Inspect] and interact with the typewriters normally.
+To find a usable value for this, you can use [REF_Inspect](https://github.com/FuzzyGamesOn/REF_Inspect) and interact with the typewriters normally.
