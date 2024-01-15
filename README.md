@@ -18,14 +18,14 @@ Currently, only Leon's 1st / A scenario is supported.
 ## How is the scenarios data structured?
 All of the scenarios' data lives in the `data` folder. The structure of the data is:
 
-- (Character folder)[### Character folder]
-  - (Scenarios folder)[### Scenarios folder]
-    - (Locations file)[#### Locations file]
-    - (Regions file)[#### Regions file]
-    - (Region Connections file)[#### Region Connections file]
-    - (Typewriter List file)[#### Typewriter List file]
-  - (Item List file)[#### Item List file]
-  - (Region Zones file)[#### Region Zones file]
+- (Character folder)[###-Character-folder]
+  - (Scenarios folder)[###-Scenarios-folder]
+    - (Locations file)[####-Locations-file]
+    - (Regions file)[####-Regions-file]
+    - (Region Connections file)[####-Region-Connections-file]
+    - (Typewriter List file)[####-Typewriter-List-file]
+  - (Item List file)[####-Item-List-file]
+  - (Region Zones file)[####-Region-Zones-file]
 
 ### Character folder
 Each character is separated into its own folder to group their scenarios together.
