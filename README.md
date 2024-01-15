@@ -30,6 +30,8 @@ All of the scenarios' data lives in the `data` folder. The structure of the data
 ### Character folder
 Each character is separated into its own folder to group their scenarios together.
 
+---
+
 #### Item List file
 Each character's items are the same across scenarios. Some important fields to note:
 
@@ -55,11 +57,17 @@ The count field represents the quantity you receive each time the item is receiv
 ##### Progression
 If an item is marked as progression, it unlocks one or more locations. Typically, this will only be the case for the item types Key and Gating.
 
+---
+
 #### Region Zones file
 Regions represent rooms, so zones represent groups of rooms, like RPD.
 
+---
+
 ### Scenarios folder
 Each scenario is separated into its own folder under the scenarios folder. Typically, each scenario has a different set of item locations, some different regions, and different ways that regions connect to each other.
+
+---
 
 #### Locations file
 This is the most important part of the randomizer world. The locations and original items defined here directly impact what is randomized into the world, and the item object information is used by the randomizer client to track those location checks.
@@ -89,8 +97,12 @@ This is an optional field and only included on some item entries. In some cases,
 ##### ID and Victory
 There must be exactly one Victory location (i.e., location that finishes the randomizer), and it is the only location that uses these fields. All location IDs are dynamically assigned unless provided, but Victory forces a non-dynamic ID. The Victory field is set to true to indicate that the location is the Victory location.
 
+---
+
 #### Regions file
 This file lists all of the rooms (regions) in the game and what zone (area) they belong to. This file must always start with the Menu region.
+
+---
 
 #### Region Connections file
 This file dictates how the randomizer connects each room (region) together. Currently, these connections must follow their vanilla connection and item requirements.
@@ -111,6 +123,8 @@ You will also notice that some major region connections (like going to RPD's Sec
 This is an optional field, and is currently only used to define a region connection as a one-sided connection (with the value "ONE_SIDED_DOOR"). This is commonly used for doors with latches or bolt cutter doors that you have to activate from one side to allow traversing.
 
 **Note: One-sided connections are currently excluded from the randomizer because they may end up in logic on the reverse path, which can be unreachable. Similar issue as noted above with From and To. However, we want these defined in case we change this behavior later.**
+
+---
 
 #### Typewriter List file
 This file defines all of the typewriter locations in the scenario. This is used for creating typewriter teleports in the randomizer client.
