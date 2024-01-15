@@ -1,0 +1,590 @@
+[
+    {
+        "type": "Key",
+        "name": "Spade Key",
+        "decimal": "82",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Club Key",
+        "decimal": "160",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Diamond Key",
+        "decimal": "119",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Fuse - Main Hall",
+        "decimal": "240",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Fuse - Break Room Hallway",
+        "decimal": "241",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Bolt Cutters",
+        "decimal": "244",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Valve Handle",
+        "decimal": "86",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Lion Medallion",
+        "decimal": "118",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Unicorn Medallion",
+        "decimal": "81",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Maiden Medallion",
+        "decimal": "124",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "STARS Badge",
+        "decimal": "87",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Square Crank",
+        "decimal": "80",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Mechanic Jack Handle",
+        "decimal": "79",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Parking Garage Key Card",
+        "decimal": "83",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "T-Bar Handle",
+        "decimal": "176",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Sewers Key",
+        "decimal": "194",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Pawn Plug",
+        "decimal": "133",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Knight Plug",
+        "decimal": "132",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Bishop Plug",
+        "decimal": "93",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Rook Plug",
+        "decimal": "94",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Queen Plug",
+        "decimal": "134",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "King Plug",
+        "decimal": "95",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "ID Wristband - Visitor",
+        "decimal": "195",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Electronic Chip - General Staff",
+        "decimal": "198",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Electronic Chip - Senior Staff",
+        "decimal": "199",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Trophy",
+        "decimal": "190",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Signal Modulator",
+        "decimal": "189",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Joint Plug",
+        "decimal": "183",
+        "count": 1,
+        "progression": 1
+    },
+
+    {
+        "type": "Gating",
+        "name": "Electronic Gadget",
+        "decimal": "34",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Battery",
+        "decimal": "35",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Spare Key 1",
+        "decimal": "112",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Spare Key 2",
+        "decimal": "112",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Red Book",
+        "decimal": "114",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Statue Left Arm",
+        "decimal": "115",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Scepter",
+        "decimal": "88",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Bejeweled Box",
+        "decimal": "91",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Weapons Locker Key Card",
+        "decimal": "84",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Boxed Electronic Part 1",
+        "decimal": "135",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Boxed Electronic Part 2",
+        "decimal": "136",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Car Key",
+        "decimal": "120",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Large Gear",
+        "decimal": "130",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Small Gear",
+        "decimal": "129",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Dispersal Cartridge - Empty",
+        "decimal": "179",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Film - Commemorative",
+        "decimal": "74",
+        "count": 1,
+        "progression": 1,
+        "comments": "The hex is a guess and could be wrong."
+    },
+    {
+        "type": "Gating",
+        "name": "Film - Lion Statue",
+        "decimal": "73",
+        "count": 1,
+        "progression": 1,
+        "comments": "The hex is a guess and could be wrong."
+    },
+    {
+        "type": "Gating",
+        "name": "Film - 3F Locker",
+        "decimal": "75",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Film - Hiding Place",
+        "decimal": "72",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Film - Rising Rookie",
+        "decimal": "76",
+        "count": 1,
+        "progression": 1,
+        "comments": "The hex is a guess and could be wrong."
+    },
+
+    {
+        "type": "Consumable",
+        "name": "Wooden Boards",
+        "decimal": "33",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Consumable",
+        "name": "Gunpowder",
+        "decimal": "36",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Consumable",
+        "name": "Gunpowder - Large",
+        "decimal": "37",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Consumable",
+        "name": "High-Grade Gunpowder - Yellow",
+        "decimal": "38",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Consumable",
+        "name": "Hip Pouch",
+        "decimal": "262",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Consumable",
+        "name": "Ink Ribbon",
+        "decimal": "32",
+        "count": 2,
+        "progression": 0
+    },
+
+    {
+        "type": "Recovery",
+        "name": "First Aid Spray",
+        "decimal": "1",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Recovery",
+        "name": "Green Herb",
+        "decimal": "2",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Recovery",
+        "name": "Red Herb",
+        "decimal": "3",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Recovery",
+        "name": "Blue Herb",
+        "decimal": "4",
+        "count": 1,
+        "progression": 0
+    },
+
+    {
+        "type": "Weapon",
+        "name": "Matilda",
+        "decimal": "1",
+        "count": 10,
+        "progression": 0,
+        "ammo": "Handgun Ammo"
+    },
+    {
+        "type": "Weapon",
+        "name": "W-870",
+        "decimal": "11",
+        "count": 10,
+        "progression": 0,
+        "ammo": "Shotgun Shells"
+    },
+    {
+        "type": "Weapon",
+        "name": "Lightning Hawk",
+        "decimal": "31",
+        "count": 10,
+        "progression": 0,
+        "ammo": "MAG Ammo"
+    },
+    {
+        "type": "Weapon",
+        "name": "Chemical Flamethrower",
+        "decimal": "43",
+        "count": 10,
+        "progression": 0,
+        "ammo": "Flamethrower Fuel"
+    },
+    {
+        "type": "Weapon",
+        "name": "Anti-tank Rocket",
+        "decimal": "49",
+        "count": 4,
+        "progression": 0
+    },
+
+    {
+        "type": "Subweapon",
+        "name": "Combat Knife",
+        "decimal": "46",
+        "count": 1000,
+        "progression": 0
+    },
+    {
+        "type": "Subweapon",
+        "name": "Hand Grenade",
+        "decimal": "65",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Subweapon",
+        "name": "Flash Grenade",
+        "decimal": "66",
+        "count": 1,
+        "progression": 0
+    },
+
+    {
+        "type": "Ammo",
+        "name": "Handgun Ammo",
+        "decimal": "15",
+        "count": 10,
+        "progression": 0
+    },
+    {
+        "type": "Ammo",
+        "name": "Large-caliber Handgun Ammo",
+        "decimal": "26",
+        "count": 6,
+        "progression": 0
+    },
+    {
+        "type": "Ammo",
+        "name": "Shotgun Shells",
+        "decimal": "16",
+        "count": 4,
+        "progression": 0
+    },
+    {
+        "type": "Ammo",
+        "name": "Flamethrower Fuel",
+        "decimal": "25",
+        "count": 100,
+        "progression": 0
+    },
+    {
+        "type": "Ammo",
+        "name": "MAG Ammo",
+        "decimal": "18",
+        "count": 4,
+        "progression": 0
+    },
+
+    {
+        "type": "Upgrade",
+        "name": "Gun Stock - Matilda",
+        "decimal": "50",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "High-Capacity Magazine - Matilda",
+        "decimal": "48",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "Muzzle Brake - Matilda",
+        "decimal": "49",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "Long Barrel - W-870",
+        "decimal": "56",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "Shotgun Stock - W-870",
+        "decimal": "55",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "Long Barrel - Lightning Hawk",
+        "decimal": "62",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "Red Dot Sight - Lightning Hawk",
+        "decimal": "61",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "Regulator - Flamethrower",
+        "decimal": "65",
+        "count": 1,
+        "progression": 0
+    },
+
+    {
+        "type": "Lore",
+        "name": "USS Digital Video Cassette",
+        "decimal": "170",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Lore",
+        "name": "Lab Digital Video Cassette",
+        "decimal": "203",
+        "count": 1,
+        "progression": 0
+    },
+
+    {
+        "name": "Victory",
+        "id": null,
+        "progression": 1
+    }
+]
