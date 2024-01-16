@@ -227,7 +227,8 @@
         "condition": {},    
         "item_object": "sm44_006_LeonDesk01A_control",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/WestOffice/LeonDesk"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/WestOffice/LeonDesk",
+        "randomized": 0
     },
     {
         "name": "Outside Darkroom 1",
