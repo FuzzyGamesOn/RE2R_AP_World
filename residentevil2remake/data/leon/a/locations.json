@@ -138,8 +138,7 @@
         },    
         "item_object": "sm74_200",
         "parent_object": "sm74_200_sidepack_Locker203",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems",
-        "randomized": 0
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
     },
     {
         "name": "Locker 106",
@@ -217,8 +216,7 @@
         "condition": {},    
         "item_object": "sm42_019_SafeBoxDial01A_OfficeW_control",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/1FW/WestOffice/IronSafe_1FWOffice",
-        "randomized": 0
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/1FW/WestOffice/IronSafe_1FWOffice"
     },
     {
         "name": "Rookie Desk",
@@ -707,8 +705,7 @@
         "condition": {},    
         "item_object": "sm74_200",
         "parent_object": "sm74_200_SidePack_1st",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FW/LickerRoom",
-        "randomized": 0
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FW/LickerRoom"
     },
     {
         "name": "Maiden Statue",
@@ -847,8 +844,7 @@
         "condition": {},    
         "item_object": "sm74_200",
         "parent_object": "PosOnly_ItemLocker",
-        "folder_path": "RopewayContents/World/Location_RPD_B1/Environments/st4_751_0/gimmick",
-        "randomized": 0
+        "folder_path": "RopewayContents/World/Location_RPD_B1/Environments/st4_751_0/gimmick"
     },
     {
         "name": "Police Car Trunk",
@@ -1580,8 +1576,7 @@
         "condition": {},    
         "item_object": "sm74_200",
         "parent_object": "Sidepack",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common",
-        "randomized": 0
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common"
     },
     {
         "name": "Middle Table",
@@ -1835,8 +1830,7 @@
         },    
         "item_object": "sm74_200",
         "parent_object": "sm74_200_Sidepack",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/StartArea/NapRoom",
-        "randomized": 0
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/StartArea/NapRoom"
     },
     {
         "name": "Front Desk",

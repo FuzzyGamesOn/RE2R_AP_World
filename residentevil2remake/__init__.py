@@ -133,6 +133,22 @@ class ResidentEvil2Remake(World):
                 pool.remove(blue_herbs[x])
                 pool.append(self.create_item('Ink Ribbon'))
 
+        # check the starting hip pouches option and add as precollected, removing from pool and replacing with junk
+        starting_hip_pouches = int(self.multiworld.starting_hip_pouches[self.player])
+
+        if starting_hip_pouches > 0:
+            hip_pouches = [item for item in pool if item.name == 'Hip Pouch'] # 6 total in every campaign, I think
+
+            for x in range(starting_hip_pouches):
+                self.multiworld.push_precollected(hip_pouches[x]) # starting inv
+                pool.remove(hip_pouches[x])
+                pool.append(self.create_item('Wooden Boards'))
+
+        # check the bonus start option and add some heal items and ammo packs as precollected / starting items
+        if self._format_option_text(self.multiworld.bonus_start[self.player]) == 'True':
+            for x in range(3): self.multiworld.push_precollected(self.create_item('First Aid Spray'))
+            for x in range(4): self.multiworld.push_precollected(self.create_item('Handgun Ammo'))
+
         self.multiworld.itempool += pool
             
     def create_item(self, item_name: str) -> Item:

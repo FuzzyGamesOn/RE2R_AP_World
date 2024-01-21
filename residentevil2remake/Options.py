@@ -1,4 +1,4 @@
-from Options import Choice, OptionList
+from Options import Choice, OptionList, NamedRange
 
 class Character(Choice):
     """Leon: Expected, can video game.
@@ -30,9 +30,33 @@ class UnlockedTypewriters(OptionList):
     """
     display_name = "Unlocked Typewriters"
 
+class StartingHipPouches(NamedRange):
+    """The number of hip pouches you want to start the game with, to a max of 6. 
+    Any that you start with are taken out of the item pool and replaced with junk."""
+    default = 0
+    range_start = 0
+    range_end = 6
+    display_name = "Starting Hip Pouches"
+    special_range_names = {
+        "disabled": 0,
+        "half": 3,
+        "all": 6,
+    }
+
+class BonusStart(Choice):
+    """Some players might want to start with a little help in the way of a few extra heal items and packs of ammo.
+    No: Normal, don't start with extra heal items and packs of ammo.
+    Yes: Start with those helper items."""
+    display_name = "Bonus Start"
+    option_false = 0
+    option_true = 1
+    default = 0
+
 re2roptions = {
     "character": Character,
     "scenario": Scenario,
     "difficulty": Difficulty,
-    "unlocked_typewriters": UnlockedTypewriters
+    "unlocked_typewriters": UnlockedTypewriters,
+    "starting_hip_pouches": StartingHipPouches,
+    "bonus_start": BonusStart
 }
