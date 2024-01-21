@@ -45,8 +45,8 @@ class StartingHipPouches(NamedRange):
 
 class BonusStart(Choice):
     """Some players might want to start with a little help in the way of a few extra heal items and packs of ammo.
-    No: Normal, don't start with extra heal items and packs of ammo.
-    Yes: Start with those helper items."""
+    False: Normal, don't start with extra heal items and packs of ammo.
+    True: Start with those helper items."""
     display_name = "Bonus Start"
     option_false = 0
     option_true = 1
