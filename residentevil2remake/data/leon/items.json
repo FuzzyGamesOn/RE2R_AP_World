@@ -440,7 +440,7 @@
         "type": "Weapon",
         "name": "Chemical Flamethrower",
         "decimal": "43",
-        "count": 10,
+        "count": 200,
         "progression": 0,
         "ammo": "Flamethrower Fuel"
     },

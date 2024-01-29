@@ -100,11 +100,12 @@ class ResidentEvil2Remake(World):
         pool = [
             self.create_item(item['name'] if item else None) for item in [
                 self.item_name_to_item[location['original_item']] if location.get('original_item') else None
-                    for _, location in scenario_locations.items() if location.get('randomized') != 0
+                    for _, location in scenario_locations.items()
             ]
         ]
-        pool = [item for item in pool if item is not None] # some of the locations might not have an original item, so might not create an item for the pool
 
+        pool = [item for item in pool if item is not None] # some of the locations might not have an original item, so might not create an item for the pool
+        
         # remove any already-placed items from the pool (forced items, etc.)
         for filled_location in self.multiworld.get_filled_locations(self.player):
             if filled_location.item.code and filled_location.item in pool: # not id... not address... "code"

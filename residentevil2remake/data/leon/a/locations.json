@@ -18,6 +18,16 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall"
     },
     {
+        "name": "Marvin's Knife",
+        "region": "Main Hall",
+        "original_item": "Combat Knife",
+        "condition": {},
+        "item_object": "CFPlayExtra_GoHall",
+        "parent_object": "",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Scenario/S02_0000/1FE/1FE_GoHall",
+        "randomized": 0
+    },
+    {
         "name": "Lion Statue",
         "region": "Main Hall",
         "original_item": "Lion Medallion",
@@ -961,7 +971,7 @@
         "folder_path": "RopewayContents/World/Location_RPD_B1/Environments/st4_702_0/gimmick"
     },
     {
-        "name": "Location 1",
+        "name": "Near Door on Ground",
         "region": "Generator Room",
         "original_item": "Green Herb",
         "condition": {},    
@@ -970,7 +980,7 @@
         "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/green_herb"
     },
     {
-        "name": "Location 2",
+        "name": "Shelves",
         "region": "Generator Room",
         "original_item": "Gunpowder",
         "condition": {},    
@@ -979,7 +989,7 @@
         "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Gunpowder"
     },
     {
-        "name": "Location 3",
+        "name": "Corner Table",
         "region": "Generator Room",
         "original_item": "Boxed Electronic Part 1",
         "condition": {},    
@@ -1741,6 +1751,16 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/G2Area"
     },
     {
+        "name": "Ada's Wristband",
+        "region": "Cable Car Platform",
+        "original_item": "ID Wristband - Visitor",
+        "condition": {},    
+        "item_object": "WW_WarpToLabo",
+        "parent_object": "",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/LocationFsm_WasteWater/S04_0200/startLever_cableCar",
+        "randomized": 0
+    },
+    {
         "name": "Desk",
         "region": "Security Room",
         "original_item": "W-870",
@@ -2245,6 +2265,16 @@
         "item_object": "sm70_002",
         "parent_object": "sm70_102_RHerb",
         "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common/Leon_common"
+    },
+    {
+        "name": "Final Hit on Super Tyrant",
+        "region": "Path to Super Tyrant",
+        "original_item": "Anti-tank Rocket",
+        "condition": {},    
+        "item_object": "WP4600",
+        "parent_object": "wp4600_rocketLauncher",
+        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/Environments/st5_211_0/gimmick/CutScene",
+        "randomized": 0
     },
 
     {
