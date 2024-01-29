@@ -143,12 +143,18 @@ class ResidentEvil2Remake(World):
             for x in range(starting_hip_pouches):
                 self.multiworld.push_precollected(hip_pouches[x]) # starting inv
                 pool.remove(hip_pouches[x])
-                pool.append(self.create_item('Wooden Boards'))
 
         # check the bonus start option and add some heal items and ammo packs as precollected / starting items
         if self._format_option_text(self.multiworld.bonus_start[self.player]) == 'True':
             for x in range(3): self.multiworld.push_precollected(self.create_item('First Aid Spray'))
             for x in range(4): self.multiworld.push_precollected(self.create_item('Handgun Ammo'))
+
+        # if the number of unfilled locations exceeds the count of the pool, fill the remainder of the pool with extra maybe helpful items
+        missing_item_count = len(self.multiworld.get_unfilled_locations(self.player)) - len(pool)
+
+        if missing_item_count > 0:
+            for x in range(missing_item_count):
+                pool.append(self.create_item('Blue Herb'))
 
         self.multiworld.itempool += pool
             
