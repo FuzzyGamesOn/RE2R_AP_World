@@ -1895,7 +1895,8 @@
         "condition": {},    
         "item_object": "sm42_222_SprayingMachine01A_control",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/LocationFsm_Laboratory/S05_0100/T_Area/ControlRoom/SanpuSouchiTrue_CONV366,367,368_CF707"
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/LocationFsm_Laboratory/S05_0100/T_Area/ControlRoom/SanpuSouchiTrue_CONV366,367,368_CF707",
+        "randomized": 0
     },
     {
         "name": "Before Drug Testing Lab",
