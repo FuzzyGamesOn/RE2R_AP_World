@@ -2,7 +2,7 @@
 An Archipelago (AP) randomizer world for Resident Evil 2 Remake. Designed for use with the Archipelago client repository, which will be linked when it's ready.
 
 ## How to play an RE2R randomized world
-This requires the RE2R Archipelago client, which is not currently available (but will be soon).
+This requires the RE2R Archipelago client here: https://github.com/FuzzyGamesOn/RE2R_AP_Client
 
 ## How to generate an RE2R randomized world
 You can generate this AP world similar to any other:
@@ -11,6 +11,7 @@ You can generate this AP world similar to any other:
 2. Take the example YAML file from the most recent Release here and put it in the `Players` folder of your normal AP install.
 3. In your normal AP install, run `ArchipelagoGenerate.exe`. It will place the generated multiworld in the `output` folder.
 4. If you want to host the multiworld on the AP website, upload the zip that was generated in the `output` folder.
+5. If you want to host the multiworld locally, run `ArchipelagoServer.exe` and choose the zip that was generated in the `output` folder.
 
 ## What scenarios does this support?
 Currently, only Leon's 1st / A scenario is supported.
