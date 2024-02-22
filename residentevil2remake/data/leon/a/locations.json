@@ -944,7 +944,7 @@
         "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Leon_common/YellowChemical_LEON"
     },
     {
-        "name": "Location 1",
+        "name": "2nd Body Drawer",
         "region": "Morgue",
         "original_item": "Red Herb",
         "condition": {},    
@@ -953,7 +953,7 @@
         "folder_path": "RopewayContents/World/Location_RPD_B1/Environments/st4_702_0/gimmick"
     },
     {
-        "name": "Location 2",
+        "name": "6th Body Drawer",
         "region": "Morgue",
         "original_item": "Flash Grenade",
         "condition": {},    
@@ -962,7 +962,7 @@
         "folder_path": "RopewayContents/World/Location_RPD_B1/Environments/st4_702_0/gimmick"
     },
     {
-        "name": "Coffin",
+        "name": "Next to Last Drawer",
         "region": "Morgue",
         "original_item": "Diamond Key",
         "condition": {},    
@@ -2106,7 +2106,7 @@
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/GVirusRoom"
     },
     {
-        "name": "Location 1",
+        "name": "Table Right of Elevator 1",
         "region": "Bioreactors Room",
         "original_item": "Handgun Ammo",
         "condition": {},    
@@ -2115,7 +2115,7 @@
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
-        "name": "Location 2",
+        "name": "First of Two Flashbangs",
         "region": "Bioreactors Room",
         "original_item": "Flash Grenade",
         "condition": {},    
@@ -2124,7 +2124,7 @@
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
-        "name": "Location 3",
+        "name": "1st Table Left of Entrance",
         "region": "Bioreactors Room",
         "original_item": "First Aid Spray",
         "condition": {},    
@@ -2133,7 +2133,7 @@
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
-        "name": "Location 4",
+        "name": "2nd Table Left of Entrance",
         "region": "Bioreactors Room",
         "original_item": "Handgun Ammo",
         "condition": {},    
@@ -2142,7 +2142,7 @@
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
-        "name": "Location 5",
+        "name": "1st Table Right of Entrance",
         "region": "Bioreactors Room",
         "original_item": "Handgun Ammo",
         "condition": {},    
@@ -2151,7 +2151,7 @@
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
-        "name": "Location 6",
+        "name": "Table Right of Elevator 2",
         "region": "Bioreactors Room",
         "original_item": "Handgun Ammo",
         "condition": {},    
@@ -2160,16 +2160,16 @@
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
-        "name": "Location 7",
+        "name": "Second of Two Flashbangs",
         "region": "Bioreactors Room",
         "original_item": "Flash Grenade",
         "condition": {},    
-        "item_object": "WP6300s",
+        "item_object": "WP6300",
         "parent_object": "WP6300_FlashBan",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
-        "name": "Location 8",
+        "name": "Right Side of Room 1",
         "region": "Bioreactors Room",
         "original_item": "Flamethrower Fuel",
         "condition": {},    
@@ -2178,7 +2178,7 @@
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/GArea/G3Room"
     },
     {
-        "name": "Location 9",
+        "name": "2nd Table Right of Entrance",
         "region": "Bioreactors Room",
         "original_item": "MAG Ammo",
         "condition": {},    
@@ -2187,7 +2187,7 @@
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/GArea/G3Room"
     },
     {
-        "name": "Location 10",
+        "name": "Right Side of Room 2",
         "region": "Bioreactors Room",
         "original_item": "Hand Grenade",
         "condition": {},    
