@@ -1,5 +1,5 @@
 # RE2R Archipelago World
-An Archipelago (AP) randomizer world for Resident Evil 2 Remake. Designed for use with the Archipelago client repository, which will be linked when it's ready.
+An Archipelago (AP) randomizer world for Resident Evil 2 Remake. Designed for use with the RE2R Archipelago client repository linked below.
 
 ## How to play an RE2R randomized world
 This requires the RE2R Archipelago client here: https://github.com/FuzzyGamesOn/RE2R_AP_Client
