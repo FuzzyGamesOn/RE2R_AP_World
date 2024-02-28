@@ -488,7 +488,7 @@
         "from": "Reception - Labs",
         "to": "Main Shaft",
         "condition": {
-            "items": ["Electronic Chip - General Staff"]
+            "items": ["ID Wristband - General Staff"]
         }
     },
     { 
@@ -552,7 +552,7 @@
         "from": "Main Shaft",
         "to": "Biotesting Lab",
         "condition": {
-            "items": ["Signal Modulator", "Electronic Chip - Senior Staff"]
+            "items": ["Signal Modulator", "ID Wristband - Senior Staff"]
         }
     },
     { 

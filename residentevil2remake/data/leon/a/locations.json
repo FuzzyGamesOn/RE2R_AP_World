@@ -1257,7 +1257,8 @@
         "condition": {},    
         "item_object": "sm73_157",
         "parent_object": "ItemPositions",
-        "folder_path": "RopewayContents/World/Location_RPD/Environments/st4_602_0/gimmick/CutScene"
+        "folder_path": "RopewayContents/World/Location_RPD/Environments/st4_602_0/gimmick/CutScene",
+        "randomized": 0
     },
     {
         "name": "Back Hallway",
@@ -1541,7 +1542,8 @@
         "condition": {},    
         "item_object": "sm73_411",
         "parent_object": "T_ji_crank",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/KeyItem"
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/KeyItem",
+        "randomized": 0
     },
     {
         "name": "Downstairs Location 1",
@@ -1667,7 +1669,8 @@
         "condition": {},    
         "item_object": "sm73_116",
         "parent_object": "ItemPositions_2",
-        "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_625_0/gimmick"
+        "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_625_0/gimmick",
+        "randomized": 0
     },
     {
         "name": "Box Downstairs From King Plug",
@@ -1826,7 +1829,7 @@
     {
         "name": "Sleeping Pod",
         "region": "Nap Room",
-        "original_item": "Electronic Chip - General Staff",
+        "original_item": "ID Wristband - General Staff",
         "condition": {},    
         "item_object": "sm73_423",
         "parent_object": "sm73_433_WristTagUpdater_Lv1",
@@ -2036,7 +2039,7 @@
     {
         "name": "Downed Employee",
         "region": "Greenhouse",
-        "original_item": "Electronic Chip - Senior Staff",
+        "original_item": "ID Wristband - Senior Staff",
         "condition": {},    
         "item_object": "sm73_434",
         "parent_object": "sm73_434_WristtagUpdater_Lv2",
@@ -2288,7 +2291,7 @@
                 "Square Crank", "Fuse - Break Room Hallway", "Mechanic Jack Handle", "Small Gear", "Large Gear", 
                 "Boxed Electronic Part 1", "Boxed Electronic Part 2", "Parking Garage Key Card",
                 "T-Bar Handle", "Pawn Plug", "Knight Plug", "Bishop Plug", "Rook Plug", "Queen Plug", "King Plug", 
-                "Electronic Chip - General Staff", "Electronic Chip - Senior Staff", "Signal Modulator",
+                "ID Wristband - General Staff", "ID Wristband - Senior Staff", "Signal Modulator",
                 "Joint Plug"
             ]
         },

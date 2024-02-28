@@ -162,15 +162,15 @@
     },
     {
         "type": "Key",
-        "name": "Electronic Chip - General Staff",
-        "decimal": "198",
+        "name": "ID Wristband - General Staff",
+        "decimal": "196",
         "count": 1,
         "progression": 1
     },
     {
         "type": "Key",
-        "name": "Electronic Chip - Senior Staff",
-        "decimal": "199",
+        "name": "ID Wristband - Senior Staff",
+        "decimal": "197",
         "count": 1,
         "progression": 1
     },
