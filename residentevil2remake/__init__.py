@@ -149,6 +149,62 @@ class ResidentEvil2Remake(World):
             for x in range(3): self.multiworld.push_precollected(self.create_item('First Aid Spray'))
             for x in range(4): self.multiworld.push_precollected(self.create_item('Handgun Ammo'))
 
+        # check the "Oops! All Rockets" option. From the option description:
+        #     Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 
+        #     (Except progression weapons, of course.)
+        if self._format_option_text(self.multiworld.oops_all_rockets[self.player]) == 'True':
+            # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
+            items_to_replace = [
+                item for item in self.item_name_to_item.values() 
+                if 'type' in item and item['type'] in ['Weapon', 'Subweapon', 'Ammo'] and item['name'] != 'Anti-tank Rocket'
+            ]
+            to_item_name = 'Anti-tank Rocket'
+
+            for from_item in items_to_replace:
+                pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
+
+            # Add Marvin's Knife back in. He gets cranky if you don't give him his knife.
+            for item in pool:
+                if item.name == to_item_name:
+                    pool.remove(item)
+                    pool.append(self.create_item("Combat Knife"))
+                    break
+
+        # check the "Oops! All Grenades" option. From the option description:
+        #     Enabling this swaps all weapons, weapon ammo, and subweapons to Grenades. 
+        #     (Except progression weapons, of course.)
+        if self._format_option_text(self.multiworld.oops_all_grenades[self.player]) == 'True':
+            # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
+            items_to_replace = [
+                item for item in self.item_name_to_item.values() 
+                if 'type' in item and item['type'] in ['Weapon', 'Subweapon', 'Ammo'] and item['name'] != 'Anti-tank Rocket'
+            ]
+            to_item_name = 'Hand Grenade'
+
+            for from_item in items_to_replace:
+                pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
+
+            # Add Marvin's Knife back in. He gets cranky if you don't give him his knife.
+            for item in pool:
+                if item.name == to_item_name:
+                    pool.remove(item)
+                    pool.append(self.create_item("Combat Knife"))
+                    break
+
+        # check the "Oops! All Knives" option. From the option description:
+        #     Enabling this swaps all weapons, weapon ammo, and subweapons to Combat Knives. 
+        #     (Except progression weapons, of course.)
+        if self._format_option_text(self.multiworld.oops_all_knives[self.player]) == 'True':
+            # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
+            items_to_replace = [
+                item for item in self.item_name_to_item.values() 
+                if 'type' in item and item['type'] in ['Weapon', 'Subweapon', 'Ammo'] and item['name'] != 'Anti-tank Rocket'
+            ]
+            to_item_name = 'Combat Knife'
+
+            for from_item in items_to_replace:
+                pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
+
         # if the number of unfilled locations exceeds the count of the pool, fill the remainder of the pool with extra maybe helpful items
         missing_item_count = len(self.multiworld.get_unfilled_locations(self.player)) - len(pool)
 
@@ -209,6 +265,18 @@ class ResidentEvil2Remake(World):
     def _get_scenario(self) -> str:
         return self._format_option_text(self.multiworld.scenario[self.player]).lower()
     
+    def _replace_pool_item_with(self, pool, from_item_name, to_item_name) -> list:
+        items_to_remove = [item for item in pool if item.name == from_item_name]
+        count_of_new_items = len(items_to_remove)
+
+        for item in items_to_remove:
+            pool.remove(item)
+
+        for x in range(count_of_new_items):
+            pool.append(self.create_item(to_item_name))
+
+        return pool
+
     # def _output_items_and_locations_as_text(self):
     #     my_locations = [
     #         {

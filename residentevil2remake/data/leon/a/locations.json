@@ -991,7 +991,7 @@
     {
         "name": "Corner Table",
         "region": "Generator Room",
-        "original_item": "Boxed Electronic Part 1",
+        "original_item": "Boxed Electronic Part 2",
         "condition": {},    
         "item_object": "sm73_158",
         "parent_object": "SpeciakButton_B_Leon",
@@ -1199,7 +1199,7 @@
         "name": "Whiteboard",
         "region": "Boiler Room",
         "original_item": "Club Key",
-        "force_item": "Boxed Electronic Part 1",
+        "force_item": "Boxed Electronic Part 2",
         "condition": {},    
         "item_object": "sm73_300",
         "parent_object": "sm73_300_ClubKey",
@@ -1253,7 +1253,7 @@
     {
         "name": "Use the Gears",
         "region": "Clock Tower",
-        "original_item": "Boxed Electronic Part 2",
+        "original_item": "Boxed Electronic Part 1",
         "condition": {},    
         "item_object": "sm73_157",
         "parent_object": "ItemPositions",

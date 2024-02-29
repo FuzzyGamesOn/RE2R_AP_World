@@ -202,7 +202,7 @@
         "from": "Library",
         "to": "Clock Tower",
         "condition": {
-            "items": ["Mechanic Jack Handle", "Small Gear", "Large Gear", "Square Crank", "Fuse - Main Hall", "Fuse - Break Room Hallway", "Boxed Electronic Part 1"]
+            "items": ["Mechanic Jack Handle", "Small Gear", "Large Gear", "Square Crank", "Fuse - Main Hall", "Fuse - Break Room Hallway", "Boxed Electronic Part 2"]
         }
     },
     { 

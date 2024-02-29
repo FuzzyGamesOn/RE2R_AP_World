@@ -52,11 +52,38 @@ class BonusStart(Choice):
     option_true = 1
     default = 0
 
+class OopsAllRockets(Choice):
+    """Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 
+    (Except progression weapons, of course.)"""
+    display_name = "Oops! All Rockets"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+class OopsAllGrenades(Choice):
+    """Enabling this swaps all weapons, weapon ammo, and subweapons to Grenades. 
+    (Except progression weapons, of course.)"""
+    display_name = "Oops! All Grenades"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+class OopsAllKnives(Choice):
+    """Enabling this swaps all weapons, weapon ammo, and subweapons to Knives. 
+    (Except progression weapons, of course.)"""
+    display_name = "Oops! All Knives"
+    option_false = 0
+    option_true = 1
+    default = 0
+
 re2roptions = {
     "character": Character,
     "scenario": Scenario,
     "difficulty": Difficulty,
     "unlocked_typewriters": UnlockedTypewriters,
     "starting_hip_pouches": StartingHipPouches,
-    "bonus_start": BonusStart
+    "bonus_start": BonusStart,
+    "oops_all_rockets": OopsAllRockets,
+    "oops_all_grenades": OopsAllGrenades,
+    "oops_all_knives": OopsAllKnives
 }
