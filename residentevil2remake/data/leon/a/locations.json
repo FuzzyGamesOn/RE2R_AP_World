@@ -1915,7 +1915,7 @@
         "region": "Greenhouse",
         "original_item": "Blue Herb",
         "condition": {},    
-        "item_object": "sm70_003aw",
+        "item_object": "sm70_003",
         "parent_object": "sm70_003_BlueHerb",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/T_Area/GreenHouse"
     },
