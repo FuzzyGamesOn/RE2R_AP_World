@@ -47,7 +47,7 @@
     },
     {
         "name": "Shelves",
-        "region": "Supply Closet",
+        "region": "East Hallway 1F Closet",
         "original_item": "Handgun Ammo",
         "condition": {},    
         "item_object": "sm70_100",
@@ -56,7 +56,7 @@
     },
     {
         "name": "Boxes",
-        "region": "Supply Closet",
+        "region": "East Hallway 1F Closet",
         "original_item": "Wooden Boards",
         "condition": {},    
         "item_object": "sm70_202",
