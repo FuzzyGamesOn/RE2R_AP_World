@@ -1209,7 +1209,9 @@
         "name": "After Helicopter Crash",
         "region": "East Hallway 2F",
         "original_item": "Red Herb",
-        "condition": {},    
+        "condition": {
+            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key", "Bolt Cutters", "Square Crank"]
+        },
         "item_object": "sm70_002",
         "parent_object": "sm70_002_RedHerb",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FE/Corrider"
