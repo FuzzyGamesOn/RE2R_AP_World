@@ -52,6 +52,24 @@ class BonusStart(Choice):
     option_true = 1
     default = 0
 
+class ExtraClockTowerItems(Choice):
+    """The gears and jack handle required for Clock Tower can leave players BK for a while. This option adds an extra set of these items so the odds of BK are lower.
+    False: Normal, only 1 of each gear and the jack handle in the item pool.
+    True: Now, 2 of each gear and 2 jack handles in the item pool."""
+    display_name = "Extra Clock Tower Items"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+class ExtraMedallions(Choice):
+    """On your first visit to RPD, the medallions are required to leave. If you spend too long waiting for these on average, this option will add extras of 2 medallions.
+    False: Normal, only 1 of each RPD medallion in the item pool.
+    True: Now, 2 of the Lion and Unicorn medallions in the item pool. (Maiden medallion is always at Fire Escape and does not have an extra.)"""
+    display_name = "Extra Medallions"
+    option_false = 0
+    option_true = 1
+    default = 0
+
 class OopsAllRockets(Choice):
     """Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 
     (Except progression weapons, of course.)"""
@@ -83,6 +101,8 @@ re2roptions = {
     "unlocked_typewriters": UnlockedTypewriters,
     "starting_hip_pouches": StartingHipPouches,
     "bonus_start": BonusStart,
+    "extra_clock_tower_items": ExtraClockTowerItems,
+    "extra_medallions": ExtraMedallions,
     "oops_all_rockets": OopsAllRockets,
     "oops_all_grenades": OopsAllGrenades,
     "oops_all_knives": OopsAllKnives

@@ -205,6 +205,25 @@ class ResidentEvil2Remake(World):
             for from_item in items_to_replace:
                 pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
 
+        if self._format_option_text(self.multiworld.extra_clock_tower_items[self.player]) == 'True':
+            replaceables = [item for item in pool if item.name == 'Handgun Ammo' or item.name == 'Blue Herb']
+            
+            for x in range(3):
+                pool.remove(replaceables[x])
+
+            pool.append(self.create_item('Mechanic Jack Handle'))
+            pool.append(self.create_item('Small Gear'))
+            pool.append(self.create_item('Large Gear'))
+
+        if self._format_option_text(self.multiworld.extra_medallions[self.player]) == 'True':
+            replaceables = [item for item in pool if item.name == 'Handgun Ammo' or item.name == 'Blue Herb']
+            
+            for x in range(2):
+                pool.remove(replaceables[x])
+
+            pool.append(self.create_item('Lion Medallion'))
+            pool.append(self.create_item('Unicorn Medallion'))
+
         # if the number of unfilled locations exceeds the count of the pool, fill the remainder of the pool with extra maybe helpful items
         missing_item_count = len(self.multiworld.get_unfilled_locations(self.player)) - len(pool)
 
