@@ -448,6 +448,13 @@
         "type": "Weapon",
         "name": "Anti-tank Rocket",
         "decimal": "49",
+        "count": 4,
+        "progression": 0
+    },
+    {
+        "type": "Weapon",
+        "name": "Single Use Rocket",
+        "decimal": "49",
         "count": 1,
         "progression": 0
     },

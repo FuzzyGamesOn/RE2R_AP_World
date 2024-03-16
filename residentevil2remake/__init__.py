@@ -1,6 +1,6 @@
 import re
 
-from typing import Dict, Any
+from typing import Dict, Any, TextIO
 
 from BaseClasses import ItemClassification, Item, Location, Region, CollectionState
 from worlds.AutoWorld import World
@@ -33,6 +33,7 @@ class ResidentEvil2Remake(World):
 
     data_version = 2
     required_client_version = (0, 4, 3)
+    apworld_release_version = "0.1.7" # defined to show in spoiler log
 
     item_id_to_name = { item['id']: item['name'] for item in Data.item_table }
     item_name_to_id = { item['name']: item['id'] for item in Data.item_table }
@@ -158,7 +159,7 @@ class ResidentEvil2Remake(World):
                 item for item in self.item_name_to_item.values() 
                 if 'type' in item and item['type'] in ['Weapon', 'Subweapon', 'Ammo'] and item['name'] != 'Anti-tank Rocket'
             ]
-            to_item_name = 'Anti-tank Rocket'
+            to_item_name = 'Single Use Rocket'
 
             for from_item in items_to_replace:
                 pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
@@ -253,6 +254,9 @@ class ResidentEvil2Remake(World):
         }
 
         return slot_data
+    
+    def write_spoiler_header(self, spoiler_handle: TextIO):
+        spoiler_handle.write(f"RE2R_AP_World version: {self.apworld_release_version}\n")
 
     def _has_items(self, state: CollectionState, item_names: list) -> bool:
         return state.has_all(item_names, self.player)
