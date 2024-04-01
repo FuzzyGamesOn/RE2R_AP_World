@@ -1292,6 +1292,24 @@
         "folder_path": "RopewayContents/World/Location_OrphanApproach/LocationLevel_OrphanApproach/Item/common/Claire_common/Item"
     },
     {
+        "name": "Bathroom Basket",
+        "region": "Orphanage",
+        "original_item": "Submachine Gun Ammo",
+        "condition": {},    
+        "item_object": "sm70_102",
+        "parent_object": "MachineGun_50",
+        "folder_path": "RopewayContents/World/Location_OrphanAsylum/LocationLevel_OrphanAsylum/LocationFsm_OrphanAsylum/S04_0000/Claire_S04_0000/Item"
+    },
+    {
+        "name": "Bathroom Vanity",
+        "region": "Orphanage",
+        "original_item": "First Aid Spray",
+        "condition": {},    
+        "item_object": "sm70_000",
+        "parent_object": "Spray",
+        "folder_path": "RopewayContents/World/Location_OrphanAsylum/LocationLevel_OrphanAsylum/LocationFsm_OrphanAsylum/S04_0000/Claire_S04_0000/Item"
+    },
+    {
         "name": "Maintenance Room",
         "region": "Sewer Office",
         "original_item": "Submachine Gun Ammo",
