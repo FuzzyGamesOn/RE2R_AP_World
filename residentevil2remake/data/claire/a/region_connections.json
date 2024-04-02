@@ -377,11 +377,6 @@
         }
     },
     { 
-        "from": "Upper Waterway",
-        "to": "Lower Waterway",
-        "condition": {}
-    },
-    { 
         "from": "Lower Waterway",
         "to": "Workroom",
         "condition": {
