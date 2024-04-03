@@ -50,8 +50,7 @@
         "location_id": 17, 
         "map_id": 332, 
         "player_position": [-49.34, -49.18, -45], 
-        "item_object": "Typewriter01A_waterWater03_control",
-        "line_break": true
+        "item_object": "Typewriter01A_waterWater03_control"
     },
 
     { 
