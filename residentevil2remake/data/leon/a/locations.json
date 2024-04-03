@@ -73,6 +73,18 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/PressRoom"
     },
     {
+        "name": "Hiding Place Drawer",
+        "region": "Press Room",
+        "original_item": "Flamethrower Fuel",
+        "condition": {
+            "items": ["Film - Hiding Place"]
+        },    
+        "item_object": "Test_2_1_DrawerDesk_1FE1_control",
+        "parent_object": "",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/PressRoom/DrawerDesk_1FEPressRoom_TreasurePhotoItem",
+        "randomized": 0
+    },
+    {
         "name": "Second Stall",
         "region": "Bathroom",
         "original_item": "First Aid Spray",
@@ -345,6 +357,18 @@
         "item_object": "sm70_101",
         "parent_object": "LEON_sm70_101_ShotgunB",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2F/2FW/Corrider"
+    },
+    {
+        "name": "Hiding Place Drawer",
+        "region": "STARS Office",
+        "original_item": "Red Dot Sight - Lightning Hawk",
+        "condition": {
+            "items": ["Film - Hiding Place"]
+        },    
+        "item_object": "sm44_004_WeskerDesk01A_control",
+        "parent_object": "",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0200/Leon_S02_0200/2FW/StarsOffice/WeskerDesk_LEON",
+        "randomized": 0
     },
     {
         "name": "Boxes By Door",

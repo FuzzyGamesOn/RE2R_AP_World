@@ -1,6 +1,7 @@
 import re
 
 from typing import Dict, Any, TextIO
+from Utils import visualize_regions
 
 from BaseClasses import ItemClassification, Item, Location, Region, CollectionState
 from worlds.AutoWorld import World
@@ -12,8 +13,7 @@ from .Options import re2roptions
 
 
 Data.load_data('leon', 'a')
-# can add other scenarios like that once they're ready, too, like:
-# Data.load_data('claire', 'b')
+#Data.load_data('claire', 'a')
 
 
 class RE2RLocation(Location):
@@ -87,7 +87,8 @@ class ResidentEvil2Remake(World):
             if "condition" in connect and "items" in connect["condition"]:
                 set_rule(ent, lambda state, en=ent, conn=connect: self._has_items(state, conn["condition"].get("items", [])))
 
-        #visualize_regions(self.multiworld.get_region("Menu", self.player), "region_uml")
+        # Uncomment the below to see a connection of the regions (and their locations) for any scenarios you're testing.
+        # visualize_regions(self.multiworld.get_region("Menu", self.player), "region_uml")
 
         # Place victory and set the completion condition for having victory
         self.multiworld.get_location("Victory", self.player) \
@@ -106,34 +107,11 @@ class ResidentEvil2Remake(World):
         ]
 
         pool = [item for item in pool if item is not None] # some of the locations might not have an original item, so might not create an item for the pool
-        
+
         # remove any already-placed items from the pool (forced items, etc.)
         for filled_location in self.multiworld.get_filled_locations(self.player):
             if filled_location.item.code and filled_location.item in pool: # not id... not address... "code"
                 pool.remove(filled_location.item)
-
-        # all that changes in hardcore item-wise is that ammo/gunpowder pool is reduced slightly to fit ink ribbons
-        if self._format_option_text(self.multiworld.difficulty[self.player]) == 'Hardcore':
-            handgun_ammo = [item for item in pool if item.name == 'Handgun Ammo'] # 40 total in LA
-            gunpowder = [item for item in pool if item.name == 'Gunpowder'] # 17 total in LA
-            blue_herbs = [item for item in pool if item.name == 'Blue Herb'] # 11 total in LA
-
-            # vanilla provides 27-29 saves across X ribbons giving 2-3
-            # rando could do either 27/30 (3 per for 9/10 total) or 24 (2 per for 12 total), higher item density seems better
-            # original total for 3 items above is 68, so do same proportions but for 12 instead:
-            # so swapping out 7 ammo, 3 gunpowder, 2 blue herb each for an ink ribbon (2 uses) per
-
-            for x in range(7):
-                pool.remove(handgun_ammo[x])
-                pool.append(self.create_item('Ink Ribbon'))
-
-            for x in range(3):
-                pool.remove(gunpowder[x])
-                pool.append(self.create_item('Ink Ribbon'))
-
-            for x in range(2):
-                pool.remove(blue_herbs[x])
-                pool.append(self.create_item('Ink Ribbon'))
 
         # check the starting hip pouches option and add as precollected, removing from pool and replacing with junk
         starting_hip_pouches = int(self.multiworld.starting_hip_pouches[self.player])
@@ -250,6 +228,7 @@ class ResidentEvil2Remake(World):
         slot_data = {
             "character": self._get_character(),
             "scenario": self._get_scenario(),
+            "difficulty": self._get_difficulty(),
             "unlocked_typewriters": self._format_option_text(self.multiworld.unlocked_typewriters[self.player]).split(", ")
         }
 
@@ -265,10 +244,30 @@ class ResidentEvil2Remake(World):
         return re.sub('\w+\(', '', str(option)).rstrip(')')
     
     def _get_locations_for_scenario(self, character, scenario) -> dict:
-        return {
+        locations_pool = {
             loc['id']: loc for _, loc in self.location_name_to_location.items()
                 if loc['character'] == character and loc['scenario'] == scenario
         }
+
+        # if the player chose hardcore, take out any matching standard difficulty locations
+        if self._format_option_text(self.multiworld.difficulty[self.player]) == 'Hardcore':
+            for hardcore_loc in [loc for loc in locations_pool.values() if loc['difficulty'] == 'hardcore']:
+                check_loc_region = re.sub('H\)$', ')', hardcore_loc['region']) # take the Hardcore off the region name
+                check_loc_name = hardcore_loc['name']
+
+                # if there's a standard location with matching name and region, it's obsoleted in hardcore, remove it
+                standard_locs = [id for id, loc in locations_pool.items() if loc['region'] == check_loc_region and loc['name'] == check_loc_name]
+
+                if len(standard_locs) > 0:
+                    del locations_pool[standard_locs[0]]
+
+        # else, the player is still playing standard, take out all of the matching hardcore difficulty locations
+        else:
+            locations_pool = {
+                id: loc for id, loc in locations_pool.items() if loc['difficulty'] != 'hardcore'
+            }
+            
+        return locations_pool
 
     def _get_region_table_for_scenario(self, character, scenario) -> list:
         return [
@@ -287,6 +286,9 @@ class ResidentEvil2Remake(World):
     
     def _get_scenario(self) -> str:
         return self._format_option_text(self.multiworld.scenario[self.player]).lower()
+    
+    def _get_difficulty(self) -> str:
+        return self._format_option_text(self.multiworld.difficulty[self.player]).lower()
     
     def _replace_pool_item_with(self, pool, from_item_name, to_item_name) -> list:
         items_to_remove = [item for item in pool if item.name == from_item_name]

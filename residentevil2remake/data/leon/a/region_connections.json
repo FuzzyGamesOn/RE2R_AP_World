@@ -433,7 +433,9 @@
     { 
         "from": "Bottom Waterway",
         "to": "Supplies Storage Room",
-        "condition": {}
+        "condition": {
+            "items": ["Queen Plug"]
+        }
     },
     { 
         "from": "Monitor Room",

@@ -23,9 +23,15 @@ class Data:
     def load_data(character, scenario):
         character_offsets = { 'leon': 0, 'claire': 1000 }        
         scenario_offsets = { 'a': 0, 'b': 500 }
+        hardcore_offset = 400 # put all hardcore-only locations in the last 100 location spots for each scenario
         scenario_suffix = ' ({}{})'.format(character[0].upper(), scenario.upper())
+        scenario_suffix_hardcore = ' ({}{}H)'.format(character[0].upper(), scenario.upper()) # makes hardcore location variations unique
 
         location_start = item_start = 3000000000 + character_offsets[character] + scenario_offsets[scenario]
+
+        ###
+        # Add standard regions
+        ###
 
         new_region_table = load_data_file(character, scenario, 'regions.json')
         Data.region_table.extend([
@@ -38,6 +44,27 @@ class Data:
             for reg in new_region_table
         ])
 
+        ###
+        # Add hardcore regions, if applicable
+        ###
+
+        hardcore_locations_table = load_data_file(character, scenario, 'locations_hardcore.json')
+        hardcore_regions = [loc['region'] for loc in hardcore_locations_table]
+
+        if len(hardcore_regions) > 0:
+            Data.region_table.extend([
+                {
+                    'name': reg + scenario_suffix_hardcore, # add the scenario abbreviation so they're unique
+                    'character': character,
+                    'scenario': scenario
+                }
+                for reg in hardcore_regions # instead of using region definitions, we're using the hardcore region additions from the locations themselves
+            ])
+
+        ###
+        # Add standard region connections
+        ###
+            
         new_region_connections_table = load_data_file(character, scenario, 'region_connections.json')
         Data.region_connections_table.extend([
             {
@@ -50,6 +77,31 @@ class Data:
             for conn in new_region_connections_table
         ])
 
+        ###
+        # Add hardcore region connections
+        ###
+
+        # not a typo. if we loaded hardcore regions, we need to generate hardcore region connections as well
+        if len(hardcore_regions) > 0:
+            for conn in new_region_connections_table:
+                if conn['from'] in hardcore_regions or conn['to'] in hardcore_regions:
+                    suffix_from = scenario_suffix_hardcore if conn['from'] in hardcore_regions else scenario_suffix
+                    suffix_to = scenario_suffix_hardcore if conn['to'] in hardcore_regions else scenario_suffix
+
+                    new_region_connection = {
+                        **conn,
+                        'from': conn['from'] + suffix_from, 
+                        'to': conn['to'] + suffix_to, 
+                        'character': character,
+                        'scenario': scenario    
+                    }
+
+                    Data.region_connections_table.append(new_region_connection)
+
+        ###
+        # Add item table for all difficulties
+        ###
+        
         new_item_table = load_data_file(character, 'items.json')
         Data.item_table.extend([
             { 
@@ -59,6 +111,10 @@ class Data:
             for key, item in enumerate(new_item_table)
         ])
 
+        ###
+        # Add standard location table
+        ###
+
         new_location_table = load_data_file(character, scenario, 'locations.json')
         Data.location_table.extend([
             { 
@@ -66,7 +122,27 @@ class Data:
                 'id': loc['id'] if loc.get('id') else location_start + key,
                 'region': loc['region'] + scenario_suffix, # add the scenario abbreviation so they're unique
                 'character': character,
-                'scenario': scenario
+                'scenario': scenario,
+                'difficulty': None
             }
             for key, loc in enumerate(new_location_table)
         ])
+
+        ###
+        # Add hardcore locations
+        ###
+
+        hardcore_location_table = load_data_file(character, scenario, 'locations_hardcore.json')
+
+        if len(hardcore_location_table) > 0:
+            Data.location_table.extend([
+                { 
+                    **loc, 
+                    'id': loc['id'] if loc.get('id') else location_start + key + hardcore_offset,
+                    'region': loc['region'] + scenario_suffix_hardcore, # add the scenario abbreviation so they're unique
+                    'character': character,
+                    'scenario': scenario,
+                    'difficulty': 'hardcore'
+                }
+                for key, loc in enumerate(hardcore_location_table)
+            ])
