@@ -1,0 +1,550 @@
+[
+    { 
+        "from": "Menu",
+        "to": "Gas Station",
+        "condition": {}
+    },
+    { 
+        "from": "Gas Station",
+        "to": "Main Hall",
+        "condition": {}
+    },
+    { 
+        "from": "Main Hall",
+        "to": "East Hallway 1F",
+        "condition": {}
+    },
+    { 
+        "from": "East Hallway 1F",
+        "to": "East Hallway 1F Closet",
+        "condition": {}
+    },
+    { 
+        "from": "East Hallway 1F",
+        "to": "Press Room",
+        "condition": {}
+    },
+    { 
+        "from": "East Hallway 1F",
+        "to": "Bathroom",
+        "condition": {}
+    },
+    { 
+        "from": "East Hallway 1F",
+        "to": "East Office",
+        "condition": {
+            "items": ["Bolt Cutters", "Fuse - Main Hall"]
+        }
+    },
+    { 
+        "from": "Main Hall",
+        "to": "Reception - RPD",
+        "condition": {}
+    },
+    {
+        "from": "Reception - RPD",
+        "to": "West Hallway"
+    },
+    { 
+        "from": "Operations Room 2",
+        "to": "Records Room",
+        "condition": {
+            "items": ["Heart Key"]
+        }
+    },
+    { 
+        "from": "West Hallway",
+        "to": "Operations Room",
+        "condition": {}
+    },
+    { 
+        "from": "Operations Room",
+        "to": "Operations Room 2",
+        "condition": {
+            "items": ["Bolt Cutters"]
+        }
+    },
+    { 
+        "from": "Operations Room",
+        "to": "West Hallway 1F",
+        "condition": {}
+    },
+    { 
+        "from": "Operations Room 2",
+        "to": "West Hallway 1F",
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
+        "from": "West Hallway 1F",
+        "to": "Safety Deposit Room",
+        "condition": {}
+    },
+    { 
+        "from": "West Hallway 1F",
+        "to": "West Office",
+        "condition": {}
+    },
+    { 
+        "from": "Main Hall",
+        "to": "West Office",
+        "condition": {
+            "items": ["Spade Key"]
+        }
+    },
+    { 
+        "from": "West Hallway 1F",
+        "to": "Darkroom",
+        "condition": {}
+    },
+    { 
+        "from": "West Hallway 1F",
+        "to": "Shower Room",
+        "condition": {
+            "items": ["Valve Handle"]
+        }
+    },
+    { 
+        "from": "Shower Room",
+        "to": "West Hallway 2F",
+        "condition": {}
+    },
+    { 
+        "from": "West Hallway 2F",
+        "to": "STARS Office",
+        "condition": {}
+    },
+    { 
+        "from": "STARS Office",
+        "to": "Armory",
+        "condition": {
+            "items": ["Statue Left Arm", "Red Book", "Bejeweled Box"]
+        }
+    },
+    { 
+        "from": "West Hallway 2F",
+        "to": "Linen Room",
+        "condition": {
+            "items": ["Diamond Key"]
+        }
+    },
+    { 
+        "from": "West Hallway 2F",
+        "to": "Lounge - RPD",
+        "condition": {
+            "items": ["Battery"]
+        }
+    },
+    { 
+        "from": "Lounge - RPD",
+        "to": "Library",
+        "condition": {},
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
+        "from": "Main Hall",
+        "to": "Library",
+        "condition": {
+            "items": ["Spade Key"]
+        }
+    },
+    { 
+        "from": "Main Hall",
+        "to": "Waiting Room",
+        "condition": {}
+    },
+    { 
+        "from": "Waiting Room",
+        "to": "East Hallway 2F",
+        "condition": {
+            "items": ["Spade Key"]
+        }
+    },
+    { 
+        "from": "East Hallway 2F",
+        "to": "Art Room",
+        "condition": {}
+    },
+    { 
+        "from": "East Hallway 2F",
+        "to": "Fire Escape",
+        "condition": {}
+    },
+    { 
+        "from": "Fire Escape",
+        "to": "East Hallway 1F",
+        "condition": {
+            "items": ["Bolt Cutters", "Fuse - Main Hall"]
+        },
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
+        "from": "Roof",
+        "to": "East Hallway 2F",
+        "condition": {},
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
+        "from": "West Hallway 1F",
+        "to": "West Hallway 3F",
+        "condition": {}
+    },
+    { 
+        "from": "West Hallway 3F",
+        "to": "West Storage Room",
+        "condition": {}
+    },
+    { 
+        "from": "West Storage Room",
+        "to": "Library",
+        "condition": {}
+    },
+    { 
+        "from": "Library",
+        "to": "Clock Tower",
+        "condition": {
+            "items": ["Mechanic Jack Handle", "Small Gear", "Large Gear", "Fuse - Main Hall", "Boxed Electronic Part 2"]
+        }
+    },
+    { 
+        "from": "Library",
+        "to": "East Storage Room",
+        "condition": {
+            "items": ["Mechanic Jack Handle"]
+        }
+    },
+    { 
+        "from": "East Storage Room",
+        "to": "Small Storage Room",
+        "condition": {
+            "items": ["Heart Key", "Diamond Key", "Mechanic Jack Handle"]
+        }
+    },
+    { 
+        "from": "East Storage Room",
+        "to": "Side Stairs",
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
+        "from": "Main Hall",
+        "to": "Secret Room",
+        "condition": {
+            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key", "Bolt Cutters"]
+        }
+    },
+    { 
+        "from": "Secret Room",
+        "to": "Underground Stairs",
+        "condition": {}
+    },
+    { 
+        "from": "Underground Stairs",
+        "to": "Machinery Room",
+        "condition": {}
+    },
+    { 
+        "from": "Machinery Room",
+        "to": "Operators Room",
+        "condition": {}
+    },
+    { 
+        "from": "Operators Room",
+        "to": "Parking Garage",
+        "condition": {}
+    },
+    { 
+        "from": "Parking Garage",
+        "to": "Kennel",
+        "condition": {}
+    },
+    { 
+        "from": "Parking Garage",
+        "to": "Firing Range",
+        "condition": {}
+    },
+    { 
+        "from": "Parking Garage",
+        "to": "Elevator Controls Room",
+        "condition": {
+            "items": ["Diamond Key"]
+        }
+    },
+    { 
+        "from": "Elevator Controls Room",
+        "to": "Chief's Office",
+        "condition": {}
+    },
+    { 
+        "from": "Chief's Office",
+        "to": "East Hallway 2F",
+        "condition": {
+            "items": ["Heart Key"]
+        }
+    },
+    { 
+        "from": "Chief's Office",
+        "to": "Private Collection Room",
+        "condition": {}
+    },
+    { 
+        "from": "East Hallway 2F",
+        "to": "Side Stairs",
+        "condition": {}
+    },
+    { 
+        "from": "Kennel",
+        "to": "Morgue",
+        "condition": {}
+    },
+    { 
+        "from": "Side Stairs",
+        "to": "Observation Room",
+        "condition": {
+            "items": ["Heart Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"]
+        }
+    },
+    { 
+        "from": "Side Stairs",
+        "to": "Interrogation Room",
+        "condition": {
+            "items": ["Heart Key"]
+        }
+    },
+    { 
+        "from": "Side Stairs",
+        "to": "Balcony",
+        "condition": {}
+    },
+    { 
+        "from": "Balcony",
+        "to": "Roof",
+        "condition": {
+            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"]
+        }
+    },
+    { 
+        "from": "Parking Garage",
+        "to": "RPD Streets",
+        "condition": {
+            "items": ["Boxed Electronic Part 1", "Boxed Electronic Part 2", "Parking Garage Key Card"]
+        }
+    },
+    { 
+        "from": "RPD Streets",
+        "to": "Orphanage",
+        "condition": {}
+    },
+    { 
+        "from": "Orphanage",
+        "to": "Sewer Office",
+        "condition": {}
+    },
+    { 
+        "from": "Sewer Office",
+        "to": "Lower Waterway",
+        "condition": {}
+    },
+    { 
+        "from": "Lower Waterway",
+        "to": "Upper Waterway",
+        "condition": {
+            "items": ["Rook Plug"]
+        }
+    },
+    { 
+        "from": "Upper Waterway",
+        "to": "Workers Break Room",
+        "condition": {
+            "items": ["Sewers Key"]
+        }
+    },
+    { 
+        "from": "Workers Break Room",
+        "to": "Underground Stairs",
+        "condition": {},
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
+        "from": "Workroom",
+        "to": "Upper Waterway",
+        "condition": {},
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
+        "from": "Upper Waterway",
+        "to": "Water Injection Chamber",
+        "condition": {
+            "items": ["Sewers Key"]
+        }
+    },
+    { 
+        "from": "Lower Waterway",
+        "to": "Workroom",
+        "condition": {
+            "items": ["T-Bar Handle"]
+        }
+    },
+    { 
+        "from": "Lower Waterway",
+        "to": "Control Room",
+        "condition": {}
+    },
+    { 
+        "from": "Control Room",
+        "to": "Monitor Room",
+        "condition": {}
+    },
+    { 
+        "from": "Monitor Room",
+        "to": "Treatment Pool Room",
+        "condition": {}
+    },
+    { 
+        "from": "Treatment Pool Room",
+        "to": "Bottom Waterway",
+        "condition": {
+            "items": ["T-Bar Handle"]
+        }
+    },
+    { 
+        "from": "Bottom Waterway",
+        "to": "Supplies Storage Room",
+        "condition": {
+            "items": ["Queen Plug"]
+        }
+    },
+    { 
+        "from": "Monitor Room",
+        "to": "Main Power Room",
+        "condition": {
+            "items": ["Pawn Plug", "Knight Plug", "Bishop Plug", "Rook Plug", "Queen Plug", "King Plug"]
+        }
+    },
+    { 
+        "from": "Main Power Room",
+        "to": "Proposed Water Purification Room",
+        "condition": {}
+    },
+    { 
+        "from": "Proposed Water Purification Room",
+        "to": "Garbage Room",
+        "condition": {}
+    },
+    { 
+        "from": "Treatment Pool Room",
+        "to": "Cable Car Platform",
+        "condition": {
+            "items": ["T-Bar Handle", "Pawn Plug", "Knight Plug", "Bishop Plug", "Rook Plug", "Queen Plug", "King Plug"]
+        }
+    },
+    { 
+        "from": "Cable Car Platform",
+        "to": "Reception - Labs",
+        "condition": {}
+    },
+    { 
+        "from": "Reception - Labs",
+        "to": "Security Room",
+        "condition": {}
+    },
+    { 
+        "from": "Reception - Labs",
+        "to": "Cafeteria",
+        "condition": {}
+    },
+    { 
+        "from": "Cafeteria",
+        "to": "Kitchen",
+        "condition": {}
+    },
+    { 
+        "from": "Kitchen",
+        "to": "Nap Room",
+        "condition": {}
+    },
+    { 
+        "from": "Reception - Labs",
+        "to": "Main Shaft",
+        "condition": {
+            "items": ["ID Wristband - General Staff"]
+        }
+    },
+    { 
+        "from": "Main Shaft",
+        "to": "Lobby",
+        "condition": {}
+    },
+    { 
+        "from": "Lobby",
+        "to": "Presentation Room",
+        "condition": {}
+    },
+    { 
+        "from": "Presentation Room",
+        "to": "Greenhouse Control Room",
+        "condition": {}
+    },
+    { 
+        "from": "Greenhouse Control Room",
+        "to": "Greenhouse",
+        "condition": {
+            "items": ["Dispersal Cartridge - Empty"]
+        }
+    },
+    { 
+        "from": "Greenhouse",
+        "to": "Drug Testing Lab",
+        "condition": {}
+    },
+    { 
+        "from": "Greenhouse",
+        "to": "Lounge - Labs",
+        "condition": {}
+    },
+    { 
+        "from": "Lounge - Labs",
+        "to": "Server Room",
+        "condition": {
+            "items": ["Signal Modulator"]
+        }
+    },
+    { 
+        "from": "Lounge - Labs",
+        "to": "Low-Temp Testing Lab",
+        "condition": {
+            "items": ["Signal Modulator"]
+        }
+    },
+    { 
+        "from": "Lounge - Labs",
+        "to": "Lobby Storage",
+        "condition": {}
+    },
+    { 
+        "from": "Lobby Storage",
+        "to": "Lobby",
+        "condition": {},
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
+        "from": "Main Shaft",
+        "to": "Biotesting Lab",
+        "condition": {
+            "items": ["Signal Modulator", "ID Wristband - Senior Staff"]
+        }
+    },
+    { 
+        "from": "Biotesting Lab",
+        "to": "P-4 Level Testing Lab",
+        "condition": {}
+    },
+    { 
+        "from": "P-4 Level Testing Lab",
+        "to": "Bioreactors Room",
+        "condition": {}
+    },
+    { 
+        "from": "Bioreactors Room",
+        "to": "Path to G4",
+        "condition": {}
+    }
+]

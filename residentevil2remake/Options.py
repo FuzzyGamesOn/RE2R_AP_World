@@ -2,7 +2,7 @@ from Options import Choice, OptionList, NamedRange
 
 class Character(Choice):
     """Leon: Expected, can video game.
-    Claire: Optimal choice, but needs implement."""
+    Claire: Optimal choice, but needs testing."""
     display_name = "Character to Play"
     option_leon = 0
     option_claire = 1
