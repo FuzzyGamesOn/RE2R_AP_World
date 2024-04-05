@@ -273,6 +273,12 @@
         "condition": {}
     },
     { 
+        "from": "Roof",
+        "to": "East Hallway 2F",
+        "condition": {},
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
         "from": "Main Hall",
         "to": "Secret Room",
         "condition": {
