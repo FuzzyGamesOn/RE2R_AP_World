@@ -2357,7 +2357,7 @@
 	{
         "name": "Stabbed into Cargo",
         "region": "G5 Ending",
-        "original_item": "Gunpowder - Large",
+        "original_item": "Combat Knife",
         "condition": {},    
         "item_object": "WP4500",
         "parent_object": "WP4500_G5",
