@@ -53,7 +53,7 @@
     {
         "name": "Table",
         "region": "Guard Room",
-        "original_item": "Large-Caliber Handgun Ammo",
+        "original_item": "M19",
         "condition": {
             "items": ["Bolt Cutters"]
         },
