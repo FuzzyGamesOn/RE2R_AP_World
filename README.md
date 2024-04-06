@@ -22,6 +22,7 @@ All of the scenarios' data lives in the `data` folder. The structure of the data
 - [Character folder](#character-folder)
   - [Scenarios folder](#scenarios-folder)
     - [Locations file](#locations-file)
+    - [Locations (Hardcore) file](#locations-hardcore-file)
     - [Regions file](#regions-file)
     - [Region Connections file](#region-connections-file)
     - [Typewriter List file](#typewriter-list-file)
@@ -97,6 +98,13 @@ This is an optional field and only included on some item entries. In some cases,
 
 ##### ID and Victory
 There must be exactly one Victory location (i.e., location that finishes the randomizer), and it is the only location that uses these fields. All location IDs are dynamically assigned unless provided, but Victory forces a non-dynamic ID. The Victory field is set to true to indicate that the location is the Victory location.
+
+---
+
+#### Locations (Hardcore) file
+This file is optional, but needed for Hardcore difficulty support for scenarios. The only difference between Hardcore difficulty and other difficulties is the placement of ink ribbons, both in locations that are used by other difficulties and in new locations.
+
+This file only contains locations that are changed/added for Hardcore, and is loaded after the normal locations file. If a location in the Hardcore file has the same region name and location name as a location in the normal file, the location in the normal file will be overwritten when playing Hardcore difficulty. If the location in the Hardcore file has a region + location name that doesn't match an existing location, it will be added as a new location when playing Hardcore difficulty.
 
 ---
 
