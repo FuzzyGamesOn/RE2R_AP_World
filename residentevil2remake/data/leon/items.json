@@ -22,6 +22,13 @@
     },
     {
         "type": "Key",
+        "name": "Courtyard Key",
+        "decimal": "131",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
         "name": "Fuse - Main Hall",
         "decimal": "240",
         "count": 1,
@@ -422,6 +429,14 @@
     },
     {
         "type": "Weapon",
+        "name": "M19",
+        "decimal": "2",
+        "count": 10,
+        "progression": 0,
+        "ammo": "Large-Caliber Handgun Ammo"
+    },
+    {
+        "type": "Weapon",
         "name": "W-870",
         "decimal": "11",
         "count": 10,
@@ -490,7 +505,7 @@
     },
     {
         "type": "Ammo",
-        "name": "Large-caliber Handgun Ammo",
+        "name": "Large-Caliber Handgun Ammo",
         "decimal": "26",
         "count": 6,
         "progression": 0
