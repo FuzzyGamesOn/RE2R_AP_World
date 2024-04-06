@@ -975,6 +975,17 @@
         "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Claire_common/WhiteChemical_CLEAR"
     },
     {
+        "name": "Corner of Room on Ground",
+        "region": "Parking Garage",
+        "original_item": "Blue Herb",
+        "condition": {
+            "items": ["Diamond Key"]
+        },    
+        "item_object": "sm70_003",
+        "parent_object": "sm70_003_01",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/BlueHerb"
+    },
+    {
         "name": "Near Door on Ground",
         "region": "Chief's Office",
         "original_item": "Green Herb",
