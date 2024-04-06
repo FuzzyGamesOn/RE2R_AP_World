@@ -2,7 +2,7 @@ from Options import Choice, OptionList, NamedRange
 
 class Character(Choice):
     """Leon: Expected, can video game.
-    Claire: Optimal choice, but needs testing."""
+    Claire: Optimal choice, but needs playtesting."""
     display_name = "Character to Play"
     option_leon = 0
     option_claire = 1
@@ -10,7 +10,7 @@ class Character(Choice):
 
 class Scenario(Choice):
     """A: Best letter.
-    B: 2nd-best letter. Too similar to A. Probably not implemented yet."""
+    B: 2nd-best letter. Too similar to A. Definitely not implemented yet."""
     display_name = "Scenario to Play"
     option_a = 0
     option_b = 1

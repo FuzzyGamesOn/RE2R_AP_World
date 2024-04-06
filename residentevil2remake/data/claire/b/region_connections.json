@@ -87,10 +87,10 @@
         "to": "West Hallway"
     },
     { 
-        "from": "West Hallway",
+        "from": "Operations Room 2",
         "to": "Records Room",
         "condition": {
-            "items": ["Club Key"]
+            "items": ["Heart Key"]
         }
     },
     { 
@@ -175,7 +175,7 @@
             "items": ["Battery"]
         }
     },
-	{ 
+    { 
         "from": "Lounge - RPD",
         "to": "Library",
         "condition": {},
@@ -188,7 +188,35 @@
             "items": ["Spade Key"]
         }
     },
-	{ 
+    { 
+        "from": "Main Hall",
+        "to": "Waiting Room",
+        "condition": {}
+    },
+    { 
+        "from": "Waiting Room",
+        "to": "East Hallway 2F",
+        "condition": {
+            "items": ["Spade Key"]
+        }
+    },
+    { 
+        "from": "East Hallway 2F",
+        "to": "Art Room",
+        "condition": {}
+    },
+    { 
+        "from": "East Hallway 2F",
+        "to": "Fire Escape",
+        "condition": {}
+    },
+    { 
+        "from": "Roof",
+        "to": "East Hallway 2F",
+        "condition": {},
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
         "from": "West Hallway 1F",
         "to": "West Hallway 3F",
         "condition": {}
@@ -207,7 +235,7 @@
         "from": "Library",
         "to": "Clock Tower",
         "condition": {
-            "items": ["Mechanic Jack Handle", "Small Gear", "Large Gear", "Square Crank", "Boxed Electronic Part 2"]
+            "items": ["Mechanic Jack Handle", "Small Gear", "Large Gear", "Fuse - Main Hall", "Boxed Electronic Part 2"]
         }
     },
     { 
@@ -217,65 +245,16 @@
             "items": ["Mechanic Jack Handle"]
         }
     },
-	{ 
-        "from": "Main Hall",
-        "to": "Waiting Room",
-        "condition": {}
-    },
     { 
-        "from": "Waiting Room",
-        "to": "East Hallway 2F",
+        "from": "East Storage Room",
+        "to": "Small Storage Room",
         "condition": {
-            "items": ["Spade Key"]
+            "items": ["Heart Key", "Diamond Key", "Mechanic Jack Handle"]
         }
     },
     { 
         "from": "East Storage Room",
         "to": "Side Stairs",
-        "limitation": "ONE_SIDED_DOOR"
-    },
-    { 
-        "from": "East Hallway 2F",
-        "to": "Side Stairs",
-        "condition": {
-            "items": ["Square Crank"]
-        }
-    },
-    { 
-        "from": "Side Stairs",
-        "to": "Observation Room",
-        "condition": {
-            "items": ["Club Key"]
-        }
-    },
-    { 
-        "from": "Side Stairs",
-        "to": "Interrogation Room",
-        "condition": {
-            "items": ["Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
-        }
-    },
-    { 
-        "from": "Side Stairs",
-        "to": "Balcony",
-        "condition": {}
-    },
-    { 
-        "from": "Balcony",
-        "to": "Roof",
-        "condition": {
-            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
-        }
-    },
-    { 
-        "from": "Roof",
-        "to": "Boiler Room",
-        "condition": {}
-    },
-	{ 
-        "from": "Roof",
-        "to": "East Hallway 2F",
-        "condition": {},
         "limitation": "ONE_SIDED_DOOR"
     },
     { 
@@ -307,11 +286,6 @@
     },
     { 
         "from": "Parking Garage",
-        "to": "Jail",
-        "condition": {}
-    },
-    { 
-        "from": "Parking Garage",
         "to": "Kennel",
         "condition": {}
     },
@@ -321,21 +295,64 @@
         "condition": {}
     },
     { 
+        "from": "Parking Garage",
+        "to": "Elevator Controls Room",
+        "condition": {
+            "items": ["Diamond Key"]
+        }
+    },
+    { 
+        "from": "Elevator Controls Room",
+        "to": "Chief's Office",
+        "condition": {}
+    },
+    { 
+        "from": "Chief's Office",
+        "to": "East Hallway 2F",
+        "condition": {
+            "items": ["Heart Key"]
+        }
+    },
+    { 
+        "from": "Chief's Office",
+        "to": "Private Collection Room",
+        "condition": {}
+    },
+    { 
+        "from": "East Hallway 2F",
+        "to": "Side Stairs",
+        "condition": {}
+    },
+    { 
         "from": "Kennel",
         "to": "Morgue",
         "condition": {}
     },
     { 
-        "from": "Kennel",
-        "to": "Generator Room",
+        "from": "Side Stairs",
+        "to": "Observation Room",
         "condition": {
-            "items": ["Square Crank"]
+            "items": ["Heart Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"]
         }
     },
     { 
-        "from": "Generator Room",
-        "to": "Break Room Hallway",
+        "from": "Side Stairs",
+        "to": "Interrogation Room",
+        "condition": {
+            "items": ["Heart Key"]
+        }
+    },
+    { 
+        "from": "Side Stairs",
+        "to": "Balcony",
         "condition": {}
+    },
+    { 
+        "from": "Balcony",
+        "to": "Roof",
+        "condition": {
+            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"]
+        }
     },
     { 
         "from": "Parking Garage",
@@ -346,33 +363,21 @@
     },
     { 
         "from": "RPD Streets",
-        "to": "Gun Shop",
+        "to": "Orphanage",
         "condition": {}
     },
     { 
-        "from": "Gun Shop",
-        "to": "Sewers Entrance",
+        "from": "Orphanage",
+        "to": "Sewer Office",
         "condition": {}
     },
     { 
-        "from": "Sewers Entrance",
-        "to": "Ada In Sewers",
-        "condition": {},
-        "limitation": "SIDE_STORY"
-    },
-    { 
-        "from": "Ada In Sewers",
-        "to": "Incinerator",
-        "condition": {},
-        "limitation": "SIDE_STORY"
-    },
-    { 
-        "from": "Sewers Entrance",
-        "to": "Water Gate",
+        "from": "Sewer Office",
+        "to": "Lower Waterway",
         "condition": {}
     },
     { 
-        "from": "Water Gate",
+        "from": "Lower Waterway",
         "to": "Upper Waterway",
         "condition": {
             "items": ["Rook Plug"]
@@ -403,11 +408,6 @@
         "condition": {
             "items": ["Sewers Key"]
         }
-    },
-    { 
-        "from": "Upper Waterway",
-        "to": "Lower Waterway",
-        "condition": {}
     },
     { 
         "from": "Lower Waterway",
@@ -441,7 +441,9 @@
     { 
         "from": "Bottom Waterway",
         "to": "Supplies Storage Room",
-        "condition": {}
+        "condition": {
+            "items": ["Queen Plug"]
+        }
     },
     { 
         "from": "Monitor Room",
@@ -575,11 +577,11 @@
     },
     { 
         "from": "Bioreactors Room",
-        "to": "Path to Super Tyrant",
+        "to": "Path to G4",
         "condition": {}
     },
 	{ 
-        "from": "Path to Super Tyrant",
+        "from": "Path to G4",
         "to": "G5 Ending",
         "condition": {}
     }

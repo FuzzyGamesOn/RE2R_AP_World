@@ -1,10 +1,10 @@
 [
     { 
-        "name": "RPD - Lobby", 
+        "name": "RPD - Break Room", 
         "location_id": 16, 
-        "map_id": 112, 
-        "player_position": [1.5, 0.03, 4.12], 
-        "item_object": "Typewriter_2_1_005_control" 
+        "map_id": 235, 
+        "player_position": [38.79, 0, -12.76], 
+        "item_object": "Typewriter_2_1_003_control" 
     },
     { 
         "name": "RPD - Darkroom", 
