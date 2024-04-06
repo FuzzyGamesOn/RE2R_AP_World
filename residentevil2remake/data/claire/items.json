@@ -20,6 +20,13 @@
         "count": 1,
         "progression": 1
     },
+	{
+        "type": "Key",
+        "name": "Courtyard Key",
+        "decimal": "131",
+        "count": 1,
+        "progression": 1
+    },
     {
         "type": "Key",
         "name": "Fuse - Main Hall",
@@ -427,6 +434,14 @@
         "progression": 0,
         "ammo": "Handgun Ammo"
     },
+	{
+        "type": "Weapon",
+        "name": "Quickdraw Army",
+        "decimal": "4",
+        "count": 10,
+        "progression": 0,
+        "ammo": "Large-Caliber Handgun Ammo"
+    },
     {
         "type": "Weapon",
         "name": "GM 79",
@@ -526,7 +541,7 @@
     },
     {
         "type": "Ammo",
-        "name": "Large-caliber Handgun Ammo",
+        "name": "Large-Caliber Handgun Ammo",
         "decimal": "26",
         "count": 6,
         "progression": 0
