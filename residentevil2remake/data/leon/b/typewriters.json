@@ -1,10 +1,10 @@
 [
     { 
-        "name": "RPD - Lobby", 
+        "name": "RPD - Break Room", 
         "location_id": 16, 
-        "map_id": 112, 
-        "player_position": [1.5, 0.03, 4.12], 
-        "item_object": "Typewriter_2_1_005_control" 
+        "map_id": 235, 
+        "player_position": [38.79, 0, -12.76], 
+        "item_object": "Typewriter_2_1_003_control" 
     },
     { 
         "name": "RPD - Darkroom", 
@@ -28,31 +28,35 @@
         "item_object": "sm41_000_Typewriter01A_Prison_control" 
     },
     { 
-        "name": "RPD - Chief's Office", 
+        "name": "RPD - Boiler Room", 
         "location_id": 16, 
-        "map_id": 257, 
-        "player_position": [17.21, 5.2, -19.22], 
-        "item_object": "Typewriter_ChiefRoom_control",
+        "map_id": 123, 
+        "player_position": [16.37, 0, -32.08], 
+        "item_object": "Typewriter_2_1_outdoornorth_control",
         "line_break": true
     },
 
     { 
-        "name": "Orphanage - Directors Room", 
-        "location_id": 24, 
-        "map_id": 361, 
-        "player_position": [47.45, 0.95, -212.72], 
-        "item_object": "OrphanAsylum_sm41_000_Typewriter01A_control",
-        "line_break": true
+        "name": "Sewers - Alligator", 
+        "location_id": 26, 
+        "map_id": 378, 
+        "player_position": [52.96, -15.73, -30.04], 
+        "item_object": "WaniArea_Typewriter_control" 
     },
-
     { 
-        "name": "Sewers - Office", 
+        "name": "Sewers - Annette", 
         "location_id": 17, 
-        "map_id": 332, 
-        "player_position": [1.46, -48.9, -46.91], 
-        "item_object": "Typewriter01A_waterWater03_control"
+        "map_id": 310, 
+        "player_position": [7.69, -42.51, 28.43], 
+        "item_object": "Typewriter01A_waterWater05_control" 
     },
-
+    { 
+        "name": "Sewers - Water Gate", 
+        "location_id": 17, 
+        "map_id": 313, 
+        "player_position": [-9.55, -38.97, 10.11], 
+        "item_object": "Typewriter01A_waterWater01_control" 
+    },
     { 
         "name": "Sewers - Monitor Room", 
         "location_id": 17, 
@@ -93,7 +97,7 @@
     },
 
     { 
-        "name": "G4 - Turntable Platform", 
+        "name": "Tyrant - Escape Shaft Platform", 
         "location_id": 21, 
         "map_id": 373, 
         "player_position": [-0.9, -78.51, 17.5], 
