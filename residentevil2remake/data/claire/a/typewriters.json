@@ -28,7 +28,7 @@
         "item_object": "sm41_000_Typewriter01A_Prison_control" 
     },
     { 
-        "name": "RPD - Chief's Room", 
+        "name": "RPD - Chief's Office", 
         "location_id": 16, 
         "map_id": 257, 
         "player_position": [17.21, 5.2, -19.22], 
