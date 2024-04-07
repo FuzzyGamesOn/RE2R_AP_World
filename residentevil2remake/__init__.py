@@ -13,6 +13,9 @@ from .Options import re2roptions
 
 
 Data.load_data('leon', 'a')
+Data.load_data('leon', 'b')
+Data.load_data('claire', 'a')
+Data.load_data('claire', 'b')
 #Data.load_data('claire', 'a')
 
 
