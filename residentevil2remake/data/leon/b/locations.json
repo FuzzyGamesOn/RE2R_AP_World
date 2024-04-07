@@ -1,5 +1,78 @@
 [
     {
+        "name": "Next to Stairs",
+        "region": "East Courtyard",
+        "original_item": "Red Herb",
+        "condition": {},
+        "item_object": "sm70_002",
+        "parent_object": "sm70_002_redherb",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2ndPlay/EntranceOutdoor"
+    },
+    {
+        "name": "Next to Brick Wall",
+        "region": "East Courtyard",
+        "original_item": "Blue Herb",
+        "condition": {},
+        "item_object": "sm70_003",
+        "parent_object": "sm70_003_Blueherb",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2ndPlay/EntranceOutdoor"
+    },
+    {
+        "name": "Wheelbarrow",
+        "region": "East Courtyard",
+        "original_item": "Bolt Cutters",
+        "condition": {},
+        "item_object": "sm73_726",
+        "parent_object": "sm73_726_ChainCutter",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2ndPlay/EntranceOutdoor",
+        "randomized": 0
+    },
+    {
+        "name": "Locker Door",
+        "region": "Guard Room",
+        "original_item": "Courtyard Key",
+        "condition": {
+            "items": ["Bolt Cutters"]
+        },
+        "item_object": "sm73_153",
+        "parent_object": "sm73_153_GardenKey",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2ndPlay/EntranceOutdoor",
+        "randomized": 0
+    },
+    {
+        "name": "Box by Door",
+        "region": "Guard Room",
+        "original_item": "Large-Caliber Handgun Ammo",
+        "condition": {
+            "items": ["Bolt Cutters"]
+        },
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_BigHandgunB_NormalHard",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2ndPlay/EntranceOutdoor"
+    },
+    {
+        "name": "Table",
+        "region": "Guard Room",
+        "original_item": "M19",
+        "condition": {
+            "items": ["Bolt Cutters"]
+        },
+        "item_object": "WP0100",
+        "parent_object": "WP0100_M19",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2ndPlay"
+    },
+    {
+        "name": "On Radiator",
+        "region": "Guard Room",
+        "original_item": "Hand Grenade",
+        "condition": {
+            "items": ["Bolt Cutters"]
+        },
+        "item_object": "WP6200",
+        "parent_object": "WP6200_Grenade",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2ndPlay/EntranceOutdoor"
+    },
+    {
         "name": "Beside Main Desk",
         "region": "Main Hall",
         "original_item": "First Aid Spray",
@@ -9,23 +82,22 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall"
     },
     {
-        "name": "Main Desk",
+        "name": "Main Desk 1",
         "region": "Main Hall",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall"
     },
-    {
-        "name": "Marvin's Knife",
+	{
+        "name": "Main Desk 2",
         "region": "Main Hall",
-        "original_item": "Combat Knife",
+        "original_item": "Hip Pouch",
         "condition": {},
-        "item_object": "CFPlayExtra_GoHall",
-        "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Scenario/S02_0000/1FE/1FE_GoHall",
-        "randomized": 0
+        "item_object": "sm74_200",
+        "parent_object": "sm74_200_SidePack_2nd",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2ndPlay"
     },
     {
         "name": "Lion Statue",
@@ -34,24 +106,24 @@
         "condition": {},
         "item_object": "sm42_176_HieroglyphicDialLock01A_ForLion_control",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0000/Hall/LionStatue"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0000/2ndPlay"
     },
     {
         "name": "2F Couch",
         "region": "Main Hall",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_HandgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_HandgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall"
     },
     {
         "name": "Shelves",
         "region": "East Hallway 1F Closet",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_HandgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_HandgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/SmallDepot"
     },
     {
@@ -66,10 +138,10 @@
     {
         "name": "Downed Zombie",
         "region": "Press Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_HandgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_HandgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/PressRoom"
     },
     {
@@ -93,28 +165,28 @@
     {
         "name": "Couch",
         "region": "Reception - RPD",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/Reception"
     },
     {
         "name": "Side Table",
         "region": "Operations Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/MissionRoom"
     },
     {
         "name": "Back of Hallway",
         "region": "West Hallway 1F",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/Corrider"
     },
     {
@@ -126,7 +198,7 @@
         },    
         "item_object": "sm70_205",
         "parent_object": "sm70_205_gunpowder_Locker102",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
     },
     {
         "name": "Locker 103",
@@ -137,7 +209,7 @@
         },
         "item_object": "WP4500",
         "parent_object": "WP4500_Knife_Locker103",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
     },
     {
         "name": "Locker 203",
@@ -148,7 +220,7 @@
         },    
         "item_object": "sm74_200",
         "parent_object": "sm74_200_sidepack_Locker203",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
     },
     {
         "name": "Locker 106",
@@ -157,49 +229,49 @@
         "condition": {},    
         "item_object": "sm72_202",
         "parent_object": "sm72_202_FilmC_Locker106",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
     },
     {
         "name": "Locker 208",
         "region": "Safety Deposit Room",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {
             "items": ["Spare Key 1"]
         },
-        "item_object": "sm70_108",
-        "parent_object": "sm70_108_FireB_Locker208",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
+        "item_object": "sm70_101",
+        "parent_object": "sm70_108_ShotgunB_Locker208",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
     },
     {
         "name": "Locker 109",
         "region": "Safety Deposit Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunBullet_Locker109",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_Locker109_2nd",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
     },
     {
         "name": "Weapons Locker Weapon",
         "region": "Safety Deposit Room",
-        "original_item": "GM 79",
+        "original_item": "W-870",
         "condition": {
             "items": ["Weapons Locker Key Card"]
         },    
-        "item_object": "WP4100",
-        "parent_object": "ItemPositionsCollider_2",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/hokanko/sm44_020_WeaponLocker"
+        "item_object": "WP1000",
+        "parent_object": "ItemPositionsCollider_1",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/sm44_020_WeaponLocker"
     },
     {
         "name": "Weapons Locker Ammo",
         "region": "Safety Deposit Room",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {
             "items": ["Weapons Locker Key Card"]
         },    
-        "item_object": "sm70_108",
+        "item_object": "sm70_101",
         "parent_object": "ItemPositionsCollider_3",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/hokanko/sm44_020_WeaponLocker"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/sm44_020_WeaponLocker"
     },
     {
         "name": "Desk by Lockers",
@@ -213,9 +285,9 @@
     {
         "name": "Locker",
         "region": "West Office",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
+        "item_object": "sm70_111",
         "parent_object": "ItemPositions_NormalLocker_OfficeW",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/officeW/Locker_sm70_100_handgunB"
     },
@@ -231,11 +303,11 @@
     {
         "name": "Rookie Desk",
         "region": "West Office",
-        "original_item": "Speed Loader - SLS 60",
+        "original_item": "High-Capacity Magazine - Matilda",
         "condition": {},    
         "item_object": "sm44_006_LeonDesk01A_control",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/WestOffice/LeonDesk",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/WestOffice/LeonDesk",
         "randomized": 0
     },
     {
@@ -268,9 +340,9 @@
     {
         "name": "Right Locker",
         "region": "Darkroom",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
+        "item_object": "sm70_111",
         "parent_object": "ItemPositions_OldLocker_1FW3",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/DarkRoom/Locker_sm70_100_HandgunB_HardInkribbon"
     },
@@ -286,10 +358,10 @@
     {
         "name": "Downed Zombie 2F",
         "region": "West Hallway 1F",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_HandgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_HandgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FW/Corrider"
     },
     {
@@ -304,29 +376,29 @@
     {
         "name": "Towel Rack",
         "region": "Shower Room",
-        "original_item": "Spare Key 1",
+        "original_item": "Bejeweled Box",
         "condition": {},    
-        "item_object": "sm77_002",
-        "parent_object": "sm77_002_portablesafe_blankkey_1stPlay",
+        "item_object": "sm73_112",
+        "parent_object": "sm73_112_JewelBox2ndPlay",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FW/ShowerRoom"
     },
     {
         "name": "Far Locker by Towel Rack",
         "region": "Shower Room",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_108",
+        "item_object": "sm70_101",
         "parent_object": "ItemPositions_NormalLocker_2FW5",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FW/ShowerRoom/Locker_sm70_108_FireB"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2F/2FW/ShowerRoom/Locker_sm70_101_ShotgunB"
     },
     {
         "name": "Locked Locker (CAP)",
         "region": "Shower Room",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_108",
+        "item_object": "sm70_101",
         "parent_object": "ItemPositions_NormalLocker_2FW2",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FW/ShowerRoom/Locker_CAP_sm70_108_FireB"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2F/2FW/ShowerRoom/Locker_CAP_sm70_101_ShotgunB"
     },
     {
         "name": "Locker Past Steam",
@@ -340,11 +412,11 @@
     {
         "name": "Couch",
         "region": "West Hallway 2F",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_108",
-        "parent_object": "CLAIRE_sm70_108_FireB",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FW/Corrider"
+        "item_object": "sm70_101",
+        "parent_object": "LEON_sm70_101_ShotgunB",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2F/2FW/Corrider"
     },
     {
         "name": "Boxes By Door",
@@ -367,11 +439,11 @@
     {
         "name": "Desks 1",
         "region": "STARS Office",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_108",
-        "parent_object": "CLAIRE_sm70_108_Fire",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FW/StarsOffice"
+        "item_object": "sm70_101",
+        "parent_object": "LEON_sm70_101_shotgunbullet",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2F/2FW/StarsOffice"
     },
     {
         "name": "Desks 2",
@@ -394,20 +466,29 @@
     {
         "name": "Desks 4",
         "region": "STARS Office",
-        "original_item": "High-Grade Gunpowder - White",
+        "original_item": "High-Grade Gunpowder - Yellow",
         "condition": {},    
-        "item_object": "sm70_208",
-        "parent_object": "CLAIRE_sm70_208_Claireyakueki",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FW/StarsOffice"
+        "item_object": "sm70_207",
+        "parent_object": "LEON_sm70_207_Leonyakueki",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2F/2FW/StarsOffice"
+    },
+	{
+        "name": "On Cart by Armory",
+        "region": "STARS Office",
+        "original_item": "High-Grade Gunpowder - Yellow",
+        "condition": {},    
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2ndPlay/StarsOffice"
     },
     {
         "name": "Weapon Cage",
         "region": "Armory",
-        "original_item": "MQ 11",
+        "original_item": "Lightning Hawk",
         "condition": {},    
-        "item_object": "WP2000",
-        "parent_object": "CLAIRE_wp2000_MachineGun",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FW/StarsOffice"
+        "item_object": "WP3000",
+        "parent_object": "LEON_wp3000_Magnum",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2F/2FW/StarsOffice"
     },
     {
         "name": "Location 1",
@@ -430,11 +511,11 @@
     {
         "name": "Side Table",
         "region": "Lounge - RPD",
-        "original_item": "Gunpowder",
+        "original_item": "Film - Lion Statue",
         "condition": {},    
-        "item_object": "sm70_205",
-        "parent_object": "sm70_205_Gunpowder_1st",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FW/reception2F"
+        "item_object": "sm77_007",
+        "parent_object": "sm77_007_FilmRion_Kan",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2ndPlay"
     },
     {
         "name": "Unicorn Statue",
@@ -443,7 +524,7 @@
         "condition": {},    
         "item_object": "sm42_176_HieroglyphicDialLock01A_ForUnicorn_control",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/2FW/Reception2F/UnicornStatue"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0000/2ndPlay"
     },
     {
         "name": "Downed Zombie",
@@ -468,8 +549,8 @@
         "region": "Library",
         "original_item": "Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FW/Library"
     },
     {
@@ -484,11 +565,11 @@
     {
         "name": "Safe Behind Desk",
         "region": "Waiting Room",
-        "original_item": "High-Capacity Mag - JMB Hp3",
+        "original_item": "Muzzle Brake - Matilda",
         "condition": {},    
         "item_object": "sm42_019_SafeBoxDial01A_OfficeE_control",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0000/Claire_S02_0000/2FE/2FWaitingRoom/IronSafe_2FE"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0000/Leon_S02_0000/2FE/2FWaitingRoom/IronSafe_2FE"
     },
     {
         "name": "Table Near Door",
@@ -538,20 +619,10 @@
     {
         "name": "Barrel",
         "region": "Fire Escape",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorS"
-    },
-    {
-        "name": "Garbage Beside Door",
-        "region": "Fire Escape",
-        "original_item": "Bolt Cutters",
-        "force_item": "Maiden Medallion",
-        "condition": {},    
-        "item_object": "sm73_726",
-        "parent_object": "sm73_726_ChainCutter",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorS"
     },
     {
@@ -575,10 +646,10 @@
     {
         "name": "Downed Zombie",
         "region": "East Office",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/OfficeE"
     },
     {
@@ -588,15 +659,6 @@
         "condition": {},    
         "item_object": "sm70_205",
         "parent_object": "sm70_205_Gunpowder",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/OfficeE"
-    },
-    {
-        "name": "End of Desks",
-        "region": "East Office",
-        "original_item": "Fuse - Main Hall",
-        "condition": {},    
-        "item_object": "sm73_722",
-        "parent_object": "sm73_722_fuse_1st",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/OfficeE"
     },
     {
@@ -611,11 +673,11 @@
     {
         "name": "Small Office Furniture",
         "region": "East Office",
-        "original_item": "High-Grade Gunpowder - White",
+        "original_item": "High-Grade Gunpowder - Yellow",
         "condition": {},    
-        "item_object": "sm70_208",
-        "parent_object": "CLAIRE_sm70_208_Claireyakueki",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/1F/1FE/OfficeE"
+        "item_object": "sm70_207",
+        "parent_object": "LEON_sm70_207_Leonyakueki",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/OfficeE"
     },
     {
         "name": "Desk",
@@ -656,20 +718,20 @@
     {
         "name": "Pallets",
         "region": "West Hallway 3F",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_HandgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_HandgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FW/Corridor"
     },
     {
         "name": "Locker (DCM)",
         "region": "West Hallway 3F",
-        "original_item": "Submachine Gun Ammo",
+        "original_item": "MAG Ammo",
         "condition": {},    
-        "item_object": "sm70_102",
+        "item_object": "sm70_103",
         "parent_object": "ItemPositions_NormalLocker_3FWCorridor",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/3FW/Corridor/Locker_MachinegunB"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/3FW/Corridor/Locker_MagnumB"
     },
     {
         "name": "Desk",
@@ -702,19 +764,10 @@
     {
         "name": "Bookshelf",
         "region": "West Storage Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_HandgunB",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FW/LickerRoom"
-    },
-    {
-        "name": "Side Table",
-        "region": "West Storage Room",
-        "original_item": "Hip Pouch",
-        "condition": {},    
-        "item_object": "sm74_200",
-        "parent_object": "sm74_200_SidePack_1st",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_HandgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FW/LickerRoom"
     },
     {
@@ -726,16 +779,16 @@
         },
         "item_object": "sm42_177_HieroglyphicDialLock01B_ForVirgin_control",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/3FW/LickerRoom"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0000/2ndPlay"
     },
     {
         "name": "Left of Entrance",
         "region": "Secret Room",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_108",
-        "parent_object": "CLAIRE_sm70_108_Fire",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/UnderGoddes"
+        "item_object": "sm70_101",
+        "parent_object": "LEON_sm70_101_ShotgunB",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/UnderGoddes"
     },
     {
         "name": "Desk",
@@ -758,21 +811,21 @@
     {
         "name": "Location 2",
         "region": "Underground Stairs",
-        "original_item": "Suppressor - MQ 11",
+        "original_item": "Long Barrel - Lightning Hawk",
         "condition": {
             "items": ["Statue Left Arm", "Red Book", "Bejeweled Box"]
         },    
-        "item_object": "sm71_913",
+        "item_object": "sm71_915",
         "parent_object": "ItemPositions",
-        "folder_path": "RopewayContents/World/Location_RPD_B1/Environments/st4_750_0/gimmick_claire"
+        "folder_path": "RopewayContents/World/Location_RPD_B1/Environments/st4_750_0/gimmick_leon"
     },
     {
         "name": "Location 1",
         "region": "Machinery Room",
         "original_item": "Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_G1_02",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_G1_02",
         "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/HundGun"
     },
     {
@@ -796,10 +849,10 @@
     {
         "name": "Location 4",
         "region": "Machinery Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_G1",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_G1",
         "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/HundGun"
     },
     {
@@ -823,10 +876,10 @@
     {
         "name": "Location 7",
         "region": "Machinery Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_G1_01",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_G1_01",
         "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/HundGun"
     },
     {
@@ -859,13 +912,31 @@
     {
         "name": "Police Car Trunk",
         "region": "Parking Garage",
-        "original_item": "JMB Hp3",
+        "original_item": "Gun Stock - Matilda",
         "condition": {
             "items": ["Car Key"]
         },    
-        "item_object": "WP0200",
+        "item_object": "sm71_903",
         "parent_object": "null_ItemPositions_sidepack",
-        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/LocationFsm_RPD_B1/S02_0500/Claire_S02_0500/AREA_Parking/CarTrunk_Claire"
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/LocationFsm_RPD_B1/S02_0500/Leon_S02_0500/AREA_Parking/CarTrunk_Leon"
+    },
+    {
+        "name": "First Office",
+        "region": "Jail",
+        "original_item": "Large-Caliber Handgun Ammo",
+        "condition": {},    
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/HundGun"
+    },
+    {
+        "name": "Table By Last Cell",
+        "region": "Parking Garage",
+        "original_item": "Square Crank",
+        "condition": {},    
+        "item_object": "sm73_101",
+        "parent_object": "crank",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/KeyItem"
     },
     {
         "name": "Table",
@@ -879,11 +950,11 @@
     {
         "name": "Location 2",
         "region": "Firing Range",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_108",
-        "parent_object": "sm70_108",
-        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Claire_common/FireGrenade_CLEAR"
+        "item_object": "sm70_101",
+        "parent_object": "sm70_101_B1F_1",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Leon_common/ShotGun_LEON"
     },
     {
         "name": "Diamond Room Table",
@@ -919,11 +990,11 @@
     {
         "name": "Location 2",
         "region": "Kennel",
-        "original_item": "High-Grade Gunpowder - White",
+        "original_item": "High-Grade Gunpowder - Yellow",
         "condition": {},    
-        "item_object": "sm70_208",
-        "parent_object": "sm70_208",
-        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Claire_common/WhiteChemical_CLEAR"
+        "item_object": "sm70_207",
+        "parent_object": "sm70_207",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Leon_common/YellowChemical_LEON"
     },
     {
         "name": "2nd Body Drawer",
@@ -953,95 +1024,103 @@
         "folder_path": "RopewayContents/World/Location_RPD_B1/Environments/st4_702_0/gimmick"
     },
     {
-        "name": "Locker",
-        "region": "Parking Garage",
-        "original_item": "Shoulder Stock - GM 79",
-        "condition": {
-            "items": ["Diamond Key"]
-        },    
-        "item_object": "sm71_917",
-        "parent_object": "PosOnly_ClaireLocker",
-        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Claire_common"
-    },
-    {
-        "name": "Boxes Next to Table",
-        "region": "Parking Garage",
-        "original_item": "High-Grade Gunpowder - White",
-        "condition": {
-            "items": ["Diamond Key"]
-        },    
-        "item_object": "sm70_208",
-        "parent_object": "sm70_208",
-        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Claire_common/WhiteChemical_CLEAR"
-    },
-    {
-        "name": "Corner of Room on Ground",
-        "region": "Parking Garage",
-        "original_item": "Blue Herb",
-        "condition": {
-            "items": ["Diamond Key"]
-        },    
-        "item_object": "sm70_003",
-        "parent_object": "sm70_003_01",
-        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/BlueHerb"
-    },
-    {
         "name": "Near Door on Ground",
-        "region": "Chief's Office",
+        "region": "Generator Room",
         "original_item": "Green Herb",
         "condition": {},    
         "item_object": "sm70_001",
-        "parent_object": "sm70_001_GreenHerb",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FE/ChiefHiddenCorridor"
+        "parent_object": "sm70_001_01",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/green_herb"
     },
     {
-        "name": "Table",
-        "region": "Chief's Office",
-        "original_item": "Submachine Gun Ammo",
+        "name": "Shelves",
+        "region": "Generator Room",
+        "original_item": "Gunpowder",
         "condition": {},    
-        "item_object": "sm70_102",
-        "parent_object": "sm70_102_machinegunB",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FE/ChiefRoom"
+        "item_object": "sm70_205",
+        "parent_object": "sm70_205",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Gunpowder"
     },
     {
-        "name": "Breakfront",
-        "region": "Private Collection Room",
-        "original_item": "High-Grade Gunpowder - White",
+        "name": "Corner Table",
+        "region": "Generator Room",
+        "original_item": "Boxed Electronic Part 2",
         "condition": {},    
-        "item_object": "sm70_208",
-        "parent_object": "sm70_208_ClaireYakueki",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FE/ChiefStore"
+        "item_object": "sm73_158",
+        "parent_object": "SpeciakButton_B_Leon",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Leon_common"
     },
     {
-        "name": "Stabbed into Manikin Head",
-        "region": "Small Storage Room",
+        "name": "Shelves",
+        "region": "Break Room Hallway",
+        "original_item": "Shotgun Shells",
+        "condition": {},    
+        "item_object": "sm70_101",
+        "parent_object": "LEON_sm70_101_shotgunB",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/CorriderC"
+    },
+    {
+        "name": "Stuck in Wall",
+        "region": "Break Room Hallway",
         "original_item": "Combat Knife",
-        "condition": {
-            "items": ["Heart Key"]
-        },    
+        "condition": {},    
         "item_object": "WP4500",
         "parent_object": "WP4500_Knife",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/3FE/3FClaireRoom"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/CorriderC"
     },
     {
         "name": "Table",
-        "region": "Small Storage Room",
-        "original_item": "Boxed Electronic Part 2",
-        "condition": {
-            "items": ["Heart Key"]
-        },    
-        "item_object": "sm73_158",
-        "parent_object": "sm73_158_SwitchBBox",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/3FE/3FClaireRoom"
+        "region": "Break Room",
+        "original_item": "Blue Herb",
+        "condition": {},    
+        "item_object": "sm70_003",
+        "parent_object": "sm70_003_BlueHerb",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/NightDutyRoom"
+    },
+    {
+        "name": "Locker 1",
+        "region": "Break Room",
+        "original_item": "High-Grade Gunpowder - Yellow",
+        "condition": {},    
+        "item_object": "sm70_207",
+        "parent_object": "ItemPositions_NormalLocker_1FE_restroom1",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/NightDutyRoom/Locker_sm70_207_LeonYakueki"
+    },
+    {
+        "name": "Locker 2",
+        "region": "Break Room",
+        "original_item": "Large-Caliber Handgun Ammo",
+        "condition": {},    
+        "item_object": "sm70_111",
+        "parent_object": "ItemPositions_NormalLocker_1FE_restroom2",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/NightDutyRoom/Locker_NightDutyRoomB_sm70_100_HandgunB"
+    },
+    {
+        "name": "Sink",
+        "region": "Break Room",
+        "original_item": "MAG Ammo",
+        "condition": {},    
+        "item_object": "sm70_103",
+        "parent_object": "sm70_103_magnumB",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/NightDutyRoom"
+    },
+    {
+        "name": "Chair",
+        "region": "Break Room",
+        "original_item": "Fuse - Main Hall",
+        "condition": {},    
+        "item_object": "sm73_723",
+        "parent_object": "sm73_723_fuse2",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/NightDutyRoom"
     },
     {
         "name": "Locker",
         "region": "Side Stairs",
-        "original_item": "High-Grade Gunpowder - White",
+        "original_item": "High-Grade Gunpowder - Yellow",
         "condition": {},    
-        "item_object": "sm70_208",
+        "item_object": "sm70_207",
         "parent_object": "ItemPositions_NormalLocker_1FE1",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/1F/1FE/CorriderB/Locker_sm70_208_Claireyakueki"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/CorriderB/Locker_sm70_207_Leonyakueki"
     },
     {
         "name": "Downed Zombie",
@@ -1053,21 +1132,21 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/InterrogationRoom"
     },
     {
-        "name": "Shelves",
-        "region": "Interrogation Room",
-        "original_item": "Bejeweled Box",
+        "name": "Table",
+        "region": "Observation Room",
+        "original_item": "Spare Key 1",
         "condition": {},    
-        "item_object": "sm73_112",
-        "parent_object": "sm73_112_BlueJuelBox_StarsBadgeInside_1stPlay",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/1F/1FE/InterrogationRoom"
+        "item_object": "sm77_002",
+        "parent_object": "sm77_002_PortableSafe_2ndPlay",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/InterrogationRoom"
     },
     {
         "name": "Location 1",
         "region": "Interrogation Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/InterrogationRoom"
     },
     {
@@ -1091,9 +1170,9 @@
     {
         "name": "3F Locker 2",
         "region": "Side Stairs",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
+        "item_object": "sm70_111",
         "parent_object": "ItemPositions_NormalLocker_3FE2",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/Corridor/Locker_sm70_100_HandgunB"
     },
@@ -1118,11 +1197,11 @@
     {
         "name": "Shelves 2",
         "region": "East Storage Room",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_108",
-        "parent_object": "CLAIRE_sm70_108_Fire",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/3FE/ArtRoom"
+        "item_object": "sm70_101",
+        "parent_object": "LEON_sm70_101_shotgunB",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/3FE/ArtRoom"
     },
     {
         "name": "Table",
@@ -1136,15 +1215,15 @@
     {
         "name": "Bench by Flaming Helicopter",
         "region": "Roof",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
     },
     {
         "name": "Outside by Stairs 1",
-        "region": "Roof",
+        "region": "Boiler Room",
         "original_item": "Green Herb",
         "condition": {},    
         "item_object": "sm70_001",
@@ -1153,7 +1232,7 @@
     },
     {
         "name": "Outside by Stairs 2",
-        "region": "Roof",
+        "region": "Boiler Room",
         "original_item": "Green Herb",
         "condition": {},    
         "item_object": "sm70_001",
@@ -1161,21 +1240,30 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
     },
     {
-        "name": "Table",
-        "region": "Private Collection Room",
-        "original_item": "Heart Key",
+        "name": "Desk",
+        "region": "Boiler Room",
+        "original_item": "Gunpowder",
         "condition": {},    
-        "item_object": "sm73_150",
-        "parent_object": "sm73_150_Koibito",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FE/ChiefStore"
+        "item_object": "sm70_205",
+        "parent_object": "sm70_205_gunpowder",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
+    },
+    {
+        "name": "Whiteboard",
+        "region": "Boiler Room",
+        "original_item": "Club Key",
+        "force_item": "Boxed Electronic Part 2",
+        "condition": {},    
+        "item_object": "sm73_300",
+        "parent_object": "sm73_300_ClubKey",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
     },
     {
         "name": "After Helicopter Crash",
         "region": "East Hallway 2F",
         "original_item": "Red Herb",
-        "force_item": "Boxed Electronic Part 2",
         "condition": {
-            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key", "Bolt Cutters"]
+            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key", "Bolt Cutters", "Square Crank"]
         },
         "item_object": "sm70_002",
         "parent_object": "sm70_002_RedHerb",
@@ -1246,16 +1334,27 @@
         "folder_path": "RopewayContents/World/Location_RPD/Environments/st4_602_0/gimmick/CutScene"
     },
     {
-        "name": "Secured Area",
-        "region": "Private Collection Room",
+        "name": "Last Cell 1",
+        "region": "Jail",
         "original_item": "Parking Garage Key Card",
         "condition": {
-            "items": ["Mechanic Jack Handle", "Fuse - Main Hall", "Boxed Electronic Part 1", "Boxed Electronic Part 2"]
+            "items": ["Square Crank", "Fuse - Main Hall", "Boxed Electronic Part 1", "Boxed Electronic Part 2"]
         },
-        "item_object": "FlagCheckItemGet_Cardkey",
+        "item_object": "B1_GetBen'sCardKey_CF320_00",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Scenario/S02_0500/Claire_S02_0500/2FE/ChiefRoom/FromSherryPart",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/LocationFsm_RPD_B1/S02_0500/Leon_S02_0500/AREA_Prison/GetBenMemo&CardKey_CF320_00",
         "randomized": 0
+    },
+    {
+        "name": "Last Cell Toilet",
+        "region": "Jail",
+        "original_item": "First Aid Spray",
+        "condition": {
+            "items": ["Square Crank", "Fuse - Main Hall", "Boxed Electronic Part 1", "Boxed Electronic Part 2"]
+        },
+        "item_object": "sm70_000",
+        "parent_object": "sm70_000",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/EmergencySpray"
     },
     {
         "name": "Just Outside Gate",
@@ -1267,94 +1366,76 @@
         "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/green_herb"
     },
     {
-        "name": "Basketball Court on Bench 1",
-        "region": "RPD Streets",
-        "original_item": "Submachine Gun Ammo",
-        "condition": {},    
-        "item_object": "sm70_102",
-        "parent_object": "MachineGun_50",
-        "folder_path": "RopewayContents/World/Location_OrphanApproach/LocationLevel_OrphanApproach/Item/common/Claire_common/Item"
-    },
-    {
-        "name": "Basketball Court on Bench 2",
-        "region": "RPD Streets",
-        "original_item": "Green Herb",
-        "condition": {},    
-        "item_object": "sm70_001",
-        "parent_object": "GreenHurb",
-        "folder_path": "RopewayContents/World/Location_OrphanApproach/LocationLevel_OrphanApproach/Item/common/Claire_common/Item"
-    },
-    {
-        "name": "Outside Bus",
-        "region": "RPD Streets",
-        "original_item": "Blue Herb",
-        "condition": {},    
-        "item_object": "sm70_003",
-        "parent_object": "BlueHurb",
-        "folder_path": "RopewayContents/World/Location_OrphanApproach/LocationLevel_OrphanApproach/Item/common/Claire_common/Item"
-    },
-    {
-        "name": "Inside Bus",
-        "region": "RPD Streets",
+        "name": "Short Shelves Left of Entrance",
+        "region": "Gun Shop",
         "original_item": "Hand Grenade",
         "condition": {},    
         "item_object": "WP6200",
         "parent_object": "Bomb",
-        "folder_path": "RopewayContents/World/Location_OrphanApproach/LocationLevel_OrphanApproach/Item/common/Claire_common/Item"
+        "folder_path": "RopewayContents/World/Location_OrphanApproach/LocationLevel_OrphanApproach/Item/common/Leon_common/Wepon"
     },
     {
-        "name": "Bathroom Basket",
-        "region": "Orphanage",
-        "original_item": "Submachine Gun Ammo",
+        "name": "Long Shelves Left of Entrance",
+        "region": "Gun Shop",
+        "original_item": "Long Barrel - W-870",
         "condition": {},    
-        "item_object": "sm70_102",
-        "parent_object": "MachineGun_50",
-        "folder_path": "RopewayContents/World/Location_OrphanAsylum/LocationLevel_OrphanAsylum/LocationFsm_OrphanAsylum/S04_0000/Claire_S04_0000/Item"
+        "item_object": "sm71_909",
+        "parent_object": "SG_Parts",
+        "folder_path": "RopewayContents/World/Location_OrphanApproach/LocationLevel_OrphanApproach/Item/common/Leon_common/Wepon"
     },
     {
-        "name": "Bathroom Vanity",
-        "region": "Orphanage",
-        "original_item": "First Aid Spray",
+        "name": "Shelves Back Left Corner",
+        "region": "Gun Shop",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_000",
-        "parent_object": "Spray",
-        "folder_path": "RopewayContents/World/Location_OrphanAsylum/LocationLevel_OrphanAsylum/LocationFsm_OrphanAsylum/S04_0000/Claire_S04_0000/Item"
+        "item_object": "sm70_111",
+        "parent_object": "HandGunBullet2_03",
+        "folder_path": "RopewayContents/World/Location_OrphanApproach/LocationLevel_OrphanApproach/Item/common/Leon_common/Wepon"
     },
     {
-        "name": "Maintenance Room",
-        "region": "Sewer Office",
-        "original_item": "Submachine Gun Ammo",
+        "name": "End of Third Hallway",
+        "region": "Sewers Entrance",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_102",
-        "parent_object": "sm70_102_ww_3_01",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/SubMachineGun"
+        "item_object": "sm70_111",
+        "parent_object": "HandGun2_04",
+        "folder_path": "RopewayContents/World/Location_CrocodiliaArea/LocationLevel_CrocodiliaArea/Item/common/Leon_common"
     },
     {
-        "name": "Table",
-        "region": "Sewer Office",
-        "original_item": "High-Powered Rounds",
+        "name": "Barrels Before Alligator Cutscene",
+        "region": "Sewers Entrance",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_112",
-        "parent_object": "sm70_112_ww_2",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/Magnum"
+        "item_object": "sm70_111",
+        "parent_object": "HandGun2_03",
+        "folder_path": "RopewayContents/World/Location_CrocodiliaArea/LocationLevel_CrocodiliaArea/Item/common/Leon_common"
+    },
+    {
+        "name": "After Alligator",
+        "region": "Sewers Entrance",
+        "original_item": "Hand Grenade",
+        "condition": {},    
+        "item_object": "WP6200",
+        "parent_object": "WP6200",
+        "folder_path": "RopewayContents/World/Location_CrocodiliaArea/LocationLevel_CrocodiliaArea/Item/common/Leon_common"
     },
     {
         "name": "At Water Gate",
         "region": "Upper Waterway",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_ww_1_01",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111",
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/HundGun"
     },
     {
         "name": "In Front of Gate",
         "region": "Upper Waterway",
-        "original_item": "High-Powered Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_112",
-        "parent_object": "sm70_112_ww_3_01",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/Magnum"
+        "item_object": "sm70_101",
+        "parent_object": "sm70_101_ww_2_01",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Leon_common/ShotGun"
     },
     {
         "name": "Downed Zombie",
@@ -1368,9 +1449,9 @@
     {
         "name": "Locker",
         "region": "Workers Break Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
+        "item_object": "sm70_111",
         "parent_object": "ItemPositions_locker04",
         "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_615_0/gimmick"
     },
@@ -1386,11 +1467,11 @@
     {
         "name": "Down Elevator",
         "region": "Workers Break Room",
-        "original_item": "High-Powered Rounds",
+        "original_item": "MAG Ammo",
         "condition": {},    
-        "item_object": "sm70_112",
-        "parent_object": "sm70_112_ww_2",
-        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Claire_common/Mugnum_Claire"
+        "item_object": "sm70_103",
+        "parent_object": "sm70_103_ww_2",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Leon_common/Mugnum_Leon"
     },
     {
         "name": "Table Location 1",
@@ -1404,11 +1485,11 @@
     {
         "name": "Table Location 2",
         "region": "Water Injection Chamber",
-        "original_item": "High-Grade Gunpowder - White",
+        "original_item": "High-Grade Gunpowder - Yellow",
         "condition": {},    
-        "item_object": "sm70_208",
-        "parent_object": "sm70_208_ww_2",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/Chemical_claire"
+        "item_object": "sm70_207",
+        "parent_object": "sm70_207_ww_2",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Leon_common/Chemical_leon"
     },
     {
         "name": "Before the Waterslide",
@@ -1422,37 +1503,37 @@
     {
         "name": "Before Left Path",
         "region": "Lower Waterway",
-        "original_item": "High-Grade Gunpowder - White",
+        "original_item": "High-Grade Gunpowder - Yellow",
         "condition": {},    
-        "item_object": "sm70_208",
-        "parent_object": "sm70_208_ww_1",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/Chemical_claire"
+        "item_object": "sm70_207",
+        "parent_object": "sm70_207_ww_1",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Leon_common/Chemical_leon"
     },
     {
         "name": "Chairs in Corner",
         "region": "Control Room",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_108",
-        "parent_object": "sm70_108",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/grelan"
+        "item_object": "sm70_101",
+        "parent_object": "sm70_101_ww_2_01_01",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Leon_common/ShotGun"
     },
     {
         "name": "Locker (SZF)",
         "region": "Control Room",
-        "original_item": "Submachine Gun Ammo",
+        "original_item": "MAG Ammo",
         "condition": {},    
-        "item_object": "sm70_102",
+        "item_object": "sm70_103",
         "parent_object": "ItemPositions_ForSidePack",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/LocationFsm_WasteWater/S04_0050/Claire_S04_0050/DialLocker_Claire_MonitorRoomHigher"
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/LocationFsm_WasteWater/S04_0050/Leon_S04_0050/DialLocker_Leon_MonitorRoomHigher"
     },
     {
         "name": "Table with Raccoon Milk",
         "region": "Monitor Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_ww_1_01_01",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_01",
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/HundGun"
     },
     {
@@ -1494,11 +1575,11 @@
     {
         "name": "Safe (2, 12, 8)",
         "region": "Treatment Pool Room",
-        "original_item": "Reinforced Frame - SLS 60",
+        "original_item": "Shotgun Stock - W-870",
         "condition": {},    
         "item_object": "sm42_019_SafeBoxDial01A_WW_control",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/LocationFsm_WasteWater/S04_0050/Claire_S04_0050/Kinko_Claire"
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/LocationFsm_WasteWater/S04_0050/Leon_S04_0050/Kinko_LEON"
     },
     {
         "name": "Before Cable Car",
@@ -1549,11 +1630,11 @@
     {
         "name": "Before Lift 2",
         "region": "Workroom",
-        "original_item": "High-Powered Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_112",
-        "parent_object": "sm70_112_ww_2",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/Magnum"
+        "item_object": "sm70_101",
+        "parent_object": "sm70_101_ww_2",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Leon_common/ShotGun"
     },
     {
         "name": "Left Table",
@@ -1585,10 +1666,10 @@
     {
         "name": "Right Table",
         "region": "Workroom",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_ww_1",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111",
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/HundGun"
     },
     {
@@ -1612,11 +1693,11 @@
     {
         "name": "Left of 2nd Mutant",
         "region": "Bottom Waterway",
-        "original_item": "Submachine Gun Ammo",
+        "original_item": "MAG Ammo",
         "condition": {},    
-        "item_object": "sm70_102",
-        "parent_object": "sm70_102_ww_3",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/SubMachineGun"
+        "item_object": "sm70_103",
+        "parent_object": "sm70_103_ww_2",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Leon_common/Magnum"
     },
     {
         "name": "Shelves 1",
@@ -1658,11 +1739,11 @@
     {
         "name": "Weapon Cage",
         "region": "Supplies Storage Room",
-        "original_item": "Spark Shot",
+        "original_item": "Chemical Flamethrower",
         "condition": {},    
-        "item_object": "WP4300",
-        "parent_object": "WP_SparkShot",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common"
+        "item_object": "WP4200",
+        "parent_object": "WP_FireShooter",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Leon_common"
     },
     {
         "name": "Stairs After Chess Puzzle",
@@ -1694,19 +1775,19 @@
     {
         "name": "Location 1",
         "region": "Proposed Water Purification Room",
-        "original_item": "Submachine Gun Ammo",
+        "original_item": "MAG Ammo",
         "condition": {},    
-        "item_object": "sm70_102",
-        "parent_object": "ItemPositions-sm70-102",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/G2Area_Claire"
+        "item_object": "sm70_103",
+        "parent_object": "ItemPositions-sm70-103",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Leon_common/G2Area_Leon"
     },
     {
         "name": "Location 2",
         "region": "Proposed Water Purification Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "ItemPositions-sm70-100-1",
+        "item_object": "sm70_111",
+        "parent_object": "ItemPositions-sm70-100-2",
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/G2Area"
     },
     {
@@ -1728,23 +1809,23 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/G2Area"
     },
     {
-        "name": "Sherry's Wristband",
+        "name": "Ada's Wristband",
         "region": "Cable Car Platform",
         "original_item": "ID Wristband - Visitor",
         "condition": {},    
-        "item_object": "CFPlay2_CF705_01",
+        "item_object": "WW_WarpToLabo",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Scenario/S05_0000/Claire_S05_0000/SherryRoom",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/LocationFsm_WasteWater/S04_0200/startLever_cableCar",
         "randomized": 0
     },
     {
         "name": "Desk",
         "region": "Security Room",
-        "original_item": "GM 79",
+        "original_item": "W-870",
         "condition": {},    
-        "item_object": "WP4100",
-        "parent_object": "WP4100_Grenade",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/StartArea/Sherry Room"
+        "item_object": "sm70_101",
+        "parent_object": "sm70_101_shotgunB",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/StartArea/SherryRoom"
     },
     {
         "name": "Downed Zombie at Entrance",
@@ -1760,18 +1841,18 @@
         "region": "Cafeteria",
         "original_item": "Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/StartArea/DiningRoom"
     },
     {
         "name": "Coffee and Candy Counter",
         "region": "Cafeteria",
-        "original_item": "Needle Cartridges",
+        "original_item": "Flamethrower Fuel",
         "condition": {},    
-        "item_object": "sm70_109",
-        "parent_object": "sm70_109_Spark",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/StartArea/DiningRoomCorridor"
+        "item_object": "sm70_110",
+        "parent_object": "sm70_110_Fuel",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/StartArea/DiningRoomCorridor"
     },
     {
         "name": "Location 1",
@@ -1794,11 +1875,11 @@
     {
         "name": "Table with Lamp",
         "region": "Nap Room",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_108",
-        "parent_object": "sm70_108_FireB",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/StartArea/NapRoom"
+        "item_object": "sm70_101",
+        "parent_object": "sm70_101_ShotgunB",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/StartArea/NapRoom"
     },
     {
         "name": "Sleeping Pod",
@@ -1812,11 +1893,11 @@
     {
         "name": "Locker",
         "region": "Nap Room",
-        "original_item": "High Voltage Condenser - Spark Shot",
+        "original_item": "Regulator - Flamethrower",
         "condition": {},    
-        "item_object": "sm71_919",
+        "item_object": "sm71_918",
         "parent_object": "ItemPositionsCollider",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/StartArea/NapRoom/LockerT01_sm71_919_SparkParts"
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/StartArea/NapRoom/LockerT01_sm71_918_FireLauncherParts"
     },
     {
         "name": "Sleeping Pod 2",
@@ -1828,6 +1909,15 @@
         "item_object": "sm74_200",
         "parent_object": "sm74_200_Sidepack",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/StartArea/NapRoom"
+    },
+	{
+        "name": "Next to Soldier",
+        "region": "Main Shaft",
+        "original_item": "Signal Modulator",
+        "condition": {},    
+        "item_object": "sm73_424",
+        "parent_object": "sm73_424_MenteTool_2nd",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/2ndPlay"
     },
     {
         "name": "Front Desk",
@@ -1850,11 +1940,11 @@
     {
         "name": "Ivy Room Before",
         "region": "Greenhouse Control Room",
-        "original_item": "High-Grade Gunpowder - White",
+        "original_item": "High-Grade Gunpowder - Yellow",
         "condition": {},    
-        "item_object": "sm70_208",
-        "parent_object": "sm70_208_ClaireYakueki",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/TArea/CorridorA"
+        "item_object": "sm70_207",
+        "parent_object": "sm70_207_LeonYakueki",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/TArea/CorridorA"
     },
     {
         "name": "Middle Desk",
@@ -1923,20 +2013,11 @@
     {
         "name": "Bench By Entrance",
         "region": "Lounge - Labs",
-        "original_item": "Flame Rounds",
+        "original_item": "Shotgun Shells",
         "condition": {},    
-        "item_object": "sm70_108",
-        "parent_object": "sm70_108_FireB",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/TArea/RestArea"
-    },
-    {
-        "name": "Table in Middle of Lounge",
-        "region": "Lounge - Labs",
-        "original_item": "Trophy",
-        "condition": {},    
-        "item_object": "sm73_426",
-        "parent_object": "sm43_426_Kibori no Kuma_1st",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/T_Area/RestArea"
+        "item_object": "sm70_101",
+        "parent_object": "sm70_101_ShotgunB",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/TArea/RestArea"
     },
     {
         "name": "Benches Across the Room",
@@ -1950,29 +2031,20 @@
     {
         "name": "Boxes By Door",
         "region": "Lobby Storage",
-        "original_item": "High-Grade Gunpowder - White",
+        "original_item": "High-Grade Gunpowder - Yellow",
         "condition": {},    
-        "item_object": "sm70_208",
-        "parent_object": "sm70_208_ClaireYakueki",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/TArea/DepotA"
+        "item_object": "sm70_207",
+        "parent_object": "sm70_207_LeonYakueki",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/TArea/DepotA"
     },
     {
         "name": "Locker",
         "region": "Lobby Storage",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
+        "item_object": "sm70_111",
         "parent_object": "ItemPositionsCollider",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/T_Area/DepotA/Locker03_HandgunB"
-    },
-    {
-        "name": "Signal Modulator Panel",
-        "region": "Lobby Storage",
-        "original_item": "Signal Modulator",
-        "condition": {},    
-        "item_object": "sm73_424",
-        "parent_object": "sm73_424_MenteTool_1st",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/T_Area/DepotA"
     },
     {
         "name": "Table Across from Robot Arm",
@@ -1983,14 +2055,23 @@
         "parent_object": "sm70_205_gunpowder",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/T_Area/LowTempatureRoom"
     },
+	{
+        "name": "Table near Entrance",
+        "region": "Low-Temp Testing Lab",
+        "original_item": "Trophy",
+        "condition": {},    
+        "item_object": "sm73_425",
+        "parent_object": "sm43_425_Kibori no Kuma_2ndPlay",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/2ndPlay"
+    },
     {
         "name": "Left of Door",
         "region": "Server Room",
-        "original_item": "High-Grade Gunpowder - White",
+        "original_item": "High-Grade Gunpowder - Yellow",
         "condition": {},    
-        "item_object": "sm70_208",
-        "parent_object": "sm70_208_ClaireYakueki",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/TArea/DepotB"
+        "item_object": "sm70_207",
+        "parent_object": "sm70_207_LeonYakueki",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/TArea/DepotB"
     },
     {
         "name": "On Cart By Laptop",
@@ -2004,11 +2085,11 @@
     {
         "name": "Shelves Left of Typewriter",
         "region": "Server Room",
-        "original_item": "Flame Rounds",
+        "original_item": "Flamethrower Fuel",
         "condition": {},    
-        "item_object": "sm70_108",
-        "parent_object": "sm70_108_FireB",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/TArea/DepotB"
+        "item_object": "sm70_110",
+        "parent_object": "sm70_110_Oil",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/TArea/DepotB"
     },
     {
         "name": "Downed Employee",
@@ -2050,11 +2131,11 @@
     {
         "name": "Before Sanitation Spray",
         "region": "Biotesting Lab",
-        "original_item": "High-Grade Gunpowder - White",
+        "original_item": "High-Grade Gunpowder - Yellow",
         "condition": {},    
-        "item_object": "sm70_208",
-        "parent_object": "sm70_208_ClaireYakueki",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/GArea/Corridor"
+        "item_object": "sm70_207",
+        "parent_object": "sm70_207_LeonYakueki",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/GArea/Corridor"
     },
     {
         "name": "Cart By Doorway",
@@ -2068,11 +2149,11 @@
     {
         "name": "Desk",
         "region": "P-4 Level Testing Lab",
-        "original_item": "High-Grade Gunpowder - White",
+        "original_item": "High-Grade Gunpowder - Yellow",
         "condition": {},    
-        "item_object": "sm70_208",
-        "parent_object": "sm70_208_ClaireYakueki",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/GArea/GVirusRoom"
+        "item_object": "sm70_207",
+        "parent_object": "sm70_207_LeonYakueki",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/GArea/GVirusRoom"
     },
     {
         "name": "Locker by Desk",
@@ -2086,10 +2167,10 @@
     {
         "name": "Table Right of Elevator 1",
         "region": "Bioreactors Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB_01",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_01_2nd",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
@@ -2113,28 +2194,28 @@
     {
         "name": "2nd Table Left of Entrance",
         "region": "Bioreactors Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_2nd",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
         "name": "1st Table Right of Entrance",
         "region": "Bioreactors Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB_03",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_03_2nd",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
         "name": "Table Right of Elevator 2",
         "region": "Bioreactors Room",
-        "original_item": "Handgun Ammo",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100_handgunB_02",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111_handgunB_02_2nd",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
@@ -2149,20 +2230,20 @@
     {
         "name": "Right Side of Room 1",
         "region": "Bioreactors Room",
-        "original_item": "Needle Cartridges",
+        "original_item": "Flamethrower Fuel",
         "condition": {},    
-        "item_object": "sm70_109",
-        "parent_object": "sm70_109_Cartridge",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/GArea/G3Room"
+        "item_object": "sm70_110",
+        "parent_object": "sm70_110_Fuel",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/GArea/G3Room"
     },
     {
         "name": "2nd Table Right of Entrance",
         "region": "Bioreactors Room",
-        "original_item": "High-Powered Rounds",
+        "original_item": "MAG Ammo",
         "condition": {},    
-        "item_object": "sm70_112",
-        "parent_object": "sm70_112_MagnumBClaire",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Claire_common/GArea/G3Room"
+        "item_object": "sm70_103",
+        "parent_object": "sm70_103_MagnumB",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/Leon_common/GArea/G3Room"
     },
     {
         "name": "Right Side of Room 2",
@@ -2174,18 +2255,8 @@
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/G_Area/G3Room"
     },
     {
-        "name": "Annette's Wristband",
-        "region": "Security Room",
-        "original_item": "Upgrade Chip - Admin",
-        "condition": {},    
-        "item_object": "CFPlay_EV750",
-        "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Scenario/S05_0200/Claire_S05_0200/GuradRoom",
-        "randomized": 0
-    },
-    {
-        "name": "After Elevator 1",
-        "region": "Path to G4",
+        "name": "Before Voice Call",
+        "region": "Path to Super Tyrant",
         "original_item": "First Aid Spray",
         "condition": {},    
         "item_object": "sm70_000",
@@ -2193,8 +2264,8 @@
         "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common"
     },
     {
-        "name": "After Elevator 2",
-        "region": "Path to G4",
+        "name": "After Voice Call",
+        "region": "Path to Super Tyrant",
         "original_item": "Combat Knife",
         "condition": {},    
         "item_object": "WP4500",
@@ -2203,7 +2274,7 @@
     },
     {
         "name": "Start of Ivy Room",
-        "region": "Path to G4",
+        "region": "Path to Super Tyrant",
         "original_item": "Blue Herb",
         "condition": {},    
         "item_object": "sm70_003",
@@ -2211,8 +2282,8 @@
         "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common"
     },
     {
-        "name": "Before Ladder on Ground",
-        "region": "Path to G4",
+        "name": "Before Ladder at Mr X",
+        "region": "Path to Super Tyrant",
         "original_item": "Green Herb",
         "condition": {},    
         "item_object": "sm70_001",
@@ -2220,60 +2291,96 @@
         "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common"
     },
     {
-        "name": "After Ladder on Ground",
-        "region": "Path to G4",
-        "original_item": "Handgun Ammo",
+        "name": "After Ladder at Mr X",
+        "region": "Path to Super Tyrant",
+        "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
-        "item_object": "sm70_100",
-        "parent_object": "sm70_100",
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111",
         "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common"
     },
     {
-        "name": "Inside Turntable",
-        "region": "Path to G4",
+        "name": "Final Battle Table Item",
+        "region": "Path to Super Tyrant",
         "original_item": "Joint Plug",
         "condition": {},    
         "item_object": "sm73_418",
         "parent_object": "sm73_418_2wakuItem",
-        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common/Claire_common"
+        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common/Leon_common"
+    },
+    {
+        "name": "Final Battle Barrel Item",
+        "region": "Path to Super Tyrant",
+        "original_item": "Large-Caliber Handgun Ammo",
+        "condition": {},    
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111",
+        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common/Leon_common"
     },
     {
         "name": "Final Battle By Item Box",
-        "region": "Path to G4",
+        "region": "Path to Super Tyrant",
         "original_item": "Red Herb",
         "condition": {},    
         "item_object": "sm70_002",
         "parent_object": "sm70_102_RHerb",
-        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common/Claire_common"
+        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common/Leon_common"
     },
     {
-        "name": "Turntable Control Room",
-        "region": "Path to G4",
-        "original_item": "Minigun",
+        "name": "Final Hit on Super Tyrant",
+        "region": "Path to Super Tyrant",
+        "original_item": "Anti-tank Rocket",
         "condition": {},    
-        "item_object": "WP4700",
-        "parent_object": "wp4700_GatoringuGun",
-        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/LocationFsm_LaboratoryUndermost/S05_0400/Claire_S05_0400/Enemy",
+        "item_object": "WP4600",
+        "parent_object": "wp4600_rocketLauncher",
+        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/Environments/st5_211_0/gimmick/CutScene",
         "randomized": 0
+    },
+	{
+        "name": "Box by Door",
+        "region": "G5 Ending",
+        "original_item": "Gunpowder - Large",
+        "condition": {},    
+        "item_object": "sm70_206",
+        "parent_object": "sm70_206-2_G5",
+        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common"
+    },
+	{
+        "name": "On Floor by Barrels",
+        "region": "G5 Ending",
+        "original_item": "Gunpowder - Large",
+        "condition": {},    
+        "item_object": "sm70_206",
+        "parent_object": "sm70_206_G5",
+        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common"
+    },
+	{
+        "name": "Stabbed into Cargo",
+        "region": "G5 Ending",
+        "original_item": "Combat Knife",
+        "condition": {},    
+        "item_object": "WP4500",
+        "parent_object": "WP4500_G5",
+        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common"
     },
 
     {
         "name": "Victory",
-        "region": "Path to G4",
+        "region": "G5 Ending",
         "condition": {
             "items": [
-                "Spade Key", "Heart Key", "Diamond Key",
+                "Courtyard Key", "Spade Key", "Club Key", "Diamond Key",
                 "Bolt Cutters", "Fuse - Main Hall", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion",
-                "Mechanic Jack Handle", "Small Gear", "Large Gear", 
+                "Square Crank", "Mechanic Jack Handle", "Small Gear", "Large Gear", 
                 "Boxed Electronic Part 1", "Boxed Electronic Part 2", "Parking Garage Key Card",
                 "T-Bar Handle", "Pawn Plug", "Knight Plug", "Bishop Plug", "Rook Plug", "Queen Plug", "King Plug", 
                 "ID Wristband - General Staff", "ID Wristband - Senior Staff", "Signal Modulator",
                 "Joint Plug"
             ]
         },
-        "item_object": "Ending_Claire",
+        "item_object": "G5End",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/LocationFsm_LaboratoryUndermost/S05_0400/Claire_S05_0400/Ending",
+        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/LocationFsm_LaboratoryUndermost/S05_0500/Leon_S05_0500",
         "id": null,
         "victory": true
     }
