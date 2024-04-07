@@ -198,7 +198,7 @@
         },    
         "item_object": "sm70_205",
         "parent_object": "sm70_205_gunpowder_Locker102",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
     },
     {
         "name": "Locker 103",
@@ -209,7 +209,7 @@
         },
         "item_object": "WP4500",
         "parent_object": "WP4500_Knife_Locker103",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
     },
     {
         "name": "Locker 203",
@@ -220,7 +220,7 @@
         },    
         "item_object": "sm74_200",
         "parent_object": "sm74_200_sidepack_Locker203",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Claire_S02_0100/1FW/hokanko/HokankoLocker/HokankoItems"
     },
     {
         "name": "Locker 106",
