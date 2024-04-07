@@ -56,7 +56,8 @@ class Data:
                 {
                     'name': reg + scenario_suffix_hardcore, # add the scenario abbreviation so they're unique
                     'character': character,
-                    'scenario': scenario
+                    'scenario': scenario,
+                    'zone_id': [regular['zone_id'] for regular in new_region_table if regular['name'] == reg][0]
                 }
                 for reg in hardcore_regions # instead of using region definitions, we're using the hardcore region additions from the locations themselves
             ])
