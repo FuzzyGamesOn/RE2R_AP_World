@@ -1,4 +1,5 @@
 import re
+import random
 
 from typing import Dict, Any, TextIO
 from Utils import visualize_regions
@@ -13,8 +14,8 @@ from .Options import re2roptions
 
 
 Data.load_data('leon', 'a')
-#Data.load_data('claire', 'a')
-
+Data.load_data('claire', 'a')
+Data.load_data('leon', 'b')
 
 class RE2RLocation(Location):
     def stack_names(*area_names):
@@ -46,9 +47,10 @@ class ResidentEvil2Remake(World):
 
     def create_regions(self): # and create locations
         scenario_locations = self._get_locations_for_scenario(self._get_character(), self._get_scenario())
+        scenario_regions = self._get_region_table_for_scenario(self._get_character(), self._get_scenario())
         regions = [
             Region(region['name'], self.player, self.multiworld) 
-                for region in self._get_region_table_for_scenario(self._get_character(), self._get_scenario())
+                for region in scenario_regions
         ]
         
         for region in regions:
@@ -56,17 +58,23 @@ class ResidentEvil2Remake(World):
                 RE2RLocation(self.player, RE2RLocation.stack_names_not_victory(region.name, location['name']), location['id'], region) 
                     for _, location in scenario_locations.items() if location['region'] == region.name
             ]
+            region_data = [scenario_region for scenario_region in scenario_regions if scenario_region['name'] == region.name][0]
             
             for location in region.locations:
                 location_data = scenario_locations[location.address]
-
+                
                 # if location has an item that should be forced there, place that. for cases where the item to place differs from the original.
                 if 'force_item' in location_data and location_data['force_item']:
                     location.place_locked_item(self.create_item(location_data['force_item']))
                 # if location is marked not rando'd, place its original item. 
                 # if/elif here allows force_item + randomized=0, since a forced item is technically not randomized, but don't need to trigger both.
                 elif 'randomized' in location_data and location_data['randomized'] == 0:
-                    location.place_locked_item(self.create_item(location_data["original_item"]))              
+                    location.place_locked_item(self.create_item(location_data["original_item"]))
+                # if location is not force_item'd or not not randomized, check for Labs progression option and apply
+                # since Labs progression option doesn't matter for force_item'd or not randomized locations
+                # we check for zone id > 3 because 3 is typically Sewers, and anything beyond that is Labs / endgame stuff
+                elif self._format_option_text(self.multiworld.allow_progression_in_labs[self.player]) == 'False' and region_data['zone_id'] > 3:
+                    location.item_rule = lambda item: item.classification != ItemClassification.progression and ItemClassification.progression_skip_balancing
                 # END if
 
                 # now, set rules for the location access
@@ -118,6 +126,11 @@ class ResidentEvil2Remake(World):
 
         if starting_hip_pouches > 0:
             hip_pouches = [item for item in pool if item.name == 'Hip Pouch'] # 6 total in every campaign, I think
+
+            # if the hip pouches option exceeds the number of hip pouches in the pool, reduce it to the number in the pool
+            if starting_hip_pouches > len(hip_pouches):
+                starting_hip_pouches = len(hip_pouches)
+                self.multiworld.starting_hip_pouches[self.player] = len(hip_pouches)
 
             for x in range(starting_hip_pouches):
                 self.multiworld.push_precollected(hip_pouches[x]) # starting inv
@@ -202,6 +215,32 @@ class ResidentEvil2Remake(World):
 
             pool.append(self.create_item('Lion Medallion'))
             pool.append(self.create_item('Unicorn Medallion'))
+
+            # The A scenarios have Maiden forced to the Bolt Cutters vanilla location, which is guaranteed to be accessible.
+            # B scenarios have it randomized, so add a second randomized Maiden.
+            if self._get_scenario().lower() == 'b':
+                pool.remove(replaceables[2]) # remove the 3rd item to make room for a 3rd medallion
+                pool.append(self.create_item('Maiden Medallion'))
+
+        if self._format_option_text(self.multiworld.no_first_aid_spray[self.player]) == 'True':
+            pool = self._replace_pool_item_with(pool, 'First Aid Spray', 'Wooden Boards')
+
+        if self._format_option_text(self.multiworld.no_green_herb[self.player]) == 'True':
+            pool = self._replace_pool_item_with(pool, 'Green Herb', 'Wooden Boards')
+
+        if self._format_option_text(self.multiworld.no_red_herb[self.player]) == 'True':
+            pool = self._replace_pool_item_with(pool, 'Red Herb', 'Wooden Boards')
+        
+        if self._format_option_text(self.multiworld.no_gunpowder[self.player]) == 'True':
+            replaceables = set(item.name for item in pool if 'Gunpowder' in item.name)
+            less_useful_items = set(
+                item.name for item in pool 
+                    if 'Boards' in item.name or 'Cassette' in item.name or 'Film' in item.name or item.name == 'Blue Herb'
+            )
+
+            for from_item in replaceables:
+                to_item = random.choice(list(less_useful_items))
+                pool = self._replace_pool_item_with(pool, from_item, to_item)
 
         # if the number of unfilled locations exceeds the count of the pool, fill the remainder of the pool with extra maybe helpful items
         missing_item_count = len(self.multiworld.get_unfilled_locations(self.player)) - len(pool)

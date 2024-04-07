@@ -31,7 +31,7 @@ class UnlockedTypewriters(OptionList):
     display_name = "Unlocked Typewriters"
 
 class StartingHipPouches(NamedRange):
-    """The number of hip pouches you want to start the game with, to a max of 6. 
+    """The number of hip pouches you want to start the game with, to a max of 6 (or 5 for Hardcore). 
     Any that you start with are taken out of the item pool and replaced with junk."""
     default = 0
     range_start = 0
@@ -70,6 +70,17 @@ class ExtraMedallions(Choice):
     option_true = 1
     default = 0
 
+class AllowProgressionInLabs(Choice):
+    """The randomizer has a tendency to put other player's progression towards the end in Labs, which can cause some lengthy BK. This option seeks to avoid that.
+    False: (Default) The only progression in Labs -- and the final fight area(s) -- will be the non-randomized upgraded bracelets for Labs.
+    True: Progression can be placed in Labs and the final fight area(s). This can, but won't always, lead to some BK.
+
+    NOTE - This option only affects *YOUR* Labs. Your progression can still be in someone else's Labs if they have this option enabled."""
+    display_name = "Allow Progression in Labs"
+    option_false = 0
+    option_true = 1
+    default = 0
+
 class OopsAllRockets(Choice):
     """Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 
     (Except progression weapons, of course.)"""
@@ -94,6 +105,38 @@ class OopsAllKnives(Choice):
     option_true = 1
     default = 0
 
+class NoFirstAidSpray(Choice):
+    """Enabling this swaps all first aid sprays to filler or less useful items. 
+    """
+    display_name = "No First Aid Spray"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+class NoGreenHerb(Choice):
+    """Enabling this swaps all green herbs to filler or less useful items. 
+    """
+    display_name = "No Green Herbs"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+class NoRedHerb(Choice):
+    """Enabling this swaps all red herbs to filler or less useful items. 
+    """
+    display_name = "No Red Herbs"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+class NoGunpowder(Choice):
+    """Enabling this swaps all gunpowder of all types to filler or less useful items. 
+    """
+    display_name = "No Gunpowder"
+    option_false = 0
+    option_true = 1
+    default = 0
+
 re2roptions = {
     "character": Character,
     "scenario": Scenario,
@@ -103,7 +146,12 @@ re2roptions = {
     "bonus_start": BonusStart,
     "extra_clock_tower_items": ExtraClockTowerItems,
     "extra_medallions": ExtraMedallions,
+    "allow_progression_in_labs": AllowProgressionInLabs,
     "oops_all_rockets": OopsAllRockets,
     "oops_all_grenades": OopsAllGrenades,
-    "oops_all_knives": OopsAllKnives
+    "oops_all_knives": OopsAllKnives,
+    "no_first_aid_spray": NoFirstAidSpray,
+    "no_green_herb": NoGreenHerb,
+    "no_red_herb": NoRedHerb,
+    "no_gunpowder": NoGunpowder
 }
