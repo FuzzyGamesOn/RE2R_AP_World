@@ -90,8 +90,11 @@ class ResidentEvil2Remake(World):
             if 'limitation' in connect and connect['limitation'] in ['ONE_SIDED_DOOR']:
                 continue
 
-            region_from = self.multiworld.get_region(connect['from'], self.player)
-            region_to = self.multiworld.get_region(connect['to'], self.player)
+            from_name = connect['from'] if 'Menu' not in connect['from'] else 'Menu'
+            to_name = connect['to'] if 'Menu' not in connect['to'] else 'Menu'
+
+            region_from = self.multiworld.get_region(from_name, self.player)
+            region_to = self.multiworld.get_region(to_name, self.player)
             ent = region_from.connect(region_to)
 
             if "condition" in connect and "items" in connect["condition"]:
