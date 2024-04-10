@@ -2067,7 +2067,9 @@
         "region": "Greenhouse",
         "original_item": "ID Wristband - Senior Staff",
         "force_item": "ID Wristband - Senior Staff",
-        "condition": {},    
+        "condition": {
+            "items": ["Signal Modulator"]
+        },    
         "item_object": "sm73_434",
         "parent_object": "sm73_434_WristtagUpdater_Lv2",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/T_Area/GreenHouse"
