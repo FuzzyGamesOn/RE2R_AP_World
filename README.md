@@ -14,7 +14,7 @@ You can generate this AP world similar to any other:
 5. If you want to host the multiworld locally, run `ArchipelagoServer.exe` and choose the zip that was generated in the `output` folder.
 
 ## What scenarios does this support?
-Currently, only Leon's 1st / A scenario is supported.
+All 4 scenarios (Leon and Claire, A/B or 1st/2nd scenarios) are all supported.
 
 ## How is the scenarios data structured?
 All of the scenarios' data lives in the `data` folder. The structure of the data is:
