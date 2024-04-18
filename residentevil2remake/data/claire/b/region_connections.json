@@ -206,11 +206,6 @@
         "condition": {}
     },
     { 
-        "from": "East Hallway 2F",
-        "to": "Fire Escape",
-        "condition": {}
-    },
-    { 
         "from": "Roof",
         "to": "East Hallway 2F",
         "condition": {},
@@ -308,7 +303,7 @@
     },
     { 
         "from": "Chief's Office",
-        "to": "East Hallway 2F",
+        "to": "Side Stairs",
         "condition": {
             "items": ["Heart Key"]
         }
@@ -316,11 +311,6 @@
     { 
         "from": "Chief's Office",
         "to": "Private Collection Room",
-        "condition": {}
-    },
-    { 
-        "from": "East Hallway 2F",
-        "to": "Side Stairs",
         "condition": {}
     },
     { 

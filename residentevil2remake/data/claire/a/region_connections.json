@@ -178,12 +178,6 @@
         "limitation": "ONE_SIDED_DOOR"
     },
     { 
-        "from": "Roof",
-        "to": "East Hallway 2F",
-        "condition": {},
-        "limitation": "ONE_SIDED_DOOR"
-    },
-    { 
         "from": "West Hallway 1F",
         "to": "West Hallway 3F",
         "condition": {}
@@ -275,7 +269,7 @@
     },
     { 
         "from": "Chief's Office",
-        "to": "East Hallway 2F",
+        "to": "Side Stairs",
         "condition": {
             "items": ["Heart Key"]
         }
@@ -283,11 +277,6 @@
     { 
         "from": "Chief's Office",
         "to": "Private Collection Room",
-        "condition": {}
-    },
-    { 
-        "from": "East Hallway 2F",
-        "to": "Side Stairs",
         "condition": {}
     },
     { 
@@ -320,6 +309,12 @@
         "condition": {
             "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion"]
         }
+    },
+    { 
+        "from": "Roof",
+        "to": "East Hallway 2F",
+        "condition": {},
+        "limitation": "ONE_SIDED_DOOR"
     },
     { 
         "from": "Parking Garage",
