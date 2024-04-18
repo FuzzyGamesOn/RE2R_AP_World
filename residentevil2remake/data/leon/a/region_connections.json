@@ -33,7 +33,7 @@
         "from": "East Hallway 1F",
         "to": "East Office",
         "condition": {
-            "items": ["Bolt Cutters", "Fuse - Main Hall"]
+            "items": ["Bolt Cutters"]
         }
     },
     { 
@@ -173,7 +173,7 @@
         "from": "Fire Escape",
         "to": "East Hallway 1F",
         "condition": {
-            "items": ["Bolt Cutters", "Fuse - Main Hall"]
+            "items": ["Bolt Cutters"]
         },
         "limitation": "ONE_SIDED_DOOR"
     },
@@ -202,7 +202,7 @@
         "from": "Library",
         "to": "Clock Tower",
         "condition": {
-            "items": ["Mechanic Jack Handle", "Small Gear", "Large Gear", "Square Crank", "Fuse - Main Hall", "Fuse - Break Room Hallway", "Boxed Electronic Part 2"]
+            "items": ["Mechanic Jack Handle", "Small Gear", "Large Gear", "Square Crank", "Fuse - Break Room Hallway", "Boxed Electronic Part 2"]
         }
     },
     { 
@@ -309,7 +309,7 @@
         "from": "Side Stairs",
         "to": "Interrogation Room",
         "condition": {
-            "items": ["Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank", "Fuse - Main Hall", "Fuse - Break Room Hallway"]
+            "items": ["Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank", "Fuse - Break Room Hallway"]
         }
     },
     { 
@@ -321,7 +321,7 @@
         "from": "Balcony",
         "to": "Roof",
         "condition": {
-            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall", "Fuse - Break Room Hallway", "Square Crank"]
+            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Break Room Hallway", "Square Crank"]
         }
     },
     { 

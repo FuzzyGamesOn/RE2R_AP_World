@@ -30,6 +30,7 @@
     {
         "type": "Key",
         "name": "Fuse - Main Hall",
+        "groups": ["fuse"],
         "decimal": "240",
         "count": 1,
         "progression": 1
@@ -37,6 +38,7 @@
     {
         "type": "Key",
         "name": "Fuse - Break Room Hallway",
+        "groups": ["fuse"],
         "decimal": "241",
         "count": 1,
         "progression": 1
@@ -58,6 +60,7 @@
     {
         "type": "Key",
         "name": "Lion Medallion",
+        "groups": ["medallion", "medal"],
         "decimal": "118",
         "count": 1,
         "progression": 1
@@ -65,6 +68,7 @@
     {
         "type": "Key",
         "name": "Unicorn Medallion",
+        "groups": ["medallion", "medal"],
         "decimal": "81",
         "count": 1,
         "progression": 1
@@ -72,6 +76,7 @@
     {
         "type": "Key",
         "name": "Maiden Medallion",
+        "groups": ["medallion", "medal"],
         "decimal": "124",
         "count": 1,
         "progression": 1
@@ -121,6 +126,7 @@
     {
         "type": "Key",
         "name": "Pawn Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
         "decimal": "133",
         "count": 1,
         "progression": 1
@@ -128,6 +134,7 @@
     {
         "type": "Key",
         "name": "Knight Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
         "decimal": "132",
         "count": 1,
         "progression": 1
@@ -135,6 +142,7 @@
     {
         "type": "Key",
         "name": "Bishop Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
         "decimal": "93",
         "count": 1,
         "progression": 1
@@ -142,6 +150,7 @@
     {
         "type": "Key",
         "name": "Rook Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
         "decimal": "94",
         "count": 1,
         "progression": 1
@@ -149,6 +158,7 @@
     {
         "type": "Key",
         "name": "Queen Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
         "decimal": "134",
         "count": 1,
         "progression": 1
@@ -156,6 +166,7 @@
     {
         "type": "Key",
         "name": "King Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
         "decimal": "95",
         "count": 1,
         "progression": 1
@@ -163,6 +174,7 @@
     {
         "type": "Key",
         "name": "ID Wristband - Visitor",
+        "groups": ["wristband", "bracelet", "id"],
         "decimal": "200",
         "count": 1,
         "progression": 1
@@ -170,6 +182,7 @@
     {
         "type": "Key",
         "name": "ID Wristband - General Staff",
+        "groups": ["wristband", "bracelet", "id"],
         "decimal": "201",
         "count": 1,
         "progression": 1
@@ -177,6 +190,7 @@
     {
         "type": "Key",
         "name": "ID Wristband - Senior Staff",
+        "groups": ["wristband", "bracelet", "id"],
         "decimal": "202",
         "count": 1,
         "progression": 1
@@ -184,6 +198,7 @@
     {
         "type": "Key",
         "name": "Upgrade Chip - Admin",
+        "groups": ["wristband", "bracelet", "id"],
         "decimal": "186",
         "count": 1,
         "progression": 1
@@ -227,6 +242,7 @@
     {
         "type": "Gating",
         "name": "Spare Key 1",
+        "groups": ["spare key", "button"],
         "decimal": "112",
         "count": 1,
         "progression": 1
@@ -234,6 +250,7 @@
     {
         "type": "Gating",
         "name": "Spare Key 2",
+        "groups": ["spare key", "button"],
         "decimal": "112",
         "count": 1,
         "progression": 1
@@ -276,6 +293,7 @@
     {
         "type": "Gating",
         "name": "Boxed Electronic Part 1",
+        "groups": ["boxed part", "box"],
         "decimal": "135",
         "count": 1,
         "progression": 1
@@ -283,6 +301,7 @@
     {
         "type": "Gating",
         "name": "Boxed Electronic Part 2",
+        "groups": ["boxed part", "box"],
         "decimal": "136",
         "count": 1,
         "progression": 1
@@ -297,6 +316,7 @@
     {
         "type": "Gating",
         "name": "Large Gear",
+        "groups": ["gear"],
         "decimal": "130",
         "count": 1,
         "progression": 1
@@ -304,6 +324,7 @@
     {
         "type": "Gating",
         "name": "Small Gear",
+        "groups": ["gear"],
         "decimal": "129",
         "count": 1,
         "progression": 1
@@ -445,6 +466,7 @@
     {
         "type": "Weapon",
         "name": "GM 79",
+        "groups": ["grenade", "grenade launcher"],
         "decimal": "42",
         "count": 0,
         "progression": 0,

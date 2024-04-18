@@ -59,7 +59,8 @@
         },
         "item_object": "WP0300",
         "parent_object": "WP0300_QuickDraw",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2ndPlay"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2ndPlay",
+        "randomized": 0
     },
     {
         "name": "On Radiator",

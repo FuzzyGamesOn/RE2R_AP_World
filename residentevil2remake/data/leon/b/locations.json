@@ -59,7 +59,8 @@
         },
         "item_object": "WP0100",
         "parent_object": "WP0100_M19",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2ndPlay"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2ndPlay",
+        "randomized": 0
     },
     {
         "name": "On Radiator",

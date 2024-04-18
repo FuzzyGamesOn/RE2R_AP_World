@@ -617,7 +617,7 @@
     {
         "name": "End of Desks",
         "region": "East Office",
-        "original_item": "Fuse - Main Hall",
+        "original_item": "Gunpowder",
         "condition": {},    
         "item_object": "sm73_722",
         "parent_object": "sm73_722_fuse_1st",
@@ -1309,7 +1309,7 @@
         "region": "Jail",
         "original_item": "Parking Garage Key Card",
         "condition": {
-            "items": ["Square Crank", "Fuse - Main Hall", "Fuse - Break Room Hallway", "Boxed Electronic Part 1", "Boxed Electronic Part 2"]
+            "items": ["Square Crank", "Fuse - Break Room Hallway", "Boxed Electronic Part 1", "Boxed Electronic Part 2"]
         },
         "item_object": "B1_GetBen'sCardKey_CF320_00",
         "parent_object": "",
@@ -1321,7 +1321,7 @@
         "region": "Jail",
         "original_item": "First Aid Spray",
         "condition": {
-            "items": ["Square Crank", "Fuse - Main Hall", "Fuse - Break Room Hallway", "Boxed Electronic Part 1", "Boxed Electronic Part 2"]
+            "items": ["Square Crank", "Fuse - Break Room Hallway", "Boxed Electronic Part 1", "Boxed Electronic Part 2"]
         },
         "item_object": "sm70_000",
         "parent_object": "sm70_000",
@@ -2316,7 +2316,7 @@
         "condition": {
             "items": [
                 "Spade Key", "Club Key", "Diamond Key",
-                "Bolt Cutters", "Fuse - Main Hall", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion",
+                "Bolt Cutters", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion",
                 "Square Crank", "Fuse - Break Room Hallway", "Mechanic Jack Handle", "Small Gear", "Large Gear", 
                 "Boxed Electronic Part 1", "Boxed Electronic Part 2", "Parking Garage Key Card",
                 "T-Bar Handle", "Pawn Plug", "Knight Plug", "Bishop Plug", "Rook Plug", "Queen Plug", "King Plug", 

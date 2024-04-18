@@ -20,6 +20,8 @@ class Data:
     region_table = []
     region_connections_table = []
 
+    item_name_groups = {}
+
     def load_data(character, scenario):
         character_offsets = { 'leon': 0, 'claire': 1000 }        
         scenario_offsets = { 'a': 0, 'b': 500 }
@@ -111,6 +113,19 @@ class Data:
             } 
             for key, item in enumerate(new_item_table)
         ])
+
+        # For the items that have groups, add them to the item group names
+        new_items_with_groups = [item for _, item in enumerate(new_item_table) if "groups" in item.keys()]
+
+        for item_with_group in new_items_with_groups:
+            item_name = item_with_group["name"]
+            group_names = item_with_group["groups"]
+
+            for group_name in group_names:
+                if group_name not in Data.item_name_groups.keys():
+                    Data.item_name_groups[group_name] = []
+
+                Data.item_name_groups[group_name].append(item_name)
 
         ###
         # Add standard location table

@@ -593,7 +593,7 @@
     {
         "name": "End of Desks",
         "region": "East Office",
-        "original_item": "Fuse - Main Hall",
+        "original_item": "Gunpowder",
         "condition": {},    
         "item_object": "sm73_722",
         "parent_object": "sm73_722_fuse_1st",
@@ -1250,7 +1250,7 @@
         "region": "Private Collection Room",
         "original_item": "Parking Garage Key Card",
         "condition": {
-            "items": ["Mechanic Jack Handle", "Fuse - Main Hall", "Boxed Electronic Part 1", "Boxed Electronic Part 2"]
+            "items": ["Mechanic Jack Handle", "Boxed Electronic Part 1", "Boxed Electronic Part 2"]
         },
         "item_object": "FlagCheckItemGet_Cardkey",
         "parent_object": "",
@@ -2265,7 +2265,7 @@
         "condition": {
             "items": [
                 "Spade Key", "Heart Key", "Diamond Key",
-                "Bolt Cutters", "Fuse - Main Hall", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion",
+                "Bolt Cutters", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion",
                 "Mechanic Jack Handle", "Small Gear", "Large Gear", 
                 "Boxed Electronic Part 1", "Boxed Electronic Part 2", "Parking Garage Key Card",
                 "T-Bar Handle", "Pawn Plug", "Knight Plug", "Bishop Plug", "Rook Plug", "Queen Plug", "King Plug", 

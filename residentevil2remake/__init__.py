@@ -45,6 +45,9 @@ class ResidentEvil2Remake(World):
     location_name_to_id = { RE2RLocation.stack_names(loc['region'], loc['name']): loc['id'] for loc in Data.location_table }
     location_name_to_location = { RE2RLocation.stack_names(loc['region'], loc['name']): loc for loc in Data.location_table }
 
+    # de-dupe the item names for the item group name
+    item_name_groups = { key: set(values) for key, values in Data.item_name_groups.items() }
+
     option_definitions = re2roptions
 
     def create_regions(self): # and create locations
