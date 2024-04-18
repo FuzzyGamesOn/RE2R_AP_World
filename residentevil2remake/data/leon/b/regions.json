@@ -68,7 +68,7 @@
         "zone_id": 1
     },
     {
-        "name": "West Hallway",
+        "name": "Southwest Hallway",
         "zone_id": 1
     },
     {
@@ -101,6 +101,10 @@
     },
     {
         "name": "Shower Room",
+        "zone_id": 1
+    },
+    {
+        "name": "STARS Office Hallway",
         "zone_id": 1
     },
     {
