@@ -357,7 +357,7 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/DarkRoom"
     },
     {
-        "name": "Downed Zombie 2F",
+        "name": "Downed Zombie",
         "region": "West Hallway 2F",
         "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
