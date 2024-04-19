@@ -357,8 +357,8 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/DarkRoom"
     },
     {
-        "name": "Downed Zombie 2F",
-        "region": "West Hallway 1F",
+        "name": "Downed Zombie",
+        "region": "West Hallway 2F",
         "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
         "item_object": "sm70_111",
@@ -367,7 +367,7 @@
     },
     {
         "name": "By Coffee Vending Machine",
-        "region": "West Hallway 1F",
+        "region": "West Hallway 2F",
         "original_item": "Red Herb",
         "condition": {},    
         "item_object": "sm70_002",
@@ -412,7 +412,7 @@
     },
     {
         "name": "Couch",
-        "region": "West Hallway 2F",
+        "region": "STARS Office Hallway",
         "original_item": "Flame Rounds",
         "condition": {},    
         "item_object": "sm70_108",
@@ -1456,15 +1456,6 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/Magnum"
     },
     {
-        "name": "At Water Gate",
-        "region": "Upper Waterway",
-        "original_item": "Large-Caliber Handgun Ammo",
-        "condition": {},    
-        "item_object": "sm70_111",
-        "parent_object": "sm70_111",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/HundGun"
-    },
-    {
         "name": "In Front of Gate",
         "region": "Upper Waterway",
         "original_item": "High-Powered Rounds",
@@ -1716,6 +1707,15 @@
         "item_object": "sm73_429",
         "parent_object": "Key_Gesui_ura",
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/KeyItem"
+    },
+    {
+        "name": "At Water Gate",
+        "region": "Upper Waterway",
+        "original_item": "Large-Caliber Handgun Ammo",
+        "condition": {},    
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/HundGun"
     },
     {
         "name": "Before Climb",

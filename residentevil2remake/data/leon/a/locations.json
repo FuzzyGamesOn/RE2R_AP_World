@@ -296,8 +296,8 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/DarkRoom"
     },
     {
-        "name": "Downed Zombie 2F",
-        "region": "West Hallway 1F",
+        "name": "Downed Zombie",
+        "region": "West Hallway 2F",
         "original_item": "Handgun Ammo",
         "condition": {},    
         "item_object": "sm70_100",
@@ -306,7 +306,7 @@
     },
     {
         "name": "By Coffee Vending Machine",
-        "region": "West Hallway 1F",
+        "region": "West Hallway 2F",
         "original_item": "Red Herb",
         "condition": {},    
         "item_object": "sm70_002",
@@ -351,7 +351,7 @@
     },
     {
         "name": "Couch",
-        "region": "West Hallway 2F",
+        "region": "STARS Office Hallway",
         "original_item": "Shotgun Shells",
         "condition": {},    
         "item_object": "sm70_101",

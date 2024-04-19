@@ -37,9 +37,18 @@
     },
 
     { 
+        "name": "Orphanage - Directors Room", 
+        "location_id": 24, 
+        "map_id": 361, 
+        "player_position": [47.45, 0.95, -212.72], 
+        "item_object": "OrphanAsylum_sm41_000_Typewriter01A_control",
+        "line_break": true
+    },
+
+    { 
         "name": "Sewers - Office", 
         "location_id": 17, 
-        "map_id": 332, 
+        "map_id": 320, 
         "player_position": [1.46, -48.9, -46.91], 
         "item_object": "Typewriter01A_waterWater03_control"
     },

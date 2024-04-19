@@ -43,7 +43,7 @@
     },
     {
         "from": "Reception - RPD",
-        "to": "West Hallway"
+        "to": "Southwest Hallway"
     },
     { 
         "from": "Operations Room 2",
@@ -53,7 +53,7 @@
         }
     },
     { 
-        "from": "West Hallway",
+        "from": "Southwest Hallway",
         "to": "Operations Room",
         "condition": {}
     },
@@ -98,6 +98,11 @@
     },
     { 
         "from": "West Hallway 1F",
+        "to": "West Hallway 2F",
+        "condition": {}
+    },
+    { 
+        "from": "West Hallway 2F",
         "to": "Shower Room",
         "condition": {
             "items": ["Valve Handle"]
@@ -105,11 +110,11 @@
     },
     { 
         "from": "Shower Room",
-        "to": "West Hallway 2F",
+        "to": "STARS Office Hallway",
         "condition": {}
     },
     { 
-        "from": "West Hallway 2F",
+        "from": "STARS Office Hallway",
         "to": "STARS Office",
         "condition": {}
     },
@@ -121,14 +126,14 @@
         }
     },
     { 
-        "from": "West Hallway 2F",
+        "from": "STARS Office Hallway",
         "to": "Linen Room",
         "condition": {
             "items": ["Diamond Key"]
         }
     },
     { 
-        "from": "West Hallway 2F",
+        "from": "STARS Office Hallway",
         "to": "Lounge - RPD",
         "condition": {
             "items": ["Battery"]
