@@ -48,7 +48,7 @@
     { 
         "name": "Sewers - Office", 
         "location_id": 17, 
-        "map_id": 332, 
+        "map_id": 320, 
         "player_position": [1.46, -48.9, -46.91], 
         "item_object": "Typewriter01A_waterWater03_control"
     },
