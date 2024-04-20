@@ -285,7 +285,20 @@ class ResidentEvil2Remake(World):
         spoiler_handle.write(f"RE2R_AP_World version: {self.apworld_release_version}\n")
 
     def _has_items(self, state: CollectionState, item_names: list) -> bool:
-        return state.has_all(item_names, self.player)
+        # if it requires all unique items, just do a state has all
+        if len(set(item_names)) == len(item_names):
+            return state.has_all(item_names, self.player)
+        # else, it requires some duplicates, so let's group them up and do some has w/ counts
+        else:
+            item_counts = {
+                item_name: len([i for i in item_names if i == item_name]) for item_name in item_names # e.g., { Spare Key: 2 }
+            }
+
+            for item_name, count in item_counts.items():
+                if not state.has(item_name, self.player, count):
+                    return False
+                
+            return True
 
     def _format_option_text(self, option) -> str:
         return re.sub('\w+\(', '', str(option)).rstrip(')')

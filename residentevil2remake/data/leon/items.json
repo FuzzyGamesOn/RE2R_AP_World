@@ -233,16 +233,8 @@
     },
     {
         "type": "Gating",
-        "name": "Spare Key 1",
-        "groups": ["spare key", "button"],
-        "decimal": "112",
-        "count": 1,
-        "progression": 1
-    },
-    {
-        "type": "Gating",
-        "name": "Spare Key 2",
-        "groups": ["spare key", "button"],
+        "name": "Spare Key",
+        "groups": ["button"],
         "decimal": "112",
         "count": 1,
         "progression": 1
@@ -442,6 +434,7 @@
     {
         "type": "Weapon",
         "name": "Matilda",
+        "groups": ["pistol", "light_gun"],
         "decimal": "1",
         "count": 10,
         "progression": 0,
@@ -450,6 +443,7 @@
     {
         "type": "Weapon",
         "name": "M19",
+        "groups": ["pistol", "light_gun"],
         "decimal": "2",
         "count": 10,
         "progression": 0,
@@ -458,7 +452,7 @@
     {
         "type": "Weapon",
         "name": "W-870",
-        "groups": ["shotgun"],
+        "groups": ["shotgun", "medium_gun"],
         "decimal": "11",
         "count": 10,
         "progression": 0,
@@ -467,6 +461,7 @@
     {
         "type": "Weapon",
         "name": "Lightning Hawk",
+        "groups": ["medium_gun"],
         "decimal": "31",
         "count": 10,
         "progression": 0,
@@ -475,6 +470,7 @@
     {
         "type": "Weapon",
         "name": "Chemical Flamethrower",
+        "groups": ["heavy_gun"],
         "decimal": "43",
         "count": 200,
         "progression": 0,
@@ -556,6 +552,7 @@
     {
         "type": "Upgrade",
         "name": "Gun Stock - Matilda",
+        "upgrades": "Matilda",
         "decimal": "50",
         "count": 1,
         "progression": 0
@@ -563,6 +560,7 @@
     {
         "type": "Upgrade",
         "name": "High-Capacity Magazine - Matilda",
+        "upgrades": "Matilda",
         "decimal": "48",
         "count": 1,
         "progression": 0
@@ -570,6 +568,7 @@
     {
         "type": "Upgrade",
         "name": "Muzzle Brake - Matilda",
+        "upgrades": "Matilda",
         "decimal": "49",
         "count": 1,
         "progression": 0
@@ -577,6 +576,7 @@
     {
         "type": "Upgrade",
         "name": "Long Barrel - W-870",
+        "upgrades": "W-870",
         "decimal": "56",
         "count": 1,
         "progression": 0
@@ -584,6 +584,7 @@
     {
         "type": "Upgrade",
         "name": "Shotgun Stock - W-870",
+        "upgrades": "W-870",
         "decimal": "55",
         "count": 1,
         "progression": 0
@@ -591,6 +592,7 @@
     {
         "type": "Upgrade",
         "name": "Long Barrel - Lightning Hawk",
+        "upgrades": "Lightning Hawk",
         "decimal": "62",
         "count": 1,
         "progression": 0
@@ -598,6 +600,7 @@
     {
         "type": "Upgrade",
         "name": "Red Dot Sight - Lightning Hawk",
+        "upgrades": "Lightning Hawk",
         "decimal": "61",
         "count": 1,
         "progression": 0
@@ -605,6 +608,7 @@
     {
         "type": "Upgrade",
         "name": "Regulator - Flamethrower",
+        "upgrades": "Chemical Flamethrower",
         "decimal": "65",
         "count": 1,
         "progression": 0

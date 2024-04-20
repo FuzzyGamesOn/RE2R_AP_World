@@ -122,7 +122,7 @@
         "region": "Safety Deposit Room",
         "original_item": "Gunpowder",
         "condition": {
-            "items": ["Spare Key 1"]
+            "items": ["Spare Key"]
         },    
         "item_object": "sm70_205",
         "parent_object": "sm70_205_gunpowder_Locker102",
@@ -133,7 +133,7 @@
         "region": "Safety Deposit Room",
         "original_item": "Combat Knife",
         "condition": {
-            "items": ["Spare Key 1", "Spare Key 2"]
+            "items": ["Spare Key", "Spare Key"]
         },
         "item_object": "WP4500",
         "parent_object": "WP4500_Knife_Locker103",
@@ -144,7 +144,7 @@
         "region": "Safety Deposit Room",
         "original_item": "Hip Pouch",
         "condition": {
-            "items": ["Spare Key 1", "Spare Key 2"]
+            "items": ["Spare Key", "Spare Key"]
         },    
         "item_object": "sm74_200",
         "parent_object": "sm74_200_sidepack_Locker203",
@@ -164,7 +164,7 @@
         "region": "Safety Deposit Room",
         "original_item": "Flame Rounds",
         "condition": {
-            "items": ["Spare Key 1"]
+            "items": ["Spare Key"]
         },
         "item_object": "sm70_108",
         "parent_object": "sm70_108_FireB_Locker208",
@@ -304,7 +304,7 @@
     {
         "name": "Towel Rack",
         "region": "Shower Room",
-        "original_item": "Spare Key 1",
+        "original_item": "Spare Key",
         "condition": {},    
         "item_object": "sm77_002",
         "parent_object": "sm77_002_portablesafe_blankkey_1stPlay",
@@ -421,7 +421,7 @@
     {
         "name": "Location 2",
         "region": "Linen Room",
-        "original_item": "Spare Key 2",
+        "original_item": "Spare Key",
         "condition": {},    
         "item_object": "sm77_002",
         "parent_object": "sm77_002_portablesafe_sm73_133_blankkey",

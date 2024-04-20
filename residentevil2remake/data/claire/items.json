@@ -241,16 +241,8 @@
     },
     {
         "type": "Gating",
-        "name": "Spare Key 1",
-        "groups": ["spare key", "button"],
-        "decimal": "112",
-        "count": 1,
-        "progression": 1
-    },
-    {
-        "type": "Gating",
-        "name": "Spare Key 2",
-        "groups": ["spare key", "button"],
+        "name": "Spare Key",
+        "groups": ["button"],
         "decimal": "112",
         "count": 1,
         "progression": 1
@@ -450,6 +442,7 @@
     {
         "type": "Weapon",
         "name": "SLS 60",
+        "groups": ["pistol", "light_gun"],
         "decimal": "9",
         "count": 10,
         "progression": 0,
@@ -458,6 +451,7 @@
 	{
         "type": "Weapon",
         "name": "Quickdraw Army",
+        "groups": ["pistol", "light_gun"],
         "decimal": "4",
         "count": 10,
         "progression": 0,
@@ -466,7 +460,7 @@
     {
         "type": "Weapon",
         "name": "GM 79",
-        "groups": ["grenade", "grenade launcher"],
+        "groups": ["grenade", "grenade launcher", "medium_gun"],
         "decimal": "42",
         "count": 0,
         "progression": 0,
@@ -475,6 +469,7 @@
     {
         "type": "Weapon",
         "name": "JMB Hp3",
+        "groups": ["pistol", "medium_gun"],
         "decimal": "3",
         "count": 10,
         "progression": 0,
@@ -483,6 +478,7 @@
     {
         "type": "Weapon",
         "name": "MQ 11",
+        "groups": ["medium_gun"],
         "decimal": "21",
         "count": 24,
         "progression": 0,
@@ -491,24 +487,11 @@
     {
         "type": "Weapon",
         "name": "Spark Shot",
+        "groups": ["heavy_gun"],
         "decimal": "44",
         "count": 7,
         "progression": 0,
         "ammo": "Needle Cartridges"
-    },
-    {
-        "type": "Weapon",
-        "name": "Anti-tank Rocket",
-        "decimal": "49",
-        "count": 4,
-        "progression": 0
-    },
-    {
-        "type": "Weapon",
-        "name": "Single Use Rocket",
-        "decimal": "49",
-        "count": 1,
-        "progression": 0
     },
     {
         "type": "Weapon",
@@ -593,6 +576,7 @@
     {
         "type": "Upgrade",
         "name": "Speed Loader - SLS 60",
+        "upgrades": "SLS 60",
         "decimal": "51",
         "count": 1,
         "progression": 0
@@ -600,6 +584,7 @@
     {
         "type": "Upgrade",
         "name": "High-Capacity Mag - JMB Hp3",
+        "upgrades": "JMB Hp3",
         "decimal": "54",
         "count": 1,
         "progression": 0
@@ -607,6 +592,7 @@
     {
         "type": "Upgrade",
         "name": "Suppressor - MQ 11",
+        "upgrades": "MQ 11",
         "decimal": "60",
         "count": 1,
         "progression": 0
@@ -614,6 +600,7 @@
     {
         "type": "Upgrade",
         "name": "Shoulder Stock - GM 79",
+        "upgrades": "GM 79",
         "decimal": "64",
         "count": 1,
         "progression": 0
@@ -621,6 +608,7 @@
     {
         "type": "Upgrade",
         "name": "Reinforced Frame - SLS 60",
+        "upgrades": "SLS 60",
         "decimal": "53",
         "count": 1,
         "progression": 0
@@ -628,6 +616,7 @@
     {
         "type": "Upgrade",
         "name": "High Voltage Condenser - Spark Shot",
+        "upgrades": "Spark Shot",
         "decimal": "66",
         "count": 1,
         "progression": 0
