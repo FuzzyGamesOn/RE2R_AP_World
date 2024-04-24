@@ -1292,7 +1292,7 @@
         "original_item": "Red Herb",
         "force_item": "Boxed Electronic Part 2",
         "condition": {
-            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key", "Bolt Cutters"]
+            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key", "Diamond Key"]
         },
         "item_object": "sm70_002",
         "parent_object": "sm70_002_RedHerb",
