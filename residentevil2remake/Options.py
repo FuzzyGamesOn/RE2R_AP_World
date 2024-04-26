@@ -2,7 +2,7 @@ from Options import Choice, OptionList, NamedRange
 
 class Character(Choice):
     """Leon: Expected, can video game.
-    Claire: Optimal choice, but needs testing."""
+    Claire: Optimal choice, but more lickers."""
     display_name = "Character to Play"
     option_leon = 0
     option_claire = 1
@@ -10,7 +10,7 @@ class Character(Choice):
 
 class Scenario(Choice):
     """A: Best letter.
-    B: 2nd-best letter. Too similar to A. Probably not implemented yet."""
+    B: 2nd-best letter. Very similar to A. Also known as 2nd scenario."""
     display_name = "Scenario to Play"
     option_a = 0
     option_b = 1
@@ -45,6 +45,7 @@ class StartingHipPouches(NamedRange):
 
 class BonusStart(Choice):
     """Some players might want to start with a little help in the way of a few extra heal items and packs of ammo.
+    This option IS affected by cross-scenario weapon randomization, if that option is set.
 
     False: Normal, don't start with extra heal items and packs of ammo.
     True: Start with those helper items."""
@@ -93,6 +94,7 @@ class CrossScenarioWeapons(Choice):
     This includes weapon upgrades as well.
 
     This DOES NOT include boss weapons like the Anti-tank Rocket and the Minigun. This DOES include your starting weapon.
+    This also DOES affect the Bonus Start option, if set.
     
     The available options are:
 
