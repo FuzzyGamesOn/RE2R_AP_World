@@ -54,13 +54,13 @@
         "name": "Table",
         "region": "Guard Room",
         "original_item": "Quickdraw Army",
+        "force_item": "Quickdraw Army",
         "condition": {
             "items": ["Bolt Cutters"]
         },
         "item_object": "WP0300",
         "parent_object": "WP0300_QuickDraw",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2ndPlay",
-        "randomized": 0
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2ndPlay"
     },
     {
         "name": "On Radiator",

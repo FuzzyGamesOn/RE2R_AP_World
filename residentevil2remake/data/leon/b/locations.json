@@ -54,13 +54,13 @@
         "name": "Table",
         "region": "Guard Room",
         "original_item": "M19",
+        "force_item": "M19",
         "condition": {
             "items": ["Bolt Cutters"]
         },
         "item_object": "WP0100",
         "parent_object": "WP0100_M19",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2ndPlay",
-        "randomized": 0
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2ndPlay"
     },
     {
         "name": "On Radiator",

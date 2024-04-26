@@ -194,7 +194,12 @@ class ResidentEvil2Remake(World):
         # check the bonus start option and add some heal items and ammo packs as precollected / starting items
         if self._format_option_text(self.multiworld.bonus_start[self.player]) == 'True':
             for x in range(3): self.multiworld.push_precollected(self.create_item('First Aid Spray'))
-            for x in range(4): self.multiworld.push_precollected(self.create_item('Handgun Ammo'))
+
+            if self.starting_weapon:
+                starting_weapon_ammo = self.item_name_to_item[self.starting_weapon].get('ammo')
+                for x in range(4): self.multiworld.push_precollected(self.create_item(starting_weapon_ammo))
+            else:
+                for x in range(4): self.multiworld.push_precollected(self.create_item('Handgun Ammo'))
 
         # check the "Oops! All Rockets" option. From the option description:
         #     Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 

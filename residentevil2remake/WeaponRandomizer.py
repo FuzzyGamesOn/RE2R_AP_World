@@ -127,6 +127,19 @@ class WeaponRandomizer():
             only_weapons.append(random_weapon)
             weapons = [w for w in weapons if w['name'] != random_weapon]
 
+        for loc in self._get_weapon_locations():
+            if loc.get('force_item', None) and loc.get('force_item') not in only_weapons:
+                loc['force_item'] = 'Wooden Boards'
+                loc_key = self._get_location_key(loc['region'], loc['name'])
+                self.world.location_name_to_location[loc_key] = loc
+                continue
+
+            if loc.get('original_item', None) and loc.get('original_item') not in only_weapons:
+                loc['original_item'] = 'Wooden Boards'
+                loc_key = self._get_location_key(loc['region'], loc['name'])
+                self.world.location_name_to_location[loc_key] = loc
+                continue
+
         self.world.replacement_weapons = {"Other Random Weapons": "Play and find out :)"}
 
     ###
@@ -144,7 +157,7 @@ class WeaponRandomizer():
         # NEED TO CHECK LOCATIONS BELOW TO MAKE SURE THEY'RE ACTUALLY RANDO'D
         # (i.e., L-Hawk Laser Sight)
 
-        for loc_name, loc in {k: l for k, l in self.world.location_name_to_location.items() if l['character'] == self.character and l['scenario'] == self.scenario}.items():
+        for loc_name, loc in self._get_locations().items():
             original_item = loc.get("original_item", None)
             original_item = self.world.item_name_to_item.get(original_item, {})
 
@@ -198,7 +211,7 @@ class WeaponRandomizer():
 
         # Finally, find all high grade gunpowder in the scenario, and split it half-and-half between white and yellow.
         #    To account for any possible weapons that show up in the scenario.
-        for loc_name, loc in {k: l for k, l in self.world.location_name_to_location.items() if l['character'] == self.character and l['scenario'] == self.scenario}.items():
+        for loc_name, loc in self._get_locations().items():
             original_item = loc.get("original_item", "")
             force_item = loc.get("force_item", "")
 
@@ -288,7 +301,7 @@ class WeaponRandomizer():
     def _get_weapons_from_locations(self):
         weapons = []
 
-        for _, loc in self._get_locations().items():
+        for loc in self._get_weapon_locations():
             original_item = loc.get("original_item", None)
             original_item = self.world.item_name_to_item.get(original_item, {})
 
@@ -309,6 +322,30 @@ class WeaponRandomizer():
 
         return weapons
     
+    def _get_weapon_locations(self):
+        locations = []
+
+        for _, loc in self._get_locations().items():
+            original_item = loc.get("original_item", None)
+            original_item = self.world.item_name_to_item.get(original_item, {})
+
+            if original_item.get("type") == "Weapon" and original_item.get("ammo", None):
+                if loc not in locations:
+                    locations.append(loc)
+
+                continue
+
+            force_item = loc.get("force_item", None)
+            force_item = self.world.item_name_to_item.get(force_item, {})
+
+            if force_item.get("type") == "Weapon" and force_item.get("ammo", None):
+                if loc not in locations:
+                    locations.append(loc)
+
+                continue
+
+        return locations
+
     def _get_locations_for_extra_weapons(self) -> list:
         available_locations = []
         locations = list(self._get_locations().values())
@@ -363,10 +400,25 @@ class WeaponRandomizer():
         for level, weapons in placed_weapons_by_level.items():
             for weapon in weapons:
                 needed_ammo_by_level[level].append(weapon['ammo'])
-                placed_ammo_by_level[level].extend(self._get_locations_having(weapon['ammo']))
+                placed_ammo_by_level[level].extend([l for l in self._get_locations_having(weapon['ammo']) if l not in placed_ammo_by_level[level]])
 
-            # de-dupe the ammo list
+            # de-dupe the ammo
             needed_ammo_by_level[level] = list(set(needed_ammo_by_level[level]))
+
+        # if medium is included, fix the medium locations to not include locations from heavy and not include light ammo locations
+        if 'medium' in levels:
+            placed_ammo_by_level['medium'] = [
+                l for l in placed_ammo_by_level['medium'] 
+                    if l not in placed_ammo_by_level['heavy'] 
+                        and l.get('original_item') not in ['Handgun Ammo', 'Large-Caliber Handgun Ammo']
+            ]
+
+        # if light is included, fix the light locations to not include locations from medium or heavy
+        if 'light' in levels:
+            placed_ammo_by_level['light'] = [
+                l for l in placed_ammo_by_level['light'] 
+                    if l not in placed_ammo_by_level['medium'] and l not in placed_ammo_by_level['heavy']
+            ]
 
         for lev in levels:
             # take the amount of locations with ammo and divide by the number of ammo types, rounding down
@@ -381,7 +433,7 @@ class WeaponRandomizer():
 
                 if index + 1 >= level_total:
                     index = level_total - 1
-                
+
                 loc['original_item'] = needed_ammo_by_level[lev][index]
                 loc_key = self._get_location_key(loc['region'], loc['name'])
                 self.world.location_name_to_location[loc_key] = loc
