@@ -28,7 +28,8 @@ class WeaponRandomizer():
     # CrossScenarioWeapons == "Match"
     ###
     def match(self):
-        self._determine_starting_weapon('light') # match starting weapon level too
+        random_weapon = self._determine_starting_weapon('light') # match starting weapon level too
+        self._swap_item_at_locations(self.starting_ammo_name, random_weapon['ammo'], "Ammo")
         weapons = self._get_weapons_from_locations()
         
         for weapon in weapons:
@@ -46,7 +47,11 @@ class WeaponRandomizer():
     # CrossScenarioWeapons == "Full"
     ###
     def full(self, include_ammo: Optional[bool] = True):
-        self._determine_starting_weapon()
+        random_weapon = self._determine_starting_weapon()
+
+        if include_ammo:
+            self._swap_item_at_locations(self.starting_ammo_name, random_weapon['ammo'], "Ammo")
+
         weapons = self._get_weapons_from_locations()
 
         for weapon in weapons:
