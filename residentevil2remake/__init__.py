@@ -1,5 +1,4 @@
 import re
-import random
 import typing
 
 from typing import Dict, Any, TextIO
@@ -295,7 +294,7 @@ class ResidentEvil2Remake(World):
             )
 
             for from_item in replaceables:
-                to_item = random.choice(list(less_useful_items))
+                to_item = self.random.choice(list(less_useful_items))
                 pool = self._replace_pool_item_with(pool, from_item, to_item)
 
         # if the number of unfilled locations exceeds the count of the pool, fill the remainder of the pool with extra maybe helpful items
