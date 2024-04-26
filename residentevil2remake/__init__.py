@@ -1,5 +1,6 @@
 import re
 import random
+import typing
 
 from typing import Dict, Any, TextIO
 from Utils import visualize_regions
@@ -11,6 +12,7 @@ from Fill import fill_restrictive
 
 from .Data import Data
 from .Options import re2roptions
+from .WeaponRandomizer import WeaponRandomizer
 
 
 Data.load_data('leon', 'a')
@@ -36,7 +38,7 @@ class ResidentEvil2Remake(World):
 
     data_version = 2
     required_client_version = (0, 4, 3)
-    apworld_release_version = "0.2.0" # defined to show in spoiler log
+    apworld_release_version = "0.2.1" # defined to show in spoiler log
 
     item_id_to_name = { item['id']: item['name'] for item in Data.item_table }
     item_name_to_id = { item['name']: item['id'] for item in Data.item_table }
@@ -48,11 +50,57 @@ class ResidentEvil2Remake(World):
     # de-dupe the item names for the item group name
     item_name_groups = { key: set(values) for key, values in Data.item_name_groups.items() }
 
+    # keep track of the weapon randomizer settings for use in various steps and in slot data
+    starting_weapon = None
+    replacement_weapons = {}
+    replacement_ammo = {}
+
     option_definitions = re2roptions
+
+    def generate_early(self): # check weapon randomization before locations and items are processed, so we can swap non-randomized items as well
+        # if any of the "Oops! All X" weapon options are present, don't bother with weapon randomization since they'll all get overwritten
+        #    and since starting with pistol is important to prevent softlock at Gator with all knives
+        if self._format_option_text(self.multiworld.oops_all_rockets[self.player]) == 'True' or \
+            self._format_option_text(self.multiworld.oops_all_grenades[self.player]) == 'True' or \
+            self._format_option_text(self.multiworld.oops_all_knives[self.player]) == 'True':
+            return
+
+        weapon_rando = self._format_option_text(self.multiworld.cross_scenario_weapons[self.player]).lower()
+
+        # if the user didn't pick any weapon randomization, skip all of this
+        if weapon_rando == "none":
+            return
+
+        weapon_randomizer = WeaponRandomizer(self, self._get_character(), self._get_scenario())
+        
+        # if only randomizing the starting weapon, replace it and all of its ammo
+        if weapon_rando == "starting": 
+            weapon_randomizer.starting()
+        elif weapon_rando == "match": 
+            weapon_randomizer.match()
+        elif weapon_rando == "full": 
+            weapon_randomizer.full()
+        elif weapon_rando == "all": 
+            weapon_randomizer.all()
+        elif weapon_rando == "full ammo": 
+            weapon_randomizer.full_ammo()
+        # all ammo and troll are identical, except there's a step after upgrades are placed for all weapons to remove all but a few weapons
+        # so just do all_ammo here, then call the actual troll option after upgrades + gunpowder + whatever else
+        elif weapon_rando == "all ammo" or weapon_rando == "troll": 
+            weapon_randomizer.all_ammo()
+        else:
+            raise "Invalid weapon randomizer value!"
+
+        weapon_randomizer.upgrades() # always swap upgrades after weapons are rando'd
+        weapon_randomizer.high_grade_gunpowder() # always split high-grade gunpowder after weapons are rando'd
+
+        if weapon_rando == "troll":
+            weapon_randomizer.troll()
 
     def create_regions(self): # and create locations
         scenario_locations = self._get_locations_for_scenario(self._get_character(), self._get_scenario())
         scenario_regions = self._get_region_table_for_scenario(self._get_character(), self._get_scenario())
+
         regions = [
             Region(region['name'], self.player, self.multiworld) 
                 for region in scenario_regions
@@ -276,13 +324,38 @@ class ResidentEvil2Remake(World):
             "character": self._get_character(),
             "scenario": self._get_scenario(),
             "difficulty": self._get_difficulty(),
-            "unlocked_typewriters": self._format_option_text(self.multiworld.unlocked_typewriters[self.player]).split(", ")
+            "unlocked_typewriters": self._format_option_text(self.multiworld.unlocked_typewriters[self.player]).split(", "),
+            "starting_weapon": self._get_starting_weapon()
         }
 
         return slot_data
     
     def write_spoiler_header(self, spoiler_handle: TextIO):
         spoiler_handle.write(f"RE2R_AP_World version: {self.apworld_release_version}\n")
+
+    def write_spoiler(self, spoiler_handle: typing.TextIO) -> None:
+        # if weapons were randomized across scenarios, list what was swapped for what here (excluding upgrades, because who cares)
+        if self._format_option_text(self.multiworld.cross_scenario_weapons[self.player]) != "None":
+            spoiler_handle.write("\n\nWeapon Swaps:\n")
+            spoiler_handle.write(f"\n{'(Starting Weapon)'.ljust(30, ' ')} -> {self.starting_weapon}")
+
+            for from_weapon, to_weapon in self.replacement_weapons.items():
+                # if the from weapon is a placeholder string of underscores, all of these were added (no "old" weapon)
+                if re.match('^[_]+$', from_weapon):
+                    from_weapon = '(Added)'
+
+                spoiler_handle.write(f"\n{from_weapon.ljust(30, ' ')} -> {to_weapon}")
+            
+            spoiler_handle.write("\n\nAmmo Swaps:\n")
+
+            for from_ammo, to_ammo in self.replacement_ammo.items():
+                if isinstance(to_ammo, list):
+                    spoiler_handle.write(f"\n{from_ammo.ljust(30, ' ')} -> {to_ammo[0]}")
+
+                    for ammo in to_ammo[1:]:
+                        spoiler_handle.write(f"\n{''.ljust(30, ' ')} -> {ammo}")
+                else:
+                    spoiler_handle.write(f"\n{from_ammo.ljust(30, ' ')} -> {to_ammo}")
 
     def _has_items(self, state: CollectionState, item_names: list) -> bool:
         # if it requires all unique items, just do a state has all
@@ -349,6 +422,9 @@ class ResidentEvil2Remake(World):
     
     def _get_difficulty(self) -> str:
         return self._format_option_text(self.multiworld.difficulty[self.player]).lower()
+    
+    def _get_starting_weapon(self) -> str:
+        return self.starting_weapon or None
     
     def _replace_pool_item_with(self, pool, from_item_name, to_item_name) -> list:
         items_to_remove = [item for item in pool if item.name == from_item_name]
