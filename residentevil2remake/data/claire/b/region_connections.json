@@ -493,7 +493,7 @@
         "from": "Reception - Labs",
         "to": "Main Shaft",
         "condition": {
-            "items": ["ID Wristband - General Staff"]
+            "items": ["Wristband - General Staff"]
         }
     },
     { 
@@ -557,7 +557,7 @@
         "from": "Main Shaft",
         "to": "Biotesting Lab",
         "condition": {
-            "items": ["Signal Modulator", "ID Wristband - Senior Staff"]
+            "items": ["Signal Modulator", "Wristband - Senior Staff"]
         }
     },
     { 
