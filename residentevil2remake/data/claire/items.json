@@ -173,7 +173,7 @@
     },
     {
         "type": "Key",
-        "name": "ID Wristband - Visitor",
+        "name": "Wristband - Visitor",
         "groups": ["wristband", "bracelet", "id"],
         "decimal": "200",
         "count": 1,
@@ -181,7 +181,7 @@
     },
     {
         "type": "Key",
-        "name": "ID Wristband - General Staff",
+        "name": "Wristband - General Staff",
         "groups": ["wristband", "bracelet", "id"],
         "decimal": "201",
         "count": 1,
@@ -189,7 +189,7 @@
     },
     {
         "type": "Key",
-        "name": "ID Wristband - Senior Staff",
+        "name": "Wristband - Senior Staff",
         "groups": ["wristband", "bracelet", "id"],
         "decimal": "202",
         "count": 1,
