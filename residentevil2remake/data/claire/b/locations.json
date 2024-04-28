@@ -1847,7 +1847,7 @@
     {
         "name": "Sherry's Wristband",
         "region": "Security Room",
-        "original_item": "ID Wristband - Visitor",
+        "original_item": "Wristband - Visitor",
         "condition": {},    
         "item_object": "CFPlay2_CF705_01",
         "parent_object": "",
@@ -1920,7 +1920,7 @@
     {
         "name": "Sleeping Pod",
         "region": "Nap Room",
-        "original_item": "ID Wristband - General Staff",
+        "original_item": "Wristband - General Staff",
         "condition": {},    
         "item_object": "sm73_423",
         "parent_object": "sm73_433_WristTagUpdater_Lv1",
@@ -2130,8 +2130,8 @@
     {
         "name": "Downed Employee",
         "region": "Greenhouse",
-        "original_item": "ID Wristband - Senior Staff",
-        "force_item": "ID Wristband - Senior Staff",
+        "original_item": "Wristband - Senior Staff",
+        "force_item": "Wristband - Senior Staff",
         "condition": {
             "items": ["Signal Modulator"]
         },     
@@ -2413,7 +2413,7 @@
                 "Mechanic Jack Handle", "Small Gear", "Large Gear", 
                 "Boxed Electronic Part 1", "Boxed Electronic Part 2", "Parking Garage Key Card",
                 "T-Bar Handle", "Pawn Plug", "Knight Plug", "Bishop Plug", "Rook Plug", "Queen Plug", "King Plug", 
-                "ID Wristband - General Staff", "ID Wristband - Senior Staff", "Signal Modulator",
+                "Wristband - General Staff", "Wristband - Senior Staff", "Signal Modulator",
                 "Joint Plug"
             ]
         },
