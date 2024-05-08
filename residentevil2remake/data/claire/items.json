@@ -205,8 +205,15 @@
     },
     {
         "type": "Key",
-        "name": "Trophy",
+        "name": "Trophy A",
         "decimal": "191",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Trophy B",
+        "decimal": "190",
         "count": 1,
         "progression": 1
     },

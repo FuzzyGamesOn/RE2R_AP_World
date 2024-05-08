@@ -2094,7 +2094,7 @@
 	{
         "name": "Table near Entrance",
         "region": "Low-Temp Testing Lab",
-        "original_item": "Trophy",
+        "original_item": "Trophy B",
         "condition": {},    
         "item_object": "sm73_425",
         "parent_object": "sm43_425_Kibori no Kuma_2ndPlay",

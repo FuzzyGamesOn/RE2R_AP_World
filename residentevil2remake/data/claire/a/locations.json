@@ -1942,7 +1942,7 @@
     {
         "name": "Table in Middle of Lounge",
         "region": "Lounge - Labs",
-        "original_item": "Trophy",
+        "original_item": "Trophy A",
         "condition": {},    
         "item_object": "sm73_426",
         "parent_object": "sm43_426_Kibori no Kuma_1st",
