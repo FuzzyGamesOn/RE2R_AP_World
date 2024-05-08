@@ -6,7 +6,8 @@
         "condition": {},
         "item_object": "sm70_000",
         "parent_object": "sm70_000_Spray",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall",
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
     },
     {
         "name": "Main Desk",
@@ -15,7 +16,8 @@
         "condition": {},
         "item_object": "sm70_100",
         "parent_object": "sm70_100_handgunB",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall",
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
     },
     {
         "name": "Marvin's Knife",
@@ -34,7 +36,8 @@
         "condition": {},
         "item_object": "sm42_176_HieroglyphicDialLock01A_ForLion_control",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0000/Hall/LionStatue"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0000/Hall/LionStatue",
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
     },
     {
         "name": "2F Couch",
@@ -43,7 +46,8 @@
         "condition": {},
         "item_object": "sm70_100",
         "parent_object": "sm70_100_HandgunB",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall",
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
     },
     {
         "name": "Shelves",
@@ -52,7 +56,8 @@
         "condition": {},    
         "item_object": "sm70_100",
         "parent_object": "sm70_100_HandgunB",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/SmallDepot"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/SmallDepot",
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
     },
     {
         "name": "Boxes",
@@ -61,7 +66,8 @@
         "condition": {},    
         "item_object": "sm70_202",
         "parent_object": "sm70_202_mokuzai",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/SmallDepot"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/SmallDepot",
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
     },
     {
         "name": "Downed Zombie",
@@ -70,7 +76,8 @@
         "condition": {},    
         "item_object": "sm70_100",
         "parent_object": "sm70_100_HandgunB",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/PressRoom"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/PressRoom",
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
     },
     {
         "name": "Second Stall",
@@ -79,7 +86,8 @@
         "condition": {},    
         "item_object": "sm70_000",
         "parent_object": "ItemPositions_Toilet_1FE2",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/common/GeneralPurposeGimmicks/ToiletDoor"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/common/GeneralPurposeGimmicks/ToiletDoor",
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
     },
     {
         "name": "Boxes",
@@ -479,7 +487,8 @@
         "condition": {},    
         "item_object": "sm70_001",
         "parent_object": "sm70_001_Harb",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FE/WaitingRoom"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FE/WaitingRoom",
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
     },
     {
         "name": "Safe Behind Desk",
@@ -488,7 +497,8 @@
         "condition": {},    
         "item_object": "sm42_019_SafeBoxDial01A_OfficeE_control",
         "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0000/Claire_S02_0000/2FE/2FWaitingRoom/IronSafe_2FE"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0000/Claire_S02_0000/2FE/2FWaitingRoom/IronSafe_2FE",
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
     },
     {
         "name": "Table Near Door",

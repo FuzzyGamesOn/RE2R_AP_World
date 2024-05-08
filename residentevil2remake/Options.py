@@ -70,7 +70,8 @@ class ExtraMedallions(Choice):
     If you spend too long waiting for these on average, this option will add extras of 2 medallions.
 
     False: Normal, only 1 of each RPD medallion in the item pool.
-    True: Now, 2 of the Lion and Unicorn medallions in the item pool. (Maiden medallion is always at Fire Escape and does not have an extra.)"""
+    True: Now, A scenarios will have 2 extra medallions (since Maiden is always at Fire Escape). 
+          B scenarios will have 3 extra medallions since all are randomized."""
     display_name = "Extra Medallions"
     option_false = 0
     option_true = 1
