@@ -10,7 +10,7 @@ from ..generic.Rules import set_rule
 from Fill import fill_restrictive
 
 from .Data import Data
-from .Options import re2roptions
+from .Options import RE2ROptions
 from .WeaponRandomizer import WeaponRandomizer
 
 
@@ -40,7 +40,7 @@ class ResidentEvil2Remake(World):
     game: str = "Resident Evil 2 Remake"
 
     data_version = 2
-    required_client_version = (0, 4, 3)
+    required_client_version = (0, 4, 4)
     apworld_release_version = "0.2.2" # defined to show in spoiler log
 
     item_id_to_name = { item['id']: item['name'] for item in Data.item_table }
@@ -54,21 +54,22 @@ class ResidentEvil2Remake(World):
     item_name_groups = { key: set(values) for key, values in Data.item_name_groups.items() }
 
     # keep track of the weapon randomizer settings for use in various steps and in slot data
-    starting_weapon = None
+    starting_weapon = {}
     replacement_weapons = {}
     replacement_ammo = {}
 
-    option_definitions = re2roptions
+    options_dataclass = RE2ROptions
+    options: RE2ROptions
 
     def generate_early(self): # check weapon randomization before locations and items are processed, so we can swap non-randomized items as well
         # if any of the "Oops! All X" weapon options are present, don't bother with weapon randomization since they'll all get overwritten
         #    and since starting with pistol is important to prevent softlock at Gator with all knives
-        if self._format_option_text(self.multiworld.oops_all_rockets[self.player]) == 'True' or \
-            self._format_option_text(self.multiworld.oops_all_grenades[self.player]) == 'True' or \
-            self._format_option_text(self.multiworld.oops_all_knives[self.player]) == 'True':
+        if self._format_option_text(self.options.oops_all_rockets) == 'True' or \
+            self._format_option_text(self.options.oops_all_grenades) == 'True' or \
+            self._format_option_text(self.options.oops_all_knives) == 'True':
             return
 
-        weapon_rando = self._format_option_text(self.multiworld.cross_scenario_weapons[self.player]).lower()
+        weapon_rando = self._format_option_text(self.options.cross_scenario_weapons).lower()
 
         # if the user didn't pick any weapon randomization, skip all of this
         if weapon_rando == "none":
@@ -129,7 +130,7 @@ class ResidentEvil2Remake(World):
                 # if location is not force_item'd or not not randomized, check for Labs progression option and apply
                 # since Labs progression option doesn't matter for force_item'd or not randomized locations
                 # we check for zone id > 3 because 3 is typically Sewers, and anything beyond that is Labs / endgame stuff
-                elif self._format_option_text(self.multiworld.allow_progression_in_labs[self.player]) == 'False' and region_data['zone_id'] > 3:
+                elif self._format_option_text(self.options.allow_progression_in_labs) == 'False' and region_data['zone_id'] > 3:
                     location.item_rule = lambda item: item.classification != ItemClassification.progression and ItemClassification.progression_skip_balancing
                 # END if
 
@@ -189,7 +190,7 @@ class ResidentEvil2Remake(World):
                 pool.remove(filled_location.item)
 
         # check the starting hip pouches option and add as precollected, removing from pool and replacing with junk
-        starting_hip_pouches = int(self.multiworld.starting_hip_pouches[self.player])
+        starting_hip_pouches = int(self.options.starting_hip_pouches)
 
         if starting_hip_pouches > 0:
             hip_pouches = [item for item in pool if item.name == 'Hip Pouch'] # 6 total in every campaign, I think
@@ -197,18 +198,19 @@ class ResidentEvil2Remake(World):
             # if the hip pouches option exceeds the number of hip pouches in the pool, reduce it to the number in the pool
             if starting_hip_pouches > len(hip_pouches):
                 starting_hip_pouches = len(hip_pouches)
-                self.multiworld.starting_hip_pouches[self.player] = len(hip_pouches)
+                self.options.starting_hip_pouches = len(hip_pouches)
 
             for x in range(starting_hip_pouches):
                 self.multiworld.push_precollected(hip_pouches[x]) # starting inv
                 pool.remove(hip_pouches[x])
 
         # check the bonus start option and add some heal items and ammo packs as precollected / starting items
-        if self._format_option_text(self.multiworld.bonus_start[self.player]) == 'True':
+        if self._format_option_text(self.options.bonus_start) == 'True':
             for x in range(3): self.multiworld.push_precollected(self.create_item('First Aid Spray'))
 
-            if self.starting_weapon:
-                starting_weapon_ammo = self.item_name_to_item[self.starting_weapon].get('ammo')
+            if self.player in self.starting_weapon:
+                starting_weapon = self.starting_weapon[self.player]
+                starting_weapon_ammo = self.item_name_to_item[starting_weapon].get('ammo')
                 for x in range(4): self.multiworld.push_precollected(self.create_item(starting_weapon_ammo))
             else:
                 for x in range(4): self.multiworld.push_precollected(self.create_item('Handgun Ammo'))
@@ -216,7 +218,7 @@ class ResidentEvil2Remake(World):
         # check the "Oops! All Rockets" option. From the option description:
         #     Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 
         #     (Except progression weapons, of course.)
-        if self._format_option_text(self.multiworld.oops_all_rockets[self.player]) == 'True':
+        if self._format_option_text(self.options.oops_all_rockets) == 'True':
             # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
             items_to_replace = [
                 item for item in self.item_name_to_item.values() 
@@ -237,7 +239,7 @@ class ResidentEvil2Remake(World):
         # check the "Oops! All Grenades" option. From the option description:
         #     Enabling this swaps all weapons, weapon ammo, and subweapons to Grenades. 
         #     (Except progression weapons, of course.)
-        if self._format_option_text(self.multiworld.oops_all_grenades[self.player]) == 'True':
+        if self._format_option_text(self.options.oops_all_grenades) == 'True':
             # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
             items_to_replace = [
                 item for item in self.item_name_to_item.values() 
@@ -258,7 +260,7 @@ class ResidentEvil2Remake(World):
         # check the "Oops! All Knives" option. From the option description:
         #     Enabling this swaps all weapons, weapon ammo, and subweapons to Combat Knives. 
         #     (Except progression weapons, of course.)
-        if self._format_option_text(self.multiworld.oops_all_knives[self.player]) == 'True':
+        if self._format_option_text(self.options.oops_all_knives) == 'True':
             # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
             items_to_replace = [
                 item for item in self.item_name_to_item.values() 
@@ -269,7 +271,7 @@ class ResidentEvil2Remake(World):
             for from_item in items_to_replace:
                 pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
 
-        if self._format_option_text(self.multiworld.extra_clock_tower_items[self.player]) == 'True':
+        if self._format_option_text(self.options.extra_clock_tower_items) == 'True':
             replaceables = [item for item in pool if item.name == 'Handgun Ammo' or item.name == 'Blue Herb']
             
             for x in range(3):
@@ -279,7 +281,7 @@ class ResidentEvil2Remake(World):
             pool.append(self.create_item('Small Gear'))
             pool.append(self.create_item('Large Gear'))
 
-        if self._format_option_text(self.multiworld.extra_medallions[self.player]) == 'True':
+        if self._format_option_text(self.options.extra_medallions) == 'True':
             replaceables = [item for item in pool if item.name == 'Handgun Ammo' or item.name == 'Blue Herb']
             
             for x in range(2):
@@ -294,16 +296,16 @@ class ResidentEvil2Remake(World):
                 pool.remove(replaceables[2]) # remove the 3rd item to make room for a 3rd medallion
                 pool.append(self.create_item('Maiden Medallion'))
 
-        if self._format_option_text(self.multiworld.no_first_aid_spray[self.player]) == 'True':
+        if self._format_option_text(self.options.no_first_aid_spray) == 'True':
             pool = self._replace_pool_item_with(pool, 'First Aid Spray', 'Wooden Boards')
 
-        if self._format_option_text(self.multiworld.no_green_herb[self.player]) == 'True':
+        if self._format_option_text(self.options.no_green_herb) == 'True':
             pool = self._replace_pool_item_with(pool, 'Green Herb', 'Wooden Boards')
 
-        if self._format_option_text(self.multiworld.no_red_herb[self.player]) == 'True':
+        if self._format_option_text(self.options.no_red_herb) == 'True':
             pool = self._replace_pool_item_with(pool, 'Red Herb', 'Wooden Boards')
         
-        if self._format_option_text(self.multiworld.no_gunpowder[self.player]) == 'True':
+        if self._format_option_text(self.options.no_gunpowder) == 'True':
             replaceables = set(item.name for item in pool if 'Gunpowder' in item.name)
             less_useful_items = set(
                 item.name for item in pool 
@@ -335,12 +337,15 @@ class ResidentEvil2Remake(World):
 
         return Item(item['name'], classification, item['id'], player=self.player)
 
+    def get_filler_item_name(self) -> str:
+        return "Wooden Boards"
+
     def fill_slot_data(self) -> Dict[str, Any]:
         slot_data = {
             "character": self._get_character(),
             "scenario": self._get_scenario(),
             "difficulty": self._get_difficulty(),
-            "unlocked_typewriters": self._format_option_text(self.multiworld.unlocked_typewriters[self.player]).split(", "),
+            "unlocked_typewriters": self._format_option_text(self.options.unlocked_typewriters).split(", "),
             "starting_weapon": self._get_starting_weapon()
         }
 
@@ -351,20 +356,21 @@ class ResidentEvil2Remake(World):
 
     def write_spoiler(self, spoiler_handle: typing.TextIO) -> None:
         # if weapons were randomized across scenarios, list what was swapped for what here (excluding upgrades, because who cares)
-        if self._format_option_text(self.multiworld.cross_scenario_weapons[self.player]) != "None":
-            spoiler_handle.write("\n\nWeapon Swaps:\n")
-            spoiler_handle.write(f"\n{'(Starting Weapon)'.ljust(30, ' ')} -> {self.starting_weapon}")
+        if self._format_option_text(self.options.cross_scenario_weapons) != "None":
+            starting_weapon = self.starting_weapon[self.player]
+            spoiler_handle.write(f"\n\nWeapon Swaps ({self.multiworld.player_name[self.player]}):\n")
+            spoiler_handle.write(f"\n{'(Starting Weapon)'.ljust(30, ' ')} -> {starting_weapon}")
 
-            for from_weapon, to_weapon in self.replacement_weapons.items():
+            for from_weapon, to_weapon in self.replacement_weapons[self.player].items():
                 # if the from weapon is a placeholder string of underscores, all of these were added (no "old" weapon)
                 if re.match('^[_]+$', from_weapon):
                     from_weapon = '(Added)'
 
                 spoiler_handle.write(f"\n{from_weapon.ljust(30, ' ')} -> {to_weapon}")
             
-            spoiler_handle.write("\n\nAmmo Swaps:\n")
+            spoiler_handle.write(f"\n\nAmmo Swaps ({self.multiworld.player_name[self.player]}):\n")
 
-            for from_ammo, to_ammo in self.replacement_ammo.items():
+            for from_ammo, to_ammo in self.replacement_ammo[self.player].items():
                 if isinstance(to_ammo, list):
                     spoiler_handle.write(f"\n{from_ammo.ljust(30, ' ')} -> {to_ammo[0]}")
 
@@ -399,13 +405,13 @@ class ResidentEvil2Remake(World):
         }
 
         # if the player chose hardcore, take out any matching standard difficulty locations
-        if self._format_option_text(self.multiworld.difficulty[self.player]) == 'Hardcore':
+        if self._format_option_text(self.options.difficulty) == 'Hardcore':
             for hardcore_loc in [loc for loc in locations_pool.values() if loc['difficulty'] == 'hardcore']:
                 check_loc_region = re.sub('H\)$', ')', hardcore_loc['region']) # take the Hardcore off the region name
                 check_loc_name = hardcore_loc['name']
 
                 # if there's a standard location with matching name and region, it's obsoleted in hardcore, remove it
-                standard_locs = [id for id, loc in locations_pool.items() if loc['region'] == check_loc_region and loc['name'] == check_loc_name]
+                standard_locs = [id for id, loc in locations_pool.items() if loc['region'] == check_loc_region and loc['name'] == check_loc_name and loc['difficulty'] != 'hardcore']
 
                 if len(standard_locs) > 0:
                     del locations_pool[standard_locs[0]]
@@ -415,7 +421,10 @@ class ResidentEvil2Remake(World):
             locations_pool = {
                 id: loc for id, loc in locations_pool.items() if loc['difficulty'] != 'hardcore'
             }
-            
+
+        # now that we've factored in hardcore swaps, remove any hardcore locations that were just there for removing unused standard ones
+        locations_pool = { id: loc for id, loc in locations_pool.items() if 'remove' not in loc }
+        
         return locations_pool
 
     def _get_region_table_for_scenario(self, character, scenario) -> list:
@@ -431,16 +440,16 @@ class ResidentEvil2Remake(World):
         ]
     
     def _get_character(self) -> str:
-        return self._format_option_text(self.multiworld.character[self.player]).lower()
+        return self._format_option_text(self.options.character).lower()
     
     def _get_scenario(self) -> str:
-        return self._format_option_text(self.multiworld.scenario[self.player]).lower()
+        return self._format_option_text(self.options.scenario).lower()
     
     def _get_difficulty(self) -> str:
-        return self._format_option_text(self.multiworld.difficulty[self.player]).lower()
+        return self._format_option_text(self.options.difficulty).lower()
     
     def _get_starting_weapon(self) -> str:
-        return self.starting_weapon or None
+        return self.starting_weapon[self.player] if self.player in self.starting_weapon else None
     
     def _replace_pool_item_with(self, pool, from_item_name, to_item_name) -> list:
         items_to_remove = [item for item in pool if item.name == from_item_name]

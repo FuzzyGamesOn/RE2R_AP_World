@@ -1,4 +1,7 @@
-from Options import Choice, OptionList, NamedRange
+from dataclasses import dataclass
+from Options import (Choice, OptionList, NamedRange, 
+    StartInventoryPool,
+    PerGameCommonOptions, DeathLinkMixin)
 
 class Character(Choice):
     """Leon: Expected, can video game.
@@ -181,22 +184,29 @@ class NoGunpowder(Choice):
     option_true = 1
     default = 0
 
-re2roptions = {
-    "character": Character,
-    "scenario": Scenario,
-    "difficulty": Difficulty,
-    "unlocked_typewriters": UnlockedTypewriters,
-    "starting_hip_pouches": StartingHipPouches,
-    "bonus_start": BonusStart,
-    "extra_clock_tower_items": ExtraClockTowerItems,
-    "extra_medallions": ExtraMedallions,
-    "allow_progression_in_labs": AllowProgressionInLabs,
-    "cross_scenario_weapons": CrossScenarioWeapons,
-    "oops_all_rockets": OopsAllRockets,
-    "oops_all_grenades": OopsAllGrenades,
-    "oops_all_knives": OopsAllKnives,
-    "no_first_aid_spray": NoFirstAidSpray,
-    "no_green_herb": NoGreenHerb,
-    "no_red_herb": NoRedHerb,
-    "no_gunpowder": NoGunpowder
-}
+# making this mixin so we can keep actual game options separate from AP core options that we want enabled
+# not sure why this isn't a mixin in core atm, anyways
+@dataclass
+class StartInventoryFromPoolMixin:
+    start_inventory_from_pool: StartInventoryPool
+
+@dataclass
+class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOptions):
+    character: Character
+    scenario: Scenario
+    difficulty: Difficulty
+    unlocked_typewriters: UnlockedTypewriters
+    starting_hip_pouches: StartingHipPouches
+    bonus_start: BonusStart
+    extra_clock_tower_items: ExtraClockTowerItems
+    extra_medallions: ExtraMedallions
+    allow_progression_in_labs: AllowProgressionInLabs
+    cross_scenario_weapons: CrossScenarioWeapons
+    oops_all_rockets: OopsAllRockets
+    oops_all_grenades: OopsAllGrenades
+    oops_all_knives: OopsAllKnives
+    no_first_aid_spray: NoFirstAidSpray
+    no_green_herb: NoGreenHerb
+    no_red_herb: NoRedHerb
+    no_gunpowder: NoGunpowder
+

@@ -169,5 +169,15 @@
         "item_object": "sm70_201",
         "parent_object": "sm70_201_G5",
         "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common"
+    },
+    {
+        "name": "Main Desk 1",
+        "region": "Main Hall",
+        "remove": true
+    },
+	{
+        "name": "Main Desk 2",
+        "region": "Main Hall",
+        "remove": true
     }
 ]
