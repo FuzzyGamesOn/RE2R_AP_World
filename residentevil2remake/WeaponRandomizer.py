@@ -18,32 +18,38 @@ class WeaponRandomizer():
         self.starting_ammo_name = 'Handgun Ammo'
         self.world.replacement_weapons[self.world.player] = {}
         self.world.replacement_ammo[self.world.player] = {}
+        self.swap_queue = {}
 
     ###
     # CrossScenarioWeapons == "Starting"
     ###
     def starting(self):
         random_weapon = self._determine_starting_weapon()
-        self._swap_item_at_locations(self.starting_ammo_name, random_weapon['ammo'], "Ammo")
+        self._queue_swap(self.starting_ammo_name, random_weapon['ammo'], "Ammo")
+
+        self._swap_queued_at_locations()
 
     ###
     # CrossScenarioWeapons == "Match"
     ###
     def match(self):
         random_weapon = self._determine_starting_weapon('light') # match starting weapon level too
-        self._swap_item_at_locations(self.starting_ammo_name, random_weapon['ammo'], "Ammo")
+        self._queue_swap(self.starting_ammo_name, random_weapon['ammo'], "Ammo")
         weapons = self._get_weapons_from_locations()
         
         for weapon in weapons:
             for key in self.weapons_by_level.keys():
                 if "groups" in weapon and "{}_gun".format(key) in weapon["groups"]: 
-                    matched = self.random.choice(self.weapons_by_level[key])
-                
-                    self._swap_item_at_locations(weapon['name'], matched['name'], "Weapon")
-                    self._swap_item_at_locations(weapon['ammo'], matched['ammo'], "Ammo")
+                    if len(self.weapons_by_level[key]) > 0: # starting weapon takes 1 out of the pool, so check length
+                        matched = self.random.choice(self.weapons_by_level[key])
+                    
+                        self._queue_swap(weapon['name'], matched['name'], "Weapon")
+                        self._queue_swap(weapon['ammo'], matched['ammo'], "Ammo")
 
-                    # remove anything that was placed so it's not placed again
-                    self.weapons_by_level[key] = [i for i in self.weapons_by_level[key] if i['name'] != matched['name']]
+                        # remove anything that was placed so it's not placed again
+                        self.weapons_by_level[key] = [i for i in self.weapons_by_level[key] if i['name'] != matched['name']]
+
+        self._swap_queued_at_locations()
 
     ###
     # CrossScenarioWeapons == "Full"
@@ -52,21 +58,23 @@ class WeaponRandomizer():
         random_weapon = self._determine_starting_weapon()
 
         if include_ammo:
-            self._swap_item_at_locations(self.starting_ammo_name, random_weapon['ammo'], "Ammo")
+            self._queue_swap(self.starting_ammo_name, random_weapon['ammo'], "Ammo")
 
         weapons = self._get_weapons_from_locations()
 
         for weapon in weapons:
             matched = self.random.choice(self.all_weapons)
 
-            self._swap_item_at_locations(weapon['name'], matched['name'], "Weapon")
+            self._queue_swap(weapon['name'], matched['name'], "Weapon")
 
             # by default, this includes ammo. for options that rando ammo completely, this will be False
             if include_ammo:
-                self._swap_item_at_locations(weapon['ammo'], matched['ammo'], "Ammo")
+                self._queue_swap(weapon['ammo'], matched['ammo'], "Ammo")
 
             # remove anything that was placed so it's not placed again
             self.all_weapons = [i for i in self.all_weapons if i['name'] != matched['name']]
+
+        self._swap_queued_at_locations()
 
     ###
     # CrossScenarioWeapons == "All"
@@ -78,10 +86,12 @@ class WeaponRandomizer():
         # replace the base weapons...
         for weapon in weapons:
             matched = self.random.choice(self.all_weapons)
-            self._swap_item_at_locations(weapon['name'], matched['name'], "Weapon")
+            self._queue_swap(weapon['name'], matched['name'], "Weapon")
 
             # remove anything that was placed so it's not placed again
             self.all_weapons = [i for i in self.all_weapons if i['name'] != matched['name']]
+
+        self._swap_queued_at_locations()
 
         # count for repeating identifier for spoiler log
         str_repeat_count = 1
@@ -95,7 +105,7 @@ class WeaponRandomizer():
 
             loc['original_item'] = matched['name']
             loc_key = self._get_location_key(loc['region'], loc['name'])
-            self.world.location_name_to_location[loc_key] = loc
+            self.world.source_locations[self.world.player][loc_key] = loc
 
             self.world.replacement_weapons[self.world.player]["_" * str_repeat_count] = matched['name']
             str_repeat_count += 1
@@ -135,19 +145,24 @@ class WeaponRandomizer():
             weapons = [w for w in weapons if w['name'] != random_weapon]
 
         for loc in self._get_weapon_locations():
-            if loc.get('force_item', None) and loc.get('force_item') not in only_weapons:
+            if loc.get('force_item', None) is not None and loc.get('force_item') not in only_weapons:
                 loc['force_item'] = 'Wooden Boards'
                 loc_key = self._get_location_key(loc['region'], loc['name'])
-                self.world.location_name_to_location[loc_key] = loc
+                self.world.source_locations[self.world.player][loc_key] = loc
                 continue
 
-            if loc.get('original_item', None) and loc.get('original_item') not in only_weapons:
+            if loc.get('original_item', None) is not None and loc.get('original_item') not in only_weapons:
                 loc['original_item'] = 'Wooden Boards'
                 loc_key = self._get_location_key(loc['region'], loc['name'])
-                self.world.location_name_to_location[loc_key] = loc
+                self.world.source_locations[self.world.player][loc_key] = loc
                 continue
 
-        self.world.replacement_weapons[self.world.player] = {"Other Random Weapons": "Play and find out :)"}
+        self.world.replacement_weapons[self.world.player] = {
+            "Other Random Weapons": [
+                w['name'] for w in only_weapons 
+                    if w['name'] != self.world.starting_weapon[self.world.player]
+            ]
+        }
 
     ###
     # Function to be called after ANY weapon rando, so that the upgrades for the included weapons are also included
@@ -197,7 +212,7 @@ class WeaponRandomizer():
 
             if extra_upgrades_needed > 0:
                 for x in range(extra_upgrades_needed):
-                    replacement_item = list(self.world.replacement_ammo[self.world.player].values())[0]
+                    replacement_item = list(self.world.replacement_ammo[self.world.player].values())[0][0]
 
                     if isinstance(replacement_item, list):
                         replacement_item = replacement_item[0]
@@ -205,10 +220,10 @@ class WeaponRandomizer():
                     available_upgrades.append(replacement_item)
 
         for loc_name in location_names_with_upgrades:
-            if self.world.location_name_to_location[loc_name].get("force_item"):
-                self.world.location_name_to_location[loc_name]["force_item"] = available_upgrades.pop(0)
-            elif self.world.location_name_to_location[loc_name].get("original_item"):
-                self.world.location_name_to_location[loc_name]["original_item"] = available_upgrades.pop(0)
+            if self.world.source_locations[self.world.player][loc_name].get("force_item"):
+                self.world.source_locations[self.world.player][loc_name]["force_item"] = available_upgrades.pop(0)
+            elif self.world.source_locations[self.world.player][loc_name].get("original_item"):
+                self.world.source_locations[self.world.player][loc_name]["original_item"] = available_upgrades.pop(0)
 
     ###
     # Function to be called after ANY weapon rando, so that the high-grade gunpowder is split to support any weapon's ammo
@@ -229,17 +244,17 @@ class WeaponRandomizer():
         counter = 0
         for loc_name in location_names_with_hgg:
             if counter % 2 == 0:
-                if self.world.location_name_to_location[loc_name].get("original_item"):
-                    self.world.location_name_to_location[loc_name]["original_item"] = "High-Grade Gunpowder - Yellow"
+                if self.world.source_locations[self.world.player][loc_name].get("original_item"):
+                    self.world.source_locations[self.world.player][loc_name]["original_item"] = "High-Grade Gunpowder - Yellow"
                 
-                if self.world.location_name_to_location[loc_name].get("force_item"):
-                    self.world.location_name_to_location[loc_name]["force_item"] = "High-Grade Gunpowder - Yellow"
+                if self.world.source_locations[self.world.player][loc_name].get("force_item"):
+                    self.world.source_locations[self.world.player][loc_name]["force_item"] = "High-Grade Gunpowder - Yellow"
             else:
-                if self.world.location_name_to_location[loc_name].get("original_item"):
-                    self.world.location_name_to_location[loc_name]["original_item"] = "High-Grade Gunpowder - White"
+                if self.world.source_locations[self.world.player][loc_name].get("original_item"):
+                    self.world.source_locations[self.world.player][loc_name]["original_item"] = "High-Grade Gunpowder - White"
                 
-                if self.world.location_name_to_location[loc_name].get("force_item"):
-                    self.world.location_name_to_location[loc_name]["force_item"] = "High-Grade Gunpowder - White"
+                if self.world.source_locations[self.world.player][loc_name].get("force_item"):
+                    self.world.source_locations[self.world.player][loc_name]["force_item"] = "High-Grade Gunpowder - White"
 
             counter = counter + 1
 
@@ -257,7 +272,7 @@ class WeaponRandomizer():
         random_weapon = self.random.choice(weapon_list)
         self.world.starting_weapon[self.world.player] = random_weapon["name"]
         # starting weapon isn't on a location, so no need to set replacement; but set replacement for ammo
-        self.world.replacement_ammo[self.world.player][self.starting_ammo_name] = random_weapon["ammo"]
+        self.world.replacement_ammo[self.world.player][self.starting_ammo_name] = [random_weapon["ammo"]]
 
         # remove the starting
         self.all_weapons = [i for i in self.all_weapons if i['name'] != random_weapon['name']]
@@ -267,7 +282,30 @@ class WeaponRandomizer():
 
         return random_weapon
 
-    def _swap_item_at_locations(self, old_item: str, new_item: str, item_type: str):
+    def _queue_swap(self, old_item: str, new_item: str, item_type: str):
+        if old_item not in self.swap_queue.keys():
+            self.swap_queue[old_item] = []
+        
+        self.swap_queue[old_item].append({
+            'old_item': old_item,
+            'new_item': new_item,
+            'item_type': item_type
+        })
+
+        old_item = self.world.item_name_to_item.get(old_item, {})
+
+        if old_item.get('type') == 'Weapon':
+            self.world.replacement_weapons[self.world.player][old_item['name']] = new_item
+
+        if old_item.get('type') == 'Ammo':
+            if old_item['name'] not in self.world.replacement_ammo[self.world.player].keys():
+                self.world.replacement_ammo[self.world.player][old_item['name']] = []
+
+            self.world.replacement_ammo[self.world.player][old_item['name']].append(new_item)
+
+    def _swap_queued_at_locations(self):
+        queue_indexes = { k: 0 for k in self.swap_queue.keys() }
+        
         for loc_name, loc in self._get_locations().items():
             # if the location has already been swapped, don't swap it again
             if loc.get('swapped', None) == True:
@@ -279,31 +317,42 @@ class WeaponRandomizer():
             force_item = self.world.item_name_to_item.get(force_item, {})
             swapped = False
 
-            if original_item.get('type') == item_type:
-                if original_item.get('name', None) == old_item:
-                    loc['original_item'] = new_item
-                    swapped = True
-            
-            if force_item.get('type') == item_type:
-                if force_item.get('name', None) == old_item:
-                    loc['force_item'] = new_item
-                    swapped = True
+            matched_by_force = [v2 for v in self.swap_queue.values() for v2 in v if force_item.get('type') == v2['item_type'] and force_item.get('name', None) == v2['old_item']]
+
+            if not swapped and len(matched_by_force) > 0:
+                old_item = matched_by_force[0]['old_item']
+                queue_index = queue_indexes[old_item]
+
+                # increment the indexes so we're alternating what replacement gets swapped in
+                if queue_index >= len(self.swap_queue[old_item]):
+                    queue_index = queue_indexes[old_item] = 0
+
+                loc['force_item'] = matched_by_force[queue_index]['new_item']
+                swapped = True
+                queue_indexes[old_item] += 1
+
+            matched_by_original = [v2 for v in self.swap_queue.values() for v2 in v if original_item.get('type') == v2['item_type'] and original_item.get('name', None) == v2['old_item']]
+
+            if not swapped and len(matched_by_original) > 0:
+                old_item = matched_by_original[0]['old_item']
+                queue_index = queue_indexes[old_item]
+
+                # increment the indexes so we're alternating what replacement gets swapped in
+                if queue_index >= len(self.swap_queue[old_item]):
+                    queue_index = queue_indexes[old_item] = 0
+                    
+                loc['original_item'] = matched_by_original[queue_index]['new_item']
+                swapped = True
+                queue_indexes[old_item] += 1
 
             # if anything was swapped, set the new location back
             if swapped:
                 loc['swapped'] = True
-                self.world.location_name_to_location[loc_name] = loc
-        
-        old_item = self.world.item_name_to_item.get(old_item, {})
-
-        if old_item.get('type') == 'Weapon':
-            self.world.replacement_weapons[self.world.player][old_item['name']] = new_item
-
-        if old_item.get('type') == 'Ammo':
-            self.world.replacement_ammo[self.world.player][old_item['name']] = new_item
+                self.world.source_locations[self.world.player][loc_name] = loc
         
     def _get_locations(self):
-        return {k: l for k, l in self.world.location_name_to_location.items() if l['character'] == self.character and l['scenario'] == self.scenario}
+        locs = { k: l for k, l in self.world.source_locations[self.world.player].items() }
+        return locs
 
     def _get_weapons_from_locations(self):
         weapons = []
@@ -364,10 +413,10 @@ class WeaponRandomizer():
                 continue
 
             # only use locations that don't have an item forced there and are randomized
-            if loc.get('force_item') or loc.get('randomized') == 0:
+            if loc.get('force_item', None) or loc.get('randomized', 1) == 0:
                 continue
 
-            if loc.get('original_item') in ['Handgun Ammo', 'Wooden Boards', 'Blue Herb']:
+            if loc.get('original_item', None) in ['Handgun Ammo', 'Wooden Boards', 'Blue Herb']:
                 available_locations.append(loc)
 
         return available_locations
@@ -443,7 +492,7 @@ class WeaponRandomizer():
 
                 loc['original_item'] = needed_ammo_by_level[lev][index]
                 loc_key = self._get_location_key(loc['region'], loc['name'])
-                self.world.location_name_to_location[loc_key] = loc
+                self.world.source_locations[self.world.player][loc_key] = loc
 
                 count += 1
 
@@ -472,7 +521,7 @@ class WeaponRandomizer():
         for loc in placed_ammo:
             loc['original_item'] = self.random.choice(needed_ammo)
             loc_key = self._get_location_key(loc['region'], loc['name'])
-            self.world.location_name_to_location[loc_key] = loc
+            self.world.source_locations[self.world.player][loc_key] = loc
 
         self.world.replacement_ammo[self.world.player]["Random Quantities"] = needed_ammo
 

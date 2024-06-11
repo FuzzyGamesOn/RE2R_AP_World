@@ -49,6 +49,7 @@ class ResidentEvil2Remake(World):
     location_id_to_name = { loc['id']: RE2RLocation.stack_names(loc['region'], loc['name']) for loc in Data.location_table }
     location_name_to_id = { RE2RLocation.stack_names(loc['region'], loc['name']): loc['id'] for loc in Data.location_table }
     location_name_to_location = { RE2RLocation.stack_names(loc['region'], loc['name']): loc for loc in Data.location_table }
+    source_locations = {} # this is used to seed the initial item pool from original items, and is indexed by player as lname:loc locations
 
     # de-dupe the item names for the item group name
     item_name_groups = { key: set(values) for key, values in Data.item_name_groups.items() }
@@ -62,6 +63,13 @@ class ResidentEvil2Remake(World):
     options: RE2ROptions
 
     def generate_early(self): # check weapon randomization before locations and items are processed, so we can swap non-randomized items as well
+        # start with the normal locations per player for pool, then overwrite with weapon rando if needed
+        self.source_locations[self.player] = self._get_locations_for_scenario(self._get_character(), self._get_scenario()) # id:loc combo
+        self.source_locations[self.player] = { 
+            RE2RLocation.stack_names(l['region'], l['name']): { **l, 'id': i } 
+                for i, l in self.source_locations[self.player].items() 
+        } # turn it into name:loc instead
+
         # if any of the "Oops! All X" weapon options are present, don't bother with weapon randomization since they'll all get overwritten
         #    and since starting with pistol is important to prevent softlock at Gator with all knives
         if self._format_option_text(self.options.oops_all_rockets) == 'True' or \
@@ -102,7 +110,7 @@ class ResidentEvil2Remake(World):
             weapon_randomizer.troll()
 
     def create_regions(self): # and create locations
-        scenario_locations = self._get_locations_for_scenario(self._get_character(), self._get_scenario())
+        scenario_locations = { l['id']: l for _, l in self.source_locations[self.player].items() }
         scenario_regions = self._get_region_table_for_scenario(self._get_character(), self._get_scenario())
 
         regions = [
@@ -173,7 +181,7 @@ class ResidentEvil2Remake(World):
         self.multiworld.completion_condition[self.player] = lambda state: self._has_items(state, ['Victory'])
 
     def create_items(self):
-        scenario_locations = self._get_locations_for_scenario(self._get_character(), self._get_scenario())
+        scenario_locations = self.source_locations[self.player]
 
         pool = [
             self.create_item(item['name'] if item else None) for item in [
@@ -214,6 +222,97 @@ class ResidentEvil2Remake(World):
                 for x in range(4): self.multiworld.push_precollected(self.create_item(starting_weapon_ammo))
             else:
                 for x in range(4): self.multiworld.push_precollected(self.create_item('Handgun Ammo'))
+
+        # do all the "no X" options here so we have more empty spots to use for traps, if needed
+        if self._format_option_text(self.options.no_first_aid_spray) == 'True':
+            pool = self._replace_pool_item_with(pool, 'First Aid Spray', 'Wooden Boards')
+
+        if self._format_option_text(self.options.no_green_herb) == 'True':
+            pool = self._replace_pool_item_with(pool, 'Green Herb', 'Wooden Boards')
+
+        if self._format_option_text(self.options.no_red_herb) == 'True':
+            pool = self._replace_pool_item_with(pool, 'Red Herb', 'Wooden Boards')
+        
+        if self._format_option_text(self.options.no_gunpowder) == 'True':
+            replaceables = set(item.name for item in pool if 'Gunpowder' in item.name)
+            less_useful_items = set(
+                item.name for item in pool 
+                    if 'Boards' in item.name or 'Cassette' in item.name or ('Film' in item.name and 'Hiding Place' not in item.name) or item.name == 'Blue Herb'
+            )
+
+            for from_item in replaceables:
+                to_item = self.random.choice(list(less_useful_items))
+                pool = self._replace_pool_item_with(pool, from_item, to_item)
+
+        # figure out which traps are enabled, then swap them in for low-priority items
+        # do this before the "oops all X" options so we can make use of extra Handgun Ammo spots before they get replaced out
+        traps = []
+
+        if self._format_option_text(self.options.add_damage_traps) == 'True':
+            for x in range(int(self.options.damage_trap_count)):
+                traps.append(self.create_item("Damage Trap"))
+
+        if self._format_option_text(self.options.add_poison_traps) == 'True':
+            for x in range(int(self.options.poison_trap_count)):
+                traps.append(self.create_item("Poison Trap"))
+
+        if len(traps) > 0:
+            # use these spots for replacement first, since they're entirely non-essential
+            available_spots = [
+                item for item in pool 
+                    if 'Boards' in item.name or 'Cassette' in item.name or ('Film' in item.name and 'Hiding Place' not in item.name)
+            ]
+            self.random.shuffle(available_spots)
+
+            # use these spots for replacement next, since they're lower priority but we don't want to use as many of them
+            # for gunpowder, only target the small / normal gunpowders
+            extra_spots = [
+                item for item in pool 
+                    if 'Handgun Ammo' in item.name or item.name == 'Gunpowder'
+            ]
+            self.random.shuffle(extra_spots)
+               
+            for spot in available_spots:
+                if len(traps) == 0: break
+
+                trap_to_place = traps.pop()
+                pool.remove(spot)
+                pool.append(trap_to_place)
+                
+            for spot in extra_spots:
+                if len(traps) == 0: break
+
+                trap_to_place = traps.pop()
+                pool.remove(spot)
+                pool.append(trap_to_place)
+
+        # add extras for Clock Tower items or Medallions, if configured
+        # doing this before "oops all X" to make use of extra Handgun Ammo spots, too
+        if self._format_option_text(self.options.extra_clock_tower_items) == 'True':
+            replaceables = [item for item in pool if item.name == 'Handgun Ammo']
+            
+            for x in range(3):
+                pool.remove(replaceables[x])
+
+            pool.append(self.create_item('Mechanic Jack Handle'))
+            pool.append(self.create_item('Small Gear'))
+            pool.append(self.create_item('Large Gear'))
+
+        if self._format_option_text(self.options.extra_medallions) == 'True':
+            replaceables = [item for item in pool if item.name == 'Handgun Ammo']
+            
+            for x in range(2):
+                pool.remove(replaceables[x])
+
+            pool.append(self.create_item('Lion Medallion'))
+            pool.append(self.create_item('Unicorn Medallion'))
+
+            # The A scenarios have Maiden forced to the Bolt Cutters vanilla location, which is guaranteed to be accessible.
+            # B scenarios have it randomized, so add a second randomized Maiden.
+            if self._get_scenario().lower() == 'b':
+                pool.remove(replaceables[2]) # remove the 3rd item to make room for a 3rd medallion
+                pool.append(self.create_item('Maiden Medallion'))
+
 
         # check the "Oops! All Rockets" option. From the option description:
         #     Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 
@@ -271,50 +370,6 @@ class ResidentEvil2Remake(World):
             for from_item in items_to_replace:
                 pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
 
-        if self._format_option_text(self.options.extra_clock_tower_items) == 'True':
-            replaceables = [item for item in pool if item.name == 'Handgun Ammo' or item.name == 'Blue Herb']
-            
-            for x in range(3):
-                pool.remove(replaceables[x])
-
-            pool.append(self.create_item('Mechanic Jack Handle'))
-            pool.append(self.create_item('Small Gear'))
-            pool.append(self.create_item('Large Gear'))
-
-        if self._format_option_text(self.options.extra_medallions) == 'True':
-            replaceables = [item for item in pool if item.name == 'Handgun Ammo' or item.name == 'Blue Herb']
-            
-            for x in range(2):
-                pool.remove(replaceables[x])
-
-            pool.append(self.create_item('Lion Medallion'))
-            pool.append(self.create_item('Unicorn Medallion'))
-
-            # The A scenarios have Maiden forced to the Bolt Cutters vanilla location, which is guaranteed to be accessible.
-            # B scenarios have it randomized, so add a second randomized Maiden.
-            if self._get_scenario().lower() == 'b':
-                pool.remove(replaceables[2]) # remove the 3rd item to make room for a 3rd medallion
-                pool.append(self.create_item('Maiden Medallion'))
-
-        if self._format_option_text(self.options.no_first_aid_spray) == 'True':
-            pool = self._replace_pool_item_with(pool, 'First Aid Spray', 'Wooden Boards')
-
-        if self._format_option_text(self.options.no_green_herb) == 'True':
-            pool = self._replace_pool_item_with(pool, 'Green Herb', 'Wooden Boards')
-
-        if self._format_option_text(self.options.no_red_herb) == 'True':
-            pool = self._replace_pool_item_with(pool, 'Red Herb', 'Wooden Boards')
-        
-        if self._format_option_text(self.options.no_gunpowder) == 'True':
-            replaceables = set(item.name for item in pool if 'Gunpowder' in item.name)
-            less_useful_items = set(
-                item.name for item in pool 
-                    if 'Boards' in item.name or 'Cassette' in item.name or 'Film' in item.name or item.name == 'Blue Herb'
-            )
-
-            for from_item in replaceables:
-                to_item = self.random.choice(list(less_useful_items))
-                pool = self._replace_pool_item_with(pool, from_item, to_item)
 
         # if the number of unfilled locations exceeds the count of the pool, fill the remainder of the pool with extra maybe helpful items
         missing_item_count = len(self.multiworld.get_unfilled_locations(self.player)) - len(pool)
@@ -330,10 +385,14 @@ class ResidentEvil2Remake(World):
 
         item = self.item_name_to_item[item_name]
 
-        # double filler, but accounts for key missing and key set to 
-        classification = ItemClassification.progression if 'progression' in item and item['progression'] \
-                        else ItemClassification.useful if 'progression' in item and item['type'] not in ['Lore'] \
-                        else ItemClassification.filler
+        if item.get('progression', False):
+            classification = ItemClassification.progression
+        elif item.get('type', None) not in ['Lore', 'Trap']:
+            classification = ItemClassification.useful
+        elif item.get('type', None) == 'Trap':
+            classification = ItemClassification.trap
+        else: # it's Lore
+            classification = ItemClassification.filler
 
         return Item(item['name'], classification, item['id'], player=self.player)
 
@@ -346,7 +405,9 @@ class ResidentEvil2Remake(World):
             "scenario": self._get_scenario(),
             "difficulty": self._get_difficulty(),
             "unlocked_typewriters": self._format_option_text(self.options.unlocked_typewriters).split(", "),
-            "starting_weapon": self._get_starting_weapon()
+            "starting_weapon": self._get_starting_weapon(),
+            "damage_traps_can_kill": self._format_option_text(self.options.damage_traps_can_kill) == 'True',
+            "death_link": self._format_option_text(self.options.death_link) == 'Yes' # why is this yes? lol
         }
 
         return slot_data
@@ -366,18 +427,29 @@ class ResidentEvil2Remake(World):
                 if re.match('^[_]+$', from_weapon):
                     from_weapon = '(Added)'
 
-                spoiler_handle.write(f"\n{from_weapon.ljust(30, ' ')} -> {to_weapon}")
+                if isinstance(to_weapon, list):
+                    spoiler_handle.write(f"\n{from_weapon.ljust(30, ' ')} -> {to_weapon[0]}")
+
+                    if len(to_weapon) > 1:
+                        for weapon in to_weapon[1:]:
+                            spoiler_handle.write(f"\n{''.ljust(30, ' ')} -> {weapon}")
+                else:
+                    spoiler_handle.write(f"\n{from_weapon.ljust(30, ' ')} -> {to_weapon}")
             
             spoiler_handle.write(f"\n\nAmmo Swaps ({self.multiworld.player_name[self.player]}):\n")
 
             for from_ammo, to_ammo in self.replacement_ammo[self.player].items():
-                if isinstance(to_ammo, list):
-                    spoiler_handle.write(f"\n{from_ammo.ljust(30, ' ')} -> {to_ammo[0]}")
+                ammo_set = list(set(to_ammo))
+                ammo_count = len([l for _, l in self.source_locations[self.player].items() if l.get('original_item', None) == ammo_set[0]])                    
 
-                    for ammo in to_ammo[1:]:
-                        spoiler_handle.write(f"\n{''.ljust(30, ' ')} -> {ammo}")
-                else:
-                    spoiler_handle.write(f"\n{from_ammo.ljust(30, ' ')} -> {to_ammo}")
+                spoiler_handle.write(f"\n{from_ammo.ljust(30, ' ')} -> {ammo_set[0]} ({ammo_count})")
+
+                if len(ammo_set) > 1:
+                    for ammo in ammo_set[1:]:
+                        ammo_count = len([l for _, l in self.source_locations[self.player].items() if l.get('original_item', None) == ammo])                    
+                        spoiler_handle.write(f"\n{''.ljust(30, ' ')} -> {ammo} ({ammo_count})")
+
+            spoiler_handle.write("\n\n(Ammo totals are for the whole campaign, not per swap/category.)")
 
     def _has_items(self, state: CollectionState, item_names: list) -> bool:
         # if it requires all unique items, just do a state has all

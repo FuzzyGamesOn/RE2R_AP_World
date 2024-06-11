@@ -116,7 +116,7 @@ class CrossScenarioWeapons(Choice):
     Troll: Same as AllAmmo (every weapon + random ammo), except the randomizer removes all but a few weapons. 
             Ammo and upgrades for the removed weapons are still included to troll you.
             
-    NOTE: The options for "Random Ammo", "All Ammo", and "Troll" are not guaranteed to be reasonably beatable. Especially Troll. >:)"""
+    NOTE: The options for "Full Ammo", "All Ammo", and "Troll" are not guaranteed to be reasonably beatable. Especially Troll. >:)"""
     display_name = "Cross-Scenario Weapons"
     option_none = 0
     option_starting = 1
@@ -184,6 +184,58 @@ class NoGunpowder(Choice):
     option_true = 1
     default = 0
 
+class AddDamageTraps(Choice):
+    """Enabling this adds traps to your game that, when received, deal 1 health state of damage to you. e.g., if you're "Fine", first one puts you in "Caution". 
+    By default, these traps cannot kill you, but the "Damage Traps Can Kill" option can make them lethal.
+    """
+    display_name = "Add Damage Traps"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+class DamageTrapCount(NamedRange):
+    """While the "AddDamageTraps" option is enabled, this option specifies how many of this trap should be placed.
+    """
+    default = 10
+    range_start = 0
+    range_end = 30 
+    display_name = "Damage Trap Count"
+    special_range_names = {
+        "disabled": 0,
+        "half": 15,
+        "all": 30,
+    }
+
+class DamageTrapsCanKill(Choice):
+    """Enabling this while "Add Damage Traps" is enabled will allow the damage traps to drop your health state below "Danger". As in, they can kill you. 
+    """
+    display_name = "Damage Traps Can Kill"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+class AddPoisonTraps(Choice):
+    """Enabling this adds traps to your game that, when received, apply the Poisoned status effect.
+    Warning: There are typically only 11 Blue Herbs in the game, so you can potentially run out!
+    """
+    display_name = "Add Poison Traps"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+class PoisonTrapCount(NamedRange):
+    """While the "AddPoisonTraps" option is enabled, this option specifies how many of this trap should be placed.
+    """
+    default = 10
+    range_start = 0
+    range_end = 30 
+    display_name = "Poison Trap Count"
+    special_range_names = {
+        "disabled": 0,
+        "half": 15,
+        "all": 30,
+    }
+
 # making this mixin so we can keep actual game options separate from AP core options that we want enabled
 # not sure why this isn't a mixin in core atm, anyways
 @dataclass
@@ -209,4 +261,9 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     no_green_herb: NoGreenHerb
     no_red_herb: NoRedHerb
     no_gunpowder: NoGunpowder
+    add_damage_traps: AddDamageTraps
+    damage_trap_count: DamageTrapCount
+    damage_traps_can_kill: DamageTrapsCanKill
+    add_poison_traps: AddPoisonTraps
+    poison_trap_count: PoisonTrapCount
 

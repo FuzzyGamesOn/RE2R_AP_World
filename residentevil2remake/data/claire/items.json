@@ -630,6 +630,21 @@
     },
 
     {
+        "type": "Trap",
+        "name": "Damage Trap",
+        "decimal": "",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Trap",
+        "name": "Poison Trap",
+        "decimal": "",
+        "count": 1,
+        "progression": 0
+    },
+
+    {
         "type": "Lore",
         "name": "USS Digital Video Cassette",
         "decimal": "170",
