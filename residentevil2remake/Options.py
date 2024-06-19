@@ -66,7 +66,7 @@ class ExtraClockTowerItems(Choice):
     display_name = "Extra Clock Tower Items"
     option_false = 0
     option_true = 1
-    default = 0
+    default = 1
 
 class ExtraMedallions(Choice):
     """On your first visit to RPD, the medallions are required to leave. 
@@ -78,7 +78,7 @@ class ExtraMedallions(Choice):
     display_name = "Extra Medallions"
     option_false = 0
     option_true = 1
-    default = 0
+    default = 1
 
 class AllowProgressionInLabs(Choice):
     """The randomizer has a tendency to put other player's progression towards the end in Labs, which can cause some lengthy BK. 

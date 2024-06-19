@@ -289,7 +289,7 @@ class ResidentEvil2Remake(World):
         # add extras for Clock Tower items or Medallions, if configured
         # doing this before "oops all X" to make use of extra Handgun Ammo spots, too
         if self._format_option_text(self.options.extra_clock_tower_items) == 'True':
-            replaceables = [item for item in pool if item.name == 'Handgun Ammo']
+            replaceables = [item for item in pool if 'Boards' in item.name or item.name == 'Handgun Ammo' or item.name == 'Large-Caliber Handgun Ammo']
             
             for x in range(3):
                 pool.remove(replaceables[x])
@@ -299,7 +299,7 @@ class ResidentEvil2Remake(World):
             pool.append(self.create_item('Large Gear'))
 
         if self._format_option_text(self.options.extra_medallions) == 'True':
-            replaceables = [item for item in pool if item.name == 'Handgun Ammo']
+            replaceables = [item for item in pool if 'Boards' in item.name or item.name == 'Handgun Ammo' or item.name == 'Large-Caliber Handgun Ammo']
             
             for x in range(2):
                 pool.remove(replaceables[x])
@@ -377,6 +377,20 @@ class ResidentEvil2Remake(World):
         if missing_item_count > 0:
             for x in range(missing_item_count):
                 pool.append(self.create_item('Blue Herb'))
+
+        # Make any items that result in a really quick BK either early or local items, so the BK time is reduced
+        early_items = {}       
+
+        for item_name, item_qty in early_items.items():
+            if item_qty > 0:
+                self.multiworld.early_items[self.player][item_name] = item_qty
+
+        local_items = {}       
+        local_items["Fuse - Main Hall"] = len([i for i in pool if i.name == "Fuse - Main Hall"])
+
+        for item_name, item_qty in local_items.items():
+            if item_qty > 0:
+                self.options.local_items.value.add(item_name)
 
         self.multiworld.itempool += pool
             
