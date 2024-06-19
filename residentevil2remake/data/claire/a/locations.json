@@ -1219,8 +1219,8 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/ReferenceRoom"
     },
     {
-        "name": "Outside Door",
-        "region": "Clock Tower",
+        "name": "Outside Clock Tower Door",
+        "region": "Main Hall 3F",
         "original_item": "Green Herb",
         "condition": {},    
         "item_object": "sm70_001",

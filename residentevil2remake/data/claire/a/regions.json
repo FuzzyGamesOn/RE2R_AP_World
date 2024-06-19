@@ -163,6 +163,10 @@
         "name": "Private Collection Room",
         "zone_id": 1
     },
+    {
+        "name": "Main Hall 3F",
+        "zone_id": 1
+    },
 
     {
         "name": "Secret Room",

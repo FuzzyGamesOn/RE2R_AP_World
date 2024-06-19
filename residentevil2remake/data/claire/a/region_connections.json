@@ -199,13 +199,20 @@
     },
     { 
         "from": "Library",
+        "to": "Main Hall 3F",
+        "condition": {
+            "items": ["Mechanic Jack Handle"]
+        }
+    },
+    {
+        "from": "Main Hall 3F",
         "to": "Clock Tower",
         "condition": {
-            "items": ["Mechanic Jack Handle", "Small Gear", "Large Gear", "Boxed Electronic Part 2"]
+            "items": ["Small Gear", "Large Gear", "Boxed Electronic Part 2"]
         }
     },
     { 
-        "from": "Library",
+        "from": "Main Hall 3F",
         "to": "East Storage Room",
         "condition": {
             "items": ["Mechanic Jack Handle"]
@@ -213,15 +220,14 @@
     },
     { 
         "from": "East Storage Room",
+        "to": "Side Stairs"
+    },
+    { 
+        "from": "East Storage Room",
         "to": "Small Storage Room",
         "condition": {
             "items": ["Heart Key", "Diamond Key", "Mechanic Jack Handle"]
         }
-    },
-    { 
-        "from": "East Storage Room",
-        "to": "Side Stairs",
-        "limitation": "ONE_SIDED_DOOR"
     },
     { 
         "from": "Main Hall",
