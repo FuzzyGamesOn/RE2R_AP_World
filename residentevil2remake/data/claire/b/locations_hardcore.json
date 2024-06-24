@@ -179,5 +179,15 @@
         "name": "Main Desk 2",
         "region": "Main Hall",
         "remove": true
+    },
+    {
+        "name": "Locker",
+        "region": "Operators Room",
+        "remove": true
+    },
+    {
+        "name": "Left Table",
+        "region": "Workroom",
+        "remove": true
     }
 ]
