@@ -142,5 +142,20 @@
         "item_object": "sm70_201",
         "parent_object": "sm70_201",
         "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common"
+    },
+    {
+    	"name": "Side Table",
+    	"region": "West Storage Room",
+    	"remove": true
+    },
+    {
+    	"name": "Left Table",
+    	"region": "Workroom",
+    	"remove": true
+    },
+    {
+    	"name": "Before Sanitation Spray",
+    	"region": "Biotesting Lab",
+    	"remove": true
     }
 ]
