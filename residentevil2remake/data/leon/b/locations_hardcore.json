@@ -172,13 +172,18 @@
         "remove": true
     },
     {
-        "name": "Locker",
-        "region": "Operators Room",
-        "remove": true
+    	"name": "Side Table",
+    	"region": "West Storage Room",
+    	"remove": true
     },
     {
-        "name": "Left Table",
-        "region": "Workroom",
-        "remove": true
+    	"name": "Left Table",
+    	"region": "Workroom",
+    	"remove": true
+    },
+    {
+    	"name": "Before Sanitation Spray",
+    	"region": "Biotesting Lab",
+    	"remove": true
     }
 ]
