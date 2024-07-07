@@ -175,9 +175,24 @@
         "region": "Main Hall",
         "remove": true
     },
-	{
+    {
         "name": "Main Desk 2",
         "region": "Main Hall",
         "remove": true
+    },
+    {
+    	"name": "Side Table",
+    	"region": "West Storage Room",
+    	"remove": true
+    },
+    {
+    	"name": "Left Table",
+    	"region": "Workroom",
+    	"remove": true
+    },
+    {
+    	"name": "Before Sanitation Spray",
+    	"region": "Biotesting Lab",
+    	"remove": true
     }
 ]
