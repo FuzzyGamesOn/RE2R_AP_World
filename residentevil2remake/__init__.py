@@ -206,7 +206,7 @@ class ResidentEvil2Remake(World):
             # if the hip pouches option exceeds the number of hip pouches in the pool, reduce it to the number in the pool
             if starting_hip_pouches > len(hip_pouches):
                 starting_hip_pouches = len(hip_pouches)
-                self.options.starting_hip_pouches = len(hip_pouches)
+                self.options.starting_hip_pouches.value = len(hip_pouches)
 
             for x in range(starting_hip_pouches):
                 self.multiworld.push_precollected(hip_pouches[x]) # starting inv
