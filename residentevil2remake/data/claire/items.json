@@ -606,6 +606,14 @@
     },
     {
         "type": "Upgrade",
+        "name": "High Capacity Mag - MQ 11",
+        "upgrades": "MQ 11",
+        "decimal": "58",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
         "name": "Shoulder Stock - GM 79",
         "upgrades": "GM 79",
         "decimal": "64",
