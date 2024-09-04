@@ -51,7 +51,7 @@ class Data:
         ###
 
         hardcore_locations_table = load_data_file(character, scenario, 'locations_hardcore.json')
-        hardcore_regions = [loc['region'] for loc in hardcore_locations_table]
+        hardcore_regions = set([loc['region'] for loc in hardcore_locations_table])
 
         if len(hardcore_regions) > 0:
             Data.region_table.extend([
@@ -67,18 +67,27 @@ class Data:
         ###
         # Add standard region connections
         ###
-            
+
+        added_connections = []
         new_region_connections_table = load_data_file(character, scenario, 'region_connections.json')
-        Data.region_connections_table.extend([
-            {
-                **conn,
-                'from': conn['from'] + scenario_suffix if conn['from'] != 'Menu' else conn['from'], # add the scenario abbreviation so they're unique
-                'to': conn['to'] + scenario_suffix if conn['to'] != 'Menu' else conn['to'], # add the scenario abbreviation so they're unique
-                'character': character,
-                'scenario': scenario
-            }
-            for conn in new_region_connections_table
-        ])
+
+        for conn in new_region_connections_table:
+            connection_path = f"{conn['from'] + scenario_suffix} to {conn['to'] + scenario_suffix}"
+
+            if connection_path in added_connections:
+                continue
+
+            added_connections.append(connection_path)
+
+            Data.region_connections_table.append(
+                {
+                    **conn,
+                    'from': conn['from'] + scenario_suffix if conn['from'] != 'Menu' else conn['from'], # add the scenario abbreviation so they're unique
+                    'to': conn['to'] + scenario_suffix if conn['to'] != 'Menu' else conn['to'], # add the scenario abbreviation so they're unique
+                    'character': character,
+                    'scenario': scenario
+                }
+            )
 
         ###
         # Add hardcore region connections
@@ -91,10 +100,19 @@ class Data:
                     suffix_from = scenario_suffix_hardcore if conn['from'] in hardcore_regions else scenario_suffix
                     suffix_to = scenario_suffix_hardcore if conn['to'] in hardcore_regions else scenario_suffix
 
+                    connection_from_name = conn['from'] + suffix_from
+                    connection_to_name = conn['to'] + suffix_to
+                    connection_path = f"{connection_from_name} to {connection_to_name}"
+
+                    if connection_path in added_connections:
+                        continue
+
+                    added_connections.append(connection_path)
+
                     new_region_connection = {
                         **conn,
-                        'from': conn['from'] + suffix_from, 
-                        'to': conn['to'] + suffix_to, 
+                        'from': connection_from_name, 
+                        'to': connection_to_name, 
                         'character': character,
                         'scenario': scenario    
                     }
