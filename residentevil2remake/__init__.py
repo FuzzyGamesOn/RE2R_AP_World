@@ -482,7 +482,7 @@ class ResidentEvil2Remake(World):
             return True
 
     def _format_option_text(self, option) -> str:
-        return re.sub('\w+\(', '', str(option)).rstrip(')')
+        return re.sub(r'\w+\(', '', str(option)).rstrip(')')
     
     def _get_locations_for_scenario(self, character, scenario) -> dict:
         locations_pool = {
@@ -493,7 +493,7 @@ class ResidentEvil2Remake(World):
         # if the player chose hardcore, take out any matching standard difficulty locations
         if self._format_option_text(self.options.difficulty) == 'Hardcore':
             for hardcore_loc in [loc for loc in locations_pool.values() if loc['difficulty'] == 'hardcore']:
-                check_loc_region = re.sub('H\)$', ')', hardcore_loc['region']) # take the Hardcore off the region name
+                check_loc_region = re.sub(r'H\)$', ')', hardcore_loc['region']) # take the Hardcore off the region name
                 check_loc_name = hardcore_loc['name']
 
                 # if there's a standard location with matching name and region, it's obsoleted in hardcore, remove it
