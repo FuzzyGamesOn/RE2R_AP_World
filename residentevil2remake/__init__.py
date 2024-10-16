@@ -139,7 +139,7 @@ class ResidentEvil2Remake(World):
                 # since Labs progression option doesn't matter for force_item'd or not randomized locations
                 # we check for zone id > 3 because 3 is typically Sewers, and anything beyond that is Labs / endgame stuff
                 elif self._format_option_text(self.options.allow_progression_in_labs) == 'False' and region_data['zone_id'] > 3:
-                    location.item_rule = lambda item: item.classification != ItemClassification.progression and item.classification != ItemClassification.progression_skip_balancing
+                    location.item_rule = lambda item: not item.advancement
                 # END if
 
                 if 'forbid_item' in location_data and location_data['forbid_item']:
@@ -148,7 +148,7 @@ class ResidentEvil2Remake(World):
                     if not current_item_rule:
                         current_item_rule = lambda x: True
 
-                    location.item_rule = lambda item: RE2RLocation.is_item_forbidden(item, location_data, current_item_rule)
+                    location.item_rule = lambda item, location_data=location_data: RE2RLocation.is_item_forbidden(item, location_data, current_item_rule)
 
                 # now, set rules for the location access
                 if "condition" in location_data and "items" in location_data["condition"]:
