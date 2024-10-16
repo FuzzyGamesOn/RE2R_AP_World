@@ -1204,12 +1204,12 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FE/ChiefStore"
     },
     {
-        "name": "After Helicopter Crash",
-        "region": "East Hallway 2F",
+        "name": "Room with Helicopter Crash",
+        "region": "Roof",
         "original_item": "Red Herb",
         "force_item": "Boxed Electronic Part 2",
         "condition": {
-            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key", "Diamond Key"]
+            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Heart Key", "Diamond Key"]
         },
         "item_object": "sm70_002",
         "parent_object": "sm70_002_RedHerb",
