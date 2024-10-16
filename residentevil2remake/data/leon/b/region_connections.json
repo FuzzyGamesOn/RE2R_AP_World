@@ -176,15 +176,12 @@
     { 
         "from": "STARS Office Hallway",
         "to": "Lounge - RPD",
-        "condition": {
-            "items": ["Battery"]
-        }
+        "limitation": "ONE_SIDED_DOOR"
     },
 	{ 
-        "from": "Lounge - RPD",
-        "to": "Library",
-        "condition": {},
-        "limitation": "ONE_SIDED_DOOR"
+        "from": "Library",
+        "to": "Lounge - RPD",
+        "condition": {}
     },
     { 
         "from": "Main Hall",
@@ -263,7 +260,10 @@
         "from": "Side Stairs",
         "to": "Interrogation Room",
         "condition": {
-            "items": ["Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
+            "items": [
+                ["Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"],
+                ["Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle"]
+            ]
         }
     },
     { 
@@ -275,7 +275,10 @@
         "from": "Balcony",
         "to": "Roof",
         "condition": {
-            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
+            "items": [
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"],
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle"]
+            ]
         }
     },
     { 
@@ -293,7 +296,7 @@
         "from": "Main Hall",
         "to": "Secret Room",
         "condition": {
-            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key", "Bolt Cutters"]
+            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
         }
     },
     { 
