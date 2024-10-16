@@ -139,8 +139,8 @@
         "limitation": "ONE_SIDED_DOOR"
     },
     { 
-        "from": "Lounge - RPD",
-        "to": "Library",
+        "from": "Library",
+        "to": "Lounge - RPD",
         "condition": {}
     },
     { 
