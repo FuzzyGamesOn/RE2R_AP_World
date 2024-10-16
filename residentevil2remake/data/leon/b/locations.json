@@ -1598,8 +1598,7 @@
         "condition": {},    
         "item_object": "sm73_411",
         "parent_object": "T_ji_crank",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/KeyItem",
-        "randomized": 0
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/KeyItem"
     },
     {
         "name": "Downstairs Location 1",
