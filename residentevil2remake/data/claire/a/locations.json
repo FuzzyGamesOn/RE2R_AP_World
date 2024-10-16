@@ -1204,8 +1204,8 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/2F/2FE/ChiefStore"
     },
     {
-        "name": "After Helicopter Crash",
-        "region": "East Hallway 2F",
+        "name": "Room with Helicopter Crash",
+        "region": "Roof",
         "original_item": "Red Herb",
         "force_item": "Boxed Electronic Part 2",
         "condition": {
