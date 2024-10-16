@@ -114,7 +114,8 @@
         "condition": {},    
         "item_object": "sm70_201",
         "parent_object": "sm70_201_Inkribbon_Narea",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/InkRibbon"
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/InkRibbon",
+        "forbid_item": ["Sewers Key", "T-Bar Handle"]
     },
     {
         "name": "Front Desk",
@@ -123,7 +124,8 @@
         "condition": {},    
         "item_object": "sm70_201",
         "parent_object": "sm70_201_Inkribbon_Tarea",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/InkRibbon"
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/InkRibbon",
+        "forbid_item": ["Sewers Key", "T-Bar Handle"]
     },
     {
         "name": "Beside Typewriter",
@@ -132,7 +134,8 @@
         "condition": {},    
         "item_object": "sm70_201",
         "parent_object": "sm70_201_Inkribbon_Garea",
-        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/InkRibbon"
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/InkRibbon",
+        "forbid_item": ["Sewers Key", "T-Bar Handle"]
     },
     {
         "name": "Boxes By Typewriter",
@@ -141,7 +144,8 @@
         "condition": {},    
         "item_object": "sm70_201",
         "parent_object": "sm70_201",
-        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common"
+        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common",
+        "forbid_item": ["Sewers Key", "T-Bar Handle"]
     },
     {
     	"name": "Side Table",
