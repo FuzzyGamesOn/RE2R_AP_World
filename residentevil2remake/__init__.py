@@ -212,6 +212,21 @@ class ResidentEvil2Remake(World):
                 self.multiworld.push_precollected(hip_pouches[x]) # starting inv
                 pool.remove(hip_pouches[x])
 
+        # check the starting ink ribbons option and add as precollected, removing from pool and replacing with junk
+        starting_ink_ribbons = int(self.options.starting_ink_ribbons)
+
+        if self._format_option_text(self.options.difficulty) == 'Hardcore' and starting_ink_ribbons > 0:
+            ink_ribbons = [item for item in pool if item.name == 'Ink Ribbon'] # 12+ total in every campaign, I think
+
+            # if the ink ribbons option exceeds the number of ink ribbons in the pool, reduce it to the number in the pool
+            if starting_ink_ribbons > len(ink_ribbons):
+                starting_ink_ribbons = len(ink_ribbons)
+                self.options.starting_ink_ribbons.value = len(ink_ribbons)
+
+            for x in range(starting_ink_ribbons):
+                self.multiworld.push_precollected(ink_ribbons[x]) # starting inv
+                pool.remove(ink_ribbons[x])
+
         # check the bonus start option and add some heal items and ammo packs as precollected / starting items
         if self._format_option_text(self.options.bonus_start) == 'True':
             for x in range(3): self.multiworld.push_precollected(self.create_item('First Aid Spray'))

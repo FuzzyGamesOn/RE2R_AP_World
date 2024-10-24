@@ -43,7 +43,20 @@ class StartingHipPouches(NamedRange):
     special_range_names = {
         "disabled": 0,
         "half": 3,
-        "all": 6,
+        "all": 6
+    }
+
+class StartingInkRibbons(NamedRange):
+    """If playing Hardcore, the number of ink ribbons you want to start the game with, to a max of 12.
+    Any that you start with are taken out of the item pool and replaced with junk."""
+    default = 0
+    range_start = 0
+    range_end = 12
+    display_name = "Starting Ink Ribbons"
+    special_range_names = {
+        "disabled": 0,
+        "half": 6,
+        "all": 12
     }
 
 class BonusStart(Choice):
@@ -203,7 +216,7 @@ class DamageTrapCount(NamedRange):
     special_range_names = {
         "disabled": 0,
         "half": 15,
-        "all": 30,
+        "all": 30
     }
 
 class DamageTrapsCanKill(Choice):
@@ -233,7 +246,7 @@ class PoisonTrapCount(NamedRange):
     special_range_names = {
         "disabled": 0,
         "half": 15,
-        "all": 30,
+        "all": 30
     }
 
 # making this mixin so we can keep actual game options separate from AP core options that we want enabled
@@ -249,6 +262,7 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     difficulty: Difficulty
     unlocked_typewriters: UnlockedTypewriters
     starting_hip_pouches: StartingHipPouches
+    starting_ink_ribbons: StartingInkRibbons
     bonus_start: BonusStart
     extra_clock_tower_items: ExtraClockTowerItems
     extra_medallions: ExtraMedallions
