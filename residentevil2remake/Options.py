@@ -141,6 +141,34 @@ class CrossScenarioWeapons(Choice):
     option_troll = 7
     default = 0
 
+class AmmoPackModifier(Choice):
+    """This option, when set, will modify the quantity of ammo in each ammo pack. This can make the game easier or much, much harder.
+    The available options are:
+
+    None: You realized that consistency in ammo pack quantities is one of the few true joys in life, and this causes you to not modify them at all.
+    Max: Each ammo pack will contain the maximum amount of ammo that the game allows. (i.e., you will never, ever run out of ammo.)
+    Double: Each ammo pack will contain twice as much ammo as it normally contains.
+    Half: Each ammo pack will contain half as much ammo as it normally contains.
+    Only Three: Each ammo pack will have an ammo count of 3.
+    Only Two: Each ammo pack will have an ammo count of 2.
+    Only One: Each ammo pack will have an ammo count of 1. (Yes, your Handgun Ammo pack will have a single bullet in it.)
+    Random By Type: Each ammo type's ammo pack will have a random quantity of ammo, and you will get that same quantity of ammo from every pack for that ammo type.
+        (For example, you receive a Shotgun Shells pack that has a random quantity of 7 ammo. All Shotgun Shells packs will have a quantity of 7.)
+    Random Always: Each ammo pack will have a random quantity of ammo, and that quantity will be randomized every time.
+        (For example, you receive a Shotgun Shells pack that has a random quantity of 7 ammo. Your next Shotgun Shells pack has a quantity of 4, next has 2, etc.)
+
+    NOTE: The options for "Only Three", "Only Two", "Only One", "Random By Type", and "Random Always" are not guaranteed to be reasonably beatable."""
+    display_name = "Ammo Pack Modifier"
+    option_none = 0
+    option_max = 1
+    option_double = 2
+    option_half = 3
+    option_only_three = 4
+    option_only_two = 5
+    option_only_one = 6
+    option_random_by_type = 7
+    option_random_always = 8
+
 class OopsAllRockets(Choice):
     """Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 
     (Except progression weapons, of course.)"""
@@ -268,6 +296,7 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     extra_medallions: ExtraMedallions
     allow_progression_in_labs: AllowProgressionInLabs
     cross_scenario_weapons: CrossScenarioWeapons
+    ammo_pack_modifier: AmmoPackModifier
     oops_all_rockets: OopsAllRockets
     oops_all_grenades: OopsAllGrenades
     oops_all_knives: OopsAllKnives

@@ -435,6 +435,7 @@ class ResidentEvil2Remake(World):
             "difficulty": self._get_difficulty(),
             "unlocked_typewriters": self._format_option_text(self.options.unlocked_typewriters).split(", "),
             "starting_weapon": self._get_starting_weapon(),
+            "ammo_pack_modifier": self._format_option_text(self.options.ammo_pack_modifier),
             "damage_traps_can_kill": self._format_option_text(self.options.damage_traps_can_kill) == 'True',
             "death_link": self._format_option_text(self.options.death_link) == 'Yes' # why is this yes? lol
         }
