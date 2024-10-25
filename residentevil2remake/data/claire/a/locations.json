@@ -2261,7 +2261,9 @@
         "name": "Annette's Wristband",
         "region": "Security Room",
         "original_item": "Upgrade Chip - Admin",
-        "condition": {},    
+        "condition": {
+            "items": ["Signal Modulator", "ID Wristband - General Staff", "ID Wristband - Senior Staff"]
+        },    
         "item_object": "CFPlay_EV750",
         "parent_object": "",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Scenario/S05_0200/Claire_S05_0200/GuradRoom",
