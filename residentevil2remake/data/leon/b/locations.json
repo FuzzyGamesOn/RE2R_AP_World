@@ -146,6 +146,17 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/PressRoom"
     },
     {
+        "name": "Hiding Place Drawer",
+        "region": "Press Room",
+        "original_item": "Flamethrower Fuel",
+        "condition": {
+            "items": ["Film - Hiding Place"]
+        },    
+        "item_object": "sm70_110",
+        "parent_object": "ItemPos_TreasureA_Leon",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/PressRoom/DrawerDesk_1FEPressRoom_TreasurePhotoItem"
+    },
+    {
         "name": "Second Stall",
         "region": "Bathroom",
         "original_item": "First Aid Spray",
@@ -306,10 +317,9 @@
         "region": "West Office",
         "original_item": "High-Capacity Magazine - Matilda",
         "condition": {},    
-        "item_object": "sm44_006_LeonDesk01A_control",
-        "parent_object": "",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/WestOffice/LeonDesk",
-        "randomized": 0
+        "item_object": "sm71_901",
+        "parent_object": "ItemPositionsCollider",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0100/Leon_S02_0100/1FW/WestOffice/LeonDesk"
     },
     {
         "name": "Outside Darkroom 1",
@@ -418,6 +428,28 @@
         "item_object": "sm70_101",
         "parent_object": "LEON_sm70_101_ShotgunB",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/2F/2FW/Corrider"
+    },
+    {
+        "name": "Hiding Place Drawer",
+        "region": "STARS Office",
+        "original_item": "Red Dot Sight - Lightning Hawk",
+        "condition": {
+            "items": ["Film - Hiding Place"]
+        },    
+        "item_object": "sm77_005",
+        "parent_object": "ItemPos_TreasureB_Leon",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0200/Leon_S02_0200/2FW/StarsOffice/WeskerDesk_LEON"
+    },
+    {
+        "name": "Hiding Place Secret Film",
+        "region": "STARS Office",
+        "original_item": "Film - Rising Rookie",
+        "condition": {
+            "items": ["Film - Hiding Place"]
+        },    
+        "item_object": "sm72_201",
+        "parent_object": "itempos_sm72_201_FilmB_PosweskerDesk",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0200/Leon_S02_0200/2FW/StarsOffice/WeskerDesk_LEON"
     },
     {
         "name": "Boxes By Door",
