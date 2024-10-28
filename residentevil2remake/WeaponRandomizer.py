@@ -174,7 +174,7 @@ class WeaponRandomizer():
         #    and swap their orig & force to an upgrade at random for one of the new random weapons.
         #    Then, fill in any gaps with the first value in replacement ammo to match the starting weapon's ammo.
         location_names_with_upgrades = []
-        available_upgrades = [item["name"] for item in all_upgrades if item.get('upgrades') in self.world.replacement_weapons[self.world.player].values()] # match to new weapons
+        available_upgrades = [item["name"] for item in all_upgrades if item.get('upgrades') in self.world.replacement_weapons[self.world.player].values() or item.get('upgrades') == self.world.starting_weapon[self.world.player]] # match to new weapons
 
         # NEED TO CHECK LOCATIONS BELOW TO MAKE SURE THEY'RE ACTUALLY RANDO'D
         # (i.e., L-Hawk Laser Sight)
