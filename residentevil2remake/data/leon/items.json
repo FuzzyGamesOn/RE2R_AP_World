@@ -332,16 +332,14 @@
         "name": "Film - Commemorative",
         "decimal": "74",
         "count": 1,
-        "progression": 1,
-        "comments": "The hex is a guess and could be wrong."
+        "progression": 1
     },
     {
         "type": "Gating",
         "name": "Film - Lion Statue",
-        "decimal": "73",
+        "decimal": "76",
         "count": 1,
-        "progression": 1,
-        "comments": "The hex is a guess and could be wrong."
+        "progression": 1
     },
     {
         "type": "Gating",
@@ -360,10 +358,9 @@
     {
         "type": "Gating",
         "name": "Film - Rising Rookie",
-        "decimal": "76",
+        "decimal": "73",
         "count": 1,
-        "progression": 1,
-        "comments": "The hex is a guess and could be wrong."
+        "progression": 1
     },
 
     {
