@@ -319,8 +319,8 @@
         "to": "Interrogation Room",
         "condition": {
             "items": [
-                ["Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank", "Fuse - Break Room Hallway"],
-                ["Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Fuse - Break Room Hallway"]
+                ["Spade Key", "Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank", "Fuse - Break Room Hallway"],
+                ["Spade Key", "Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Fuse - Break Room Hallway"]
             ]
         }
     },
@@ -334,8 +334,8 @@
         "to": "Roof",
         "condition": {
             "items": [
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key", "Fuse - Break Room Hallway", "Square Crank"],
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key", "Fuse - Break Room Hallway", "Mechanic Jack Handle"]
+                ["Spade Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Break Room Hallway", "Square Crank"],
+                ["Spade Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Break Room Hallway", "Mechanic Jack Handle"]
             ]
         }
     },

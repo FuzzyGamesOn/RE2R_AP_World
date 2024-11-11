@@ -331,7 +331,7 @@
         "from": "Side Stairs",
         "to": "Observation Room",
         "condition": {
-            "items": ["Heart Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"]
+            "items": ["Spade Key", "Heart Key", "Diamond Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"]
         }
     },
     { 
@@ -350,7 +350,7 @@
         "from": "Balcony",
         "to": "Roof",
         "condition": {
-            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"]
+            "items": ["Spade Key", "Heart Key", "Diamond Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"]
         }
     },
     { 
