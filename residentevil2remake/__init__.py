@@ -423,7 +423,8 @@ class ResidentEvil2Remake(World):
         else: # it's Lore
             classification = ItemClassification.filler
 
-        return Item(item['name'], classification, item['id'], player=self.player)
+        new_item = Item(item['name'], classification, item['id'], player=self.player)
+        return new_item
 
     def get_filler_item_name(self) -> str:
         return "Wooden Boards"
@@ -498,7 +499,7 @@ class ResidentEvil2Remake(World):
             # else, it requires some duplicates, so let's group them up and do some has w/ counts
             else:
                 item_counts = {
-                    item_name: len([i for i in item_names if i == item_name]) for item_name in set_of_requirements # e.g., { Spare Key: 2 }
+                    item_name: len([i for i in set_of_requirements if i == item_name]) for item_name in set_of_requirements # e.g., { Spare Key: 2 }
                 }
                 missing_an_item = False
 
