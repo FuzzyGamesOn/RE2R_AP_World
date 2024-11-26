@@ -106,7 +106,6 @@ class EarlyMedallions(Choice):
     option_true = 1
     default = 0
 
-
 class AllowProgressionInLabs(Choice):
     """The randomizer has a tendency to put other player's progression towards the end in Labs, which can cause some lengthy BK. 
     This option seeks to avoid that.
