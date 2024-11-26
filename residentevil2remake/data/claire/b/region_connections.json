@@ -300,13 +300,13 @@
     },
     { 
         "from": "Parking Garage",
-        "to": "Elevator Controls Room",
+        "to": "Elevator Control Room",
         "condition": {
             "items": ["Diamond Key"]
         }
     },
     { 
-        "from": "Elevator Controls Room",
+        "from": "Elevator Control Room",
         "to": "Chief's Office",
         "condition": {}
     },
