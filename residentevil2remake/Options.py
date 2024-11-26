@@ -93,6 +93,20 @@ class ExtraMedallions(Choice):
     option_true = 1
     default = 1
 
+class EarlyMedallions(Choice):
+    """If you find yourself in BK a lot waiting on medallions to leave RPD, this option could be for you!
+
+    This option will mark your RPD medallions as "early" items, meaning they will show up in the 1st sphere of someone's playthrough.
+    Also, if you combine this early option with the extra option above, at least some of those extra medallions will *also* be in the 1st sphere.
+
+    False: Normal, you get your medallions when you get them. Could be a while.
+    True: Now, your medallions will likely all show up before you complete RPD 1's location checks."""
+    display_name = "Early Medallions"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+
 class AllowProgressionInLabs(Choice):
     """The randomizer has a tendency to put other player's progression towards the end in Labs, which can cause some lengthy BK. 
     This option seeks to avoid that.
@@ -294,6 +308,7 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     bonus_start: BonusStart
     extra_clock_tower_items: ExtraClockTowerItems
     extra_medallions: ExtraMedallions
+    early_medallions: EarlyMedallions
     allow_progression_in_labs: AllowProgressionInLabs
     cross_scenario_weapons: CrossScenarioWeapons
     ammo_pack_modifier: AmmoPackModifier
