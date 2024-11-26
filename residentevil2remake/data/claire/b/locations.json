@@ -206,7 +206,7 @@
         "region": "Safety Deposit Room",
         "original_item": "Gunpowder",
         "condition": {
-            "items": ["Spare Key"]
+            "items": ["Spare Key", "Spare Key"]
         },    
         "item_object": "sm70_205",
         "parent_object": "sm70_205_gunpowder_Locker102",
@@ -248,7 +248,7 @@
         "region": "Safety Deposit Room",
         "original_item": "Flame Rounds",
         "condition": {
-            "items": ["Spare Key"]
+            "items": ["Spare Key", "Spare Key"]
         },
         "item_object": "sm70_108",
         "parent_object": "sm70_108_FireB_Locker208",
