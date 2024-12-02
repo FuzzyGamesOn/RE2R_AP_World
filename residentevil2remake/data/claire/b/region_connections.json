@@ -377,9 +377,29 @@
     },
     { 
         "from": "Lower Waterway",
+        "to": "Workroom",
+        "condition": {
+            "items": ["T-Bar Handle"]
+        }
+    },
+    { 
+        "from": "Workroom",
         "to": "Upper Waterway",
+        "condition": {}
+    },
+    { 
+        "from": "Upper Waterway",
+        "to": "Lower Waterway",
         "condition": {
             "items": ["Rook Plug"]
+        },
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
+        "from": "Upper Waterway",
+        "to": "Water Injection Chamber",
+        "condition": {
+            "items": ["Sewers Key"]
         }
     },
     { 
@@ -394,26 +414,6 @@
         "to": "Underground Stairs",
         "condition": {},
         "limitation": "ONE_SIDED_DOOR"
-    },
-    { 
-        "from": "Workroom",
-        "to": "Upper Waterway",
-        "condition": {},
-        "limitation": "ONE_SIDED_DOOR"
-    },
-    { 
-        "from": "Upper Waterway",
-        "to": "Water Injection Chamber",
-        "condition": {
-            "items": ["Sewers Key"]
-        }
-    },
-    { 
-        "from": "Lower Waterway",
-        "to": "Workroom",
-        "condition": {
-            "items": ["T-Bar Handle"]
-        }
     },
     { 
         "from": "Lower Waterway",
