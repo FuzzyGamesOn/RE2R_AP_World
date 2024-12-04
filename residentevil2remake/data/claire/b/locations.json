@@ -150,7 +150,7 @@
         "region": "Press Room",
         "original_item": "Needle Cartridges",
         "condition": {
-            "items": ["Film - Hiding Place"]
+            "items": ["Fuse - Main Hall", "Film - Hiding Place"]
         },    
         "item_object": "sm70_109",
         "parent_object": "ItemPos_TreasureA_Claire",
@@ -440,7 +440,7 @@
         "region": "STARS Office",
         "original_item": "High Capacity Mag - MQ 11",
         "condition": {
-            "items": ["Film - Hiding Place"]
+            "items": ["Fuse - Main Hall", "Film - Hiding Place"]
         },    
         "item_object": "sm77_006",
         "parent_object": "ItemPos_TreasureB_Claire",
@@ -451,7 +451,7 @@
         "region": "STARS Office",
         "original_item": "Film - Rising Rookie",
         "condition": {
-            "items": ["Film - Hiding Place"]
+            "items": ["Fuse - Main Hall", "Film - Hiding Place"]
         },    
         "item_object": "sm72_201",
         "parent_object": "itempos_sm72_201_FilmB_PosweskerDesk",
