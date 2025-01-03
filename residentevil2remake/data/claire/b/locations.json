@@ -1190,7 +1190,7 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/NightDutyRoom"
     },
     {
-        "name": "Locker",
+        "name": "Locker Near Observation Room",
         "region": "Side Stairs",
         "original_item": "High-Grade Gunpowder - White",
         "condition": {},    
@@ -1494,7 +1494,16 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/Magnum"
     },
     {
-        "name": "In Front of Gate",
+        "name": "Southwestern Trash",
+        "region": "Upper Waterway",
+        "original_item": "Large-Caliber Handgun Ammo",
+        "condition": {},    
+        "item_object": "sm70_111",
+        "parent_object": "sm70_111",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/HundGun"
+    },
+    {
+        "name": "Northeastern Trash",
         "region": "Upper Waterway",
         "original_item": "High-Powered Rounds",
         "condition": {},    
@@ -1504,7 +1513,7 @@
     },
     {
         "name": "Downed Zombie",
-        "region": "Upper Waterway",
+        "region": "Waterway Overpass",
         "original_item": "USS Digital Video Cassette",
         "condition": {},    
         "item_object": "sm73_405",
@@ -1530,7 +1539,7 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Gunpowder"
     },
     {
-        "name": "Down Elevator",
+        "name": "Ride the Elevator",
         "region": "Workers Break Room",
         "original_item": "High-Powered Rounds",
         "condition": {},    
@@ -1555,15 +1564,6 @@
         "item_object": "sm70_208",
         "parent_object": "sm70_208_ww_2",
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/Chemical_claire"
-    },
-    {
-        "name": "Before the Waterslide",
-        "region": "Lower Waterway",
-        "original_item": "Combat Knife",
-        "condition": {},    
-        "item_object": "WP4500",
-        "parent_object": "WP4500_1_ww_01",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Knife"
     },
     {
         "name": "Before Left Path",
@@ -1665,8 +1665,8 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/KeyItem"
     },
     {
-        "name": "Downstairs Location",
-        "region": "Treatment Pool Room",
+        "name": "On Boxes",
+        "region": "Central Hub",
         "original_item": "Green Herb",
         "condition": {},    
         "item_object": "sm70_001",
@@ -1674,8 +1674,8 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/green_herb"
     },
     {
-        "name": "End of Left Path",
-        "region": "Lower Waterway",
+        "name": "On Ledge",
+        "region": "Central Hub",
         "original_item": "Hand Grenade",
         "condition": {},    
         "item_object": "WP6200",
@@ -1719,15 +1719,6 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/KeyItem"
     },
     {
-        "name": "Rook Panel Outside",
-        "region": "Workroom",
-        "original_item": "Rook Plug",
-        "condition": {},    
-        "item_object": "sm73_115",
-        "parent_object": "ItemPositions_1",
-        "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_611_0/gimmick"
-    },
-    {
         "name": "Right Table",
         "region": "Workroom",
         "original_item": "Large-Caliber Handgun Ammo",
@@ -1737,22 +1728,31 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/HundGun"
     },
     {
+        "name": "Rook Panel",
+        "region": "Waterway Overpass",
+        "original_item": "Rook Plug",
+        "condition": {},    
+        "item_object": "sm73_115",
+        "parent_object": "ItemPositions_1",
+        "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_611_0/gimmick"
+    },
+    {
+        "name": "Before the Waterslide",
+        "region": "Waterway Overpass",
+        "original_item": "Combat Knife",
+        "condition": {},    
+        "item_object": "WP4500",
+        "parent_object": "WP4500_1_ww_01",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Knife"
+    },
+    {
         "name": "Keys Panel",
-        "region": "Treatment Pool Room",
+        "region": "Bottom Waterway",
         "original_item": "Sewers Key",
         "condition": {},    
         "item_object": "sm73_429",
         "parent_object": "Key_Gesui_ura",
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/KeyItem"
-    },
-    {
-        "name": "At Water Gate",
-        "region": "Upper Waterway",
-        "original_item": "Large-Caliber Handgun Ammo",
-        "condition": {},    
-        "item_object": "sm70_111",
-        "parent_object": "sm70_111",
-        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/HundGun"
     },
     {
         "name": "Before Climb",
@@ -1764,7 +1764,7 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/green_herb"
     },
     {
-        "name": "Left of 2nd Mutant",
+        "name": "Ledge After 2nd Mutant",
         "region": "Bottom Waterway",
         "original_item": "Submachine Gun Ammo",
         "condition": {},    
@@ -1846,7 +1846,7 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/G2Area"
     },
     {
-        "name": "Location 1",
+        "name": "Pile of Metal",
         "region": "Proposed Water Purification Room",
         "original_item": "Submachine Gun Ammo",
         "condition": {},    
@@ -1855,7 +1855,7 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common/G2Area_Claire"
     },
     {
-        "name": "Location 2",
+        "name": "Next to Crane Switch",
         "region": "Proposed Water Purification Room",
         "original_item": "Large-Caliber Handgun Ammo",
         "condition": {},    
@@ -1864,7 +1864,7 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/G2Area"
     },
     {
-        "name": "Location 3",
+        "name": "On Barrel",
         "region": "Proposed Water Purification Room",
         "original_item": "Flash Grenade",
         "condition": {},    
@@ -1873,7 +1873,7 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/G2Area"
     },
     {
-        "name": "Location 4",
+        "name": "Stabbed Into Sack",
         "region": "Proposed Water Purification Room",
         "original_item": "Combat Knife",
         "condition": {},    

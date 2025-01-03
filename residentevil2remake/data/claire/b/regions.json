@@ -242,6 +242,14 @@
         "zone_id": 3
     },
     {
+        "name": "Waterway Overpass",
+        "zone_id": 3
+    },
+    {
+        "name": "Central Hub",
+        "zone_id": 3
+    },
+    {
         "name": "Workroom",
         "zone_id": 3
     },
