@@ -144,11 +144,17 @@ class WeaponRandomizer():
             only_weapons.append(random_weapon)
             weapons = [w for w in weapons if w['name'] != random_weapon]
 
+        weapons_names = [w['name'] for w in weapons]
         only_weapons_names = [w['name'] for w in only_weapons]
 
         for loc in self._get_weapon_locations():
             if loc.get('force_item', None) is not None and loc.get('force_item') not in only_weapons_names:
                 loc['force_item'] = 'Wooden Boards'
+
+                # if the original item is a weapon and is not one of the troll weapons, replace it too (so it doesn't end up in the item pool anyways)
+                if loc.get('original_item', None) is not None and loc.get('original_item') in weapons_names and loc.get('original_item') not in only_weapons_names:
+                    loc['original_item'] = 'Wooden Boards'
+
                 loc_key = self._get_location_key(loc['region'], loc['name'])
                 self.world.source_locations[self.world.player][loc_key] = loc
                 continue
@@ -366,15 +372,6 @@ class WeaponRandomizer():
         weapons = []
 
         for loc in self._get_weapon_locations():
-            original_item = loc.get("original_item", None)
-            original_item = self.world.item_name_to_item.get(original_item, {})
-
-            if original_item.get("type") == "Weapon" and original_item.get("ammo", None):
-                if original_item not in weapons:
-                    weapons.append(original_item)
-
-                continue
-
             force_item = loc.get("force_item", None)
             force_item = self.world.item_name_to_item.get(force_item, {})
 
@@ -384,25 +381,34 @@ class WeaponRandomizer():
 
                 continue
 
+            original_item = loc.get("original_item", None)
+            original_item = self.world.item_name_to_item.get(original_item, {})
+
+            if original_item.get("type") == "Weapon" and original_item.get("ammo", None):
+                if original_item not in weapons:
+                    weapons.append(original_item)
+
+                continue
+
         return weapons
     
     def _get_weapon_locations(self):
         locations = []
 
         for _, loc in self._get_locations().items():
-            original_item = loc.get("original_item", None)
-            original_item = self.world.item_name_to_item.get(original_item, {})
+            force_item = loc.get("force_item", None)
+            force_item = self.world.item_name_to_item.get(force_item, {})
 
-            if original_item.get("type") == "Weapon" and original_item.get("ammo", None):
+            if force_item.get("type") == "Weapon" and force_item.get("ammo", None):
                 if loc not in locations:
                     locations.append(loc)
 
                 continue
 
-            force_item = loc.get("force_item", None)
-            force_item = self.world.item_name_to_item.get(force_item, {})
+            original_item = loc.get("original_item", None)
+            original_item = self.world.item_name_to_item.get(original_item, {})
 
-            if force_item.get("type") == "Weapon" and force_item.get("ammo", None):
+            if original_item.get("type") == "Weapon" and original_item.get("ammo", None):
                 if loc not in locations:
                     locations.append(loc)
 
@@ -430,6 +436,7 @@ class WeaponRandomizer():
         return available_locations
     
     def _get_locations_having(self, item_name: str) -> list:
+        # this doesn't need to check force_item because it's used for ammo only
         return [loc for _, loc in self._get_locations().items() if loc.get('original_item') == item_name]
 
     def _split_ammo_by_level(self, level: Optional[str] = None):
