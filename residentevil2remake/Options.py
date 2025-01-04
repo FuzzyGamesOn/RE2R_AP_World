@@ -141,8 +141,10 @@ class CrossScenarioWeapons(Choice):
     All Ammo: Same as All (adds every weapon from all 4 scenarios), and randomizes how much ammo is placed for each in the world.
     Troll: Same as AllAmmo (every weapon + random ammo), except the randomizer removes all but a few weapons. 
             Ammo and upgrades for the removed weapons are still included to troll you.
-            
-    NOTE: The options for "Full Ammo", "All Ammo", and "Troll" are not guaranteed to be reasonably beatable. Especially Troll. >:)"""
+    Troll Starting: Same as Troll, except the randomizer removes all weapons except for your starting weapon.
+            Ammo and upgrades for the removed weapons are still included as in Troll.
+
+    NOTE: The options for "Full Ammo", "All Ammo", and "Troll" / "Troll Starting" are not guaranteed to be reasonably beatable. Especially the Troll ones. >:)"""
     display_name = "Cross-Scenario Weapons"
     option_none = 0
     option_starting = 1
@@ -152,6 +154,7 @@ class CrossScenarioWeapons(Choice):
     option_full_ammo = 5
     option_all_ammo = 6   
     option_troll = 7
+    option_troll_starting = 8
     default = 0
 
 class AmmoPackModifier(Choice):
