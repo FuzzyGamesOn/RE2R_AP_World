@@ -133,25 +133,27 @@ class WeaponRandomizer():
     ###
     # CrossScenarioWeapons == "Troll"
     ###
-    def troll(self):
+    def troll(self, weapon_count=2):
         # self.all_ammo() is called during processing of options, and self.troll() is specifically called after upgrades, gunpowder, etc.
 
         weapons = [w for w in self._get_weapons_from_locations() if w['name'] != self.world.starting_weapon[self.world.player]]
         only_weapons = [self.world.item_name_to_item.get(self.world.starting_weapon[self.world.player])]
 
-        for _ in range(2):
+        for _ in range(weapon_count):
             random_weapon = self.random.choice(weapons)
             only_weapons.append(random_weapon)
             weapons = [w for w in weapons if w['name'] != random_weapon]
 
+        only_weapons_names = [w['name'] for w in only_weapons]
+
         for loc in self._get_weapon_locations():
-            if loc.get('force_item', None) is not None and loc.get('force_item') not in only_weapons:
+            if loc.get('force_item', None) is not None and loc.get('force_item') not in only_weapons_names:
                 loc['force_item'] = 'Wooden Boards'
                 loc_key = self._get_location_key(loc['region'], loc['name'])
                 self.world.source_locations[self.world.player][loc_key] = loc
                 continue
 
-            if loc.get('original_item', None) is not None and loc.get('original_item') not in only_weapons:
+            if loc.get('original_item', None) is not None and loc.get('original_item') not in only_weapons_names:
                 loc['original_item'] = 'Wooden Boards'
                 loc_key = self._get_location_key(loc['region'], loc['name'])
                 self.world.source_locations[self.world.player][loc_key] = loc
@@ -163,6 +165,12 @@ class WeaponRandomizer():
                     if w['name'] != self.world.starting_weapon[self.world.player]
             ]
         }
+
+    ###
+    # CrossScenarioWeapons == "TrollStarting"
+    ###
+    def troll_starting(self):
+        return self.troll(0) # remove all weapons except the starting weapon
 
     ###
     # Function to be called after ANY weapon rando, so that the upgrades for the included weapons are also included
