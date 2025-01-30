@@ -359,6 +359,28 @@ class ResidentEvil2Remake(World):
                     pool.append(self.create_item("Combat Knife"))
                     break
 
+        # check the "Oops! All Miniguns" option. From the option description:
+        #     Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 
+        #     (Except progression weapons, of course.)
+        if self._format_option_text(self.options.oops_all_miniguns) == 'True':
+            # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
+            items_to_replace = [
+                item for item in self.item_name_to_item.values() 
+                if 'type' in item and item['type'] in ['Weapon', 'Subweapon', 'Ammo'] and item['name'] != 'Anti-tank Rocket'
+            ]
+            to_item_name = 'Minigun'
+
+            for from_item in items_to_replace:
+                pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
+
+            # Add Marvin's Knife back in. He gets cranky if you don't give him his knife.
+            for item in pool:
+                if item.name == to_item_name:
+                    pool.remove(item)
+                    pool.append(self.create_item("Combat Knife"))
+                    break
+
+
         # check the "Oops! All Grenades" option. From the option description:
         #     Enabling this swaps all weapons, weapon ammo, and subweapons to Grenades. 
         #     (Except progression weapons, of course.)
