@@ -72,9 +72,7 @@ class ResidentEvil2Remake(World):
 
         # if any of the "Oops! All X" weapon options are present, don't bother with weapon randomization since they'll all get overwritten
         #    and since starting with pistol is important to prevent softlock at Gator with all knives
-        if self._format_option_text(self.options.oops_all_rockets) == 'True' or \
-            self._format_option_text(self.options.oops_all_grenades) == 'True' or \
-            self._format_option_text(self.options.oops_all_knives) == 'True':
+        if self.options.oops_all.value != 0:
             return
 
         weapon_rando = self._format_option_text(self.options.cross_scenario_weapons).lower()
@@ -338,84 +336,27 @@ class ResidentEvil2Remake(World):
                     self.multiworld.early_items[self.player][item_name] = item_qty
    
 
-        # check the "Oops! All Rockets" option. From the option description:
-        #     Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 
+        # check the "Oops! All ____" option. From the option description:
+        #     Enabling this swaps all weapons, weapon ammo, and subweapons to the selected weapon. 
         #     (Except progression weapons, of course.)
-        if self._format_option_text(self.options.oops_all_rockets) == 'True':
+        if self.options.oops_all.value != 0:
+            to_item_names = ['None', 'Single Use Rocket', 'Minigun', 'Hand Grenade', 'Combat Knife']
+            
             # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
             items_to_replace = [
                 item for item in self.item_name_to_item.values() 
                 if 'type' in item and item['type'] in ['Weapon', 'Subweapon', 'Ammo'] and item['name'] != 'Anti-tank Rocket'
             ]
-            to_item_name = 'Single Use Rocket'
 
             for from_item in items_to_replace:
-                pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
+                pool = self._replace_pool_item_with(pool, from_item['name'], to_item_names[self.options.oops_all.value])
 
             # Add Marvin's Knife back in. He gets cranky if you don't give him his knife.
             for item in pool:
-                if item.name == to_item_name:
+                if item.name == to_item_names[self.options.oops_all.value]:
                     pool.remove(item)
                     pool.append(self.create_item("Combat Knife"))
                     break
-
-        # check the "Oops! All Miniguns" option. From the option description:
-        #     Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 
-        #     (Except progression weapons, of course.)
-        if self._format_option_text(self.options.oops_all_miniguns) == 'True':
-            # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
-            items_to_replace = [
-                item for item in self.item_name_to_item.values() 
-                if 'type' in item and item['type'] in ['Weapon', 'Subweapon', 'Ammo'] and item['name'] != 'Anti-tank Rocket'
-            ]
-            to_item_name = 'Minigun'
-
-            for from_item in items_to_replace:
-                pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
-
-            # Add Marvin's Knife back in. He gets cranky if you don't give him his knife.
-            for item in pool:
-                if item.name == to_item_name:
-                    pool.remove(item)
-                    pool.append(self.create_item("Combat Knife"))
-                    break
-
-
-        # check the "Oops! All Grenades" option. From the option description:
-        #     Enabling this swaps all weapons, weapon ammo, and subweapons to Grenades. 
-        #     (Except progression weapons, of course.)
-        if self._format_option_text(self.options.oops_all_grenades) == 'True':
-            # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
-            items_to_replace = [
-                item for item in self.item_name_to_item.values() 
-                if 'type' in item and item['type'] in ['Weapon', 'Subweapon', 'Ammo'] and item['name'] != 'Anti-tank Rocket'
-            ]
-            to_item_name = 'Hand Grenade'
-
-            for from_item in items_to_replace:
-                pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
-
-            # Add Marvin's Knife back in. He gets cranky if you don't give him his knife.
-            for item in pool:
-                if item.name == to_item_name:
-                    pool.remove(item)
-                    pool.append(self.create_item("Combat Knife"))
-                    break
-
-        # check the "Oops! All Knives" option. From the option description:
-        #     Enabling this swaps all weapons, weapon ammo, and subweapons to Combat Knives. 
-        #     (Except progression weapons, of course.)
-        if self._format_option_text(self.options.oops_all_knives) == 'True':
-            # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
-            items_to_replace = [
-                item for item in self.item_name_to_item.values() 
-                if 'type' in item and item['type'] in ['Weapon', 'Subweapon', 'Ammo'] and item['name'] != 'Anti-tank Rocket'
-            ]
-            to_item_name = 'Combat Knife'
-
-            for from_item in items_to_replace:
-                pool = self._replace_pool_item_with(pool, from_item['name'], to_item_name)
-
 
         # if the number of unfilled locations exceeds the count of the pool, fill the remainder of the pool with extra maybe helpful items
         missing_item_count = len(self.multiworld.get_unfilled_locations(self.player)) - len(pool)
