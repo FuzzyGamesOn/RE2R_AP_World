@@ -504,7 +504,13 @@
         "count": 400,
         "progression": 0
     },
-
+    {
+        "type": "Weapon",
+        "name": "Mini-Minigun",
+        "decimal": "50",
+        "count": 50,
+        "progression": 0
+    },
     {
         "type": "Subweapon",
         "name": "Combat Knife",

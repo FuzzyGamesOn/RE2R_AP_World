@@ -340,7 +340,7 @@ class ResidentEvil2Remake(World):
         #     Enabling this swaps all weapons, weapon ammo, and subweapons to the selected weapon. 
         #     (Except progression weapons, of course.)
         if self.options.oops_all.value != 0:
-            to_item_names = ['None', 'Single Use Rocket', 'Minigun', 'Hand Grenade', 'Combat Knife']
+            to_item_names = ['None', 'Single Use Rocket', 'Mini-Minigun', 'Hand Grenade', 'Combat Knife']
             
             # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
             items_to_replace = [
