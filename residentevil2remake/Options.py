@@ -189,7 +189,7 @@ class OopsAll(Choice):
     """Enabling this swaps all weapons, weapon ammo, and subweapons to the selected weapon. 
     (Except progression weapons, of course.)"""
     display_name = "Oops! All ____"
-    option_none = 0
+    option_disabled = 0
     option_rockets = 1
     option_miniguns = 2
     option_grenades = 3

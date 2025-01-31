@@ -339,8 +339,8 @@ class ResidentEvil2Remake(World):
         # check the "Oops! All ____" option. From the option description:
         #     Enabling this swaps all weapons, weapon ammo, and subweapons to the selected weapon. 
         #     (Except progression weapons, of course.)
-        if self.options.oops_all.value != 0:
-            to_item_names = ['None', 'Single Use Rocket', 'Mini-Minigun', 'Hand Grenade', 'Combat Knife']
+        if self._format_option_text(self.options.oops_all) != 'Disabled':
+            to_item_names = ['Disabled', 'Single Use Rocket', 'Mini-Minigun', 'Hand Grenade', 'Combat Knife']
             
             # leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
             items_to_replace = [
