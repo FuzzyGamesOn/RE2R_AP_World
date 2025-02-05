@@ -366,10 +366,10 @@ class ResidentEvil2Remake(World):
 
             # Add Marvin's Knife back in. He gets cranky if you don't give him his knife.
             for item in pool:
-                    if item.name == oops_items_map[oops_all_flag]:
-                        pool.remove(item)
-                        pool.append(self.create_item("Combat Knife"))
-                        break
+                if item.name == oops_items_map[oops_all_flag]:
+                    pool.remove(item)
+                    pool.append(self.create_item("Combat Knife"))
+                    break
 
 
         # if the number of unfilled locations exceeds the count of the pool, fill the remainder of the pool with extra maybe helpful items
