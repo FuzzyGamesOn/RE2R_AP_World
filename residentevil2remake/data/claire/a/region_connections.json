@@ -433,11 +433,17 @@
         }
     },
     { 
-        "from": "Bottom Waterway",
-        "to": "Upper Waterway",
+        "from": "Upper Waterway",
+        "to": "Bottom Waterway",
         "condition": {
             "items": ["T-Bar Handle"]
         }
+    },   
+    { 
+        "from": "Bottom Waterway",
+        "to": "Upper Waterway",
+        "condition": {},
+        "limitation": "ONE_SIDED_DOOR"
     },
     { 
         "from": "Monitor Room",
