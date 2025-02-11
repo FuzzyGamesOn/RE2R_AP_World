@@ -332,21 +332,21 @@
         "name": "Film - Commemorative",
         "decimal": "74",
         "count": 1,
-        "progression": 1
+        "progression": 0
     },
     {
         "type": "Gating",
         "name": "Film - Lion Statue",
         "decimal": "76",
         "count": 1,
-        "progression": 1
+        "progression": 0
     },
     {
         "type": "Gating",
         "name": "Film - 3F Locker",
         "decimal": "75",
         "count": 1,
-        "progression": 1
+        "progression": 0
     },
     {
         "type": "Gating",
@@ -360,7 +360,7 @@
         "name": "Film - Rising Rookie",
         "decimal": "73",
         "count": 1,
-        "progression": 1
+        "progression": 0
     },
 
     {
