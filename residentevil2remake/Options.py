@@ -193,6 +193,14 @@ class OopsAllRockets(Choice):
     option_true = 1
     default = 0
 
+class OopsAllMiniguns(Choice):
+    """Enabling this swaps all weapons, weapon ammo, and subweapons to Miniguns. 
+    (Except progression weapons, of course.)"""
+    display_name = "Oops! All Miniguns"
+    option_false = 0
+    option_true = 1
+    default = 0
+
 class OopsAllGrenades(Choice):
     """Enabling this swaps all weapons, weapon ammo, and subweapons to Grenades. 
     (Except progression weapons, of course.)"""
@@ -208,6 +216,7 @@ class OopsAllKnives(Choice):
     option_false = 0
     option_true = 1
     default = 0
+
 
 class NoFirstAidSpray(Choice):
     """Enabling this swaps all first aid sprays to filler or less useful items. 
@@ -315,6 +324,7 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     cross_scenario_weapons: CrossScenarioWeapons
     ammo_pack_modifier: AmmoPackModifier
     oops_all_rockets: OopsAllRockets
+    oops_all_miniguns: OopsAllMiniguns
     oops_all_grenades: OopsAllGrenades
     oops_all_knives: OopsAllKnives
     no_first_aid_spray: NoFirstAidSpray
