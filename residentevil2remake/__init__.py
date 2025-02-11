@@ -417,6 +417,7 @@ class ResidentEvil2Remake(World):
 
     def fill_slot_data(self) -> Dict[str, Any]:
         slot_data = {
+            "apworld_version": self.apworld_release_version,
             "character": self._get_character(),
             "scenario": self._get_scenario(),
             "difficulty": self._get_difficulty(),
