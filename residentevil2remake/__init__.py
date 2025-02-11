@@ -30,7 +30,7 @@ class RE2RLocation(Location):
         return RE2RLocation.stack_names(*area_names)
 
     def is_item_forbidden(item, location_data, current_item_rule):
-        return current_item_rule and ('forbid_item' not in location_data or item.name not in location_data['forbid_item'])
+        return current_item_rule(item) and ('forbid_item' not in location_data or item.name not in location_data['forbid_item'])
 
 
 class ResidentEvil2Remake(World):
@@ -152,7 +152,7 @@ class ResidentEvil2Remake(World):
                     if not current_item_rule:
                         current_item_rule = lambda x: True
 
-                    location.item_rule = lambda item, location_data=location_data: RE2RLocation.is_item_forbidden(item, location_data, current_item_rule)
+                    location.item_rule = lambda item, loc_data=location_data, cur_rule=current_item_rule: RE2RLocation.is_item_forbidden(item, loc_data, cur_rule)
 
                 # now, set rules for the location access
                 if "condition" in location_data and "items" in location_data["condition"]:
