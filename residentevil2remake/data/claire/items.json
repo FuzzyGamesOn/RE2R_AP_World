@@ -340,21 +340,21 @@
         "name": "Film - Commemorative",
         "decimal": "74",
         "count": 1,
-        "progression": 1
+        "progression": 0
     },
     {
         "type": "Gating",
         "name": "Film - Lion Statue",
         "decimal": "76",
         "count": 1,
-        "progression": 1
+        "progression": 0
     },
     {
         "type": "Gating",
         "name": "Film - 3F Locker",
         "decimal": "75",
         "count": 1,
-        "progression": 1
+        "progression": 0
     },
     {
         "type": "Gating",
@@ -368,7 +368,7 @@
         "name": "Film - Rising Rookie",
         "decimal": "73",
         "count": 1,
-        "progression": 1
+        "progression": 0
     },
 
     {
@@ -448,7 +448,7 @@
         "name": "SLS 60",
         "groups": ["pistol", "light_gun"],
         "decimal": "9",
-        "count": 10,
+        "count": 5,
         "progression": 0,
         "ammo": "Handgun Ammo"
     },
@@ -457,7 +457,7 @@
         "name": "Quickdraw Army",
         "groups": ["pistol", "light_gun"],
         "decimal": "4",
-        "count": 10,
+        "count": 6,
         "progression": 0,
         "ammo": "Large-Caliber Handgun Ammo"
     },
@@ -466,7 +466,7 @@
         "name": "GM 79",
         "groups": ["grenade", "grenade launcher", "medium_gun"],
         "decimal": "42",
-        "count": 0,
+        "count": 1,
         "progression": 0,
         "ammo": "Flame Rounds"
     },
@@ -475,7 +475,7 @@
         "name": "JMB Hp3",
         "groups": ["pistol", "medium_gun"],
         "decimal": "3",
-        "count": 10,
+        "count": 13,
         "progression": 0,
         "ammo": "Handgun Ammo"
     },
