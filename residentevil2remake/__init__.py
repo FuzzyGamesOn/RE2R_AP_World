@@ -233,14 +233,22 @@ class ResidentEvil2Remake(World):
 
         # check the bonus start option and add some heal items and ammo packs as precollected / starting items
         if self._format_option_text(self.options.bonus_start) == 'True':
-            for x in range(3): self.multiworld.push_precollected(self.create_item('First Aid Spray'))
+            count_spray = 3
+            count_ammo = 4
+            count_grenades = 3
+            count_bangs = 3
+
+            for x in range(count_spray): self.multiworld.push_precollected(self.create_item('First Aid Spray'))
 
             if self.player in self.starting_weapon:
                 starting_weapon = self.starting_weapon[self.player]
                 starting_weapon_ammo = self.item_name_to_item[starting_weapon].get('ammo')
-                for x in range(4): self.multiworld.push_precollected(self.create_item(starting_weapon_ammo))
+                for x in range(count_ammo): self.multiworld.push_precollected(self.create_item(starting_weapon_ammo))
             else:
-                for x in range(4): self.multiworld.push_precollected(self.create_item('Handgun Ammo'))
+                for x in range(count_ammo): self.multiworld.push_precollected(self.create_item('Handgun Ammo'))
+
+            for x in range(count_grenades): self.multiworld.push_precollected(self.create_item('Hand Grenade'))
+            for x in range(count_bangs): self.multiworld.push_precollected(self.create_item('Flash Grenade'))
 
         # do all the "no X" options here so we have more empty spots to use for traps, if needed
         if self._format_option_text(self.options.no_first_aid_spray) == 'True':
