@@ -22,10 +22,11 @@ class Scenario(Choice):
 class Difficulty(Choice):
     """Standard: Most people should play on this.
     Hardcore: Good luck, and thanks for testing deaths. Kappa
-    Assisted: No. Do Standard."""
+    Assisted: ... Okay, fine. No judgment here. :)"""
     display_name = "Difficulty to Play On"
     option_standard = 0
     option_hardcore = 1
+    option_assisted = 2
     default = 0
 
 class UnlockedTypewriters(OptionList):
