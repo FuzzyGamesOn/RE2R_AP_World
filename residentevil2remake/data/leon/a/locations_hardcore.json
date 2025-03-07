@@ -18,7 +18,7 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/DarkRoom/Locker_sm70_100_HandgunB_HardInkribbon"
     },
     {
-        "name": "Table By Door",
+        "name": "Table by Door",
         "region": "East Office",
         "original_item": "Ink Ribbon",
         "condition": {},    
@@ -54,7 +54,7 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/InkRibbon"
     },
     {
-        "name": "Chair Across Room",
+        "name": "Chair across Room",
         "region": "Interrogation Room",
         "original_item": "Ink Ribbon",
         "condition": {},    
@@ -72,7 +72,7 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/InkRibbon"
     },
     {
-        "name": "Barrels Before Alligator Cutscene",
+        "name": "Barrels before Alligator Cutscene",
         "region": "Sewers Entrance",
         "original_item": "Ink Ribbon",
         "condition": {},    
@@ -99,7 +99,7 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Inkribbon"
     },
     {
-        "name": "Trash Can By Saving Ada",
+        "name": "Trash Can by Saving Ada",
         "region": "Main Power Room",
         "original_item": "Ink Ribbon",
         "condition": {},    
@@ -138,9 +138,9 @@
         "forbid_item": ["Sewers Key", "T-Bar Handle"]
     },
     {
-        "name": "Boxes By Typewriter",
+        "name": "Boxes by Typewriter",
         "region": "Path to Super Tyrant",
-        "original_item": "Ink Ribbon",
+        "original_item": "",
         "condition": {},    
         "item_object": "sm70_201",
         "parent_object": "sm70_201",
