@@ -1295,7 +1295,8 @@
         "condition": {},    
         "item_object": "sm70_111",
         "parent_object": "sm70_111_handgunB_2nd",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN",
+        "forbid_item": ["Square Crank"]
     },
     {
         "name": "Outside by Stairs 1",
@@ -1304,7 +1305,8 @@
         "condition": {},    
         "item_object": "sm70_001",
         "parent_object": "sm70_001_GreenHerb",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN",
+        "forbid_item": ["Square Crank"]
     },
     {
         "name": "Outside by Stairs 2",
@@ -1313,7 +1315,8 @@
         "condition": {},    
         "item_object": "sm70_001",
         "parent_object": "sm70_001_GreenHerb",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN",
+        "forbid_item": ["Square Crank"]
     },
     {
         "name": "Table",
@@ -1334,7 +1337,8 @@
         },
         "item_object": "sm70_002",
         "parent_object": "sm70_002_RedHerb",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FE/Corrider"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FE/Corrider",
+        "forbid_item": ["Square Crank"]
     },
     {
         "name": "Printer",

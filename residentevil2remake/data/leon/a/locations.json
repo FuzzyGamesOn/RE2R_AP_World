@@ -1214,7 +1214,8 @@
         "condition": {},    
         "item_object": "sm70_100",
         "parent_object": "sm70_100_handgunB",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN",
+        "forbid_item": ["Square Crank"]
     },
     {
         "name": "Outside by Stairs 1",
@@ -1223,7 +1224,8 @@
         "condition": {},    
         "item_object": "sm70_001",
         "parent_object": "sm70_001_GreenHerb",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN",
+        "forbid_item": ["Square Crank"]
     },
     {
         "name": "Outside by Stairs 2",
@@ -1232,7 +1234,8 @@
         "condition": {},    
         "item_object": "sm70_001",
         "parent_object": "sm70_001_GreenHerb",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN",
+        "forbid_item": ["Square Crank"]
     },
     {
         "name": "Desk",
@@ -1241,7 +1244,8 @@
         "condition": {},    
         "item_object": "sm70_205",
         "parent_object": "sm70_205_gunpowder",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN",
+        "forbid_item": ["Square Crank"]
     },
     {
         "name": "Whiteboard",
@@ -1251,7 +1255,8 @@
         "condition": {},    
         "item_object": "sm73_300",
         "parent_object": "sm73_300_ClubKey",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN",
+        "forbid_item": ["Square Crank"]
     },
     {
         "name": "Room with Helicopter Crash",
@@ -1265,7 +1270,8 @@
         },
         "item_object": "sm70_002",
         "parent_object": "sm70_002_RedHerb",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FE/Corrider"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FE/Corrider",
+        "forbid_item": ["Square Crank"]
     },
     {
         "name": "Printer",
