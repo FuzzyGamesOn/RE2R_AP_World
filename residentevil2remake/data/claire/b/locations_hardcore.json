@@ -27,7 +27,7 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/DarkRoom/Locker_sm70_100_HandgunB_HardInkribbon"
     },
     {
-        "name": "Table By Door",
+        "name": "Table by Door",
         "region": "East Office",
         "original_item": "Ink Ribbon",
         "condition": {},    
@@ -81,7 +81,7 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/InkRibbon"
     },
 	{
-        "name": "Shelves Before Printer",
+        "name": "Shelves before Printer",
         "region": "Orphanage",
         "original_item": "Ink Ribbon",
         "condition": {},    
@@ -117,7 +117,7 @@
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Inkribbon"
     },
     {
-        "name": "Trash Can By Saving Sherry",
+        "name": "Trash Can before G2 Fight",
         "region": "Main Power Room",
         "original_item": "Ink Ribbon",
         "condition": {},    
@@ -156,7 +156,7 @@
         "forbid_item": ["Sewers Key", "T-Bar Handle"]
     },
     {
-        "name": "Boxes By Typewriter",
+        "name": "Boxes by Typewriter",
         "region": "Path to G4",
         "original_item": "Ink Ribbon",
         "condition": {},    
