@@ -387,6 +387,11 @@
     },
     { 
         "from": "Upper Waterway",
+        "to": "Waterway Overpass",
+        "condition": {}
+    },
+    { 
+        "from": "Waterway Overpass",
         "to": "Workers Break Room",
         "condition": {
             "items": ["Sewers Key"]
@@ -400,19 +405,19 @@
     },
     { 
         "from": "Workroom",
-        "to": "Upper Waterway",
+        "to": "Waterway Overpass",
         "condition": {},
         "limitation": "ONE_SIDED_DOOR"
     },
     { 
-        "from": "Upper Waterway",
+        "from": "Waterway Overpass",
         "to": "Water Injection Chamber",
         "condition": {
             "items": ["Sewers Key"]
         }
     },
     { 
-        "from": "Upper Waterway",
+        "from": "Waterway Overpass",
         "to": "Lower Waterway",
         "condition": {}
     },
@@ -440,6 +445,17 @@
     },
     { 
         "from": "Treatment Pool Room",
+        "to": "Central Hub",
+        "condition": {}
+    },
+    { 
+        "from": "Central Hub",
+        "to": "Lower Waterway",
+        "condition": {},
+        "limitation": "ONE_SIDED_DOOR"
+    },
+    { 
+        "from": "Central Hub",
         "to": "Bottom Waterway",
         "condition": {
             "items": ["T-Bar Handle"]
@@ -451,6 +467,19 @@
         "condition": {
             "items": ["Queen Plug"]
         }
+    },
+    { 
+        "from": "Upper Waterway",
+        "to": "Bottom Waterway",
+        "condition": {
+            "items": ["T-Bar Handle"]
+        }
+    }, 
+    { 
+        "from": "Bottom Waterway",
+        "to": "Upper Waterway",
+        "condition": {},
+        "limitation": "ONE_SIDED_DOOR"
     },
     { 
         "from": "Monitor Room",
