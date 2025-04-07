@@ -626,6 +626,8 @@
 	{ 
         "from": "Path to Super Tyrant",
         "to": "G5 Ending",
-        "condition": {}
+        "condition": {
+            "items": ["Joint Plug"]
+        }
     }
 ]
