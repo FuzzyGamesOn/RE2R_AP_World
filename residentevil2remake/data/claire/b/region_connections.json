@@ -611,6 +611,8 @@
 	{ 
         "from": "Path to G4",
         "to": "G5 Ending",
-        "condition": {}
+        "condition": {
+            "items": ["Joint Plug"]
+        }
     }
 ]
