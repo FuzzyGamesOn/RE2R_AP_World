@@ -576,8 +576,10 @@
         "condition": {}
     },
     { 
-        "from": "Bioreactors Room",
-        "to": "Path to G4",
-        "condition": {}
+        "from": "Path to G4",
+        "to": "G5 Ending",
+        "condition": {
+            "items": ["Joint Plug"]
+        }
     }
 ]
