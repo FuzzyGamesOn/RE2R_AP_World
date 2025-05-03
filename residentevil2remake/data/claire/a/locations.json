@@ -2374,8 +2374,8 @@
         "region": "Path to G4",
         "condition": {
             "items": [
-                "Spade Key", "Heart Key", "Diamond Key",
-                "Bolt Cutters", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion",
+                "Spade Key", "Heart Key", "Diamond Key", 
+                "Bolt Cutters", "Valve Handle", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", 
                 "Mechanic Jack Handle", "Small Gear", "Large Gear", 
                 "Boxed Electronic Part 1", "Boxed Electronic Part 2", "Parking Garage Key Card",
                 "T-Bar Handle", "Pawn Plug", "Knight Plug", "Bishop Plug", "Rook Plug", "Queen Plug", "King Plug", 
