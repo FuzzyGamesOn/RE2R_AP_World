@@ -1545,8 +1545,8 @@
         "region": "Monitor Room",
         "original_item": "Knight Plug",
         "condition": {},    
-        "item_object": "sm73_154",
-        "parent_object": "ItemPositions_4",
+        "item_object": "Rook_sm42_215_PlugPlace02A_control",
+        "parent_object": "Rook_sm42_215_PlugPlace02A_control",
         "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_632_0/gimmick"
     },
     {
@@ -1554,8 +1554,8 @@
         "region": "Monitor Room",
         "original_item": "Bishop Plug",
         "condition": {},    
-        "item_object": "sm73_114",
-        "parent_object": "ItemPositions_0",
+        "item_object": "King_sm42_215_PlugPlace02A_control",
+        "parent_object": "King_sm42_215_PlugPlace02A_control",
         "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_632_0/gimmick"
     },
     {
@@ -1563,8 +1563,8 @@
         "region": "Monitor Room",
         "original_item": "Pawn Plug",
         "condition": {},    
-        "item_object": "sm73_155",
-        "parent_object": "ItemPositions_5",
+        "item_object": "Pawn_sm42_215_PlugPlace02A_control",
+        "parent_object": "Pawn_sm42_215_PlugPlace02A_control",
         "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_632_0/gimmick"
     },
     {
@@ -1671,8 +1671,8 @@
         "region": "Waterway Overpass",
         "original_item": "Rook Plug",
         "condition": {},    
-        "item_object": "sm73_115",
-        "parent_object": "ItemPositions_1",
+        "item_object": "sm42_208_PlugPlace01A_control",
+        "parent_object": "sm42_208_PlugPlace01A_control",
         "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_611_0/gimmick"
     },
     {
@@ -1716,8 +1716,8 @@
         "region": "Supplies Storage Room",
         "original_item": "Queen Plug",
         "condition": {},    
-        "item_object": "sm73_156",
-        "parent_object": "ItemPositions_3",
+        "item_object": "QueenA_sm42_208_PlugPlace01A_control",
+        "parent_object": "QueenA_sm42_208_PlugPlace01A_control",
         "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_625_0/gimmick"
     },
     {
@@ -1725,8 +1725,8 @@
         "region": "Supplies Storage Room",
         "original_item": "King Plug",
         "condition": {},    
-        "item_object": "sm73_116",
-        "parent_object": "ItemPositions_2",
+        "item_object": "KingB_sm42_208_PlugPlace01A_control",
+        "parent_object": "KingB_sm42_208_PlugPlace01A_control",
         "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_625_0/gimmick",
         "randomized": 0
     },
