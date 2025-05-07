@@ -408,7 +408,7 @@ class ResidentEvil2Remake(World):
             eligible_items = [i for i in pool if i.classification == ItemClassification.filler]
 
             if len(eligible_items) == 0:
-                eligible_items = [i for i in pool if i.name in ["Wooden Boards", "Blue Herb"]]
+                eligible_items = [i for i in pool if i.name in ["Wooden Boards", "Blue Herb", "Gunpowder"]]
 
             if len(eligible_items) == 0:
                 eligible_items = [i for i in pool if i.name in ["Handgun Ammo"]]
