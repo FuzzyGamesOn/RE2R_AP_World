@@ -40,8 +40,8 @@ class ResidentEvil2Remake(World):
     game: str = "Resident Evil 2 Remake"
 
     data_version = 2
-    required_client_version = (0, 4, 4)
-    apworld_release_version = "0.2.5" # defined to show in spoiler log
+    required_client_version = (0, 5, 0)
+    apworld_release_version = "0.2.6" # defined to show in spoiler log
 
     item_id_to_name = { item['id']: item['name'] for item in Data.item_table }
     item_name_to_id = { item['name']: item['id'] for item in Data.item_table }
@@ -400,6 +400,22 @@ class ResidentEvil2Remake(World):
         for item_name, item_qty in local_items.items():
             if item_qty > 0:
                 self.options.local_items.value.add(item_name)
+
+        # Check the item count against the location count, and remove items until they match
+        extra_items = len(pool) - len(self.multiworld.get_unfilled_locations(self.player))
+
+        for _ in range(extra_items):
+            eligible_items = [i for i in pool if i.classification == ItemClassification.filler]
+
+            if len(eligible_items) == 0:
+                eligible_items = [i for i in pool if i.name in ["Wooden Boards", "Blue Herb"]]
+
+            if len(eligible_items) == 0:
+                eligible_items = [i for i in pool if i.name in ["Handgun Ammo"]]
+
+            if len(eligible_items) == 0: break # no items to remove to match, give up
+
+            pool.remove(eligible_items[0])
 
         self.multiworld.itempool += pool
             
