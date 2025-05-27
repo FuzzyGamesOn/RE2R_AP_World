@@ -10,6 +10,7 @@ from ..generic.Rules import set_rule
 from Fill import fill_restrictive
 
 from .Data import Data
+from .Exceptions import RE2ROptionError
 from .Options import RE2ROptions
 from .WeaponRandomizer import WeaponRandomizer
 
@@ -76,7 +77,7 @@ class ResidentEvil2Remake(World):
         #    and since starting with pistol is important to prevent softlock at Gator with all knives
         if self._get_oops_all_options_flag():
             if weapon_rando != "none":
-                raise Exception("Cannot apply 'Oops All' options alongside Cross Scenario Weapons. Please fix your yaml.")
+                raise RE2ROptionError("Cannot apply 'Oops All' options alongside Cross Scenario Weapons. Please fix your yaml.")
             return
 
         weapon_rando = self._format_option_text(self.options.cross_scenario_weapons).lower()
@@ -103,7 +104,7 @@ class ResidentEvil2Remake(World):
         elif weapon_rando == "all ammo" or weapon_rando == "troll" or weapon_rando == "troll starting": 
             weapon_randomizer.all_ammo()
         else:
-            raise "Invalid weapon randomizer value!"
+            raise RE2ROptionError("Invalid weapon randomizer value!")
 
         weapon_randomizer.upgrades() # always swap upgrades after weapons are rando'd
         weapon_randomizer.high_grade_gunpowder() # always split high-grade gunpowder after weapons are rando'd
@@ -361,7 +362,7 @@ class ResidentEvil2Remake(World):
             }
 
             if oops_all_flag not in oops_items_map:
-                raise Exception("Cannot apply multiple 'Oops All' options. Please fix your yaml")
+                raise RE2ROptionError("Cannot apply multiple 'Oops All' options. Please fix your yaml.")
 
             # Leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
             items_to_replace = [
