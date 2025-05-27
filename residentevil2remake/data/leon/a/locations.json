@@ -7,7 +7,7 @@
         "item_object": "sm70_000",
         "parent_object": "sm70_000_Spray",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall",
-        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters", "Combat Knife"]
     },
     {
         "name": "Main Desk",
@@ -17,7 +17,7 @@
         "item_object": "sm70_100",
         "parent_object": "sm70_100_handgunB",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall",
-        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters", "Combat Knife"]
     },
     {
         "name": "Marvin's Knife",
@@ -37,7 +37,7 @@
         "item_object": "sm42_176_HieroglyphicDialLock01A_ForLion_control",
         "parent_object": "",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/LocationFsm_RPD/S02_0000/Hall/LionStatue",
-        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters", "Combat Knife"]
     },
     {
         "name": "2F Couch",
@@ -47,7 +47,7 @@
         "item_object": "sm70_100",
         "parent_object": "sm70_100_HandgunB",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Hall",
-        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters"]
+        "forbid_item": ["Fuse - Main Hall", "Fuse - Break Room Hallway", "Bolt Cutters", "Combat Knife"]
     },
     {
         "name": "Shelves",
