@@ -1147,6 +1147,7 @@
         "name": "Chair",
         "region": "Break Room",
         "original_item": "Fuse - Main Hall",
+        "force_item": "Combat Knife",
         "condition": {},    
         "item_object": "sm73_723",
         "parent_object": "sm73_723_fuse2",
