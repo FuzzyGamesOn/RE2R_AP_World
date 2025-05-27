@@ -1590,8 +1590,8 @@
         "region": "Monitor Room",
         "original_item": "Knight Plug",
         "condition": {},    
-        "item_object": "Rook_sm42_215_PlugPlace02A_control",
-        "parent_object": "Rook_sm42_215_PlugPlace02A_control",
+        "item_object": "Knight_sm42_215_PlugPlace02A_control",
+        "parent_object": "Knight_sm42_215_PlugPlace02A_control",
         "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_632_0/gimmick"
     },
     {
@@ -1599,8 +1599,8 @@
         "region": "Monitor Room",
         "original_item": "Bishop Plug",
         "condition": {},    
-        "item_object": "King_sm42_215_PlugPlace02A_control",
-        "parent_object": "King_sm42_215_PlugPlace02A_control",
+        "item_object": "Bishop_sm42_215_PlugPlace02A_control",
+        "parent_object": "Bishop_sm42_215_PlugPlace02A_control",
         "folder_path": "RopewayContents/World/Location_WasteWater/Environments/st3_632_0/gimmick"
     },
     {
