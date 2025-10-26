@@ -78,12 +78,21 @@ class ResidentEvil2Remake(World):
         if self._get_oops_all_options_flag():
             if weapon_rando != "none":
                 raise RE2ROptionError("Cannot apply 'Oops All' options alongside Cross Scenario Weapons. Please fix your yaml.")
+            
+            # also check for starting weapon option, which is incompatible with Oops! options
+            if self.options.starting_weapon.current_key != "default":
+                raise RE2ROptionError("Cannot apply 'Starting Weapon' options alongside 'Oops All' options. Please fix your yaml.")
+
             return
 
         weapon_rando = self._format_option_text(self.options.cross_scenario_weapons).lower()
 
         # if the user didn't pick any weapon randomization, skip all of this
         if weapon_rando == "none":
+            # if not using weapon rando (which handles its own starting weapon), set the starting weapon here
+            if self.options.starting_weapon.current_key != "default":
+                self.starting_weapon[self.player] = self.get_starting_weapon_name_from_option_value()
+
             return
 
         weapon_randomizer = WeaponRandomizer(self, self._get_character(), self._get_scenario())
@@ -196,6 +205,14 @@ class ResidentEvil2Remake(World):
         ]
 
         pool = [item for item in pool if item is not None] # some of the locations might not have an original item, so might not create an item for the pool
+
+        # if there's a starting weapon option set, remove the starting weapon from the pool and replace it with its ammo
+        if self.options.starting_weapon.current_key != "default":
+            starting_weapon_name = self.get_starting_weapon_name_from_option_value()
+            starting_weapon_ammo = [item['ammo'] for item in self.item_name_to_item.values() if item['name'] == starting_weapon_name][0]
+
+            # replace every instance of the weapon we started with (in the item pool) with its ammo
+            pool = [item if item.name != starting_weapon_name else self.create_item(starting_weapon_ammo) for item in pool]
 
         # remove any already-placed items from the pool (forced items, etc.)
         for filled_location in self.multiworld.get_filled_locations(self.player):
@@ -497,6 +514,9 @@ class ResidentEvil2Remake(World):
                         spoiler_handle.write(f"\n{''.ljust(30, ' ')} -> {ammo} ({ammo_count})")
 
             spoiler_handle.write("\n\n(Ammo totals are for the whole campaign, not per swap/category.)")
+        elif self.options.starting_weapon.current_key != "default":
+            starting_weapon = self.starting_weapon[self.player]
+            spoiler_handle.write(f"\n\nStarting Weapon ({self.multiworld.player_name[self.player]}): {starting_weapon}\n")
 
     def _has_items(self, state: CollectionState, item_names: list) -> bool:
         # if there are no item requirements, this location is open, they "have the items needed"
@@ -587,6 +607,24 @@ class ResidentEvil2Remake(World):
     
     def _get_starting_weapon(self) -> str:
         return self.starting_weapon[self.player] if self.player in self.starting_weapon else None
+
+    # not private because used by weapon rando file
+    def get_starting_weapon_name_from_option_value(self) -> str:
+        lookups: dict = {
+            "default": None,
+            "handgun_matilda": "Matilda",
+            "handgun_sls": "SLS 60",
+            "handgun_m19": "M19",
+            "handgun_quickdraw": "Quickdraw Army",
+            "handgun_hp3": "JMB Hp3",
+            "flamethrower": "Chemical Flamethrower",
+            "shotgun_w870": "W-870",
+            "grenadelauncher_gm79": "GM 79",
+            "lightninghawk": "Lightning Hawk",
+            "submachinegun_mq11": "MQ 11"
+        }
+
+        return lookups[self.options.starting_weapon.current_key]
     
     def _replace_pool_item_with(self, pool, from_item_name, to_item_name) -> list:
         items_to_remove = [item for item in pool if item.name == from_item_name]

@@ -1,6 +1,8 @@
 import math
 from typing import Optional
 
+from .Exceptions import RE2ROptionError
+
 class WeaponRandomizer():
     def __init__(self, world, character, scenario):
         self.world = world
@@ -278,6 +280,17 @@ class WeaponRandomizer():
 
         # pick random starting weapon and set for later slot data
         random_weapon = self.random.choice(weapon_list)
+
+        # if the player set a starting weapon option, use that as the choice instead, and raise error if it's an invalid choice
+        if self.world.options.starting_weapon.current_key != "default":
+            starting_weapon_name = self.world.get_starting_weapon_name_from_option_value()
+            weapons_with_name = [w for w in weapon_list if w['name'] == starting_weapon_name]
+
+            if len(weapons_with_name) == 0:
+                raise RE2ROptionError("Your 'Starting Weapon' option is not compatible with this weapon rando setting. Please adjust your YAML.")
+
+            random_weapon = weapons_with_name[0]
+
         self.world.starting_weapon[self.world.player] = random_weapon["name"]
         # starting weapon isn't on a location, so no need to set replacement; but set replacement for ammo
         self.world.replacement_ammo[self.world.player][self.starting_ammo_name] = [random_weapon["ammo"]]

@@ -34,6 +34,27 @@ class UnlockedTypewriters(OptionList):
     """
     display_name = "Unlocked Typewriters"
 
+class StartingWeapon(Choice):
+    """Use this option to start with a specific weapon instead of the default weapon for that scenario. Not compatible with any of the 'Oops!' options.
+
+    By default, the number of ammo packs for this weapon (in the item pool) is unchanged. 
+       You can replace handgun ammo with this weapon's ammo by also using the "Starting" option of cross-scenario weapon rando, or any other cross-scenario weapon rando option.
+
+    NOTE: When combined with cross-scenario weapon rando, the starting weapon must be valid for the weapon rando option chosen as well."""
+    display_name = "Starting Weapon"
+    option_default = 0
+    option_handgun_matilda = 1
+    option_handgun_sls = 2
+    option_handgun_m19 = 3
+    option_handgun_quickdraw = 4
+    option_handgun_hp3 = 5
+    option_flamethrower = 6
+    option_shotgun_w870 = 7
+    option_grenadelauncher_gm79 = 8
+    option_lightninghawk = 9
+    option_submachinegun_mq11 = 10
+    default = 0
+
 class StartingHipPouches(NamedRange):
     """The number of hip pouches you want to start the game with, to a max of 6 (or 5 for Hardcore). 
     Any that you start with are taken out of the item pool and replaced with junk."""
@@ -62,7 +83,7 @@ class StartingInkRibbons(NamedRange):
 
 class BonusStart(Choice):
     """Some players might want to start with a little help in the way of a few extra heal items and packs of ammo.
-    This option IS affected by cross-scenario weapon randomization, if that option is set.
+    This option IS affected by cross-scenario weapon randomization or starting weapon options, if either option is set.
 
     False: Normal, don't start with extra heal items and packs of ammo.
     True: Start with those helper items."""
@@ -315,6 +336,7 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     scenario: Scenario
     difficulty: Difficulty
     unlocked_typewriters: UnlockedTypewriters
+    starting_weapon: StartingWeapon
     starting_hip_pouches: StartingHipPouches
     starting_ink_ribbons: StartingInkRibbons
     bonus_start: BonusStart
