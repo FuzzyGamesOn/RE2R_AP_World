@@ -1160,7 +1160,8 @@
         "condition": {},    
         "item_object": "sm70_207",
         "parent_object": "ItemPositions_NormalLocker_1FE1",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/CorriderB/Locker_sm70_207_Leonyakueki"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/CorriderB/Locker_sm70_207_Leonyakueki",
+        "forbid_item": ["Fuse - Main Hall"]
     },
     {
         "name": "Downed Zombie",
@@ -1169,7 +1170,8 @@
         "condition": {},    
         "item_object": "sm70_205",
         "parent_object": "sm70_205_gunpowder",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/InterrogationRoom"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/InterrogationRoom",
+        "forbid_item": ["Fuse - Main Hall"]
     },
     {
         "name": "Table",
@@ -1178,7 +1180,8 @@
         "condition": {},    
         "item_object": "sm77_002",
         "parent_object": "sm77_002_PortableSafe_2ndPlay",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/InterrogationRoom"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/1F/1FE/InterrogationRoom",
+        "forbid_item": ["Fuse - Main Hall"]
     },
     {
         "name": "Table",
@@ -1187,7 +1190,8 @@
         "condition": {},    
         "item_object": "sm70_111",
         "parent_object": "sm70_111_handgunB_2nd",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/InterrogationRoom"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FE/InterrogationRoom",
+        "forbid_item": ["Fuse - Main Hall"]
     },
     {
         "name": "3F By Stairs",
@@ -1196,7 +1200,8 @@
         "condition": {},    
         "item_object": "sm70_202",
         "parent_object": "sm70_202_mokuzai",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/Corridor"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/Corridor",
+        "forbid_item": ["Fuse - Main Hall"]
     },
     {
         "name": "South Locker",
@@ -1205,7 +1210,8 @@
         "condition": {},    
         "item_object": "WP6300",
         "parent_object": "ItemPositions_NormalLocker_3FE1",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/Corridor/Locker_WP6300_FlashBan"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/Corridor/Locker_WP6300_FlashBan",
+        "forbid_item": ["Fuse - Main Hall"]
     },
     {
         "name": "West Locker",
@@ -1214,7 +1220,8 @@
         "condition": {},    
         "item_object": "sm70_111",
         "parent_object": "ItemPositions_NormalLocker_3FE2",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/Corridor/Locker_sm70_100_HandgunB"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/Corridor/Locker_sm70_100_HandgunB",
+        "forbid_item": ["Fuse - Main Hall"]
     },
     {
         "name": "North Shelves",
@@ -1223,7 +1230,8 @@
         "condition": {},    
         "item_object": "sm70_003",
         "parent_object": "sm70_003_BlueHerb",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/3FDepot"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/3FDepot",
+        "forbid_item": ["Fuse - Main Hall"]
     },
     {
         "name": "Pallet",
@@ -1232,7 +1240,8 @@
         "condition": {},    
         "item_object": "sm73_152",
         "parent_object": "sm73_152_HagurumaBig",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/3FDepot"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/3FDepot",
+        "forbid_item": ["Fuse - Main Hall"]
     },
     {
         "name": "Southeast Shelves",
@@ -1241,7 +1250,8 @@
         "condition": {},    
         "item_object": "sm70_101",
         "parent_object": "LEON_sm70_101_shotgunB",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/3FE/ArtRoom"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Leon_common/3FE/ArtRoom",
+        "forbid_item": ["Fuse - Main Hall"]
     },
     {
         "name": "Table",
@@ -1250,7 +1260,8 @@
         "condition": {},    
         "item_object": "sm70_003",
         "parent_object": "sm70_003_BlueHerb",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/OutdoorN",
+        "forbid_item": ["Fuse - Main Hall"]
     },
     {
         "name": "Bench by Flaming Helicopter",
