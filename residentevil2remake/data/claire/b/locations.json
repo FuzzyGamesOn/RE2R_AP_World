@@ -779,8 +779,7 @@
         "condition": {},    
         "item_object": "sm73_103",
         "parent_object": "sm73_103_SpadeKey",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FW/3FWSmallRoom",
-        "randomized": 0
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FW/3FWSmallRoom"
     },
     {
         "name": "Furniture by Door",
