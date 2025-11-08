@@ -15,10 +15,15 @@ jobs:
   create-release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout APWorld Repo
+      - name: Checkout AP
         uses: actions/checkout@v4
         with:
-          sparse-checkout: worlds/${{ env.AP_WORLD_DIR }}
+          repository: ArchipelagoMW/Archipelago
+          path: .
+      - name: Checkout this Repo
+        uses: actions/checkout@v4
+        with:
+          path: worlds/${{ env.AP_WORLD_DIR }}
       - name: Set version number env from apworld init
         run: |
           ls -la
