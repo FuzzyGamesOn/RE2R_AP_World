@@ -38,15 +38,16 @@ jobs:
         with:
           python-version: '~3.12.7'
           check-latest: true
-      # - name: Install dependencies
-      #   run: |
-      #     python -m pip install --upgrade pip
-      #     python ModuleUpdate.py --yes --force
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python ModuleUpdate.py --yes --force
       - name: Update World Version in Manifest
         run:  |
           cd worlds/${{ env.AP_WORLD_DIR }}
           echo -e "{\n\t\"game\": \"${{ env.AP_WORLD_NAME }}\"\n}" > archipelago.json
           json="$(jq '.world_version = ${{ env.VERSION_NUM }}' archipelago.json)"
+          echo $json
           echo "${json}" > archipelago.json
       - name: Create AP World Archive 
         run: |
