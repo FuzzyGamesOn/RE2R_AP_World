@@ -1,5 +1,3 @@
-# This workflow will create an AP world release and store builds to it when an vX.Y.Z tag is pushed
-
 name: Release AP World
 
 on: workflow_dispatch
