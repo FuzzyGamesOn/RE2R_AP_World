@@ -1,0 +1,59 @@
+# This workflow will create an AP world release and store builds to it when an vX.Y.Z tag is pushed
+
+name: Release AP World
+
+on: workflow_dispatch
+
+env:
+  AP_WORLD_NAME: Resident Evil 2 Remake
+  AP_WORLD_DIR: residentevil2remake
+  VERSION_NUM: "0.0.0"
+  AP_WORLD_PATH: ""
+  AP_WORLD_YAML_PATH: ""
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout APWorld Repo
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: worlds/${{ env.AP_WORLD_DIR }}
+      - name: Set version number env from apworld init
+        run: |
+          $VERSION_NUM=$(cat ${AP_WORLD_DIR}/__init__.py | grep "apworld_release_version" | head -n1 | awk '{print $3}')
+          echo "VERSION_NUM=$VERSION_NUM" >> $GITHUB_ENV
+      - name: Install python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '~3.12.7'
+          check-latest: true
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python ModuleUpdate.py --yes --force
+      - name: Update World Version in Manifest
+        run:  |
+          cd worlds/${{ env.AP_WORLD_DIR }}
+          echo "{\n\t\"game\": \"${AP_WORLD_NAME}\"\n}" > archipelago.json
+          json="$(jq '.world_version = "${{ env.VERSION_NUM }}"' archipelago.json)"
+          echo "${json}" > archipelago.json
+      - name: Create AP World Archive 
+        run: |
+          python Launcher.py "Build APWorlds" -- "${{ env.AP_WORLD_NAME }}"
+          echo "AP_WORLD_PATH=build/apworlds/${{ env.AP_WORLD_DIR }}.apworld" >> $GITHUB_ENV
+      - name: Create AP World Template YAML
+        run: |
+          python Launcher.py "Generate Template Options"
+          echo "AP_WORLD_YAML_PATH=Players/Templates/${{ env.AP_WORLD_NAME }}.yaml" >> $GITHUB_ENV
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true  # don't publish right away
+          prerelease: false
+          name: ${{ env.AP_WORLD_NAME }} APWorld ${{ env.VERSION_NUM }}
+          files: |
+            ${{ env.AP_WORLD_PATH }}
+            ${{ env.AP_WORLD_YAML_PATH }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
