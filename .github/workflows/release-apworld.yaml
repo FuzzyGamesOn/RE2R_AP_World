@@ -45,7 +45,7 @@ jobs:
       - name: Update World Version in Manifest
         run:  |
           cd worlds/${{ env.AP_WORLD_DIR }}
-          echo -e "{\n\t\"game\": ${{ env.AP_WORLD_NAME }}\n}" > archipelago.json
+          echo -e "{\n\t\"game\": \"${{ env.AP_WORLD_NAME }}\"\n}" > archipelago.json
           json="$(jq '.world_version = ${{ env.VERSION_NUM }}' archipelago.json)"
           echo "${json}" > archipelago.json
       - name: Create AP World Archive 
