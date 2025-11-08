@@ -28,8 +28,8 @@ jobs:
         run: |
           mkdir -p worlds/${AP_WORLD_DIR}
           cp -R temp/${AP_WORLD_DIR}/* worlds/${AP_WORLD_DIR}
-          $VERSION_NUM=$(cat worlds/${AP_WORLD_DIR}/__init__.py | grep "apworld_release_version" | head -n1 | awk '{print $3}')
-          echo "VERSION_NUM=$VERSION_NUM" >> $GITHUB_ENV
+          V_NUM=$(cat worlds/${AP_WORLD_DIR}/__init__.py | grep "apworld_release_version" | head -n1 | awk '{print $3}')
+          echo "VERSION_NUM=$V_NUM" >> $GITHUB_ENV
       - name: Install python
         uses: actions/setup-python@v5
         with:
