@@ -1,0 +1,250 @@
+[
+    {
+            "name": "Dark-Haired Zombie",
+            "region": "East Hallway 1F",
+            "original_item": "",
+            "item_object": "emZombie_Depot1",
+            "parent_object": "16-239-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Blonde Zombie",
+            "region": "East Hallway 1F",
+            "original_item": "",
+            "item_object": "emZombie_1FECorridor_DepotZombies",
+            "parent_object": "16-239-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Overweight Zombie in Closet",
+            "region": "East Hallway 1F Closet",
+            "original_item": "",
+            "item_object": "emZombie_DepotLate",
+            "parent_object": "16-231-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Zombie from Elliot's Window",
+            "region": "East Hallway 1F",
+            "original_item": "",
+            "item_object": "emZombie1FE2Window",
+            "parent_object": "16-239-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "2nd Zombie from Elliot's Window",
+            "region": "East Hallway 1F",
+            "original_item": "",
+            "item_object": "emZombie1FE2Window2nd",
+            "parent_object": "16-239-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Police Zombie at Elliot",
+            "region": "East Hallway 1F",
+            "original_item": "",
+            "item_object": "emZombie_1stDoorBan",
+            "parent_object": "16-239-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Female Zombie from Operations Room Window",
+            "region": "Southwest Hallway",
+            "original_item": "",
+            "item_object": "emZombie1FW2Window",
+            "parent_object": "16-225-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Overweight Zombie at Vending Machines",
+            "region": "West Hallway 1F",
+            "original_item": "",
+            "item_object": "emZombie_1FWjihanki",
+            "parent_object": "16-431-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Sleeping Desk Zombie",
+            "region": "West Office",
+            "original_item": "",
+            "item_object": "emZombie_1FWestOffice2",
+            "parent_object": "16-119-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Sitting Zombie near Safe",
+            "region": "West Office",
+            "original_item": "",
+            "item_object": "emZombie_1FWestOffice",
+            "parent_object": "16-119-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "One-Armed Zombie outside West Office",
+            "region": "West Hallway 1F",
+            "original_item": "",
+            "item_object": "emZombie_1FW_TrapZombie",
+            "parent_object": "16-431-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Zombie from Window at Stairs",
+            "region": "West Hallway 1F",
+            "original_item": "",
+            "item_object": "emZombie1FW1Window",
+            "parent_object": "16-226-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Zombie at top of Stairs",
+            "region": "West Hallway 3F",
+            "original_item": "",
+            "item_object": "emZombie_2FW_CorriderB",
+            "parent_object": "16-226-1",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Sitting Police Zombie at top of Stairs",
+            "region": "West Hallway 2F",
+            "original_item": "",
+            "item_object": "emZombie_2FW",
+            "parent_object": "16-252-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Female Zombie near Spade Door",
+            "region": "Library",
+            "original_item": "",
+            "item_object": "emZombie_Library_4",
+            "parent_object": "16-249-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Overweight Zombie near Spade Door",
+            "region": "Library",
+            "original_item": "",
+            "item_object": "emZombie_Library2",
+            "parent_object": "16-249-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Downed Police Zombie with Knife",
+            "region": "Library",
+            "original_item": "",
+            "item_object": "DeadZombie_Knife",
+            "parent_object": "16-249-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Eating Zombie",
+            "region": "Library",
+            "original_item": "",
+            "item_object": "emZombie_Library3",
+            "parent_object": "16-249-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Helicopter Crash Zombie 1",
+            "region": "East Hallway 2F",
+            "original_item": "",
+            "item_object": "emZombie_2FECorrider",
+            "parent_object": "16-255-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Helicopter Crash Zombie 2",
+            "region": "East Hallway 2F",
+            "original_item": "",
+            "item_object": "emZombie_2FECorrider",
+            "parent_object": "16-255-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Standing Police Zombie",
+            "region": "East Office",
+            "original_item": "",
+            "item_object": "emZombie_1FEOffice2",
+            "parent_object": "16-230-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Zombie from Window",
+            "region": "East Office",
+            "original_item": "",
+            "item_object": "emZombie_1FEOffice_Window",
+            "parent_object": "16-230-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Police Zombie from first Window",
+            "region": "Southwest Hallway",
+            "original_item": "",
+            "item_object": "emZombie1FW4Window",
+            "parent_object": "16-125-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Jumpsuit Zombie",
+            "region": "Southwest Hallway",
+            "original_item": "",
+            "item_object": "emZombie1FW3Window_Add",
+            "parent_object": "16-225-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Female Zombie from mid Window",
+            "region": "Southwest Hallway",
+            "original_item": "",
+            "item_object": "emZombie1FW_Knock",
+            "parent_object": "16-225-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Overweight Zombie wearing Vest",
+            "region": "Southwest Hallway",
+            "original_item": "",
+            "item_object": "emZombie1FWAdd",
+            "parent_object": "16-225-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "2nd Blonde Zombie from Operations Room Window",
+            "region": "Southwest Hallway",
+            "original_item": "",
+            "item_object": "emZombie1FW3Window_BreakIn",
+            "parent_object": "16-225-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "2nd Zombie at Stairs",
+            "region": "West Hallway 1F",
+            "original_item": "",
+            "item_object": "emZombie1FW1Window2nd",
+            "parent_object": "16-226-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Licker outside STARS Office",
+            "region": "STARS Office",
+            "original_item": "",
+            "item_object": "FirstLickerReplace",
+            "parent_object": "16-253-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Licker near Maiden Statue",
+            "region": "West Storage Room",
+            "original_item": "",
+            "item_object": "emLicker_3FLickerRoomA",
+            "parent_object": "16-265-0",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "G1 Boss Fight",
+            "region": "Machinery Room",
+            "original_item": "",
+            "item_object": "G1",
+            "parent_object": "29-353-1",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    }
+]
