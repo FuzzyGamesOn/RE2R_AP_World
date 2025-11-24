@@ -487,9 +487,9 @@ class ResidentEvil2Remake(World):
 
         # below are the only options that affect logic during generation
         #    comparing and only sending what's different breaks with YAML random, so always just regen with the slot data
-        regen_values['character'] = slot_data['character'] or self._get_character()
-        regen_values['scenario'] = slot_data['scenario'] or self._get_scenario()
-        regen_values['difficulty'] = slot_data['difficulty'] or self._get_difficulty()
+        regen_values['character'] = slot_data.get('character') or self._get_character()
+        regen_values['scenario'] = slot_data.get('scenario') or self._get_scenario()
+        regen_values['difficulty'] = slot_data.get('difficulty') or self._get_difficulty()
 
         return regen_values
 
