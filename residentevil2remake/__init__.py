@@ -64,6 +64,11 @@ class ResidentEvil2Remake(World):
     options: RE2ROptions
 
     def generate_early(self): # check weapon randomization before locations and items are processed, so we can swap non-randomized items as well
+        # check for option values that UT passed via storing from slot data, and set our options to match if present
+        for key, val in getattr(self.multiworld, 're_gen_passthrough', {}).get(self.game, {}).items():
+            # gets the int val from the string option value name, then sets
+            getattr(self.options, key).value = getattr(self.options, key).options[val]
+
         # start with the normal locations per player for pool, then overwrite with weapon rando if needed
         self.source_locations[self.player] = self._get_locations_for_scenario(self._get_character(), self._get_scenario()) # id:loc combo
         self.source_locations[self.player] = { 
@@ -472,6 +477,22 @@ class ResidentEvil2Remake(World):
 
         return slot_data
     
+    # called by UT to pass slot data into the world dupe it's trying to generate, so you can make the options match for gen
+    #     (if you return anything from this, UT will put it in self.multiworld.re_gen_passthrough[<game name>] for the single player that is running UT)
+    def interpret_slot_data(self, slot_data: dict[str, Any]):
+        if not slot_data:
+            return False
+
+        regen_values: dict[str, Any] = {}
+
+        # below are the only options that affect logic during generation
+        #    comparing and only sending what's different breaks with YAML random, so always just regen with the slot data
+        regen_values['character'] = slot_data.get('character') or self._get_character()
+        regen_values['scenario'] = slot_data.get('scenario') or self._get_scenario()
+        regen_values['difficulty'] = slot_data.get('difficulty') or self._get_difficulty()
+
+        return regen_values
+
     def write_spoiler_header(self, spoiler_handle: TextIO):
         spoiler_handle.write(f"RE2R_AP_World version: {self.apworld_release_version}\n")
 
