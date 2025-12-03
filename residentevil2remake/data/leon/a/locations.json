@@ -1172,7 +1172,7 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/Corridor/Locker_sm70_100_HandgunB"
     },
     {
-        "name": "North Shelves",
+        "name": "Shelves near Large Gear",
         "region": "East Storage Room",
         "original_item": "Blue Herb",
         "condition": {},    
@@ -1190,7 +1190,7 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/3FDepot"
     },
     {
-        "name": "Southeast Shelves",
+        "name": "Shelves near Heart Room",
         "region": "East Storage Room",
         "original_item": "Shotgun Shells",
         "condition": {},    
@@ -1743,7 +1743,9 @@
         "name": "Weapon Cage",
         "region": "Supplies Storage Room",
         "original_item": "Chemical Flamethrower",
-        "condition": {},    
+        "condition": {
+            "items": ["King Plug"]
+        },       
         "item_object": "WP4200",
         "parent_object": "WP_FireShooter",
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Leon_common"
