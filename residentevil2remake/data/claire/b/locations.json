@@ -1047,9 +1047,7 @@
         "name": "Locker",
         "region": "Elevator Control Room",
         "original_item": "Shoulder Stock - GM 79",
-        "condition": {
-            "items": ["Diamond Key"]
-        },    
+        "condition": {},
         "item_object": "sm71_917",
         "parent_object": "PosOnly_ClaireLocker",
         "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Claire_common"
@@ -1058,9 +1056,7 @@
         "name": "Boxes Next to Table",
         "region": "Elevator Control Room",
         "original_item": "High-Grade Gunpowder - White",
-        "condition": {
-            "items": ["Diamond Key"]
-        },    
+        "condition": {},
         "item_object": "sm70_208",
         "parent_object": "sm70_208",
         "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/Claire_common/WhiteChemical_CLEAR"
@@ -1069,9 +1065,7 @@
         "name": "Corner of Room on Ground",
         "region": "Elevator Control Room",
         "original_item": "Blue Herb",
-        "condition": {
-            "items": ["Diamond Key"]
-        },    
+        "condition": {},
         "item_object": "sm70_003",
         "parent_object": "sm70_003_01",
         "folder_path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/Item/common/BlueHerb"
@@ -1107,9 +1101,7 @@
         "name": "Stabbed into Manikin Head",
         "region": "Small Storage Room",
         "original_item": "Combat Knife",
-        "condition": {
-            "items": ["Heart Key"]
-        },    
+        "condition": {},
         "item_object": "WP4500",
         "parent_object": "WP4500_Knife",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/3FE/3FClaireRoom"
@@ -1118,9 +1110,7 @@
         "name": "Table",
         "region": "Small Storage Room",
         "original_item": "Boxed Electronic Part 2",
-        "condition": {
-            "items": ["Heart Key"]
-        },    
+        "condition": {},
         "item_object": "sm73_158",
         "parent_object": "sm73_158_SwitchBBox",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/Claire_common/3FE/3FClaireRoom"
@@ -1253,7 +1243,7 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/Corridor/Locker_sm70_100_HandgunB"
     },
     {
-        "name": "North Shelves",
+        "name": "Shelves near Large Gear",
         "region": "East Storage Room",
         "original_item": "Blue Herb",
         "condition": {},    
@@ -1271,7 +1261,7 @@
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/3FHigher/3FE/3FDepot"
     },
     {
-        "name": "Southeast Shelves",
+        "name": "Shelves near Heart Door",
         "region": "East Storage Room",
         "original_item": "Flame Rounds",
         "condition": {},    
@@ -1333,12 +1323,14 @@
         "original_item": "Red Herb",
         "force_item": "Boxed Electronic Part 2",
         "condition": {
-            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Heart Key", "Diamond Key"]
+            "items": [
+	        ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Heart Key", "Diamond Key"],
+	        ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle"]
+	    ]
         },
         "item_object": "sm70_002",
         "parent_object": "sm70_002_RedHerb",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FE/Corrider",
-        "forbid_item": ["Square Crank"]
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FE/Corrider"
     },
     {
         "name": "Printer",
@@ -1817,7 +1809,9 @@
         "name": "Weapon Cage",
         "region": "Supplies Storage Room",
         "original_item": "Spark Shot",
-        "condition": {},    
+        "condition": {
+            "items": ["King Plug"]
+        },    
         "item_object": "WP4300",
         "parent_object": "WP_SparkShot",
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Claire_common"

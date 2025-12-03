@@ -216,7 +216,7 @@
         "from": "Main Hall 3F",
         "to": "Clock Tower",
         "condition": {
-            "items": ["Small Gear", "Large Gear", "Square Crank", "Boxed Electronic Part 2"]
+            "items": ["Small Gear", "Large Gear", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion"]
         }
     },
     { 
@@ -261,8 +261,8 @@
         "to": "Interrogation Room",
         "condition": {
             "items": [
-                ["Spade Key", "Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank", "Fuse - Main Hall"],
-                ["Spade Key", "Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Fuse - Main Hall"]
+                ["Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank", "Fuse - Main Hall"],
+                ["Club Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Fuse - Main Hall"]
             ]
         }
     },
@@ -276,8 +276,8 @@
         "to": "Roof",
         "condition": {
             "items": [
-                ["Spade Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank", "Fuse - Main Hall"],
-                ["Spade Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Fuse - Main Hall"]
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank", "Fuse - Main Hall"],
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Fuse - Main Hall"]
             ]
         }
     },
@@ -296,7 +296,7 @@
         "from": "Main Hall",
         "to": "Secret Room",
         "condition": {
-            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion"]
         }
     },
     { 
