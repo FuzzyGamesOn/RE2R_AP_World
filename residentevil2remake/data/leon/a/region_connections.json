@@ -212,7 +212,7 @@
         "from": "Main Hall 3F",
         "to": "Clock Tower",
         "condition": {
-            "items": ["Small Gear", "Large Gear", "Square Crank", "Fuse - Break Room Hallway", "Boxed Electronic Part 2"]
+            "items": ["Small Gear", "Large Gear", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion"]
         }
     },
     { 

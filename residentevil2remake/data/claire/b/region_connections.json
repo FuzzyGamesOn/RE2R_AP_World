@@ -240,7 +240,7 @@
         "from": "Main Hall 3F",
         "to": "Clock Tower",
         "condition": {
-            "items": ["Small Gear", "Large Gear", "Fuse - Main Hall", "Boxed Electronic Part 2"]
+            "items": ["Small Gear", "Large Gear", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion"]
         }
     },
     { 
@@ -258,14 +258,14 @@
         "from": "East Storage Room",
         "to": "Small Storage Room",
         "condition": {
-            "items": ["Heart Key", "Diamond Key", "Mechanic Jack Handle"]
+            "items": ["Heart Key"]
         }
     },
     { 
         "from": "Main Hall",
         "to": "Secret Room",
         "condition": {
-            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+            "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion"]
         }
     },
     { 
@@ -311,13 +311,6 @@
         "condition": {}
     },
     { 
-        "from": "Chief's Office",
-        "to": "Side Stairs",
-        "condition": {
-            "items": ["Heart Key"]
-        }
-    },
-    { 
         "from": "Side Stairs",
         "to": "Chief's Office",
         "condition": {
@@ -338,7 +331,10 @@
         "from": "Side Stairs",
         "to": "Observation Room",
         "condition": {
-            "items": ["Spade Key", "Heart Key", "Diamond Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"]
+            "items": [ 
+		        ["Heart Key", "Diamond Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"],
+		        ["Heart Key", "Mechanic Jack Handle", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"]
+            ]
         }
     },
     { 
@@ -357,7 +353,10 @@
         "from": "Balcony",
         "to": "Roof",
         "condition": {
-            "items": ["Spade Key", "Heart Key", "Diamond Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Fuse - Main Hall"]
+            "items": [
+		        ["Heart Key", "Diamond Key", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion"],
+		        ["Mechanic Jack Handle", "Lion Medallion", "Unicorn Medallion", "Maiden Medallion"]
+            ]
         }
     },
     { 
