@@ -145,6 +145,8 @@ class AddEnemyKillsAsLocations(Choice):
     """When enabled, multiworld items are also placed on the enemies in your world. Killing those enemies gives the item.
 
     Currently only supports Leon's A (1st) scenario on Assisted / Standard difficulty.
+    
+    NOTE: Ivys can only be killed with fire. If you don't have a fire weapon/ammo to use against them, YOU COULD BE UNABLE TO GET THESE CHECKS.
 
     The available options are:
 
@@ -177,7 +179,7 @@ class EnemyKillItems(Choice):
     option_gunpowder = 4
     option_healing = 5
     option_trash = 6
-    default = 0
+    default = 3
 
 class CrossScenarioWeapons(Choice):
     """This option, when set, will randomize the weapons in your scenario, choosing from weapons in all 4 scenarios (LA, LB, CA, CB). 
