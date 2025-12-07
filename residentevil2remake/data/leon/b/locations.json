@@ -53,7 +53,7 @@
     {
         "name": "Table",
         "region": "Guard Room",
-        "original_item": "M19",
+        "original_item": "",
         "force_item": "M19",
         "condition": {
             "items": ["Bolt Cutters"]

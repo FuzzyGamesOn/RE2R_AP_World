@@ -53,7 +53,7 @@
     {
         "name": "Table",
         "region": "Guard Room",
-        "original_item": "Quickdraw Army",
+        "original_item": "",
         "force_item": "Quickdraw Army",
         "condition": {
             "items": ["Bolt Cutters"]

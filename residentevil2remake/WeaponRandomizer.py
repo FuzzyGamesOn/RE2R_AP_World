@@ -392,7 +392,7 @@ class WeaponRandomizer():
             force_item = self.world.item_name_to_item.get(force_item, {})
 
             if force_item.get("type") == "Weapon" and force_item.get("ammo", None):
-                if force_item in weapons:
+                if force_item not in weapons:
                     weapons.append(force_item)
 
                 continue
