@@ -53,7 +53,7 @@
     {
         "name": "Table",
         "region": "Guard Room",
-        "original_item": "M19",
+        "original_item": "",
         "force_item": "M19",
         "condition": {
             "items": ["Bolt Cutters"]
@@ -1223,7 +1223,7 @@
         "forbid_item": ["Fuse - Main Hall"]
     },
     {
-        "name": "North Shelves",
+        "name": "Shelves near Large Gear",
         "region": "East Storage Room",
         "original_item": "Blue Herb",
         "condition": {},    
@@ -1243,7 +1243,7 @@
         "forbid_item": ["Fuse - Main Hall"]
     },
     {
-        "name": "Southeast Shelves",
+        "name": "Shelves near Heart Door",
         "region": "East Storage Room",
         "original_item": "Shotgun Shells",
         "condition": {},    
@@ -1319,8 +1319,8 @@
         "original_item": "Red Herb",
         "condition": {
             "items": [
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key", "Square Crank"],
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key", "Mechanic Jack Handle"]
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"],
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle"]
             ]
         },
         "item_object": "sm70_002",
@@ -1798,7 +1798,9 @@
         "name": "Weapon Cage",
         "region": "Supplies Storage Room",
         "original_item": "Chemical Flamethrower",
-        "condition": {},    
+        "condition": {
+            "items": ["King Plug"]
+        }, 
         "item_object": "WP4200",
         "parent_object": "WP_FireShooter",
         "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Leon_common"
