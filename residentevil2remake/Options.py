@@ -126,7 +126,7 @@ class EarlyMedallions(Choice):
     display_name = "Early Medallions"
     option_false = 0
     option_true = 1
-    default = 0
+    default = 1
 
 class AllowProgressionInLabs(Choice):
     """The randomizer has a tendency to put other player's progression towards the end in Labs, which can cause some lengthy BK. 
