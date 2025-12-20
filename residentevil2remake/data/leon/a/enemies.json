@@ -168,7 +168,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Police Zombie from first Window",
+            "name": "Police Zombie from first Window",   
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie1FW4Window",
@@ -348,7 +348,7 @@
             "name": "Plaid Shirt Zombie",
             "region": "Break Room Hallway",
             "original_item": "",
-            "item_object": "emZombie_Depot1",
+            "item_object": "emZombie_1FECorridorC",
             "parent_object": "16-229-0-0-ID011",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     }, 
@@ -413,7 +413,7 @@
             }
     },
     {
-            "name": "Plain Clothes Zombie from mid Window",
+            "name": "Plain Clothes Zombie from mid Window",   
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie∩╝┐1FW3Window3rd",
@@ -449,7 +449,7 @@
             "name": "Licker outside West Storage Room",
             "region": "West Hallway 3F",
             "original_item": "",
-            "item_object": "emLicker_3FLickerRoomA",
+            "item_object": "emLicker_3FW2-2",
             "parent_object": "16-265-0-3-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
