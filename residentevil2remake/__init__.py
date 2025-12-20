@@ -386,10 +386,29 @@ class ResidentEvil2Remake(World):
             if oops_all_flag not in oops_items_map:
                 raise RE2ROptionError("Cannot apply multiple 'Oops All' options. Please fix your yaml.")
 
+            replacement_types = ['Weapon', 'Subweapon', 'Ammo']
+
+            if False: # for enemy stuff later
+                replacement_types.append('Gunpowder')
+            else: # we don't want the player to have gunpowder for bullets to make Oops options safer, so we swap them to random filler
+                replacements = [
+                    ['Picture Block', 'Stuffed Doll', 'Pink Scissors', 'Gas Station Key'], # variety of filter items, exclusive to Oops for now
+                    ['Handgun Ammo', 'Flash Grenade'], # a few more useful replacements for the limited larges
+                    ['Green Herb', 'Blue Herb', 'Wooden Boards'] # some okay non-filler replacements for yellows/whites
+                ]
+
+                for from_item in [item for item in self.item_name_to_item.values() if item.get('type') == 'Gunpowder']:
+                    if "Yellow" in from_item['name'] or "White" in from_item['name']:
+                        pool = self._replace_pool_item_with(pool, from_item['name'], self.random.choice(replacements[2]))
+                    elif "Large" in from_item['name']:
+                        pool = self._replace_pool_item_with(pool, from_item['name'], self.random.choice(replacements[1]))
+                    else: # just plain Gunpowder
+                        pool = self._replace_pool_item_with(pool, from_item['name'], self.random.choice(replacements[0]))
+
             # Leave the Anti-Tank Rocket on Tyrant alone so the player can finish the fight
             items_to_replace = [
                 item for item in self.item_name_to_item.values() 
-                if 'type' in item and item['type'] in ['Weapon', 'Subweapon', 'Ammo'] and item['name'] != 'Anti-tank Rocket'
+                if item.get('type') in replacement_types and item['name'] != 'Anti-tank Rocket'
             ]
 
             for from_item in items_to_replace:
@@ -449,11 +468,11 @@ class ResidentEvil2Remake(World):
 
         if item.get('progression', False):
             classification = ItemClassification.progression
-        elif item.get('type', None) not in ['Lore', 'Trap']:
+        elif item.get('type', None) not in ['Lore', 'Filler', 'Trap']:
             classification = ItemClassification.useful
         elif item.get('type', None) == 'Trap':
             classification = ItemClassification.trap
-        else: # it's Lore
+        else: # it's Lore/Filler
             classification = ItemClassification.filler
 
         new_item = Item(item['name'], classification, item['id'], player=self.player)
