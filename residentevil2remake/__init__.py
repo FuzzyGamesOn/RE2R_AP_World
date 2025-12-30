@@ -444,9 +444,9 @@ class ResidentEvil2Remake(World):
 
             replacement_types = ['Weapon', 'Subweapon', 'Ammo']
 
-            if False: # for enemy stuff later
+            if self._enemy_kill_rando(): # if enemy kill rando, just replace gunpowder with the Oops weapon; players will need more firepower
                 replacement_types.append('Gunpowder')
-            else: # we don't want the player to have gunpowder for bullets to make Oops options safer, so we swap them to random filler
+            else: # otherwise, we don't want the player to have gunpowder for bullets to make Oops options more thematic, so we swap them to random filler
                 replacements = [
                     ['Picture Block', 'Stuffed Doll', 'Pink Scissors', 'Gas Station Key'], # variety of filter items, exclusive to Oops for now
                     ['Handgun Ammo', 'Flash Grenade'], # a few more useful replacements for the limited larges
@@ -521,7 +521,10 @@ class ResidentEvil2Remake(World):
 
         # if enemy kills are added to the locations, remove all Wooden Boards so that players don't prevent themselves from killing window vaulting enemies
         if self._enemy_kill_rando():
-            pool = self._replace_pool_item_with(pool, "Wooden Boards", "Gunpowder")
+            if self._get_oops_all_options_flag():
+                pool = self._replace_pool_item_with(pool, "Wooden Boards", "Blue Herb") # enemy kill rando removes all gunpowder with Oops, so use a different replacement
+            else:
+                pool = self._replace_pool_item_with(pool, "Wooden Boards", "Gunpowder")
 
         self.multiworld.itempool += pool
             
