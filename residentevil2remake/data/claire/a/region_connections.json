@@ -284,6 +284,13 @@
         }
     },
     { 
+        "from": "Side Stairs",
+        "to": "Chief's Office",
+        "condition": {
+            "items": ["Heart Key"]
+        }
+    },
+    { 
         "from": "Chief's Office",
         "to": "Private Collection Room",
         "condition": {}

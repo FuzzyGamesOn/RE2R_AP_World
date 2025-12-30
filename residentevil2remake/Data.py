@@ -17,6 +17,7 @@ def load_data_file(*args) -> dict:
 class Data:
     item_table = []
     location_table = []
+    enemy_table = []
     region_table = []
     region_connections_table = []
 
@@ -30,6 +31,7 @@ class Data:
         scenario_suffix_hardcore = ' ({}{}H)'.format(character[0].upper(), scenario.upper()) # makes hardcore location variations unique
 
         location_start = item_start = 3000000000 + character_offsets[character] + scenario_offsets[scenario]
+        enemy_start = location_start + 1000000000
 
         ###
         # Add standard regions
@@ -180,3 +182,25 @@ class Data:
                 }
                 for key, loc in enumerate(hardcore_location_table)
             ])
+
+        ###
+        # Add enemy table
+        ###
+
+        enemy_table = load_data_file(character, scenario, 'enemies.json')
+
+        Data.enemy_table.extend([
+            { 
+                **enemy, 
+                'id': enemy['id'] if enemy.get('id') else enemy_start + key,
+                'region': enemy['region'] + scenario_suffix, # add the scenario abbreviation so they're unique
+                'character': character,
+                'scenario': scenario,
+                'difficulty': None,
+
+                # since enemy kills don't give items themselves, just randomize more combat-related items into the pool
+                'original_item': "__Enemy Kill Drop Placeholder__"
+            }
+            for key, enemy in enumerate(enemy_table)
+        ])
+
