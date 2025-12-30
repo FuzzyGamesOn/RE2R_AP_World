@@ -488,6 +488,10 @@ class ResidentEvil2Remake(World):
         # Make any items that result in a really quick BK either early or local items, so the BK time is reduced
         early_items = {}       
 
+        # hardcore no longer removes the main hall shutter, so force bolt cutters early to prevent softlock
+        if self._get_difficulty() == "hardcore":
+            early_items["Bolt Cutters"] = 1 
+
         for item_name, item_qty in early_items.items():
             if item_qty > 0:
                 self.multiworld.early_items[self.player][item_name] = item_qty
