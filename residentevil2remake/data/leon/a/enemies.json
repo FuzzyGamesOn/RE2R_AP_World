@@ -173,7 +173,10 @@
             "original_item": "",
             "item_object": "emZombie1FW4Window",
             "parent_object": "16-125-0-0-ID211",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Maiden Medallion"]
+            }
     },
     {
             "name": "Jumpsuit Zombie",
@@ -181,7 +184,10 @@
             "original_item": "",
             "item_object": "emZombie1FW3Window_Add",
             "parent_object": "16-225-0-0-ID008",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Maiden Medallion"]
+            }
     },
     {
             "name": "Female Zombie from mid Window",
@@ -189,7 +195,10 @@
             "original_item": "",
             "item_object": "emZombie1FW_Knock",
             "parent_object": "16-225-0-1-ID003",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Maiden Medallion"]
+            }
     },
     {
             "name": "Overweight Zombie wearing Vest",
@@ -197,7 +206,10 @@
             "original_item": "",
             "item_object": "emZombie1FWAdd",
             "parent_object": "16-225-0-2-ID004",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Maiden Medallion"]
+            }
     },
     {
             "name": "2nd Blonde Zombie from Operations Room Window",
@@ -205,7 +217,10 @@
             "original_item": "",
             "item_object": "emZombie1FW3Window_BreakIn",
             "parent_object": "16-225-0-1-ID012",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Maiden Medallion"]
+            }
     },
     {
             "name": "2nd Zombie at Stairs",
@@ -213,7 +228,10 @@
             "original_item": "",
             "item_object": "emZombie1FW1Window2nd",
             "parent_object": "16-226-0-0-ID014",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Maiden Medallion"]
+            }
     },
     {
             "name": "Licker outside STARS Office",
@@ -221,7 +239,10 @@
             "original_item": "",
             "item_object": "FirstLickerReplace",
             "parent_object": "16-253-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Maiden Medallion"]
+            }
     },
     {
             "name": "Licker near Maiden Statue",
@@ -229,7 +250,10 @@
             "original_item": "",
             "item_object": "emLicker_3FLickerRoomA",
             "parent_object": "16-265-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Battery", "Electronic Gadget"]
+            }
     },
     {
             "name": "Hanging Zombie After It Drops",
@@ -237,7 +261,10 @@
             "original_item": "",
             "item_object": "DeadZombie",
             "parent_object": "16-265-0-0-ID000",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Battery", "Electronic Gadget"]
+            }
     },
     {
             "type": "Boss",
@@ -302,7 +329,10 @@
             "original_item": "",
             "item_object": "Zombie_02_JumpUp",
             "parent_object": "29-273-0-0-ID008",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Diamond Key"]
+            }
     },
     {
             "name": "Action Dog behind fence",
@@ -326,7 +356,10 @@
             "original_item": "",
             "item_object": "BaricadeJumpDog",
             "parent_object": "29-272-0-4-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Square Crank"]
+            }
     },
     {
             "name": "Action Dog from vent",
@@ -334,7 +367,10 @@
             "original_item": "",
             "item_object": "dog_East_twinsBlue2",
             "parent_object": "29-272-0-4-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Square Crank"]
+            }
     },
     {
             "name": "Dark Police Zombie",
@@ -366,7 +402,10 @@
             "original_item": "",
             "item_object": "emZombie_1FEEliot",
             "parent_object": "16-238-0-0-ID903",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Fuse - Break Room Hallway"]
+            }
     },
     {
             "name": "Dark Police Zombie",
@@ -376,7 +415,7 @@
             "parent_object": "16-269-0-0-ID211",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -387,7 +426,7 @@
             "parent_object": "16-269-0-0-ID214",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -398,7 +437,7 @@
             "parent_object": "16-240-0-0-ID213",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -409,7 +448,7 @@
             "parent_object": "16-125-0-0-ID012",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -420,7 +459,7 @@
             "parent_object": "16-225-0-0-ID011",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -431,7 +470,7 @@
             "parent_object": "16-431-0-3-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -442,7 +481,7 @@
             "parent_object": "16-125-0-3-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -453,7 +492,7 @@
             "parent_object": "16-265-0-3-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -464,7 +503,7 @@
             "parent_object": "16-112-0-0-ID902",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -491,7 +530,7 @@
             "parent_object": "16-112-0-0-ID002",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -502,7 +541,7 @@
             "parent_object": "16-112-0-0-ID200",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -541,7 +580,7 @@
             "parent_object": "16-230-0-0-ID007",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
@@ -552,7 +591,7 @@
             "parent_object": "16-239-0-1-ID002",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Spade Key"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
     {
