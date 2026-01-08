@@ -213,7 +213,7 @@ class ResidentEvil2Remake(World):
                 # we check for zone id > 3 because 3 is typically Sewers, and anything beyond that is Labs / endgame stuff
                 elif self._format_option_text(self.options.allow_progression_in_labs) == 'False' and region_data['zone_id'] > 3:
                     location.item_rule = lambda item: not item.advancement
-                elif self._format_option_text(self.options.allow_progression_in_labs) == 'True' and "Treatment Pool Room" in location.name and "Cable Car Table" in location.name:
+                elif self._format_option_text(self.options.allow_progression_in_labs) == 'True' and re.match('^Treatment Pool Room \(\w+?\) - Cable Car Table$', location.name):
                     location.place_locked_item(self.create_item("Sewers Key"))
                 # END if
 
