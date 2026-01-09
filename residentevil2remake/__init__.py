@@ -4,7 +4,7 @@ import typing
 from typing import Dict, Any, TextIO
 from Utils import visualize_regions
 
-from BaseClasses import ItemClassification, Item, Location, Region, CollectionState
+from BaseClasses import ItemClassification, Item, Location, Region, CollectionState, LocationProgressType
 from worlds.AutoWorld import World
 from ..generic.Rules import set_rule
 from Fill import fill_restrictive
@@ -186,6 +186,18 @@ class ResidentEvil2Remake(World):
         scenario_locations = { l['id']: l for _, l in self.source_locations[self.player].items() }
         scenario_regions = self._get_region_table_for_scenario(self._get_character(), self._get_scenario())
 
+        # used below if killsanity is on
+        has_fire_weapon = False
+        fire_weapons = ['GM 79', 'Chemical Flamethrower']
+
+        if self._format_option_text(self.options.oops_all_rockets) == 'True':
+            has_fire_weapon = True
+        else:
+            has_fire_weapon = len([
+                location['original_item'] 
+                    for _, location in scenario_locations.items() if location.get('original_item') in fire_weapons
+            ]) > 0
+
         regions = [
             Region(region['name'], self.player, self.multiworld) 
                 for region in scenario_regions
@@ -216,6 +228,11 @@ class ResidentEvil2Remake(World):
                 elif self._format_option_text(self.options.allow_progression_in_labs) == 'True' and re.match('^Treatment Pool Room \(\w+?\) - Cable Car Table$', location.name):
                     location.place_locked_item(self.create_item("Sewers Key"))
                 # END if
+
+                # if the player doesn't have a fire weapon or rocket launchers in their item pool, make all Ivy enemy drops give filler / be useless
+                if self._enemy_kill_rando() and "Ivy" in location.name and not has_fire_weapon:
+                    #location.progress_type = LocationProgressType.EXCLUDED
+                    location.place_locked_item(self.create_item("Pink Scissors"))
 
                 if 'forbid_item' in location_data and location_data['forbid_item']:
                     current_item_rule = location.item_rule or None
