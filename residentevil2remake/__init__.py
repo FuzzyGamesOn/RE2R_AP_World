@@ -231,7 +231,7 @@ class ResidentEvil2Remake(World):
 
                 # if the player doesn't have a fire weapon or rocket launchers in their item pool, make all Ivy enemy drops give filler / be useless
                 if self._enemy_kill_rando() and "Ivy" in location.name and not has_fire_weapon:
-                    #location.progress_type = LocationProgressType.EXCLUDED
+                    location.progress_type = LocationProgressType.EXCLUDED
                     location.place_locked_item(self.create_item("Pink Scissors"))
 
                 if 'forbid_item' in location_data and location_data['forbid_item']:
