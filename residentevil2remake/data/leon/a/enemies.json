@@ -253,7 +253,8 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": ["Battery", "Electronic Gadget"]
-            }
+            },
+            "excluded": 1
     },
     {
             "name": "Hanging Zombie After It Drops",
@@ -455,7 +456,7 @@
             "name": "Plain Clothes Zombie from mid Window",   
             "region": "Southwest Hallway",
             "original_item": "",
-            "item_object": "emZombie∩╝┐1FW3Window3rd",
+            "item_object": "emZombie1FW3Window3rd",
             "parent_object": "16-225-0-0-ID011",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
@@ -716,7 +717,8 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": ["T-Bar Handle"]
-            }
+            },
+            "excluded": 1
     },
     {
             "name": "First G-Adult",
