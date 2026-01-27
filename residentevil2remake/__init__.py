@@ -170,7 +170,8 @@ class ResidentEvil2Remake(World):
         # all ammo and troll are identical, except there's a step after upgrades are placed for all weapons to remove all but a few weapons
         # so just do all_ammo here, then call the actual troll option after upgrades + gunpowder + whatever else
         elif weapon_rando == "all ammo" or weapon_rando == "troll" or weapon_rando == "troll starting": 
-            weapon_randomizer.all_ammo()
+            if weapon_rando == "all ammo": weapon_randomizer.all_ammo()
+            else: weapon_randomizer.all_ammo_troll()
         else:
             raise RE2ROptionError("Invalid weapon randomizer value!")
 
@@ -748,7 +749,7 @@ class ResidentEvil2Remake(World):
 
         weapons_list = list(self.replacement_weapons[self.player].values())
 
-        if isinstance(weapons_list[0], list):
+        if weapons_list and isinstance(weapons_list[0], list):
             weapons_list = weapons_list[0]
 
         return [self._get_starting_weapon(), *weapons_list]
