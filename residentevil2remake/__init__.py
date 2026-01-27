@@ -225,7 +225,7 @@ class ResidentEvil2Remake(World):
                 # we check for zone id > 3 because 3 is typically Sewers, and anything beyond that is Labs / endgame stuff
                 elif self._format_option_text(self.options.allow_progression_in_labs) == 'False' and region_data['zone_id'] > 3:
                     location.item_rule = lambda item: not item.advancement
-                elif self._format_option_text(self.options.allow_progression_in_labs) == 'True' and re.match('^Treatment Pool Room \(\w+?\) - Cable Car Table$', location.name):
+                elif self._format_option_text(self.options.allow_progression_in_labs) == 'True' and re.match(r'^Treatment Pool Room \(\w+?\) - Cable Car Table$', location.name):
                     location.place_locked_item(self.create_item("Sewers Key"))
                 # END if
 
@@ -574,7 +574,9 @@ class ResidentEvil2Remake(World):
             "scenario": self._get_scenario(),
             "difficulty": self._get_difficulty(),
             "unlocked_typewriters": self._format_option_text(self.options.unlocked_typewriters).split(", "),
+            "weapon_rando": self._format_option_text(self.options.cross_scenario_weapons),
             "starting_weapon": self._get_starting_weapon(),
+            "all_weapons": self._get_all_weapons(),
             "ammo_pack_modifier": self._format_option_text(self.options.ammo_pack_modifier),
             "damage_traps_can_kill": self._format_option_text(self.options.damage_traps_can_kill) == 'True',
             "death_link": self._format_option_text(self.options.death_link) == 'Yes' # why is this yes? lol
@@ -739,6 +741,17 @@ class ResidentEvil2Remake(World):
     
     def _get_starting_weapon(self) -> str:
         return self.starting_weapon[self.player] if self.player in self.starting_weapon else None
+
+    def _get_all_weapons(self) -> list[str] | None:
+        if self.player not in self.replacement_weapons:
+            return None
+
+        weapons_list = list(self.replacement_weapons[self.player].values())
+
+        if isinstance(weapons_list[0], list):
+            weapons_list = weapons_list[0]
+
+        return [self._get_starting_weapon(), *weapons_list]
 
     # not private because used by weapon rando file
     def get_starting_weapon_name_from_option_value(self) -> str:
