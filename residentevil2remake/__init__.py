@@ -144,7 +144,7 @@ class ResidentEvil2Remake(World):
 
             # also check for double weapons, which is incompatible with Oops! options
             if self._format_option_text(self.options.double_weapons) == 'True':
-                raise RE2ROptionError("Cannot use 'Double Weapon' option alongside 'Oops All' options. Please fix your yaml.")
+                raise RE2ROptionError("Cannot use 'Double Weapons' option alongside 'Oops All' options. Please fix your yaml.")
 
             return
 
