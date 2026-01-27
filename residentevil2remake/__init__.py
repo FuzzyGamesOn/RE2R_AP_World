@@ -142,6 +142,10 @@ class ResidentEvil2Remake(World):
             if self.options.starting_weapon.current_key != "default":
                 raise RE2ROptionError("Cannot apply 'Starting Weapon' options alongside 'Oops All' options. Please fix your yaml.")
 
+            # also check for double weapons, which is incompatible with Oops! options
+            if self._format_option_text(self.options.double_weapons) == 'True':
+                raise RE2ROptionError("Cannot use 'Double Weapon' option alongside 'Oops All' options. Please fix your yaml.")
+
             return
 
         weapon_rando = self._format_option_text(self.options.cross_scenario_weapons).lower()
@@ -518,12 +522,46 @@ class ResidentEvil2Remake(World):
             if item_qty > 0:
                 self.multiworld.early_items[self.player][item_name] = item_qty
 
+        all_weapon_names = [
+            item['name'] for item in self.item_name_to_item.values() 
+                if item.get('type') == "Weapon"
+        ]
+
         local_items = {}       
         local_items["Fuse - Main Hall"] = len([i for i in pool if i.name == "Fuse - Main Hall"])
+
+        if self._format_option_text(self.options.local_weapons) == 'True':
+            for weapon_name in all_weapon_names:
+                count = len([i for i in pool if i.name == weapon_name])
+
+                if count:
+                    local_items[weapon_name] = count
 
         for item_name, item_qty in local_items.items():
             if item_qty > 0:
                 self.options.local_items.value.add(item_name)
+
+        # if double weapons is on, add copies in the place of less useful items
+        if self._format_option_text(self.options.double_weapons) == 'True':
+            for weapon_name in all_weapon_names:            
+                count = len([i for i in pool if i.name == weapon_name])
+
+                # if the weapon isn't in the pool at all, or already has a duplicate, skip it
+                if not count or count > 1:
+                    continue
+
+                eligible_items = [i for i in pool if i.classification == ItemClassification.filler]
+
+                if len(eligible_items) == 0:
+                    eligible_items = [i for i in pool if i.name in ["Wooden Boards", "Blue Herb", "Gunpowder"]]
+
+                if len(eligible_items) == 0:
+                    eligible_items = [i for i in pool if i.name in ["Handgun Ammo"]]
+
+                if len(eligible_items) == 0: break # no more items to replace out, give up
+
+                pool.append(self.create_item(weapon_name))
+                pool.remove(eligible_items[0])
 
         # Check the item count against the location count, and remove items until they match
         extra_items = len(pool) - len(self.multiworld.get_unfilled_locations(self.player))

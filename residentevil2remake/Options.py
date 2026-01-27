@@ -247,6 +247,21 @@ class AmmoPackModifier(Choice):
     option_random_by_type = 7
     option_random_always = 8
 
+class LocalWeapons(Choice):
+    """Enabling this ensures that all of your weapons are placed in your own world instead of other players' worlds."""
+    display_name = "Local Weapons"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+class DoubleWeapons(Choice):
+    """Enabling this ensures that a duplicate of each weapon is in the item pool, increasing the chances that you find more weapons early. 
+    If a weapon already has a duplicate (like the shotgun / grenade launcher), this option doesn't add any additional copies of that weapon."""
+    display_name = "Double Weapons"
+    option_false = 0
+    option_true = 1
+    default = 0
+
 class OopsAllRockets(Choice):
     """Enabling this swaps all weapons, weapon ammo, and subweapons to Rocket Launchers. 
     (Except progression weapons, of course.)"""
@@ -388,6 +403,8 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     enemy_kill_items: EnemyKillItems
     cross_scenario_weapons: CrossScenarioWeapons
     ammo_pack_modifier: AmmoPackModifier
+    local_weapons: LocalWeapons
+    double_weapons: DoubleWeapons
     oops_all_rockets: OopsAllRockets
     oops_all_miniguns: OopsAllMiniguns
     oops_all_grenades: OopsAllGrenades
