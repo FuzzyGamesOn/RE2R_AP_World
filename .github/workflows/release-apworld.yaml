@@ -58,6 +58,10 @@ jobs:
         run: |
           python Launcher.py "Generate Template Options"
           echo "AP_WORLD_YAML_PATH=Players/Templates/${{ env.AP_WORLD_NAME }}.yaml" >> $GITHUB_ENV
+      - name: Remove min version from Template YAML
+        run: |
+          sed -i '/requires:/d' Players/Templates/${{ env.AP_WORLD_NAME }}.yaml
+          sed -i '/  version: */d' Players/Templates/${{ env.AP_WORLD_NAME }}.yaml
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
