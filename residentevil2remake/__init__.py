@@ -193,7 +193,9 @@ class ResidentEvil2Remake(World):
 
         if self._format_option_text(self.options.oops_all_rockets) == 'True':
             has_fire_weapon = True
-        else:
+        elif self._get_starting_weapon() in fire_weapons:
+            has_fire_weapon = True
+        else: # check the remaining weapons
             has_fire_weapon = len([
                 location['original_item'] 
                     for _, location in scenario_locations.items() if location.get('original_item') in fire_weapons
