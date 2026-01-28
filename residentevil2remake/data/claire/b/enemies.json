@@ -89,7 +89,7 @@
     },
     {
             "name": "Female Zombie East Rail",
-            "region": "Main Hall 2F",
+            "region": "Main Hall",
             "original_item": "",
             "item_object": "emZombie_1FECorridor_DepotZombies",
             "parent_object": "16-112-2-1-ID007",
@@ -346,7 +346,7 @@
             "parent_object": "16-269-0-0-ID214",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion"]
             }
     },
     {
@@ -357,7 +357,7 @@
             "parent_object": "16-269-0-0-ID211",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion"]
             }
     },
     {
@@ -368,20 +368,20 @@
             "parent_object": "16-240-0-0-ID213",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion"]
             }
     },
     {
-            "name": "Male Zombie",
-            "region": "Boiler Room",
+            "name": "Male Zombie outside Boiler Room",
+            "region": "Roof",
             "original_item": "",
             "item_object": "emZombie_OutdoorNorth",
             "parent_object": "16-122-0-1-ID004",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Female Zombie",
-            "region": "Boiler Room",
+            "name": "Female Zombie outside Boiler Room",
+            "region": "Roof",
             "original_item": "",
             "item_object": "emZombie_OutdoorNorth",
             "parent_object": "16-122-0-0-ID002",
@@ -394,6 +394,9 @@
 			"item_object": "emLicker_3FW2-2",
 			"parent_object": "16-265-0-3-nil",
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Battery", "Electronic Gadget"]
+            },
             "excluded": 1
 	},
     {
@@ -416,14 +419,13 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": [
-                    ["Small Gear", "Large Gear", "Square Crank"],
-                    ["Small Gear", "Large Gear", "Mechanic Jack Handle"]
+                    "Small Gear", "Large Gear", "Mechanic Jack Handle"
                 ]
             }
     },
 	{
 			"name": "Zombie banging on gate",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em0100_Fence_Door",
 			"parent_object": "25-406-0-0-ID305",
@@ -431,7 +433,7 @@
 	},
 	{
 			"name": "Zombie with plaid shirt",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em0100_Fence_01",
 			"parent_object": "25-406-0-0-ID014",
@@ -439,7 +441,7 @@
 	},
 	{
 			"name": "Misty by the dumpster",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em0100_Start_01",
 			"parent_object": "25-408-0-1-ID000",
@@ -447,7 +449,7 @@
 	},
 	{
 			"name": "Zombie Dog behind fence",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em4000_Fence_01",
 			"parent_object": "25-408-0-4-nil",
@@ -455,7 +457,7 @@
 	},
 	{
 			"name": "Second Dog behind Fence",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em0100_Start_01",
 			"parent_object": "25-408-0-1-ID000",
@@ -463,7 +465,7 @@
 	},
 	{
 			"name": "Action Dog on White Car",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em4000_Start_02",
 			"parent_object": "25-408-0-4-nil",
@@ -471,7 +473,7 @@
 	},
 	{
 			"name": "Dog having a snack",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em4000_Eat_01",
 			"parent_object": "25-408-0-4-nil",
@@ -479,7 +481,7 @@
 	},
 	{
 			"name": "Action Dog 1 jumping fence",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em4000_Court_01",
 			"parent_object": "25-408-0-4-nil",
@@ -487,7 +489,7 @@
 	},
 	{
 			"name": "Action Dog 2 jumping fence",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em4000_Court_02",
 			"parent_object": "25-408-0-4-nil",
@@ -495,7 +497,7 @@
 	},
 	{
 			"name": "Dog before bus",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em4000_Court_03",
 			"parent_object": "25-408-0-4-nil",
@@ -503,7 +505,7 @@
 	},
 	{
 			"name": "Another one rides the bus",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em0000_Bus_02",
 			"parent_object": "25-408-0-0-ID000",
@@ -511,7 +513,7 @@
 	},
 	{
 			"name": "Dog after bus",
-			"region": "Path to Orphanage",
+			"region": "RPD Streets",
 			"original_item": "",
 			"item_object": "em4000_Last_01",
 			"parent_object": "25-408-0-4-nil",
@@ -675,7 +677,7 @@
 	},
 	{
 			"name": "Skylight Licker",
-			"region": "2F Art Room",
+			"region": "Art Room",
 			"original_item": "",
 			"item_object": "emLicker_2FEArtRoomLicker",
 			"parent_object": "16-256-0-3-nil",
@@ -739,7 +741,7 @@
 	},
 	{
 			"name": "Dark Clothes Zombie East Hallway",
-			"region": "East Hallway",
+			"region": "Break Room Hallway",
 			"original_item": "",
 			"item_object": "emZombie_1FECorridorC",
 			"parent_object": "16-229-0-0-ID209",
@@ -747,7 +749,7 @@
 	},
 	{
 			"name": "Plaid Shirt Zombie East Hallway",
-			"region": "East Hallway",
+			"region": "Break Room Hallway",
 			"original_item": "",
 			"item_object": "emZombie_1FECorridorC",
 			"parent_object": "16-229-0-0-ID011",
@@ -755,7 +757,7 @@
 	},
 	{
 			"name": "Snacking Zombie",
-			"region": "East Hallway",
+			"region": "Break Room Hallway",
 			"original_item": "",
 			"item_object": "emZombie_1FECorridorC",
 			"parent_object": "16-229-0-0-ID208",
@@ -763,7 +765,7 @@
 	},
 	{
 			"name": "Dark Clothes Window Zombie",
-			"region": "East Hallway",
+			"region": "Break Room Hallway",
 			"original_item": "",
 			"item_object": "emZombie_1FECorridorC_Window",
 			"parent_object": "16-229-0-0-ID207",
@@ -1068,7 +1070,7 @@
     {
             "type": "Boss",
 			"name": "G4",
-			"region": "Turntable",
+			"region": "Path to G4",
 			"original_item": "",
 			"item_object": "G4",
 			"parent_object": "21-421-0-16-nil",
@@ -1077,7 +1079,7 @@
     {
             "type": "Boss",
             "name": "G5 Boss Fight",
-            "region": "Train",
+            "region": "G5 Ending",
             "original_item": "",
             "item_object": "G5",
             "parent_object": "21-423-0-17-nil",

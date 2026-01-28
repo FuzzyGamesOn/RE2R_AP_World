@@ -89,7 +89,7 @@
     },
     {
             "name": "Female Zombie East Rail",
-            "region": "Main Hall 2F",
+            "region": "Main Hall",
             "original_item": "",
             "item_object": "emZombie_1FECorridor_DepotZombies",
             "parent_object": "16-112-2-1-ID007",
@@ -334,7 +334,6 @@
             "condition": {
                 "items": ["Square Crank"]
             }
-
     },
     {
             "name": "Action Dog from vent",
@@ -488,7 +487,7 @@
     },
     {
             "name": "Licker",
-            "region": "Southwest Hall",
+            "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emLicker_1FW-2",
             "parent_object": "16-125-0-3-nil",
@@ -518,7 +517,7 @@
     },
     {
             "name": "Licker",
-            "region": "West Hallway",
+            "region": "West Hallway 1F",
             "original_item": "",
             "item_object": "emLicker_1FW-2",
             "parent_object": "16-431-0-3-nil",
@@ -843,7 +842,7 @@
             "parent_object": "3-131-0-0-ID934",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["ID Wristband (General Staff)"]
+                "items": ["ID Wristband - General Staff"]
             }
     },
     {
@@ -1086,7 +1085,7 @@
     {
             "type": "Boss",
             "name": "G5 Boss Fight",
-            "region": "Train",
+            "region": "G5 Ending",
             "original_item": "",
             "item_object": "G5",
             "parent_object": "21-423-0-17-nil",
