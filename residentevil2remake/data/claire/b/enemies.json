@@ -213,10 +213,7 @@
             "original_item": "",
             "item_object": "emZombie_1FW4Window",
             "parent_object": "16-125-0-0-ID211",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-           	"condition": {
-                "items": ["Maiden Medallion"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Jumpsuit Zombie",
@@ -224,10 +221,7 @@
             "original_item": "",
             "item_object": "emZombie_1FW3Window",
             "parent_object": "16-225-0-0-ID008",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-           	"condition": {
-                "items": ["Maiden Medallion"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Overweight Zombie wearing Vest",
@@ -235,10 +229,7 @@
             "original_item": "",
             "item_object": "emZombie_1FWAdd",
             "parent_object": "16-225-0-2-ID004",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-           	"condition": {
-                "items": ["Maiden Medallion"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "type": "Boss",
@@ -271,7 +262,7 @@
 			"original_item": "",
 			"item_object": "Riccer_03",
 			"parent_object": "29-279-0-3-nil",
-        "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
 	},
 	{
 			"name": "Licker behind cages",
@@ -324,7 +315,7 @@
             "parent_object": "16-112-0-0-ID002",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Mechanic Jack Handle"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle"]
             }
     },
     {
@@ -335,7 +326,7 @@
             "parent_object": "16-112-0-0-ID200",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Mechanic Jack Handle"]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle"]
             }
     },
     {
@@ -418,9 +409,7 @@
             "parent_object": "16-229-0-0-ID018",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": [
-                    "Small Gear", "Large Gear", "Mechanic Jack Handle"
-                ]
+                "items": ["Small Gear", "Large Gear", "Mechanic Jack Handle"]
             }
     },
 	{
@@ -733,11 +722,17 @@
 	},
 	{
 			"name": "Female Zombie through window by East Office",
-			"region": "Southeast Hallway",
+			"region": "East Hallway 1F",
 			"original_item": "",
 			"item_object": "emZombie1FEWindow3rd",
 			"parent_object": "16-239-0-1-ID002",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "conditions": {
+                "items": [
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                ]
+            }
 	},
 	{
 			"name": "Dark Clothes Zombie East Hallway",
@@ -764,12 +759,15 @@
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
 	},
 	{
-			"name": "Dark Clothes Window Zombie",
+			"name": "Dark Clothes Zombie from Window",
 			"region": "Break Room Hallway",
 			"original_item": "",
 			"item_object": "emZombie_1FECorridorC_Window",
 			"parent_object": "16-229-0-0-ID207",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Small Gear", "Large Gear", "Mechanic Jack Handle"]
+            }
 	},
     {
             "name": "Blue Jumpsuit Zombie on ledge near entrance ladder",
@@ -1085,5 +1083,4 @@
             "parent_object": "21-423-0-17-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     }
-
 ]
