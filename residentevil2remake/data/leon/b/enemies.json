@@ -213,10 +213,7 @@
             "original_item": "",
             "item_object": "emZombie_1FW4Window",
             "parent_object": "16-125-0-0-ID211",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-           	"condition": {
-                "items": ["Maiden Medallion"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Jumpsuit Zombie",
@@ -224,10 +221,7 @@
             "original_item": "",
             "item_object": "emZombie_1FW3Window",
             "parent_object": "16-225-0-0-ID008",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-           	"condition": {
-                "items": ["Maiden Medallion"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Overweight Zombie wearing Vest",
@@ -235,10 +229,7 @@
             "original_item": "",
             "item_object": "emZombie_1FWAdd",
             "parent_object": "16-225-0-2-ID004",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-           	"condition": {
-                "items": ["Maiden Medallion"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "type": "Boss",
@@ -491,7 +482,10 @@
             "original_item": "",
             "item_object": "emLicker_1FW-2",
             "parent_object": "16-125-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
+            }
     },
     {
             "name": "Plain Clothes Zombie from first Window",
@@ -842,7 +836,7 @@
             "parent_object": "3-131-0-0-ID934",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["ID Wristband - General Staff"]
+                "items": ["Signal Modulator"]
             }
     },
     {
