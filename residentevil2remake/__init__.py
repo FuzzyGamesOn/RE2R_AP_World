@@ -840,7 +840,7 @@ class ResidentEvil2Remake(World):
         return self._format_option_text(self.options.add_enemy_kills_as_locations) != "None"
 
     def _can_enemy_kill_rando(self) -> bool:
-        return self._get_character() == "leon" and self._get_scenario() == "a" and self._get_difficulty() in ["assisted", "standard"]
+        return True # should be supported for all scenarios now thanks to contributions
 
     # def _output_items_and_locations_as_text(self):
     #     my_locations = [
