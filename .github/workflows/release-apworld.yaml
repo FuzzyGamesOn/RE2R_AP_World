@@ -57,7 +57,7 @@ jobs:
       - name: Create AP World Template YAML
         run: |
           python Launcher.py "Generate Template Options"
-          echo "AP_WORLD_YAML_PATH=\"Players/Templates/${{ env.AP_WORLD_NAME }}.yaml\"" >> $GITHUB_ENV
+          echo "AP_WORLD_YAML_PATH=Players/Templates/${{ env.AP_WORLD_NAME }}.yaml" >> $GITHUB_ENV
       - name: Remove min version from Template YAML
         run: |
           sed -i '/requires:/d' "Players/Templates/${{ env.AP_WORLD_NAME }}.yaml"
