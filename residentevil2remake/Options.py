@@ -161,6 +161,8 @@ class AddEnemyKillsAsLocations(Choice):
 class EnemyKillItems(Choice):
     """While the Add Enemy Kills as Locations option is enabled, this option specifies the items that each kill adds to the item pool.
 
+    (The items you choose here are STILL randomized. It's just that enemies don't drop items at all in RE2R, so we have to ask what they should have *vanilla*.)
+
     The available options are:
 
     Mixed: A mix of combat-related items (healing, ammo, subweapons, gunpowder) is added to the pool in equal parts.

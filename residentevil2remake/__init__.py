@@ -424,7 +424,8 @@ class ResidentEvil2Remake(World):
             replaceables = [item for item in pool if 'Boards' in item.name or item.name == 'Handgun Ammo' or item.name == 'Large-Caliber Handgun Ammo']
             
             for x in range(3):
-                pool.remove(replaceables[x])
+                if len(replaceables) == 0: break
+                pool.remove(replaceables.pop())
 
             pool.append(self.create_item('Mechanic Jack Handle'))
             pool.append(self.create_item('Small Gear'))
@@ -434,7 +435,8 @@ class ResidentEvil2Remake(World):
             replaceables = [item for item in pool if 'Boards' in item.name or item.name == 'Handgun Ammo' or item.name == 'Large-Caliber Handgun Ammo']
             
             for x in range(2):
-                pool.remove(replaceables[x])
+                if len(replaceables) == 0: break
+                pool.remove(replaceables.pop())
 
             pool.append(self.create_item('Lion Medallion'))
             pool.append(self.create_item('Unicorn Medallion'))
@@ -442,7 +444,9 @@ class ResidentEvil2Remake(World):
             # The A scenarios have Maiden forced to the Bolt Cutters vanilla location, which is guaranteed to be accessible.
             # B scenarios have it randomized, so add a second randomized Maiden.
             if self._get_scenario().lower() == 'b':
-                pool.remove(replaceables[2]) # remove the 3rd item to make room for a 3rd medallion
+                if len(replaceables) > 0:
+                    pool.remove(replaceables.pop()) # remove the 3rd item to make room for a 3rd medallion
+
                 pool.append(self.create_item('Maiden Medallion'))
 
         if self._format_option_text(self.options.early_medallions) == 'True':
