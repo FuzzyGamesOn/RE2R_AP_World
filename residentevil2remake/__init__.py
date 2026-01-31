@@ -421,7 +421,11 @@ class ResidentEvil2Remake(World):
         # add extras for Clock Tower items or Medallions, if configured
         # doing this before "oops all X" to make use of extra Handgun Ammo spots, too
         if self._format_option_text(self.options.extra_clock_tower_items) == 'True':
-            replaceables = [item for item in pool if 'Boards' in item.name or item.name == 'Handgun Ammo' or item.name == 'Large-Caliber Handgun Ammo']
+            replaceables = [
+                item for item in pool if 
+                    'Boards' in item.name or item.name == 'Handgun Ammo' or item.name == 'Large-Caliber Handgun Ammo' or item.name == "Gunpowder" or 
+                    item.name == "Damage Trap" or item.name == "Poison Trap"
+            ]
             
             for x in range(3):
                 if len(replaceables) == 0: break
@@ -432,8 +436,12 @@ class ResidentEvil2Remake(World):
             pool.append(self.create_item('Large Gear'))
 
         if self._format_option_text(self.options.extra_medallions) == 'True':
-            replaceables = [item for item in pool if 'Boards' in item.name or item.name == 'Handgun Ammo' or item.name == 'Large-Caliber Handgun Ammo']
-            
+            replaceables = replaceables = [
+                item for item in pool if 
+                    'Boards' in item.name or item.name == 'Handgun Ammo' or item.name == 'Large-Caliber Handgun Ammo' or item.name == "Gunpowder" or 
+                    item.name == "Damage Trap" or item.name == "Poison Trap"
+            ]       
+
             for x in range(2):
                 if len(replaceables) == 0: break
                 pool.remove(replaceables.pop())
