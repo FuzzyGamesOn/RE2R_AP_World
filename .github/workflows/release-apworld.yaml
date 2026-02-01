@@ -62,7 +62,7 @@ jobs:
         run: |
           sed -i '/requires:/d' "Players/Templates/${{ env.AP_WORLD_NAME }}.yaml"
           sed -i '/  version: */d' "Players/Templates/${{ env.AP_WORLD_NAME }}.yaml"
-          sed -i '/ game:' "Players/Templates/${{ env.AP_WORLD_NAME }}.yaml"
+          sed -i '/ game:/d' "Players/Templates/${{ env.AP_WORLD_NAME }}.yaml"
           sed -i '/  ${{ env.AP_WORLD_NAME }}: */d' "Players/Templates/${{ env.AP_WORLD_NAME }}.yaml"
       - name: Create Release
         uses: softprops/action-gh-release@v2
