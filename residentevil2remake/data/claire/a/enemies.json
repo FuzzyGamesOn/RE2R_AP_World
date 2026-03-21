@@ -56,7 +56,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "One-Armed Police Zombie outside West Office",
+            "name": "Police Zombie Playing Dead",
             "region": "West Hallway 1F",
             "original_item": "",
             "item_object": "emZombie_1FW_TrapZombie",
@@ -104,7 +104,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Hanging Zombie after using Detonator",
+            "name": "Zombie Hanging Around",
             "region": "West Storage Room",
             "original_item": "",
             "item_object": "DeadZombie",
@@ -131,7 +131,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Zombie-Eating Zombie",
+            "name": "Cannibal Zombie",
             "region": "Library",
             "original_item": "",
             "item_object": "emZombie_Library3",
@@ -162,7 +162,7 @@
 			"parent_object": "16-239-0-0-ID003",
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
-                "items": ["Bolt Cutters"]
+                "items": ["Maiden Medallion"]
 			}
 	},
 	{
@@ -248,6 +248,29 @@
 			}
 	},
     {
+            "name": "Licker outside STARS Office",
+            "region": "STARS Office",
+            "original_item": "",
+            "item_object": "FirstLicker",
+            "parent_object": "16-253-0-3-nil",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Maiden Medallion"]
+            }
+    },
+    {
+            "name": "Licker that loves explosions",
+            "region": "West Storage Room",
+            "original_item": "",
+            "item_object": "emLicker_3FLickerRoomA",
+            "parent_object": "16-265-0-3-nil",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Battery", "Electronic Gadget"]
+            },
+            "excluded": 1
+    },
+    {
             "type": "Boss",
             "name": "G1 Boss Fight",
             "region": "Machinery Room",
@@ -327,28 +350,6 @@
             }
 	},
     {
-            "name": "Bald Police Zombie from Window",
-            "region": "Observation Room Hallway",
-            "original_item": "",
-            "item_object": "emZombie1FE1Window",
-            "parent_object": "16-240-0-0-ID213",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
-                ]
-            }
-    },
-    {
-            "name": "Jump Scare Licker",
-            "region": "Interrogation Room",
-            "original_item": "",
-            "item_object": "1FEInterrogationRoom_Licker",
-            "parent_object": "16-233-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-    },
-    {
             "name": "Dark Police Zombie",
             "region": "East Storage Room",
             "original_item": "",
@@ -377,21 +378,111 @@
             }
     },
     {
-            "name": "Female Zombie outside of Boiler Room",
-            "region": "Roof",
+            "name": "Bald Police Zombie from Window",
+            "region": "Observation Room Hallway",
             "original_item": "",
-            "item_object": "emZombie_OutdoorNorth",
-            "parent_object": "16-122-0-1-ID002",
+            "item_object": "emZombie1FE1Window",
+            "parent_object": "16-240-0-0-ID213",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                ]
+            }
+    },
+    {
+            "name": "Peeping Zombie",
+            "region": "Press Room",
+            "original_item": "",
+            "item_object": "emZombie_1FECorriderB",
+            "parent_object": "16-232-0-0-ID011",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                ]
+            }
+    },
+    {
+            "name": "Jump Scare Licker",
+            "region": "Interrogation Room",
+            "original_item": "",
+            "item_object": "1FEInterrogationRoom_Licker",
+            "parent_object": "16-233-0-3-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Male Zombie outside of Boiler Room",
-            "region": "Roof",
+			"name": "Second Zombie from South Window",
+			"region": "Southwest Hallway",
+			"original_item": "",
+			"item_object": "emZombie1FW4Window3rd",
+			"parent_object": "16-125-0-0-ID012",
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"condition": {
+				"items": [
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+				]
+			}
+	},
+    {
+			"name": "Second Zombie from Center Window",   
+			"region": "Southwest Hallway",
+			"original_item": "",
+			"item_object": "emZombie1FW3Window3rd",
+			"parent_object": "16-225-0-0-ID011",
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"condition": {
+				"items": [
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+				]
+			}
+	},
+    {
+            "name": "Licker outside West Office",
+            "region": "West Hallway 1F",
             "original_item": "",
-            "item_object": "emZombie_OutdoorNorth",
-            "parent_object": "16-122-0-0-ID004",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "item_object": "emLicker_1FW2-2",
+            "parent_object": "16-431-0-3-nil",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                ]
+            }
     },
+    {
+			"name": "Licker in blocked passage",
+			"region": "Southwest Hallway",
+			"original_item": "",
+			"item_object": "emLicker_1FW2-2",
+			"parent_object": "16-125-0-3-nil",
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"condition": {
+				"items": [
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack 	Handle"]
+				]
+			}
+	},
+	{
+			"name": "Licker",
+			"region": "West Storage Room",
+			"original_item": "",
+			"item_object": "emLicker_3FW2-2",
+			"parent_object": "16-265-0-3-nil",
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"condition": {
+				"items": [
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+				]
+			}
+	},
     {
             "name": "Zombie Marvin",
             "region": "Main Hall",
@@ -407,18 +498,20 @@
             }
     },
     {
-            "name": "Licker outside West Office",
-            "region": "West Hallway 1F",
+            "name": "Female Zombie outside of Boiler Room",
+            "region": "Roof",
             "original_item": "",
-            "item_object": "emLicker_1FW2-2",
-            "parent_object": "16-431-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
-                ]
-            }
+            "item_object": "emZombie_OutdoorNorth",
+            "parent_object": "16-122-0-1-ID002",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Male Zombie outside of Boiler Room",
+            "region": "Roof",
+            "original_item": "",
+            "item_object": "emZombie_OutdoorNorth",
+            "parent_object": "16-122-0-0-ID004",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Plain Clothes Zombie",
@@ -445,6 +538,34 @@
                 "items": [
                     ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
                     ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                ]
+            }
+    },
+    {
+			"name": "Second Zombie from Window",
+			"region": "East Office",
+			"original_item": "",
+			"item_object": "emZombie_1FEOffice_Window",
+			"parent_object": "16-230-0-0-ID007",
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"condition": {
+				"items": [
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+				]
+			}
+	},
+    {
+            "name": "Third Zombie from Window",
+            "region": "East Hallway 1F",
+            "original_item": "",
+            "item_object": "emZombie1FEWindow3rd",
+            "parent_object": "16-239-0-1-ID002",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
                 ]
             }
     },
@@ -527,124 +648,6 @@
             "item_object": "em4000_Last_01",
             "parent_object": "25-408-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-    },
-    {
-            "name": "Third Zombie from Window",
-            "region": "East Hallway 1F",
-            "original_item": "",
-            "item_object": "emZombie1FEWindow3rd",
-            "parent_object": "16-239-0-1-ID002",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
-                ]
-            }
-    },
-    {
-            "name": "Plaid Shirt Zombie",
-            "region": "Press Room",
-            "original_item": "",
-            "item_object": "emZombie_1FECorriderB",
-            "parent_object": "16-232-0-0-ID011",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
-                ]
-            }
-    },
-    {
-            "name": "Second Zombie from Window",
-            "region": "East Office",
-            "original_item": "",
-            "item_object": "emZombie_1FEOffice_Window",
-            "parent_object": "16-230-0-0-ID007",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
-                ]
-            }
-		},
-        {
-            "name": "Second Zombie from South Window",
-            "region": "Southwest Hallway",
-            "original_item": "",
-            "item_object": "emZombie1FW4Window3rd",
-            "parent_object": "16-125-0-0-ID012",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
-                ]
-            }
-		},
-        {
-            "name": "Second Zombie from Center Window",   
-            "region": "Southwest Hallway",
-            "original_item": "",
-            "item_object": "emZombie1FW3Window3rd",
-            "parent_object": "16-225-0-0-ID011",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
-                ]
-            }
-		},
-        {
-            "name": "Licker in blocked passage",
-            "region": "Southwest Hallway",
-            "original_item": "",
-            "item_object": "emLicker_1FW2-2",
-            "parent_object": "16-125-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
-                ]
-            }
-		},
-		{
-			"name": "Licker outside STARS Office",
-			"region": "STARS Office",
-			"original_item": "",
-			"item_object": "FirstLicker",
-			"parent_object": "16-253-0-3-nil",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-		},
-		   {
-			"name": "Licker outside West Storage Room",
-			"region": "West Hallway 3F",
-			"original_item": "",
-			"item_object": "emLicker_3FW2-2",
-			"parent_object": "16-265-0-3-nil",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"condition": {
-				"items": [
-          ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
-        ]
-			}
-		},
-        {
-            "name": "Licker near Maiden Statue",
-            "region": "West Storage Room",
-            "original_item": "",
-            "item_object": "emLicker_3FLickerRoomA",
-            "parent_object": "16-265-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["Battery", "Electronic Gadget"]
-            },
-            "excluded": 1
     },
     {
             "name": "Zombie by Lockers",
@@ -852,7 +855,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Sleeping Zombie in bed",
+            "name": "Sleepy Dr Li",
             "region": "Nap Room",
             "original_item": "",
             "item_object": "ZombieNorth01",
@@ -879,7 +882,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Second Ivy near basement ladder",
+            "name": "First Ivy",
             "region": "Greenhouse",
             "original_item": "",
             "item_object": "IvyZombie_Idle",
@@ -887,22 +890,22 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Ivy in the middle",
+            "name": "Second Ivy",
             "region": "Greenhouse",
             "original_item": "",
             "item_object": "IvyZombie_Fall2",
             "parent_object": "3-410-0-7-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
-        {
-            "name": "Ivy the Fourth",
+    {
+            "name": "Third Ivy",
             "region": "Greenhouse",
             "original_item": "",
             "item_object": "IvyZombie_Fall1",
             "parent_object": "3-410-0-7-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
-       {
+    {
             "name": "Short Hair Lab Coat Zombie",
             "region": "Lounge - Labs",
             "original_item": "",
@@ -978,20 +981,26 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
         {
-            "name": "First Ivy near basement ladder",
+            "name": "First Ivy after using Dispersal Cartridge",
             "region": "Greenhouse",
             "original_item": "",
             "item_object": "IvyZombie_AfterFall",
             "parent_object": "3-410-0-7-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Signal Modulator", "Dispersal Cartridge - Empty"]
+            }
     },
         {
-            "name": "Ivy No. 5",
+            "name": "Second Ivy after using Dispersal Cartridge",
             "region": "Greenhouse",
             "original_item": "",
             "item_object": "IvyZombie_AfterFall",
             "parent_object": "3-410-0-7-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Signal Modulator", "Dispersal Cartridge - Empty"]
+            }
     },
     {
             "name": "Surprise Ivy leaving Greenhouse",

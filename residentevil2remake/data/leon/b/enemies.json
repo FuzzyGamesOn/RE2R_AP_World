@@ -878,17 +878,9 @@
             "item_object": "IvyZombie_FirstHang",
             "parent_object": "3-411-0-7-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-    },
+    }, 
     {
-            "name": "First Ivy near basement ladder",
-            "region": "Greenhouse",
-            "original_item": "",
-            "item_object": "IvyZombie_AfterFall",
-            "parent_object": "3-410-0-7-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-    },    
-    {
-            "name": "Second Ivy near basement ladder",
+            "name": "First Ivy",
             "region": "Greenhouse",
             "original_item": "",
             "item_object": "IvyZombie_Idle",
@@ -896,7 +888,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Ivy in the middle",
+            "name": "Second Ivy",
             "region": "Greenhouse",
             "original_item": "",
             "item_object": "IvyZombie_Fall2",
@@ -904,7 +896,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Ivy the Fourth",
+            "name": "Third Ivy",
             "region": "Greenhouse",
             "original_item": "",
             "item_object": "IvyZombie_Fall1",
@@ -912,12 +904,26 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Ivy No. 5",
+            "name": "First Ivy after using Dispersal Cartridge",
             "region": "Greenhouse",
             "original_item": "",
             "item_object": "IvyZombie_AfterFall",
             "parent_object": "3-410-0-7-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Signal Modulator", "Dispersal Cartridge - Empty"]
+            }
+    },   
+    {
+            "name": "Second Ivy after using Dispersal Cartridge",
+            "region": "Greenhouse",
+            "original_item": "",
+            "item_object": "IvyZombie_AfterFall",
+            "parent_object": "3-410-0-7-nil",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Signal Modulator", "Dispersal Cartridge - Empty"]
+            }
     },
     {
             "name": "Short Hair Lab Coat Zombie",
