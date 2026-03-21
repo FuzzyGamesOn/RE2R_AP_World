@@ -37,9 +37,9 @@
             "original_item": "",
             "item_object": "emZombie1FE2Window2nd",
             "parent_object": "16-239-0-0-ID003",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-			"condition": {
-                "items": ["Bolt Cutters"]
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			      "condition": {
+                "items": ["Maiden Medallion"]
 			}
     },
     {

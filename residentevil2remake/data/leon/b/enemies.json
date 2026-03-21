@@ -213,7 +213,7 @@
             "original_item": "",
             "item_object": "emZombie_1FW4Window",
             "parent_object": "16-125-0-0-ID211",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Unicorn Medallion, Maiden Medallion, Lion Medallion"]
             }
@@ -224,7 +224,7 @@
             "original_item": "",
             "item_object": "emZombie_1FW3Window",
             "parent_object": "16-225-0-0-ID008",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Unicorn Medallion, Maiden Medallion, Lion Medallion"]
             }
@@ -235,7 +235,7 @@
             "original_item": "",
             "item_object": "emZombie_1FWAdd",
             "parent_object": "16-225-0-2-ID004",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Unicorn Medallion, Maiden Medallion, Lion Medallion"]
             }
@@ -319,7 +319,7 @@
             "original_item": "",
             "item_object": "dog_East_twinsBlue1",
             "parent_object": "29-272-0-4-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": ["Square Crank"]
             }
@@ -363,7 +363,7 @@
             "original_item": "",
             "item_object": "emZombie_1FECorridorC",
             "parent_object": "16-229-0-0-ID209",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Unicorn Medallion", "Lion Medallion", "Maiden Medallion", "Square Crank"]
             }
@@ -374,7 +374,7 @@
             "original_item": "",
             "item_object": "emZombie_1FECorridorC",
             "parent_object": "16-229-0-0-ID011",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Unicorn Medallion", "Lion Medallion", "Maiden Medallion", "Square Crank"]
             }
@@ -385,7 +385,7 @@
             "original_item": "",
             "item_object": "emZombie_1FECorridorC",
             "parent_object": "16-229-0-0-ID208",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Unicorn Medallion", "Lion Medallion", "Maiden Medallion", "Square Crank"]
             }
@@ -399,7 +399,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
-            },
+            }
     },
     {
             "name": "Peeping Zombie",
@@ -407,7 +407,7 @@
             "original_item": "",
             "item_object": "emZombie_1FECorriderB",
             "parent_object": "16-232-0-0-ID011",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"conditions": {
                 "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
@@ -421,7 +421,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
-            },
+            }
     },
     {
             "name": "Police Zombie",

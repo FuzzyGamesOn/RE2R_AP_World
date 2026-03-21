@@ -160,7 +160,7 @@
 			"original_item": "",
 			"item_object": "emZombie1FE2Window2nd",
 			"parent_object": "16-239-0-0-ID003",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Bolt Cutters"]
 			}
@@ -187,7 +187,7 @@
 			"original_item": "",
 			"item_object": "emZombie1FW4Window",
 			"parent_object": "16-125-0-0-ID211",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Maiden Medallion"]
 			}
@@ -198,7 +198,7 @@
 			"original_item": "",
 			"item_object": "emZombie1FW3Window_Add",
 			"parent_object": "16-225-0-0-ID008",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Maiden Medallion"]
 			}
@@ -209,7 +209,7 @@
 			"original_item": "",
 			"item_object": "emZombie1FW_Knock",
 			"parent_object": "16-225-0-1-ID003",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
 				"items": ["Maiden Medallion"]
 			}
@@ -220,7 +220,7 @@
 			"original_item": "",
 			"item_object": "emZombie1FWAdd",
 			"parent_object": "16-225-0-2-ID004",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
 				"items": ["Maiden Medallion"]
 			}
@@ -231,7 +231,7 @@
 			"original_item": "",
 			"item_object": "emZombie1FW3Window_BreakIn",
 			"parent_object": "16-225-0-1-ID012",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
 				"items": ["Maiden Medallion"]
 			}
@@ -242,7 +242,7 @@
 			"original_item": "",
 			"item_object": "emZombie1FW1Window2nd",
 			"parent_object": "16-226-0-0-ID014",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
 				"items": ["Maiden Medallion"]
 			}
@@ -321,7 +321,7 @@
 			"original_item": "",
 			"item_object": "Riccer_04",
 			"parent_object": "29-272-0-3-nil",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Diamond Key"]
             }
@@ -536,8 +536,10 @@
             "parent_object": "16-239-0-1-ID002",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+                "items": [
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
                 ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                ]
             }
     },
     {
@@ -548,8 +550,10 @@
             "parent_object": "16-232-0-0-ID011",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+                "items": [
+                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
                 ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                ]
             }
     },
     {
@@ -624,8 +628,10 @@
 			"parent_object": "16-265-0-3-nil",
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
-				"items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+				"items": [
+          ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
 					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+        ]
 			}
 		},
         {
@@ -995,7 +1001,7 @@
             "parent_object": "3-433-0-7-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
-        {
+    {
             "type": "Boss",
             "name": "G3 Boss Fight",
             "region": "Bioreactors Room",
@@ -1004,7 +1010,7 @@
             "parent_object": "3-419-0-15-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
-        {
+    {
             "name": "Ivy 1 after elevator",
             "region": "Path to G4",
             "original_item": "",
@@ -1036,7 +1042,7 @@
             "parent_object": "21-135-0-7-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
-        {
+    {
             "name": "That Random Escape Zombie",
             "region": "Path to G4",
             "original_item": "",
