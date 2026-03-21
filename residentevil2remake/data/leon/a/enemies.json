@@ -16,7 +16,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Overweight Zombie in Closet",
+            "name": "Overweight Zombie",
             "region": "East Hallway 1F Closet",
             "original_item": "",
             "item_object": "emZombie_DepotLate",
@@ -24,7 +24,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Zombie from Elliot's Window",
+            "name": "First Zombie from Window",
             "region": "East Hallway 1F",
             "original_item": "",
             "item_object": "emZombie1FE2Window",
@@ -32,15 +32,18 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "2nd Zombie from Elliot's Window",
+            "name": "Second Zombie from Window",
             "region": "East Hallway 1F",
             "original_item": "",
             "item_object": "emZombie1FE2Window2nd",
             "parent_object": "16-239-0-0-ID003",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"condition": {
+                "items": ["Bolt Cutters"]
+			}
     },
     {
-            "name": "Police Zombie at Elliot",
+            "name": "Police Zombie after Elliot",
             "region": "East Hallway 1F",
             "original_item": "",
             "item_object": "emZombie_1stDoorBan",
@@ -59,7 +62,7 @@
             }
     },
     {
-            "name": "Female Zombie from Operations Room Window",
+            "name": "First Zombie from North Window",
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie1FW2Window",
@@ -99,7 +102,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Zombie from Window at Stairs",
+            "name": "First Zombie from Window",
             "region": "West Hallway 1F",
             "original_item": "",
             "item_object": "emZombie1FW1Window",
@@ -107,8 +110,8 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Zombie at top of Stairs",
-            "region": "West Hallway 3F",
+            "name": "Roaming Zombie on West Stairwell",
+            "region": "West Hallway 2F",
             "original_item": "",
             "item_object": "emZombie_2FW_CorriderB",
             "parent_object": "16-226-1-0-ID009",
@@ -123,7 +126,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Female Zombie near Spade Door",
+            "name": "Female Zombie",
             "region": "Library",
             "original_item": "",
             "item_object": "emZombie_Library_4",
@@ -131,7 +134,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Overweight Zombie near Spade Door",
+            "name": "Overweight Zombie",
             "region": "Library",
             "original_item": "",
             "item_object": "emZombie_Library2",
@@ -147,7 +150,15 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Helicopter Crash Zombie 1",
+            "name": "First Helicopter Crash Zombie",
+            "region": "East Hallway 2F",
+            "original_item": "",
+            "item_object": "emZombie_2FECorrider",
+			"parent_object": "16-255-0-0-ID012",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Second Helicopter Crash Zombie",
             "region": "East Hallway 2F",
             "original_item": "",
             "item_object": "emZombie_2FECorrider",
@@ -155,15 +166,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Helicopter Crash Zombie 2",
-            "region": "East Hallway 2F",
-            "original_item": "",
-            "item_object": "emZombie_2FECorrider",
-            "parent_object": "16-255-0-0-ID012",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-    },
-    {
-            "name": "Standing Police Zombie",
+            "name": "Wandering Zombie",
             "region": "East Office",
             "original_item": "",
             "item_object": "emZombie_1FEOffice2",
@@ -171,7 +174,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Zombie from Window",
+            "name": "First Zombie from Window",
             "region": "East Office",
             "original_item": "",
             "item_object": "emZombie_1FEOffice_Window",
@@ -179,7 +182,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Police Zombie from first Window",   
+            "name": "First Zombie from South Window",   
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie1FW4Window",
@@ -190,7 +193,7 @@
             }
     },
     {
-            "name": "Jumpsuit Zombie",
+            "name": "Roaming Jumpsuit Zombie",
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie1FW3Window_Add",
@@ -201,7 +204,7 @@
             }
     },
     {
-            "name": "Female Zombie from mid Window",
+            "name": "First Zombie from Center Window",
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie1FW_Knock",
@@ -212,7 +215,7 @@
             }
     },
     {
-            "name": "Overweight Zombie wearing Vest",
+            "name": "Roaming High Visibility Zombie",
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie1FWAdd",
@@ -223,7 +226,7 @@
             }
     },
     {
-            "name": "2nd Blonde Zombie from Operations Room Window",
+            "name": "Second Zombie from North Window",
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie1FW3Window_BreakIn",
@@ -234,7 +237,7 @@
             }
     },
     {
-            "name": "2nd Zombie at Stairs",
+            "name": "Second Zombie from Window",
             "region": "West Hallway 1F",
             "original_item": "",
             "item_object": "emZombie1FW1Window2nd",
@@ -256,7 +259,7 @@
             }
     },
     {
-            "name": "Licker near Maiden Statue",
+            "name": "Licker that loves explosions",
             "region": "West Storage Room",
             "original_item": "",
             "item_object": "emLicker_3FLickerRoomA",
@@ -304,7 +307,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Dog in Cage 1",
+            "name": "First Dog in Cage",
             "region": "Kennel",
             "original_item": "",
             "item_object": "dog_East_Cage03Leon",
@@ -312,7 +315,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Dog in Cage 2",
+            "name": "Second Dog in Cage",
             "region": "Kennel",
             "original_item": "",
             "item_object": "dog_East_Cage02Leon",
@@ -320,7 +323,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Dog in Cage 3",
+            "name": "Third Dog in Cage",
             "region": "Kennel",
             "original_item": "",
             "item_object": "dog_East_Cage01Leon",
@@ -328,7 +331,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Zombie at Door",
+            "name": "Zombie sitting behind Door",
             "region": "Morgue",
             "original_item": "",
             "item_object": "Zombie_01_OutSide",
@@ -336,7 +339,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Sleepy Zombie at Diamond Key",
+            "name": "Sleepy Zombie with Diamond Key",
             "region": "Morgue",
             "original_item": "",
             "item_object": "Zombie_02_JumpUp",
@@ -442,7 +445,7 @@
             }
     },
     {
-            "name": "Bald Police Zombie",
+            "name": "Bald Police Zombie from Window",
             "region": "Observation Room Hallway",
             "original_item": "",
             "item_object": "emZombie1FE1Window",
@@ -453,7 +456,7 @@
             }
     },
     {
-            "name": "Plain Clothes Zombie from first Window",
+            "name": "Second Zombie from South Window",
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie1FW4Window3rd",
@@ -464,7 +467,7 @@
             }
     },
     {
-            "name": "Plain Clothes Zombie from mid Window",   
+            "name": "Second Zombie from Center Window",   
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie1FW3Window3rd",
@@ -486,7 +489,7 @@
             }
     },
     {
-            "name": "Licker at start of hallway",
+            "name": "Licker in blocked passage",
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emLicker_1FW2-2",
@@ -497,8 +500,8 @@
             }
     },
     {
-            "name": "Licker outside West Storage Room",
-            "region": "West Hallway 3F",
+            "name": "Licker",
+            "region": "West Storage Room",
             "original_item": "",
             "item_object": "emLicker_3FW2-2",
             "parent_object": "16-265-0-3-nil",
@@ -578,14 +581,11 @@
             "parent_object": "16-229-0-0-ID018",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": [
-                    ["Small Gear", "Large Gear", "Square Crank"],
-                    ["Small Gear", "Large Gear", "Mechanic Jack Handle"]
-                ]
+                "items": ["Boxed Electronic Part 1"]
             }
     },
     {
-            "name": "Jumpsuit Zombie from office or window",
+            "name": "Second Zombie from Window",
             "region": "East Office",
             "original_item": "",
             "item_object": "emZombie_1FEOffice_Window",
@@ -596,7 +596,7 @@
             }
     },
     {
-            "name": "Female Zombie from window",
+            "name": "Third Zombie from Window",
             "region": "East Hallway 1F",
             "original_item": "",
             "item_object": "emZombie1FEWindow3rd",
@@ -647,7 +647,7 @@
             "parent_object": "17-429-0-1-ID002",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["T-Bar Handle"]
+                "items": ["King Plug"]
             }
     },
     {
@@ -658,7 +658,7 @@
             "parent_object": "17-429-0-1-ID006",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["T-Bar Handle"]
+                "items": ["King Plug"]
             }
     },
     {
@@ -669,7 +669,7 @@
             "parent_object": "17-429-0-0-ID004",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["T-Bar Handle"]
+                "items": ["King Plug"]
             }
     },
     {
@@ -760,7 +760,7 @@
             "parent_object": "17-315-0-2-ID001",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["T-Bar Handle"]
+                "items": ["Sewers Key"]
             },
             "excluded": 1
     },
