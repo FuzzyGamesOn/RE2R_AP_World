@@ -215,7 +215,7 @@
             "parent_object": "16-125-0-0-ID211",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
-                "items": ["Unicorn Medallion, Maiden Medallion, Lion Medallion"]
+                "items": ["Unicorn Medallion", "Maiden Medallion", "Lion Medallion"]
             }
     },
     {
@@ -226,7 +226,7 @@
             "parent_object": "16-225-0-0-ID008",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
-				"items": ["Unicorn Medallion, Maiden Medallion, Lion Medallion"]
+				"items": ["Unicorn Medallion", "Maiden Medallion", "Lion Medallion"]
             }
     },
     {
@@ -237,7 +237,7 @@
             "parent_object": "16-225-0-2-ID004",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
-                "items": ["Unicorn Medallion, Maiden Medallion, Lion Medallion"]
+                "items": ["Unicorn Medallion", "Maiden Medallion", "Lion Medallion"]
             }
     },
     {
@@ -698,9 +698,8 @@
             "parent_object": "16-256-0-3-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Scepter"]
+                "items": ["Red Book", "Statue Left Arm"]
             }
-			"exclude": 1
     },
     {
             "name": "Peeping Tom-bie",
