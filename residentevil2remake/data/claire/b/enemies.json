@@ -40,7 +40,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Zombie Elliot",
+            "name": "Elliot is half the man he used to be",
             "region": "East Hallway 1F",
             "original_item": "",
             "item_object": "emZombie_1FEEliot",
@@ -80,7 +80,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Zombie Marvin",
+            "name": "Marvin is just pranking us, right?",
             "region": "Main Hall",
             "original_item": "",
             "item_object": "emZombie_2ndMarvin",
@@ -88,7 +88,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Female Zombie East Rail",
+            "name": "Female Zombie Upstairs",
             "region": "Main Hall",
             "original_item": "",
             "item_object": "emZombie_1FECorridor_DepotZombies",
@@ -128,7 +128,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "One-Armed Police Zombie outside West Office",
+            "name": "Police Zombie Playing Dead",
             "region": "East Hallway 1F",
             "original_item": "",
             "item_object": "emZombie_1FW_TrapZombie",
@@ -144,7 +144,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Sitting Police Zombie at top of stairs",
+            "name": "Police Zombie that loves Jumping",
             "region": "West Hallway 2F",
             "original_item": "",
             "item_object": "emZombie_2FW",
@@ -152,7 +152,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Zombie at end of corridor",
+            "name": "Zombie between floors",
             "region": "West Hallway 2F",
             "original_item": "",
             "item_object": "emZombie_2FW_CorriderB",
@@ -160,7 +160,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Zombie at top of stairs",
+            "name": "Surprise Zombie from Spade Key room",
             "region": "West Hallway 3F",
             "original_item": "",
             "item_object": "2ndPlaySpadekeyZombie",
@@ -176,7 +176,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Zombie eating Zombie",
+            "name": "Cannibal Zombie",
             "region": "Library",
             "original_item": "",
             "item_object": "emZombie_Library3",
@@ -184,7 +184,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Overweight Zombie near Spade Key Door",
+            "name": "Overweight Zombie",
             "region": "Library",
             "original_item": "",
             "item_object": "emZombie_Library2",
@@ -208,7 +208,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Police Zombie",
+            "name": "First Zombie from South Window",
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie_1FW4Window",
@@ -219,7 +219,7 @@
             }
     },
     {
-            "name": "Jumpsuit Zombie",
+            "name": "First Zombie from Center Window",
             "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emZombie_1FW3Window",
@@ -317,6 +317,84 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
+            "name": "Dark Police Zombie from Window",
+            "region": "Break Room Hallway",
+            "original_item": "",
+            "item_object": "emZombie_1FECorridorC_Window",
+            "parent_object": "16-229-0-0-ID207",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				]
+            }
+    },	
+    {
+            "name": "Dark Police Zombie",
+            "region": "Break Room Hallway",
+            "original_item": "",
+            "item_object": "emZombie_1FECorridorC",
+            "parent_object": "16-229-0-0-ID209",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				]
+            }
+    },
+    {
+            "name": "Plaid Shirt Zombie",
+            "region": "Break Room Hallway",
+            "original_item": "",
+            "item_object": "emZombie_1FECorridorC",
+            "parent_object": "16-229-0-0-ID011",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				]
+            }
+    },
+    {
+            "name": "Munching Zombie",
+            "region": "Break Room Hallway",
+            "original_item": "",
+            "item_object": "emZombie_1FECorridorC",
+            "parent_object": "16-229-0-0-ID208",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				]
+            }
+    },	
+    {
+            "name": "Second Zombie from Window",
+            "region": "East Hallway 1F",
+            "original_item": "",
+            "item_object": "emZombie1FEWindow3rd",
+            "parent_object": "16-239-0-1-ID002",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				]
+            }
+    },	
+    {
+            "name": "Peeping Zombie",
+            "region": "Press Room",
+            "original_item": "",
+            "item_object": "emZombie_1FECorriderB",
+            "parent_object": "16-232-0-0-ID011",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				]
+            }
+    },
+    {
             "name": "Plain Clothes Zombie",
             "region": "Main Hall 3F",
             "original_item": "",
@@ -326,7 +404,7 @@
             "condition": {
                 "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle"]
             }
-    },
+    },	
     {
             "name": "Police Zombie",
             "region": "Main Hall 3F",
@@ -336,6 +414,19 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle"]
+            }
+    },
+    {
+            "name": "Second Zombie from Window",
+            "region": "East Office",
+            "original_item": "",
+            "item_object": "emZombie_1FEOffice_Window",
+            "parent_object": "16-230-0-0-ID007",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				]
             }
     },
     {
@@ -361,7 +452,7 @@
             }
     },
     {
-            "name": "Police Zombie through window",
+            "name": "Police Zombie from Window",
             "region": "Observation Room Hallway",
             "original_item": "",
             "item_object": "emZombie1FE1Window",
@@ -371,6 +462,17 @@
 				"items": [
 				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"]
 				]
+            }
+    },
+    {
+            "name": "Interrogator Licker",
+            "region": "Interrogation Room",
+            "original_item": "",
+            "item_object": "1FEInterrogationRoom_Licker",
+            "parent_object": "16-233-0-3-nil",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Unicorn Medallion", "Maiden Medallion", "Lion Medallion", "Small Gear", "Large Gear", "Mechanic Jack Handle"]
             }
     },
     {
@@ -400,6 +502,58 @@
             }
     },
     {
+            "name": "Second Licker",
+            "region": "Southwest Hallway",
+            "original_item": "",
+            "item_object": "emLicker_1FW2-2",
+            "parent_object": "16-125-0-3-nil",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				]
+            }
+    },
+    {
+            "name": "Second Zombie from South Window",
+            "region": "Southwest Hallway",
+            "original_item": "",
+            "item_object": "emZombie1FW4Window3rd",
+            "parent_object": "16-125-0-0-ID012",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				]
+            }
+    },
+    {
+            "name": "Second Zombie from Center Window",
+            "region": "Southwest Hallway",
+            "original_item": "",
+            "item_object": "emZombieFW3Window3rd",
+            "parent_object": "16-225-0-0-ID011",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				]
+            }
+    },
+    {
+            "name": "Licker",
+            "region": "West Hallway",
+            "original_item": "",
+            "item_object": "emLicker_1FW2-2",
+            "parent_object": "16-431-0-3-nil",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": [
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				]
+            }
+    },
+    {
             "name": "Licker",
             "region": "West Storage Room",
             "original_item": "",
@@ -408,12 +562,12 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"]
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"]
 				]
               }
     },
     {
-            "name": "Hanging Zombie After It Drops",
+            "name": "Zombie Hanging Around",
             "region": "West Storage Room",
             "original_item": "",
             "item_object": "DeadZombie",
@@ -424,7 +578,7 @@
             }
     },
     {
-            "name": "Plain Zombie from window",
+            "name": "Plain Zombie from Window",
             "region": "Break Room Hallway",
             "original_item": "",
             "item_object": "emZombie_1FECorridorC_Window",
@@ -432,6 +586,17 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": ["Unicorn Medallion", "Maiden Medallion", "Lion Medallion", "Small Gear", "Large Gear", "Mechanic Jack Handle"]
+            }
+    },
+    {
+            "name": "Skylight Licker",
+            "region": "Art Room",
+            "original_item": "",
+            "item_object": "emLicker_2FEArtRoomLicker",
+            "parent_object": "16-256-0-3-nil",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Red Book", "Statue Left Arm"]
             }
     },
     {
@@ -654,7 +819,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Third G-Adult from sewer hole",
+            "name": "Third G-Adult from Sewer Pipe",
             "region": "Bottom Waterway",
             "original_item": "",
             "item_object": "em6000_Hole",
@@ -667,184 +832,6 @@
             "original_item": "",
             "item_object": "Zombie_WasteGAdultArea_fat01",
             "parent_object": "17-325-0-2-ID004",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-    },
-    {
-            "name": "G-Adult upper waterway",
-            "region": "Upper Waterway",
-            "original_item": "",
-            "item_object": "em6000_07",
-            "parent_object": "17-315-0-8-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-    },
-    {
-            "name": "West Hallway Licker",
-            "region": "West Hallway",
-            "original_item": "",
-            "item_object": "emLicker_1FW2-2",
-            "parent_object": "16-431-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
-				]
-            }
-    },
-    {
-            "name": "Skylight Licker",
-            "region": "Art Room",
-            "original_item": "",
-            "item_object": "emLicker_2FEArtRoomLicker",
-            "parent_object": "16-256-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["Red Book", "Statue Left Arm"]
-            }
-    },
-    {
-            "name": "Peeping Tom-bie",
-            "region": "Press Room",
-            "original_item": "",
-            "item_object": "emZombie_1FECorriderB",
-            "parent_object": "16-232-0-0-ID011",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
-				]
-            }
-    },
-    {
-            "name": "Interrogator Licker",
-            "region": "Interrogation Room",
-            "original_item": "",
-            "item_object": "1FEInterrogationRoom_Licker",
-            "parent_object": "16-233-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-    },
-    {
-            "name": "Southwest Hallway Licker 2",
-            "region": "Southwest Hallway",
-            "original_item": "",
-            "item_object": "emLicker_1FW2-2",
-            "parent_object": "16-125-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
-				]
-            }
-    },
-    {
-            "name": "Southwest Hallway 3rd Window Zombie",
-            "region": "Southwest Hallway",
-            "original_item": "",
-            "item_object": "emZombieFW3Window3rd",
-            "parent_object": "16-225-0-0-ID011",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
-				]
-            }
-    },
-    {
-            "name": "Southwest Hallway 1st Window Zombie",
-            "region": "Southwest Hallway",
-            "original_item": "",
-            "item_object": "emZombie1FW4Window3rd",
-            "parent_object": "16-125-0-0-ID012",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
-				]
-            }
-    },
-    {
-            "name": "Overalls Zombie East Office Window",
-            "region": "East Office",
-            "original_item": "",
-            "item_object": "emZombie_1FEOffice_Window",
-            "parent_object": "16-230-0-0-ID007",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
-				]
-            }
-    },
-    {
-            "name": "Female Zombie through window by East Office",
-            "region": "East Hallway 1F",
-            "original_item": "",
-            "item_object": "emZombie1FEWindow3rd",
-            "parent_object": "16-239-0-1-ID002",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
-				]
-            }
-    },
-    {
-            "name": "Dark Clothes Zombie East Hallway",
-            "region": "Break Room Hallway",
-            "original_item": "",
-            "item_object": "emZombie_1FECorridorC",
-            "parent_object": "16-229-0-0-ID209",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
-				]
-            }
-    },
-    {
-            "name": "Plaid Shirt Zombie East Hallway",
-            "region": "Break Room Hallway",
-            "original_item": "",
-            "item_object": "emZombie_1FECorridorC",
-            "parent_object": "16-229-0-0-ID011",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
-				]
-            }
-    },
-    {
-            "name": "Snacking Zombie",
-            "region": "Break Room Hallway",
-            "original_item": "",
-            "item_object": "emZombie_1FECorridorC",
-            "parent_object": "16-229-0-0-ID208",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
-				]
-            }
-    },
-    {
-            "name": "Dark Clothes Zombie from Window",
-            "region": "Break Room Hallway",
-            "original_item": "",
-            "item_object": "emZombie_1FECorridorC_Window",
-            "parent_object": "16-229-0-0-ID207",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
-				]
-            }
-    },
-    {
-            "name": "Blue Jumpsuit Zombie on ledge near entrance ladder",
-            "region": "Bottom Waterway",
-            "original_item": "",
-            "item_object": "Zombie_WasteGAdultArea_man01",
-            "parent_object": "17-325-0-0-ID024",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
@@ -869,6 +856,22 @@
             "original_item": "",
             "item_object": "em6000_Swim",
             "parent_object": "17-325-0-8-nil",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "Blue Jumpsuit Zombie on ledge near entrance ladder",
+            "region": "Bottom Waterway",
+            "original_item": "",
+            "item_object": "Zombie_WasteGAdultArea_man01",
+            "parent_object": "17-325-0-0-ID024",
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+    },
+    {
+            "name": "G-Adult upper waterway",
+            "region": "Upper Waterway",
+            "original_item": "",
+            "item_object": "em6000_07",
+            "parent_object": "17-315-0-8-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
@@ -921,7 +924,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Dr Li",
+            "name": "Sleepy Dr Li",
             "region": "Nap Room",
             "original_item": "",
             "item_object": "ZombieNorth01",
@@ -1115,7 +1118,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Ivy Air Drop",
+            "name": "First Ivy Air Drop",
             "region": "Path to G4",
             "original_item": "",
             "item_object": "IvyZombie01",
@@ -1123,7 +1126,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "Ivy Air Drop 2",
+            "name": "Second Ivy Air Drop",
             "region": "Path to G4",
             "original_item": "",
             "item_object": "IvyZombie02",
@@ -1140,7 +1143,7 @@
     },
     {
             "type": "Boss",
-            "name": "G4",
+            "name": "G4 Boss Fight",
             "region": "Path to G4",
             "original_item": "",
             "item_object": "G4",
