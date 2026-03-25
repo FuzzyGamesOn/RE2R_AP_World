@@ -359,7 +359,7 @@
             "condition": {
                 "items": [
                     ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
                 ]
             }
     },
@@ -373,7 +373,7 @@
             "condition": {
                 "items": [
                     ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
                 ]
             }
     },
@@ -387,7 +387,7 @@
             "condition": {
                 "items": [
                     ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
                 ]
             }
     },
@@ -400,8 +400,8 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": [
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
                 ]
             }
     },
@@ -423,7 +423,7 @@
 			"condition": {
 				"items": [
 					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
 				]
 			}
 	},
@@ -437,7 +437,7 @@
 			"condition": {
 				"items": [
 					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
 				]
 			}
 	},
@@ -451,7 +451,7 @@
             "condition": {
                 "items": [
                     ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
                 ]
             }
     },
@@ -464,8 +464,8 @@
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
 				"items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
 				]
 			}
 	},
@@ -479,7 +479,7 @@
 			"condition": {
 				"items": [
 					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
 				]
 			}
 	},
@@ -493,7 +493,7 @@
             "condition": {
                 "items": [
                     ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
                 ]
             }
     },
@@ -521,10 +521,7 @@
             "parent_object": "16-112-0-0-ID002",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": [
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
-                ]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key", "Mechanic Jack Handle"]
             }
     },
     {
@@ -535,10 +532,7 @@
             "parent_object": "16-112-0-0-ID200",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": [
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
-                ]
+                "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key", "Mechanic Jack Handle"]
             }
     },
     {
@@ -551,7 +545,7 @@
 			"condition": {
 				"items": [
 					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
 				]
 			}
 	},
@@ -564,8 +558,8 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": [
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
-                ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Mechanic Jack Handle"]
+					["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"],
+                    ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
                 ]
             }
     },
@@ -593,6 +587,14 @@
             "parent_object": "25-408-0-1-ID000",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
+	{
+			"name": "Zombie Dog behind fence",
+			"region": "RPD Streets",
+			"original_item": "",
+			"item_object": "em4000_Fence_01",
+			"parent_object": "25-408-0-4-nil",
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+	},
     {
             "name": "Action Dog on white car",
             "region": "RPD Streets",
@@ -1035,6 +1037,14 @@
             "parent_object": "21-134-0-7-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
+	{
+			"name": "Ivy 3 after elevator",
+			"region": "Path to G4",
+			"original_item": "",
+			"item_object": "Ivy_03",
+			"parent_object": "21-134-0-7-nil",
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+	},
     {
             "name": "Falling Ivy 1",
             "region": "Path to G4",

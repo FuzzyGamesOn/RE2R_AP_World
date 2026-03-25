@@ -139,7 +139,7 @@
             "name": "Zombie from Window",
             "region": "West Hallway 1F",
             "original_item": "",
-            "item_object": "emZombie_1FW1Window2nd",
+            "item_object": "emZombie1FW1Window2nd",
             "parent_object": "16-226-0-0-ID014",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
@@ -156,7 +156,7 @@
             "region": "West Hallway 2F",
             "original_item": "",
             "item_object": "emZombie_2FW_CorriderB",
-            "parent_object": "16-253-0-0-ID200",
+            "parent_object": "16-226-1-0-ID009",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
@@ -208,10 +208,10 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
-            "name": "First Zombie from South Window",
+            "name": "Cop in the South Side of the Hallway",
             "region": "Southwest Hallway",
             "original_item": "",
-            "item_object": "emZombie_1FW4Window",
+            "item_object": "emZombie1FW4Window",
             "parent_object": "16-125-0-0-ID211",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
@@ -219,10 +219,10 @@
             }
     },
     {
-            "name": "First Zombie from Center Window",
+            "name": "Jumpsuit Zombie in the Center of the Hallway",
             "region": "Southwest Hallway",
             "original_item": "",
-            "item_object": "emZombie_1FW3Window",
+            "item_object": "emZombie1FW3Window",
             "parent_object": "16-225-0-0-ID008",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
@@ -233,7 +233,7 @@
             "name": "High Visibility Zombie",
             "region": "Southwest Hallway",
             "original_item": "",
-            "item_object": "emZombie_1FWAdd",
+            "item_object": "emZombie1FWAdd",
             "parent_object": "16-225-0-2-ID004",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
@@ -294,7 +294,7 @@
             "region": "Morgue",
             "original_item": "",
             "item_object": "Zombie_01_OutSide",
-            "parent_object": "29-273-0-2-ID004",
+            "parent_object": "29-273-0-0-ID004",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
@@ -498,7 +498,7 @@
             "name": "Second Licker",
             "region": "Southwest Hallway",
             "original_item": "",
-            "item_object": "emLicker_1FW-2",
+            "item_object": "emLicker_1FW2-2",
             "parent_object": "16-125-0-3-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
@@ -971,7 +971,8 @@
             "original_item": "",
             "item_object": "ZombieTAreaLowTemperature",
             "parent_object": "3-414-0-1-ID304",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"excluded": 1
     },
     {
             "name": "Lab Coat Zombie at bottom of stairs",
