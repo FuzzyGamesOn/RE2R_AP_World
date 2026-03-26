@@ -97,7 +97,7 @@
     },
     {
             "name": "Licker",
-            "region": "West Hallway 1F",
+            "region": "Southwest Hallway",
             "original_item": "",
             "item_object": "emLicker_1FW",
             "parent_object": "16-125-0-3-nil",
