@@ -408,7 +408,7 @@
             "item_object": "emZombie_1FECorriderB",
             "parent_object": "16-232-0-0-ID011",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"conditions": {
+			"condition": {
                 "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
     },
