@@ -129,7 +129,7 @@
     },
     {
             "name": "Police Zombie Playing Dead",
-            "region": "East Hallway 1F",
+            "region": "West Hallway 1F",
             "original_item": "",
             "item_object": "emZombie_1FW_TrapZombie",
             "parent_object": "16-431-0-0-ID213",
