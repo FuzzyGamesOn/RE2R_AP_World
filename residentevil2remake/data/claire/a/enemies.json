@@ -301,7 +301,8 @@
             "original_item": "",
             "item_object": "Riccer_01",
             "parent_object": "29-272-0-3-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"excluded": 1
     },
     {
             "name": "Licker eating Zombie Dog",
@@ -1075,6 +1076,9 @@
             "original_item": "",
             "item_object": "G4",
             "parent_object": "21-421-0-16-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Joint Plug"]
+            }
     }
 ]
