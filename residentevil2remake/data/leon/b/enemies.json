@@ -1057,7 +1057,10 @@
             "original_item": "",
             "item_object": "NakedTyrant",
             "parent_object": "21-373-0-11-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Joint Plug"]
+            }
     },
     {
             "name": "Rocket Target Practice Zombie 1",
@@ -1065,7 +1068,10 @@
             "original_item": "",
             "item_object": "EscpZombie05",
             "parent_object": "21-422-0-2-ID006",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Joint Plug"]
+            }
     },
     {
             "name": "Rocket Target Practice Zombie 2",
@@ -1073,7 +1079,10 @@
             "original_item": "",
             "item_object": "EscpZombie03",
             "parent_object": "21-422-0-0-ID023",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Joint Plug"]
+            }
     },
     {
             "name": "Rocket Target Practice Zombie 3",
@@ -1081,7 +1090,10 @@
             "original_item": "",
             "item_object": "EscpZombie06",
             "parent_object": "21-422-0-0-ID025",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Joint Plug"]
+            }
     },
     {
             "name": "Rocket Target Practice Zombie 4",
@@ -1089,7 +1101,10 @@
             "original_item": "",
             "item_object": "EscpZombie02",
             "parent_object": "21-422-0-2-ID005",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Joint Plug"]
+            }
     },
     {
             "name": "Rocket Target Practice Zombie 5",
@@ -1097,7 +1112,10 @@
             "original_item": "",
             "item_object": "EscpZombie04",
             "parent_object": "21-422-0-0-ID024",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Joint Plug"]
+            }
     },
     {
             "name": "Rocket Target Practice Zombie 6",
@@ -1105,7 +1123,10 @@
             "original_item": "",
             "item_object": "EscpZombie01",
             "parent_object": "21-422-0-0-ID004",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Joint Plug"]
+            }
     },
     {
             "type": "Boss",
