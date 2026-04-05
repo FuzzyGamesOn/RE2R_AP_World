@@ -354,7 +354,7 @@
             "parent_object": "16-229-0-0-ID207",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Unicorn Medallion", "Lion Medallion", "Maiden Medallion", "Square Crank"]
+                "items": ["Unicorn Medallion", "Lion Medallion", "Maiden Medallion", "Square Crank", "Fuse - Main Hall"]
             }
     },
     {
@@ -365,7 +365,7 @@
             "parent_object": "16-229-0-0-ID209",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
-                "items": ["Unicorn Medallion", "Lion Medallion", "Maiden Medallion", "Square Crank"]
+                "items": ["Unicorn Medallion", "Lion Medallion", "Maiden Medallion", "Square Crank", "Fuse - Main Hall"]
             }
     },
     {
@@ -376,7 +376,7 @@
             "parent_object": "16-229-0-0-ID011",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
-                "items": ["Unicorn Medallion", "Lion Medallion", "Maiden Medallion", "Square Crank"]
+                "items": ["Unicorn Medallion", "Lion Medallion", "Maiden Medallion", "Square Crank", "Fuse - Main Hall"]
             }
     },
     {
@@ -601,7 +601,7 @@
             "parent_object": "16-229-0-0-ID018",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Small Gear", "Large Gear", "Mechanic Jack Handle", "Lion Medallion", "Maiden Medallion", "Unicorn Medallion"]
+                "items": ["Small Gear", "Large Gear", "Mechanic Jack Handle", "Lion Medallion", "Maiden Medallion", "Unicorn Medallion", "Fuse - Main Hall"]
             }
     },
     {

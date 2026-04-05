@@ -326,7 +326,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key", "Fuse - Main Hall"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key", "Fuse - Main Hall"]
 				]
             }
     },	
@@ -339,7 +339,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key", "Fuse - Main Hall"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key", "Fuse - Main Hall"]
 				]
             }
     },
@@ -352,7 +352,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key", "Fuse - Main Hall"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key", "Fuse - Main Hall"]
 				]
             }
     },
@@ -365,7 +365,7 @@
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
                 "items": [
-				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
+				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key", "Fuse - Main Hall"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key", "Fuse - Main Hall"]
 				]
             }
     },	
@@ -586,7 +586,7 @@
             "parent_object": "16-229-0-0-ID018",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Unicorn Medallion", "Maiden Medallion", "Lion Medallion", "Small Gear", "Large Gear", "Mechanic Jack Handle"]
+                "items": ["Unicorn Medallion", "Maiden Medallion", "Lion Medallion", "Small Gear", "Large Gear", "Mechanic Jack Handle", "Fuse - Main Hall"]
             }
     },
     {
