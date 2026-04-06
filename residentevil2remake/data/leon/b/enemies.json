@@ -387,7 +387,7 @@
             "parent_object": "16-229-0-0-ID208",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
-                "items": ["Unicorn Medallion", "Lion Medallion", "Maiden Medallion", "Square Crank"]
+                "items": ["Unicorn Medallion", "Lion Medallion", "Maiden Medallion", "Square Crank", "Fuse - Main Hall"]
             }
     },
     {
