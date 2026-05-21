@@ -586,7 +586,7 @@
             "parent_object": "16-229-0-0-ID018",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Unicorn Medallion", "Maiden Medallion", "Lion Medallion", "Small Gear", "Large Gear", "Mechanic Jack Handle", "Fuse - Main Hall"]
+                "items": ["Unicorn Medallion", "Maiden Medallion", "Lion Medallion", "Small Gear", "Large Gear", "Mechanic Jack Handle", "Fuse - Main Hall", "Diamond Key"]
             }
     },
     {
