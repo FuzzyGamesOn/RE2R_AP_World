@@ -4,8 +4,8 @@ import typing
 from typing import Dict, Any, TextIO
 from Utils import visualize_regions
 
-from BaseClasses import ItemClassification, Item, Location, Region, CollectionState, LocationProgressType
-from worlds.AutoWorld import World
+from BaseClasses import ItemClassification, Item, Location, Region, CollectionState, LocationProgressType, Tutorial
+from worlds.AutoWorld import World, WebWorld
 from ..generic.Rules import set_rule
 from Fill import fill_restrictive
 
@@ -19,6 +19,17 @@ Data.load_data('leon', 'a')
 Data.load_data('leon', 'b')
 Data.load_data('claire', 'a')
 Data.load_data('claire', 'b')
+
+class RPDNet(WebWorld):
+    theme = "partyTime"
+    tutorials = [Tutorial(
+        "Multiworld Setup Guide",
+        "A guide for setting up Resident Evil 2 Remake to be played in Archipelago.",
+        "English",
+        "setup_en.md",
+        "setup/en",
+        ["TheRealSolidusSnake"]
+    )]
 
 
 class RE2RLocation(Location):
@@ -62,6 +73,7 @@ class ResidentEvil2Remake(World):
 
     options_dataclass = RE2ROptions
     options: RE2ROptions
+    web = RPDNet()
 
     def generate_early(self): # check weapon randomization before locations and items are processed, so we can swap non-randomized items as well
         # check for option values that UT passed via storing from slot data, and set our options to match if present
