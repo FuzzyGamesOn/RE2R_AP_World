@@ -1011,7 +1011,10 @@
             "original_item": "",
             "item_object": "IvyZombie_Idle",
             "parent_object": "3-433-0-7-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["ID Wristband - Senior Staff"]
+            }
     },
     {
             "type": "Boss",
