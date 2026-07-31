@@ -53,7 +53,8 @@
             "original_item": "",
             "item_object": "emZombie1FE2Window2nd",
             "parent_object": "16-239-0-0-ID003",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"excluded": 1
     },
     {
             "name": "First Zombie from Window",
@@ -61,7 +62,8 @@
             "original_item": "",
             "item_object": "emZombie_1FEOffice_Window",
             "parent_object": "16-230-0-0-ID207",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"excluded": 1
     },
     {
             "name": "Standing Police Zombie",
@@ -69,7 +71,8 @@
             "original_item": "",
             "item_object": "emZombie_1FEOffice2",
             "parent_object": "16-230-0-0-ID203",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"excluded": 1
     },
     {
             "name": "Dark-Haired Zombie",
@@ -197,7 +200,8 @@
             "original_item": "",
             "item_object": "emZombie_2FECorrider",
             "parent_object": "16-255-0-0-ID012",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"excluded": 1
     },
     {
             "name": "Second Helicopter Crash Zombie",
@@ -205,7 +209,8 @@
             "original_item": "",
             "item_object": "emZombie_2FECorrider",
             "parent_object": "16-255-0-0-ID216",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+			"excluded": 1
     },
     {
             "name": "Cop in the South Side of the Hallway",

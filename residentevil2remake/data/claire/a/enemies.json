@@ -14,7 +14,8 @@
             "item_object": "emZombie1FE2Window",
             "parent_object": "16-239-0-0-ID017",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-    },
+			},
+            "excluded": 1
     {
             "name": "Blonde Zombie",
             "region": "East Hallway 1F",
@@ -46,6 +47,7 @@
             "item_object": "emZombie1FW2Window",
             "parent_object": "16-225-0-1-ID002",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"excluded": 1
     },
     {
             "name": "Overweight Zombie at Vending Machines",
@@ -86,6 +88,7 @@
             "item_object": "emZombie1FW1Window",
             "parent_object": "16-226-0-0-ID016",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"excluded": 1
     },
     {
             "name": "Roaming Zombie on West Stairwell",
@@ -145,6 +148,7 @@
             "item_object": "emZombie_2FECorrider",
 			"parent_object": "16-255-0-0-ID012",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"excluded": 1
     },
     {
             "name": "Second Helicopter Crash Zombie",
@@ -153,6 +157,7 @@
             "item_object": "emZombie_2FECorrider",
             "parent_object": "16-255-0-0-ID216",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"excluded": 1
     },
 	{
 			"name": "Second Zombie from Window",
@@ -163,7 +168,8 @@
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Maiden Medallion"]
-			}
+			},
+			"excluded": 1
 	},
 	{
 			"name": "Wandering Zombie",
@@ -172,6 +178,7 @@
 			"item_object": "emZombie_1FEOffice2",
 			"parent_object": "16-230-0-0-ID203",
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"excluded": 1
 	},
 	{
 			"name": "First Zombie from Window",
@@ -180,6 +187,7 @@
 			"item_object": "emZombie_1FEOffice_Window",
 			"parent_object": "16-230-0-0-ID207",
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"excluded": 1
 	},
 	{
 			"name": "First Zombie from South Window",
@@ -190,7 +198,8 @@
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Maiden Medallion"]
-			}
+			},
+			"excluded": 1
 	},
 	{
 			"name": "Roaming Jumpsuit Zombie",
@@ -212,7 +221,8 @@
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
 				"items": ["Maiden Medallion"]
-			}
+			},
+			"excluded": 1
 	},
 	{
 			"name": "Roaming High Visibility Zombie",
@@ -348,7 +358,8 @@
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"condition": {
                 "items": ["Diamond Key"]
-            }
+            },
+			"excluded": 1
 	},
     {
             "name": "Dark Police Zombie",
