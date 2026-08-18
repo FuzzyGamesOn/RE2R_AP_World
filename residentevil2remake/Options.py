@@ -141,7 +141,7 @@ class AllowProgressionInLabs(Choice):
     option_true = 1
     default = 0
 
-class AddEnemyKillsAsLocations(Choice):
+class Killsanity(Choice):
     """When enabled, multiworld items are also placed on the enemies in your world. Killing those enemies gives the item.
 
     Currently only supports Leon's A (1st) scenario on Assisted / Standard difficulty.
@@ -153,15 +153,18 @@ class AddEnemyKillsAsLocations(Choice):
     None: You decided not to add hundreds of enemy locations to your world. Probably a good idea tbh.
     All: Every reachable enemy from the beginning of RPD to the end of the game now gives an item when killed.
     """
-    display_name = "Add Enemy Kills as Locations"
+    display_name = "Killsanity"
     option_none = 0
     option_all = 1
     default = 0
 
-class EnemyKillItems(Choice):
-    """While the Add Enemy Kills as Locations option is enabled, this option specifies the items that each kill adds to the item pool.
+class KillsanityItemPoolAdditions(Choice):
+    """While the Killsanity option is enabled, this option specifies the items that each kill adds to the item pool.
 
-    (The items you choose here are STILL randomized. It's just that enemies don't drop items at all in RE2R, so we have to ask what they should have *vanilla*.)
+    *****This DOES NOT mean that the enemies will drop whatever item you set here.*****
+
+    The items you choose here are **STILL randomized**.
+    It's just that enemies don't drop items at all in RE2R, so we have to ask what "vanilla" item you want them to have... which then gets randomized.
 
     The available options are:
 
@@ -173,7 +176,7 @@ class EnemyKillItems(Choice):
     Healing: Only healing items are added.
     Trash: Only filler items are added.
     """
-    display_name = "Enemy Item Kills"
+    display_name = "Killsanity - Item Pool Additions"
     option_mixed = 0
     option_all_weapon_related = 1
     option_ammo_related = 2
@@ -401,8 +404,8 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     extra_medallions: ExtraMedallions
     early_medallions: EarlyMedallions
     allow_progression_in_labs: AllowProgressionInLabs
-    add_enemy_kills_as_locations: AddEnemyKillsAsLocations
-    enemy_kill_items: EnemyKillItems
+    killsanity: Killsanity
+    killsanity_item_pool_additions: KillsanityItemPoolAdditions
     cross_scenario_weapons: CrossScenarioWeapons
     ammo_pack_modifier: AmmoPackModifier
     local_weapons: LocalWeapons
