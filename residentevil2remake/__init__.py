@@ -28,7 +28,7 @@ class RPDNet(WebWorld):
         "English",
         "setup_en.md",
         "setup/en",
-        ["TheRealSolidusSnake"]
+        ["FuzzyGamesOn"]
     )]
 
 
