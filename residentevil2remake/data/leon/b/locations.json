@@ -150,7 +150,9 @@
         "region": "Press Room",
         "original_item": "Flamethrower Fuel",
         "condition": {
-            "items": ["Fuse - Main Hall", "Film - Hiding Place"]
+            "items": [
+			["Fuse - Main Hall", "Film - Hiding Place"], ["Spade Key", "Film - Hiding Place"]
+			]
         },    
         "item_object": "sm70_110",
         "parent_object": "ItemPos_TreasureA_Leon",
@@ -2448,7 +2450,9 @@
         "name": "Final Hit on Super Tyrant",
         "region": "Path to Super Tyrant",
         "original_item": "Anti-tank Rocket",
-        "condition": {},    
+        "condition": {
+            "items": ["Joint Plug"]
+        },
         "item_object": "WP4600",
         "parent_object": "wp4600_rocketLauncher",
         "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/Environments/st5_211_0/gimmick/CutScene",
