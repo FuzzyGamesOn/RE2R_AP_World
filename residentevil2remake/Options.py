@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from Options import (Choice, OptionList, NamedRange, 
     StartInventoryPool,
-    PerGameCommonOptions, DeathLinkMixin)
+    PerGameCommonOptions, DeathLinkMixin, OptionGroup)
 
 class Character(Choice):
     """Leon: Expected, can video game.
@@ -421,3 +421,41 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     add_poison_traps: AddPoisonTraps
     poison_trap_count: PoisonTrapCount
 
+residentevil2remake_option_groups = [
+    OptionGroup("Helper Options", [
+        BonusStart,
+        StartingHipPouches,
+        StartingInkRibbons,
+        ExtraClockTowerItems,
+        ExtraMedallions,
+        EarlyMedallions,
+    ]),
+    OptionGroup("Weapon Options", [
+        StartingWeapon,
+        CrossScenarioWeapons,
+        LocalWeapons,
+        DoubleWeapons,
+        AmmoPackModifier,
+    ]),
+    OptionGroup("Enemy Kill Options", [
+        AddEnemyKillsAsLocations,
+        EnemyKillItems,
+    ]),
+    OptionGroup("Challenge Options", [
+        OopsAllRockets,
+        OopsAllMiniguns,
+        OopsAllGrenades,
+        OopsAllKnives,
+        NoFirstAidSpray,
+        NoGreenHerb,
+        NoRedHerb,
+        NoGunpowder,
+    ]),
+    OptionGroup("Trap Options", [
+        AddDamageTraps,
+        DamageTrapCount,
+        DamageTrapsCanKill,
+        AddPoisonTraps,
+        PoisonTrapCount,
+    ]),
+]
