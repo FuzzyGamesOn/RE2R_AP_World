@@ -786,7 +786,10 @@
             "original_item": "",
             "item_object": "Zombie_Waste01_02",
             "parent_object": "17-327-0-0-ID007",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Queen Plug"]
+            }
     },
     {
             "name": "Sleeping Overweight Zombie",
@@ -802,7 +805,10 @@
             "original_item": "",
             "item_object": "em6000_Swim",
             "parent_object": "17-325-0-8-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["King Plug"]
+            }
     },
     {
             "name": "Blue Jumpsuit Zombie on ledge near entrance ladder",
