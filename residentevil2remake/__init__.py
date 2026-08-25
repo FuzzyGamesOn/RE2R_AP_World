@@ -4,14 +4,14 @@ import typing
 from typing import Dict, Any, TextIO
 from Utils import visualize_regions
 
-from BaseClasses import ItemClassification, Item, Location, Region, CollectionState, LocationProgressType
-from worlds.AutoWorld import World
+from BaseClasses import ItemClassification, Item, Location, Region, CollectionState, LocationProgressType, Tutorial
+from worlds.AutoWorld import World, WebWorld
 from ..generic.Rules import set_rule
 from Fill import fill_restrictive
 
 from .Data import Data
 from .Exceptions import RE2ROptionError
-from .Options import RE2ROptions
+from .Options import RE2ROptions, residentevil2remake_option_groups
 from .WeaponRandomizer import WeaponRandomizer
 
 
@@ -19,6 +19,18 @@ Data.load_data('leon', 'a')
 Data.load_data('leon', 'b')
 Data.load_data('claire', 'a')
 Data.load_data('claire', 'b')
+
+class RPDNet(WebWorld):
+    theme = "partyTime"
+    tutorials = [Tutorial(
+        "Multiworld Setup Guide",
+        "A guide for setting up Resident Evil 2 Remake to be played in Archipelago.",
+        "English",
+        "setup_en.md",
+        "setup/en",
+        ["FuzzyGamesOn"]
+    )]
+    option_groups = residentevil2remake_option_groups
 
 
 class RE2RLocation(Location):
@@ -42,7 +54,7 @@ class ResidentEvil2Remake(World):
 
     data_version = 2
     required_client_version = (0, 5, 0)
-    apworld_release_version = "0.3.3" # defined to show in spoiler log
+    apworld_release_version = "0.3.4" # defined to show in spoiler log
 
     item_id_to_name = { item['id']: item['name'] for item in Data.item_table }
     item_name_to_id = { item['name']: item['id'] for item in Data.item_table }
@@ -62,6 +74,7 @@ class ResidentEvil2Remake(World):
 
     options_dataclass = RE2ROptions
     options: RE2ROptions
+    web = RPDNet()
 
     def generate_early(self): # check weapon randomization before locations and items are processed, so we can swap non-randomized items as well
         # check for option values that UT passed via storing from slot data, and set our options to match if present
