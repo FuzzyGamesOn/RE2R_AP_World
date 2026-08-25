@@ -788,7 +788,7 @@
             "parent_object": "17-327-0-0-ID007",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "condition": {
-                "items": ["Queen Plug"]
+                "items": ["King Plug"]
             }
     },
     {
@@ -797,7 +797,10 @@
             "original_item": "",
             "item_object": "Zombie_WasteGAdultArea_fat01",
             "parent_object": "17-327-0-2-ID008",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["King Plug"]
+            }
     },
     {
             "name": "Fourth G-Adult before ladder",
@@ -816,7 +819,10 @@
             "original_item": "",
             "item_object": "Zombie_WasteGAdultArea_man01",
             "parent_object": "17-325-0-0-ID024",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["King Plug"]
+            }
     },
     {
             "type": "Boss",
