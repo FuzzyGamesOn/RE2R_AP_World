@@ -424,7 +424,7 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     add_poison_traps: AddPoisonTraps
     poison_trap_count: PoisonTrapCount
 
-residentevil2remake_option_groups = [
+RE2ROptionGroups = [
     OptionGroup("Helper Options", [
         BonusStart,
         StartingHipPouches,
@@ -441,8 +441,8 @@ residentevil2remake_option_groups = [
         AmmoPackModifier,
     ]),
     OptionGroup("Enemy Kill Options", [
-        AddEnemyKillsAsLocations,
-        EnemyKillItems,
+        Killsanity,
+        KillsanityItemPoolAdditions,
     ]),
     OptionGroup("Challenge Options", [
         OopsAllRockets,

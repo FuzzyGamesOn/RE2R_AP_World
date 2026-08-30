@@ -11,7 +11,7 @@ from Fill import fill_restrictive
 
 from .Data import Data
 from .Exceptions import RE2ROptionError
-from .Options import RE2ROptions, residentevil2remake_option_groups
+from .Options import RE2ROptions, RE2ROptionGroups
 from .WeaponRandomizer import WeaponRandomizer
 
 
@@ -30,7 +30,7 @@ class RPDNet(WebWorld):
         "setup/en",
         ["FuzzyGamesOn"]
     )]
-    option_groups = residentevil2remake_option_groups
+    option_groups = RE2ROptionGroups
 
 
 class RE2RLocation(Location):
