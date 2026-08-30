@@ -13,9 +13,9 @@
             "original_item": "",
             "item_object": "emZombie1FE2Window",
             "parent_object": "16-239-0-0-ID017",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
-			},
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
             "excluded": 1
+    },
     {
             "name": "Blonde Zombie",
             "region": "East Hallway 1F",
@@ -46,7 +46,7 @@
             "original_item": "",
             "item_object": "emZombie1FW2Window",
             "parent_object": "16-225-0-1-ID002",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"excluded": 1
     },
     {
@@ -87,7 +87,7 @@
             "original_item": "",
             "item_object": "emZombie1FW1Window",
             "parent_object": "16-226-0-0-ID016",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"excluded": 1
     },
     {
@@ -147,7 +147,7 @@
             "original_item": "",
             "item_object": "emZombie_2FECorrider",
 			"parent_object": "16-255-0-0-ID012",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"excluded": 1
     },
     {
@@ -156,7 +156,7 @@
             "original_item": "",
             "item_object": "emZombie_2FECorrider",
             "parent_object": "16-255-0-0-ID216",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"excluded": 1
     },
 	{
@@ -177,7 +177,7 @@
 			"original_item": "",
 			"item_object": "emZombie_1FEOffice2",
 			"parent_object": "16-230-0-0-ID203",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"excluded": 1
 	},
 	{
@@ -186,7 +186,7 @@
 			"original_item": "",
 			"item_object": "emZombie_1FEOffice_Window",
 			"parent_object": "16-230-0-0-ID207",
-			"folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
 			"excluded": 1
 	},
 	{
@@ -809,7 +809,10 @@
             "original_item": "",
             "item_object": "Zombie_Waste01_02",
             "parent_object": "17-327-0-0-ID007",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["King Plug"]
+            }
     },
     {
             "name": "Fourth G-Adult before ladder",
@@ -817,7 +820,10 @@
             "original_item": "",
             "item_object": "em6000_Swim",
             "parent_object": "17-325-0-8-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["King Plug"]
+            }
     },
     {
             "type": "Boss",
