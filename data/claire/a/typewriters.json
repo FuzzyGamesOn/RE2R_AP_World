@@ -1,0 +1,102 @@
+[
+    { 
+        "name": "RPD - Lobby", 
+        "location_id": 16, 
+        "map_id": 112, 
+        "player_position": [1.5, 0.03, 4.12], 
+        "item_object": "Typewriter_2_1_005_control" 
+    },
+    { 
+        "name": "RPD - Darkroom", 
+        "location_id": 16, 
+        "map_id": 120, 
+        "player_position": [-13.65, 0, -14.72], 
+        "item_object": "Typewriter_2_1_002_control" 
+    },
+    { 
+        "name": "RPD B1 - Secret Room", 
+        "location_id": 16, 
+        "map_id": 112, 
+        "player_position": [0.08, -1.99, -19.49], 
+        "item_object": "Typewriter_UnderGoddes_control" 
+    },
+    { 
+        "name": "RPD B1 - Operators Room", 
+        "location_id": 16, 
+        "map_id": 353, 
+        "player_position": [-19.44, -11.5, 18.1], 
+        "item_object": "sm41_000_Typewriter01A_Prison_control" 
+    },
+    { 
+        "name": "RPD - Chief's Office", 
+        "location_id": 16, 
+        "map_id": 257, 
+        "player_position": [17.21, 5.2, -19.22], 
+        "item_object": "Typewriter_ChiefRoom_control",
+        "line_break": true
+    },
+
+    { 
+        "name": "Orphanage - Directors Room", 
+        "location_id": 24, 
+        "map_id": 361, 
+        "player_position": [47.45, 0.95, -212.72], 
+        "item_object": "Orphan_Claire_Typewriter01A_control",
+        "line_break": true
+    },
+
+    { 
+        "name": "Sewers - Office", 
+        "location_id": 17, 
+        "map_id": 320, 
+        "player_position": [1.46, -48.9, -46.91], 
+        "item_object": "Typewriter01A_waterWater03_control"
+    },
+
+    { 
+        "name": "Sewers - Monitor Room", 
+        "location_id": 17, 
+        "map_id": 332, 
+        "player_position": [-49.34, -49.18, -45], 
+        "item_object": "Typewriter01A_waterWater02_control",
+        "line_break": true
+    },
+
+    { 
+        "name": "Labs - Reception", 
+        "location_id": 3, 
+        "map_id": 127, 
+        "player_position": [-4.03, 0.03, -41.66], 
+        "item_object": "Typewriter01A_LabNorth_control" 
+    },
+    { 
+        "name": "Labs - Lobby", 
+        "location_id": 3, 
+        "map_id": 371, 
+        "player_position": [44.88, -0.01, 16.84], 
+        "item_object": "Typewriter01A_T_Area_control" 
+    },
+    { 
+        "name": "Labs - Server Room", 
+        "location_id": 3, 
+        "map_id": 416, 
+        "player_position": [89.63, -8.95, 14.6], 
+        "item_object": "Typewriter01A_T_Area2_control" 
+    },
+    { 
+        "name": "Labs - P-4 Testing Lab", 
+        "location_id": 3, 
+        "map_id": 420, 
+        "player_position": [-116.98, -0.06, 17.47], 
+        "item_object": "Typewriter01A_LabGArea_control",
+        "line_break": true
+    },
+
+    { 
+        "name": "G4 - Turntable Platform", 
+        "location_id": 21, 
+        "map_id": 373, 
+        "player_position": [-0.9, -78.51, 17.5], 
+        "item_object": "sm41_000_Typewriter01A_Lift_control" 
+    }
+]

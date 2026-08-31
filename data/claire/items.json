@@ -1,0 +1,701 @@
+[
+    {
+        "type": "Key",
+        "name": "Spade Key",
+        "decimal": "82",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Heart Key",
+        "decimal": "169",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Diamond Key",
+        "decimal": "119",
+        "count": 1,
+        "progression": 1
+    },
+	{
+        "type": "Key",
+        "name": "Courtyard Key",
+        "decimal": "131",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Fuse - Main Hall",
+        "groups": ["fuse"],
+        "decimal": "240",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Fuse - Break Room Hallway",
+        "groups": ["fuse"],
+        "decimal": "241",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Bolt Cutters",
+        "decimal": "244",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Valve Handle",
+        "decimal": "86",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Lion Medallion",
+        "groups": ["medallion", "medal"],
+        "decimal": "118",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Unicorn Medallion",
+        "groups": ["medallion", "medal"],
+        "decimal": "81",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Maiden Medallion",
+        "groups": ["medallion", "medal"],
+        "decimal": "124",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "STARS Badge",
+        "decimal": "87",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Square Crank",
+        "decimal": "80",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Mechanic Jack Handle",
+        "decimal": "79",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Parking Garage Key Card",
+        "decimal": "83",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "T-Bar Handle",
+        "decimal": "176",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Sewers Key",
+        "decimal": "194",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Pawn Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
+        "decimal": "133",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Knight Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
+        "decimal": "132",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Bishop Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
+        "decimal": "93",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Rook Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
+        "decimal": "94",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Queen Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
+        "decimal": "134",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "King Plug",
+        "groups": ["chess piece", "chess plug", "chess", "plug"],
+        "decimal": "95",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "ID Wristband - Visitor",
+        "groups": ["wristband", "bracelet", "id"],
+        "decimal": "200",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "ID Wristband - General Staff",
+        "groups": ["wristband", "bracelet", "id"],
+        "decimal": "201",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "ID Wristband - Senior Staff",
+        "groups": ["wristband", "bracelet", "id"],
+        "decimal": "202",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Upgrade Chip - Admin",
+        "groups": ["wristband", "bracelet", "id"],
+        "decimal": "186",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Trophy A",
+        "decimal": "191",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Key",
+        "name": "Trophy B",
+        "decimal": "190",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Key",
+        "name": "Signal Modulator",
+        "decimal": "189",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Key",
+        "name": "Joint Plug",
+        "decimal": "183",
+        "count": 1,
+        "progression": 1
+    },
+
+    {
+        "type": "Gating",
+        "name": "Electronic Gadget",
+        "decimal": "34",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Battery",
+        "decimal": "35",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Spare Key",
+        "groups": ["button"],
+        "decimal": "112",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Red Book",
+        "decimal": "114",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Statue Left Arm",
+        "decimal": "115",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Scepter",
+        "decimal": "88",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Bejeweled Box",
+        "decimal": "91",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Weapons Locker Key Card",
+        "decimal": "84",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Boxed Electronic Part 1",
+        "groups": ["boxed part", "box"],
+        "decimal": "135",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Boxed Electronic Part 2",
+        "groups": ["boxed part", "box"],
+        "decimal": "136",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Car Key",
+        "decimal": "120",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Large Gear",
+        "groups": ["gear"],
+        "decimal": "130",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Small Gear",
+        "groups": ["gear"],
+        "decimal": "129",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Dispersal Cartridge - Empty",
+        "decimal": "179",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Film - Commemorative",
+        "decimal": "74",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Gating",
+        "name": "Film - Lion Statue",
+        "decimal": "76",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Gating",
+        "name": "Film - 3F Locker",
+        "decimal": "75",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Gating",
+        "name": "Film - Hiding Place",
+        "decimal": "72",
+        "count": 1,
+        "progression": 1
+    },
+    {
+        "type": "Gating",
+        "name": "Film - Rising Rookie",
+        "decimal": "73",
+        "count": 1,
+        "progression": 0
+    },
+
+    {
+        "type": "Consumable",
+        "name": "Wooden Boards",
+        "decimal": "33",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Gunpowder",
+        "name": "Gunpowder",
+        "decimal": "36",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Gunpowder",
+        "name": "Gunpowder - Large",
+        "decimal": "37",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Gunpowder",
+        "name": "High-Grade Gunpowder - White",
+        "decimal": "39",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Consumable",
+        "name": "Hip Pouch",
+        "decimal": "262",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Consumable",
+        "name": "Ink Ribbon",
+        "decimal": "32",
+        "count": 2,
+        "progression": 0
+    },
+
+    {
+        "type": "Recovery",
+        "name": "First Aid Spray",
+        "decimal": "1",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Recovery",
+        "name": "Green Herb",
+        "decimal": "2",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Recovery",
+        "name": "Red Herb",
+        "decimal": "3",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Recovery",
+        "name": "Blue Herb",
+        "decimal": "4",
+        "count": 1,
+        "progression": 0
+    },
+
+    {
+        "type": "Weapon",
+        "name": "SLS 60",
+        "groups": ["pistol", "light_gun"],
+        "decimal": "9",
+        "count": 5,
+        "progression": 0,
+        "ammo": "Handgun Ammo"
+    },
+	{
+        "type": "Weapon",
+        "name": "Quickdraw Army",
+        "groups": ["pistol", "light_gun"],
+        "decimal": "4",
+        "count": 6,
+        "progression": 0,
+        "ammo": "Large-Caliber Handgun Ammo"
+    },
+    {
+        "type": "Weapon",
+        "name": "GM 79",
+        "groups": ["grenade", "grenade launcher", "medium_gun"],
+        "decimal": "42",
+        "count": 1,
+        "progression": 0,
+        "ammo": "Flame Rounds"
+    },
+    {
+        "type": "Weapon",
+        "name": "JMB Hp3",
+        "groups": ["pistol", "medium_gun"],
+        "decimal": "3",
+        "count": 13,
+        "progression": 0,
+        "ammo": "Handgun Ammo"
+    },
+    {
+        "type": "Weapon",
+        "name": "MQ 11",
+        "groups": ["medium_gun"],
+        "decimal": "21",
+        "count": 24,
+        "progression": 0,
+        "ammo": "Submachine Gun Ammo"
+    },
+    {
+        "type": "Weapon",
+        "name": "Spark Shot",
+        "groups": ["heavy_gun"],
+        "decimal": "44",
+        "count": 7,
+        "progression": 0,
+        "ammo": "Needle Cartridges"
+    },
+    {
+        "type": "Weapon",
+        "name": "Minigun",
+        "decimal": "50",
+        "count": 400,
+        "progression": 0
+    },
+    {
+        "type": "Weapon",
+        "name": "Mini-Minigun",
+        "decimal": "50",
+        "count": 50,
+        "progression": 0
+    },
+    {
+        "type": "Subweapon",
+        "name": "Combat Knife",
+        "decimal": "46",
+        "count": 1000,
+        "progression": 0
+    },
+    {
+        "type": "Subweapon",
+        "name": "Hand Grenade",
+        "decimal": "65",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Subweapon",
+        "name": "Flash Grenade",
+        "decimal": "66",
+        "count": 1,
+        "progression": 0
+    },
+
+    {
+        "type": "Ammo",
+        "name": "Handgun Ammo",
+        "decimal": "15",
+        "count": 10,
+        "progression": 0
+    },
+    {
+        "type": "Ammo",
+        "name": "High-Powered Rounds",
+        "decimal": "27",
+        "count": 5,
+        "progression": 0
+    },
+    {
+        "type": "Ammo",
+        "name": "Needle Cartridges",
+        "decimal": "24",
+        "count": 4,
+        "progression": 0
+    },
+    {
+        "type": "Ammo",
+        "name": "Large-Caliber Handgun Ammo",
+        "decimal": "26",
+        "count": 6,
+        "progression": 0
+    },
+    {
+        "type": "Ammo",
+        "name": "Submachine Gun Ammo",
+        "decimal": "17",
+        "count": 100,
+        "progression": 0
+    },
+    {
+        "type": "Ammo",
+        "name": "Flame Rounds",
+        "decimal": "23",
+        "count": 2,
+        "progression": 0
+    },
+    {
+        "type": "Ammo",
+        "name": "Acid Rounds",
+        "decimal": "22",
+        "count": 2,
+        "progression": 0
+    },
+
+    {
+        "type": "Upgrade",
+        "name": "Speed Loader - SLS 60",
+        "upgrades": "SLS 60",
+        "decimal": "51",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "High-Capacity Mag - JMB Hp3",
+        "upgrades": "JMB Hp3",
+        "decimal": "54",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "Suppressor - MQ 11",
+        "upgrades": "MQ 11",
+        "decimal": "60",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "High Capacity Mag - MQ 11",
+        "upgrades": "MQ 11",
+        "decimal": "58",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "Shoulder Stock - GM 79",
+        "upgrades": "GM 79",
+        "decimal": "64",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "Reinforced Frame - SLS 60",
+        "upgrades": "SLS 60",
+        "decimal": "53",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Upgrade",
+        "name": "High Voltage Condenser - Spark Shot",
+        "upgrades": "Spark Shot",
+        "decimal": "66",
+        "count": 1,
+        "progression": 0
+    },
+
+    {
+        "type": "Filler",
+        "name": "Gas Station Key",
+        "decimal": "77",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Filler",
+        "name": "Picture Block",
+        "decimal": "98",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Filler",
+        "name": "Pink Scissors",
+        "decimal": "243",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Filler",
+        "name": "Stuffed Doll",
+        "decimal": "245",
+        "count": 1,
+        "progression": 0
+    },
+
+    {
+        "type": "Trap",
+        "name": "Damage Trap",
+        "decimal": "",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Trap",
+        "name": "Poison Trap",
+        "decimal": "",
+        "count": 1,
+        "progression": 0
+    },
+
+    {
+        "type": "Lore",
+        "name": "USS Digital Video Cassette",
+        "decimal": "170",
+        "count": 1,
+        "progression": 0
+    },
+    {
+        "type": "Lore",
+        "name": "Lab Digital Video Cassette",
+        "decimal": "203",
+        "count": 1,
+        "progression": 0
+    }
+]

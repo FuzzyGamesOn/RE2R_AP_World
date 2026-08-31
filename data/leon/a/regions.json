@@ -1,0 +1,382 @@
+[
+    {
+        "name": "Menu",
+        "zone_id": 1
+    },
+    {
+        "name": "Gas Station",
+        "zone_id": 1
+    },
+    {
+        "name": "Main Hall",
+        "zone_id": 1
+    },
+    {
+        "name": "East Hallway 1F",
+        "zone_id": 1
+    },
+    {
+        "name": "East Hallway 1F Closet",
+        "zone_id": 1
+    },
+    {
+        "name": "Press Room",
+        "zone_id": 1
+    },
+    {
+        "name": "Bathroom",
+        "zone_id": 1
+    },
+    {
+        "name": "Reception - RPD",
+        "zone_id": 1
+    },
+    {
+        "name": "Southwest Hallway",
+        "zone_id": 1
+    },
+    {
+        "name": "Records Room",
+        "zone_id": 1
+    },
+    {
+        "name": "Operations Room",
+        "zone_id": 1
+    },
+    {
+        "name": "Operations Room 2",
+        "zone_id": 1
+    },
+    {
+        "name": "West Hallway 1F",
+        "zone_id": 1
+    },
+    {
+        "name": "Safety Deposit Room",
+        "zone_id": 1
+    },
+    {
+        "name": "West Office",
+        "zone_id": 1
+    },
+    {
+        "name": "Darkroom",
+        "zone_id": 1
+    },
+    {
+        "name": "East Office",
+        "zone_id": 1
+    },
+    {
+        "name": "Boiler Room",
+        "zone_id": 1
+    },
+    {
+        "name": "Break Room",
+        "zone_id": 1
+    },
+    {
+        "name": "Break Room Hallway",
+        "zone_id": 1
+    },
+    {
+        "name": "Library",
+        "zone_id": 1
+    },
+    {
+        "name": "Lounge - RPD",
+        "zone_id": 1
+    },
+    {
+        "name": "Waiting Room",
+        "zone_id": 1
+    },
+    {
+        "name": "East Hallway 2F",
+        "zone_id": 1
+    },
+    {
+        "name": "Art Room",
+        "zone_id": 1
+    },
+    {
+        "name": "Fire Escape",
+        "zone_id": 1
+    },
+    {
+        "name": "Shower Room",
+        "zone_id": 1
+    },
+    {
+        "name": "STARS Office Hallway",
+        "zone_id": 1
+    },
+    {
+        "name": "West Hallway 2F",
+        "zone_id": 1
+    },
+    {
+        "name": "STARS Office",
+        "zone_id": 1
+    },
+    {
+        "name": "Armory",
+        "zone_id": 1
+    },
+    {
+        "name": "Linen Room",
+        "zone_id": 1
+    },
+    {
+        "name": "Side Stairs",
+        "zone_id": 1
+    },
+    {
+        "name": "Roof",
+        "zone_id": 1
+    },
+    {
+        "name": "West Hallway 3F",
+        "zone_id": 1
+    },
+    {
+        "name": "West Storage Room",
+        "zone_id": 1
+    },
+    {
+        "name": "East Storage Room",
+        "zone_id": 1
+    },
+    {
+        "name": "Observation Room Hallway",
+        "zone_id": 1
+    },
+    {
+        "name": "Observation Room",
+        "zone_id": 1
+    },
+    {
+        "name": "Interrogation Room",
+        "zone_id": 1
+    },
+    {
+        "name": "Balcony",
+        "zone_id": 1
+    },
+    {
+        "name": "Clock Tower",
+        "zone_id": 1
+    },
+    {
+        "name": "Main Hall 3F",
+        "zone_id": 1
+    },
+
+    {
+        "name": "Secret Room",
+        "zone_id": 2
+    },
+    {
+        "name": "Underground Stairs",
+        "zone_id": 2
+    },
+    {
+        "name": "Machinery Room",
+        "zone_id": 2
+    },
+    {
+        "name": "Operators Room",
+        "zone_id": 2
+    },
+    {
+        "name": "Parking Garage",
+        "zone_id": 2
+    },
+    {
+        "name": "Jail",
+        "zone_id": 2
+    },
+    {
+        "name": "Kennel",
+        "zone_id": 2
+    },
+    {
+        "name": "Morgue",
+        "zone_id": 2
+    },
+    {
+        "name": "Firing Range",
+        "zone_id": 2
+    },
+    {
+        "name": "Generator Room",
+        "zone_id": 2
+    },
+
+    {
+        "name": "RPD Streets",
+        "zone_id": 3
+    },
+    {
+        "name": "Gun Shop",
+        "zone_id": 3
+    },
+    {
+        "name": "Sewers Entrance",
+        "zone_id": 3
+    },
+    {
+        "name": "Control Room",
+        "zone_id": 3
+    },
+    {
+        "name": "Treatment Pool Room",
+        "zone_id": 3
+    },
+    {
+        "name": "Incinerator",
+        "zone_id": 3
+    },
+    {
+        "name": "Water Gate",
+        "zone_id": 3
+    },
+    {
+        "name": "Workroom",
+        "zone_id": 3
+    },
+    {
+        "name": "Workers Break Room",
+        "zone_id": 3
+    },
+    {
+        "name": "Water Injection Chamber",
+        "zone_id": 3
+    },
+    {
+        "name": "Ada In Sewers",
+        "zone_id": 3
+    },
+    {
+        "name": "Monitor Room",
+        "zone_id": 3
+    },
+    {
+        "name": "Garbage Room",
+        "zone_id": 3
+    },
+    {
+        "name": "Proposed Water Purification Room",
+        "zone_id": 3
+    },
+    {
+        "name": "Main Power Room",
+        "zone_id": 3
+    },
+    {
+        "name": "Upper Waterway",
+        "zone_id": 3
+    },
+    {
+        "name": "Lower Waterway",
+        "zone_id": 3
+    },
+    {
+        "name": "Supplies Storage Room",
+        "zone_id": 3
+    },
+    {
+        "name": "Bottom Waterway",
+        "zone_id": 3
+    },
+    {
+        "name": "Waterway Overpass",
+        "zone_id": 3
+    },
+    {
+        "name": "Central Hub",
+        "zone_id": 3
+    },
+    
+    {
+        "name": "Cable Car Platform",
+        "zone_id": 4
+    },
+    {
+        "name": "Reception - Labs",
+        "zone_id": 4
+    },
+    {
+        "name": "Cafeteria",
+        "zone_id": 4
+    },
+    {
+        "name": "Kitchen",
+        "zone_id": 4
+    },
+    {
+        "name": "Nap Room",
+        "zone_id": 4
+    },
+    {
+        "name": "Security Room",
+        "zone_id": 4
+    },
+    {
+        "name": "Main Shaft",
+        "zone_id": 4
+    },
+    {
+        "name": "Lobby",
+        "zone_id": 4
+    },
+    {
+        "name": "Lobby Storage",
+        "zone_id": 4
+    },
+    {
+        "name": "Presentation Room",
+        "zone_id": 4
+    },
+    {
+        "name": "Greenhouse",
+        "zone_id": 4
+    },
+    {
+        "name": "Greenhouse Control Room",
+        "zone_id": 4
+    },
+    {
+        "name": "Drug Testing Lab",
+        "zone_id": 4
+    },
+    {
+        "name": "Lounge - Labs",
+        "zone_id": 4
+    },
+    {
+        "name": "Server Room",
+        "zone_id": 4
+    },
+    {
+        "name": "Low-Temp Testing Lab",
+        "zone_id": 4
+    },
+    {
+        "name": "Biotesting Lab",
+        "zone_id": 4
+    },
+    {
+        "name": "Bioreactors Room",
+        "zone_id": 4
+    },
+    {
+        "name": "P-4 Level Testing Lab",
+        "zone_id": 4
+    },
+
+    {
+        "name": "Path to Super Tyrant",
+        "zone_id": 5
+    }
+]

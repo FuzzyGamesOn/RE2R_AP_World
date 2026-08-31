@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "RPD"
+    },
+    {
+        "id": 2,
+        "name": "Parking Garage"
+    },
+    {
+        "id": 3,
+        "name": "Sewers"
+    },
+    {
+        "id": 4,
+        "name": "Lab"
+    },
+    {
+        "id": 5,
+        "name": "Super Tyrant"
+    }
+]

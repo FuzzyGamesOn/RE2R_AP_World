@@ -1,0 +1,174 @@
+[
+    {
+        "name": "Main Desk",
+        "region": "Main Hall",
+        "original_item": "Ink Ribbon",
+        "condition": {},
+        "item_object": "sm70_201",
+        "parent_object": "InkRibbon_Hall",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/InkRibbon"
+    },
+    {
+        "name": "Right Locker",
+        "region": "Darkroom",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "ItemPositions_OldLocker_1FW3",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/DarkRoom/Locker_sm70_100_HandgunB_HardInkribbon"
+    },
+    {
+        "name": "Table by Door",
+        "region": "East Office",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201_InkRibbon_EastOffice",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/InkRibbon"
+    },
+    {
+        "name": "Desk",
+        "region": "Secret Room",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "InkRibbon_UnderGoddes",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/InkRibbon"
+    },
+    {
+        "name": "Locker",
+        "region": "Operators Room",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "PosOnly_ItemLocker",
+        "folder_path": "RopewayContents/World/Location_RPD_B1/Environments/st4_751_0/gimmick"
+    },
+	{
+        "name": "Breakfront",
+        "region": "Private Collection Room",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201_InkRibbon_ChiefRoom",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/InkRibbon"
+    },
+    {
+        "name": "Chair across Room",
+        "region": "Interrogation Room",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "InkRibbon_TorishirabeShitu",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/InkRibbon"
+    },
+    {
+        "name": "Printer",
+        "region": "Records Room",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201_InkRibbon_ReferenceRoom",
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/InkRibbon"
+    },
+	{
+        "name": "Shelves before Printer",
+        "region": "Orphanage",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201",
+        "folder_path": "RopewayContents/World/Location_OrphanAsylum/LocationLevel_OrphanAsylum/Item/common/Claire_common"
+    },
+	{
+        "name": "Table by Door",
+        "region": "Sewer Office",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201_01",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Inkribbon"
+    },
+    {
+        "name": "Table with Raccoon Milk",
+        "region": "Monitor Room",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201_01_01",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Inkribbon"
+    },
+    {
+        "name": "On Table 2", 
+        "region": "Water Injection Chamber",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201_01_01_01_01",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Inkribbon"
+    },
+    {
+        "name": "Trash Can before G2 Fight",
+        "region": "Main Power Room",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201_G2",
+        "folder_path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/G2Area"
+    },
+    {
+        "name": "Reception Desk at Labs",
+        "region": "Cable Car Platform",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201_Inkribbon_Narea",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/InkRibbon",
+        "forbid_item": ["Sewers Key", "T-Bar Handle"]
+    },
+    { 
+        "name": "Front Desk", 
+        "region": "Lobby",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201_Inkribbon_Tarea",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/InkRibbon",
+        "forbid_item": ["Sewers Key", "T-Bar Handle"]
+    },
+    {
+        "name": "Beside Typewriter",
+        "region": "P-4 Level Testing Lab",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201_Inkribbon_Garea",
+        "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/InkRibbon",
+        "forbid_item": ["Sewers Key", "T-Bar Handle"]
+    },
+    {
+        "name": "Boxes by Typewriter",
+        "region": "Path to G4",
+        "original_item": "Ink Ribbon",
+        "condition": {},    
+        "item_object": "sm70_201",
+        "parent_object": "sm70_201",
+        "folder_path": "RopewayContents/World/Location_LaboratoryUndermost/LocationLevel_LaboratoryUndermost/Item/common",
+        "forbid_item": ["Sewers Key", "T-Bar Handle"]
+    },
+    {
+    	"name": "Side Table",
+    	"region": "West Storage Room",
+    	"remove": true
+    },
+    {
+    	"name": "Left Table",
+    	"region": "Workroom",
+    	"remove": true
+    },
+    {
+    	"name": "Before Sanitation Spray",
+    	"region": "Biotesting Lab",
+    	"remove": true
+    }
+]
