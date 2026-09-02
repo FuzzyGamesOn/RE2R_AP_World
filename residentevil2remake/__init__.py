@@ -11,7 +11,7 @@ from Fill import fill_restrictive
 
 from .Data import Data
 from .Exceptions import RE2ROptionError
-from .Options import RE2ROptions, RE2ROptionGroups
+from .Options import RE2ROptions
 from .WeaponRandomizer import WeaponRandomizer
 
 
@@ -28,9 +28,8 @@ class RPDNet(WebWorld):
         "English",
         "setup_en.md",
         "setup/en",
-        ["FuzzyGamesOn"]
+        ["TheRealSolidusSnake"]
     )]
-    option_groups = RE2ROptionGroups
 
 
 class RE2RLocation(Location):
@@ -82,6 +81,11 @@ class ResidentEvil2Remake(World):
             # gets the int val from the string option value name, then sets
             getattr(self.options, key).value = getattr(self.options, key).options[val]
 
+        # if the enemy kills as locations option is enabled for a scenario that doesn't support it yet, throw an error
+        if self._enemy_kill_rando() and not self._can_enemy_kill_rando():
+            raise RE2ROptionError("The Enemy Kills as Locations option is only currently supported for Leon's A (1st) scenario on Assisted / Standard difficulty.")
+            return
+
         # start with the normal locations per player for pool, then overwrite with weapon rando if needed
         self.source_locations[self.player] = self._get_locations_for_scenario(self._get_character(), self._get_scenario()) # id:loc combo
         self.source_locations[self.player] = { 
@@ -89,54 +93,54 @@ class ResidentEvil2Remake(World):
                 for i, l in self.source_locations[self.player].items() 
         } # turn it into name:loc instead
 
-        if self._killsanity():
+        if self._enemy_kill_rando():
             # since enemy kills don't give items themselves, create a drop table of 
             # combat-related items to add to the pool for these locations
-            killsanity_items = self._format_option_text(self.options.killsanity_item_pool_additions).lower()
+            enemy_kill_items = self._format_option_text(self.options.enemy_kill_items).lower()
 
-            if killsanity_items == "Trash":
-                killsanity_valid_drops = [
+            if enemy_kill_items == "Trash":
+                enemy_kill_valid_drops = [
                     i['name'] for i in Data.item_table if i.get('type', 'None') in ['Lore'] or 'Trophy' in i['name'] 
                 ]   
-            elif killsanity_items == "Healing":
-                killsanity_valid_drops = [
+            elif enemy_kill_items == "Healing":
+                enemy_kill_valid_drops = [
                     i['name'] for i in Data.item_table if i.get('type', 'None') in ['Recovery'] 
                 ]
-            elif killsanity_items == "Gunpowder":
-                killsanity_valid_drops = [
+            elif enemy_kill_items == "Gunpowder":
+                enemy_kill_valid_drops = [
                     i['name'] for i in Data.item_table if 'Gunpowder' in i['name'] 
                 ]
-            elif killsanity_items == "Ammo":
-                killsanity_valid_drops = [
+            elif enemy_kill_items == "Ammo":
+                enemy_kill_valid_drops = [
                     i['name'] for i in Data.item_table if i.get('type', 'None') in ['Ammo'] 
                 ]
-            elif killsanity_items == "Ammo Related":
-                killsanity_valid_drops = [
+            elif enemy_kill_items == "Ammo Related":
+                enemy_kill_valid_drops = [
                     i['name'] for i in Data.item_table if i.get('type', 'None') in ['Ammo'] or 'Gunpowder' in i['name'] 
                 ]
-            elif killsanity_items == "All Weapon Related":
-                killsanity_valid_drops = [
+            elif enemy_kill_items == "All Weapon Related":
+                enemy_kill_valid_drops = [
                     i['name'] for i in Data.item_table if i.get('type', 'None') in ['Ammo', 'Subweapon'] or 'Gunpowder' in i['name'] 
                 ]
             else: # == "Mixed"
-                killsanity_valid_drops = [
+                enemy_kill_valid_drops = [
                     i['name'] for i in Data.item_table if i.get('type', 'None') in ['Recovery', 'Ammo', 'Subweapon'] or 'Gunpowder' in i['name'] 
                 ]   
 
             # get the list of viable items from the list of items currently on the scenario's locations
-            killsanity_drop_names = list(set([
-                l['original_item'] for l in self.source_locations[self.player].values() if l.get('original_item', 'None') in killsanity_valid_drops
+            enemy_kill_drop_names = list(set([
+                l['original_item'] for l in self.source_locations[self.player].values() if l.get('original_item', 'None') in enemy_kill_valid_drops
             ]))
-            killsanity_drops = []
+            enemy_kill_drops = []
 
             for x in range(len(Data.enemy_table)):
-                drop_name = killsanity_drop_names[x % len(killsanity_drop_names)]
-                killsanity_drops.append(drop_name)
+                drop_name = enemy_kill_drop_names[x % len(enemy_kill_drop_names)]
+                enemy_kill_drops.append(drop_name)
 
             # replace placeholders for enemy kills with the chosen distribution of items
             for name, loc in self.source_locations[self.player].items():
                 if loc.get('original_item') == "__Enemy Kill Drop Placeholder__":
-                    loc['original_item'] = killsanity_drops.pop(0)
+                    loc['original_item'] = enemy_kill_drops.pop(0)
 
         weapon_rando = self._format_option_text(self.options.cross_scenario_weapons).lower()
 
@@ -245,7 +249,7 @@ class ResidentEvil2Remake(World):
                 # END if
 
                 # if the player doesn't have a fire weapon or rocket launchers in their item pool, make all Ivy enemy drops give filler / be useless
-                if self._killsanity() and "Ivy" in location.name and not has_fire_weapon:
+                if self._enemy_kill_rando() and "Ivy" in location.name and not has_fire_weapon:
                     location.progress_type = LocationProgressType.EXCLUDED
                     location.place_locked_item(self.create_item("Pink Scissors"))
 
@@ -490,7 +494,7 @@ class ResidentEvil2Remake(World):
 
             replacement_types = ['Weapon', 'Subweapon', 'Ammo']
 
-            if self._killsanity(): # if enemy kill rando, just replace gunpowder with the Oops weapon; players will need more firepower
+            if self._enemy_kill_rando(): # if enemy kill rando, just replace gunpowder with the Oops weapon; players will need more firepower
                 replacement_types.append('Gunpowder')
             else: # otherwise, we don't want the player to have gunpowder for bullets to make Oops options more thematic, so we swap them to random filler
                 replacements = [
@@ -598,9 +602,9 @@ class ResidentEvil2Remake(World):
             if len(eligible_items) == 0: break # no items to remove to match, give up
 
             pool.remove(eligible_items[0])
-
+        
         # if enemy kills are added to the locations, remove all Wooden Boards so that players don't prevent themselves from killing window vaulting enemies
-        if self._killsanity():
+        if self._enemy_kill_rando():
             if self._get_oops_all_options_flag():
                 pool = self._replace_pool_item_with(pool, "Wooden Boards", "Blue Herb") # enemy kill rando removes all gunpowder with Oops, so use a different replacement
             else:
@@ -635,7 +639,6 @@ class ResidentEvil2Remake(World):
             "scenario": self._get_scenario(),
             "difficulty": self._get_difficulty(),
             "unlocked_typewriters": self._format_option_text(self.options.unlocked_typewriters).split(", "),
-            "killsanity": self._format_option_text(self.options.killsanity),
             "weapon_rando": self._format_option_text(self.options.cross_scenario_weapons),
             "starting_weapon": self._get_starting_weapon(),
             "all_weapons": self._get_all_weapons(),
@@ -751,7 +754,7 @@ class ResidentEvil2Remake(World):
                 if loc['character'] == character and loc['scenario'] == scenario
         }
 
-        if self._killsanity():
+        if self._enemy_kill_rando():
             locations_pool.update({
                 enemy['id']: enemy for enemy in Data.enemy_table
                     if enemy['character'] == character and enemy['scenario'] == scenario
@@ -774,6 +777,16 @@ class ResidentEvil2Remake(World):
             locations_pool = {
                 id: loc for id, loc in locations_pool.items() if loc['difficulty'] != 'hardcore'
             }
+
+        # Removes enemy locations entirely if the player turns off missable enemy checks! - Pablitø
+        missable_enemy_locations = self._format_option_text(self.options.missable_enemy_locations).lower()
+
+        if not bool(self.options.missable_enemy_locations):
+            locations_pool = {
+                id: loc for id, loc in locations_pool.items()
+                if loc.get('category') != 'missable'
+            }
+        # (points upward) simple code, it plucks the enemies deemed missable with my new category flag to prevent stress on the player. - Pablitø
 
         # now that we've factored in hardcore swaps, remove any hardcore locations that were just there for removing unused standard ones
         locations_pool = { id: loc for id, loc in locations_pool.items() if 'remove' not in loc }
@@ -856,7 +869,40 @@ class ResidentEvil2Remake(World):
         if self._format_option_text(self.options.oops_all_knives) == 'True':
             flag |= 0x08
         return flag
-       
-    def _killsanity(self) -> bool:
-        return self._format_option_text(self.options.killsanity) != "None"
 
+    def _enemy_kill_rando(self) -> bool:
+        return self._format_option_text(self.options.add_enemy_kills_as_locations) != "None"
+
+    def _can_enemy_kill_rando(self) -> bool:
+        return True # should be supported for all scenarios now thanks to contributions
+
+    # def _output_items_and_locations_as_text(self):
+    #     my_locations = [
+    #         {
+    #             'id': loc.address,
+    #             'name': loc.name,
+    #             'original_item': self.location_name_to_location[loc.name]['original_item'] if loc.name != "Victory" else "(Game Complete)"
+    #         } for loc in self.multiworld.get_locations() if loc.player == self.player
+    #     ]
+
+    #     my_locations = set([
+    #         "{} | {} | {}".format(loc['id'], loc['name'], loc['original_item'])
+    #         for loc in my_locations
+    #     ])
+        
+    #     my_items = [
+    #         {
+    #             'id': item.code,
+    #             'name': item.name
+    #         } for item in self.multiworld.get_items() if item.player == self.player
+    #     ]
+
+    #     my_items = set([
+    #         "{} | {}".format(item['id'], item['name'])
+    #         for item in my_items
+    #     ])
+
+    #     print("\n".join(sorted(my_locations)))
+    #     print("\n".join(sorted(my_items)))
+
+    #     raise BaseException("Done with debug output.")

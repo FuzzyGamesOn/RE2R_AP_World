@@ -109,12 +109,5 @@
         "map_id": 373, 
         "player_position": [-0.9, -78.51, 17.5], 
         "item_object": "sm41_000_Typewriter01A_Lift_control" 
-    },
-    {
-        "name": "Tyrant - Final Battle",
-        "location_id": 21,
-        "map_id": 373,
-        "player_position": [48.38, -101.62, 16.48],
-        "item_object": "CheckPoint_NTyrant"
     }
 ]

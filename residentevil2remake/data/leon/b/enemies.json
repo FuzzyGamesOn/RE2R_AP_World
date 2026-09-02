@@ -54,7 +54,7 @@
             "item_object": "emZombie1FE2Window2nd",
             "parent_object": "16-239-0-0-ID003",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "First Zombie from Window",
@@ -63,7 +63,7 @@
             "item_object": "emZombie_1FEOffice_Window",
             "parent_object": "16-230-0-0-ID207",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Standing Police Zombie",
@@ -71,8 +71,7 @@
             "original_item": "",
             "item_object": "emZombie_1FEOffice2",
             "parent_object": "16-230-0-0-ID203",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Dark-Haired Zombie",
@@ -201,7 +200,7 @@
             "item_object": "emZombie_2FECorrider",
             "parent_object": "16-255-0-0-ID012",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Second Helicopter Crash Zombie",
@@ -210,7 +209,7 @@
             "item_object": "emZombie_2FECorrider",
             "parent_object": "16-255-0-0-ID216",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Cop in the South Side of the Hallway",
@@ -317,7 +316,7 @@
             "item_object": "FenceClimbDog",
             "parent_object": "29-274-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Action Dog under fence outside door",
@@ -326,10 +325,10 @@
             "item_object": "dog_East_twinsBlue1",
             "parent_object": "29-272-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Square Crank"]
-            },
-			"excluded": 1
+            }
     },
     {
             "name": "Action Dog jumping over debris outside doors",
@@ -338,10 +337,10 @@
             "item_object": "BaricadeJumpDog",
             "parent_object": "29-272-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Square Crank"]
-            },
-			"excluded": 1
+            }
     },
     {
             "name": "Action Dog from vent",
@@ -350,10 +349,10 @@
             "item_object": "dog_East_twinsBlue2",
             "parent_object": "29-272-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Square Crank"]
-            },
-			"excluded": 1
+            }
     },
     {
             "name": "Dark Police Zombie from Window",
@@ -554,6 +553,7 @@
             "item_object": "dog05_parking",
             "parent_object": "29-277-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Square Crank"]
             }
@@ -565,6 +565,7 @@
             "item_object": "dog02_parking",
             "parent_object": "29-277-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Square Crank"]
             }
@@ -576,6 +577,7 @@
             "item_object": "dog01_parking",
             "parent_object": "29-277-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Square Crank"]
             }
@@ -703,6 +705,7 @@
 			"item_object": "Zombie_Waste02_FallBefor",
 			"parent_object": "17-315-0-2-ID001",
 			"folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
 			"condition": {
                 "items": ["T-Bar Handle"]
             }
@@ -786,10 +789,7 @@
             "original_item": "",
             "item_object": "Zombie_Waste01_02",
             "parent_object": "17-327-0-0-ID007",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["King Plug"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Sleeping Overweight Zombie",
@@ -797,10 +797,7 @@
             "original_item": "",
             "item_object": "Zombie_WasteGAdultArea_fat01",
             "parent_object": "17-327-0-2-ID008",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["King Plug"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Fourth G-Adult before ladder",
@@ -808,10 +805,7 @@
             "original_item": "",
             "item_object": "em6000_Swim",
             "parent_object": "17-325-0-8-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["King Plug"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Blue Jumpsuit Zombie on ledge near entrance ladder",
@@ -819,10 +813,7 @@
             "original_item": "",
             "item_object": "Zombie_WasteGAdultArea_man01",
             "parent_object": "17-325-0-0-ID024",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["King Plug"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "type": "Boss",

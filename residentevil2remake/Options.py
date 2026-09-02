@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from Options import (Choice, OptionList, NamedRange, 
     StartInventoryPool,
-    PerGameCommonOptions, DeathLinkMixin, OptionGroup)
+    PerGameCommonOptions, DeathLinkMixin)
 
 class Character(Choice):
     """Leon: Expected, can video game.
@@ -141,7 +141,7 @@ class AllowProgressionInLabs(Choice):
     option_true = 1
     default = 0
 
-class Killsanity(Choice):
+class AddEnemyKillsAsLocations(Choice):
     """When enabled, multiworld items are also placed on the enemies in your world. Killing those enemies gives the item.
 
     Currently only supports Leon's A (1st) scenario on Assisted / Standard difficulty.
@@ -153,18 +153,28 @@ class Killsanity(Choice):
     None: You decided not to add hundreds of enemy locations to your world. Probably a good idea tbh.
     All: Every reachable enemy from the beginning of RPD to the end of the game now gives an item when killed.
     """
-    display_name = "Killsanity"
+    display_name = "Add Enemy Kills as Locations"
     option_none = 0
     option_all = 1
     default = 0
 
-class KillsanityItemPoolAdditions(Choice):
-    """While the Killsanity option is enabled, this option specifies the items that each kill adds to the item pool.
+class MissableEnemyLocations(Choice):
+    """When enabled, enemies that are deemed 'missable', like certain window zombies and Claire's RPD Street dogs are removed.
 
-    *****This DOES NOT mean that the enemies will drop whatever item you set here.*****
+    The available options are:
 
-    The items you choose here are **STILL randomized**.
-    It's just that enemies don't drop items at all in RE2R, so we have to ask what "vanilla" item you want them to have... which then gets randomized.
+    False: You decided not to add the enemies that are missable. Good. 
+    True: Every reachable enemy from the beginning of RPD to the end of the game are in the seed.  
+    """
+    display_name = "Missable Enemy Locations"
+    option_false = 0
+    option_true = 1
+    default = 0
+
+class EnemyKillItems(Choice):
+    """While the Add Enemy Kills as Locations option is enabled, this option specifies the items that each kill adds to the item pool.
+
+    (The items you choose here are STILL randomized. It's just that enemies don't drop items at all in RE2R, so we have to ask what they should have *vanilla*.)
 
     The available options are:
 
@@ -176,7 +186,7 @@ class KillsanityItemPoolAdditions(Choice):
     Healing: Only healing items are added.
     Trash: Only filler items are added.
     """
-    display_name = "Killsanity - Item Pool Additions"
+    display_name = "Enemy Item Kills"
     option_mixed = 0
     option_all_weapon_related = 1
     option_ammo_related = 2
@@ -404,8 +414,9 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     extra_medallions: ExtraMedallions
     early_medallions: EarlyMedallions
     allow_progression_in_labs: AllowProgressionInLabs
-    killsanity: Killsanity
-    killsanity_item_pool_additions: KillsanityItemPoolAdditions
+    add_enemy_kills_as_locations: AddEnemyKillsAsLocations
+    missable_enemy_locations: MissableEnemyLocations
+    enemy_kill_items: EnemyKillItems
     cross_scenario_weapons: CrossScenarioWeapons
     ammo_pack_modifier: AmmoPackModifier
     local_weapons: LocalWeapons
@@ -424,41 +435,3 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     add_poison_traps: AddPoisonTraps
     poison_trap_count: PoisonTrapCount
 
-RE2ROptionGroups = [
-    OptionGroup("Helper Options", [
-        BonusStart,
-        StartingHipPouches,
-        StartingInkRibbons,
-        ExtraClockTowerItems,
-        ExtraMedallions,
-        EarlyMedallions,
-    ]),
-    OptionGroup("Weapon Options", [
-        StartingWeapon,
-        CrossScenarioWeapons,
-        LocalWeapons,
-        DoubleWeapons,
-        AmmoPackModifier,
-    ]),
-    OptionGroup("Enemy Kill Options", [
-        Killsanity,
-        KillsanityItemPoolAdditions,
-    ]),
-    OptionGroup("Challenge Options", [
-        OopsAllRockets,
-        OopsAllMiniguns,
-        OopsAllGrenades,
-        OopsAllKnives,
-        NoFirstAidSpray,
-        NoGreenHerb,
-        NoRedHerb,
-        NoGunpowder,
-    ]),
-    OptionGroup("Trap Options", [
-        AddDamageTraps,
-        DamageTrapCount,
-        DamageTrapsCanKill,
-        AddPoisonTraps,
-        PoisonTrapCount,
-    ]),
-]

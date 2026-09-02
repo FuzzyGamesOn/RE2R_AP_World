@@ -54,7 +54,7 @@
             "item_object": "emZombie1FE2Window2nd",
             "parent_object": "16-239-0-0-ID003",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "First Zombie from Window",
@@ -63,7 +63,7 @@
             "item_object": "emZombie_1FEOffice_Window",
             "parent_object": "16-230-0-0-ID207",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Standing Police Zombie",
@@ -71,8 +71,7 @@
             "original_item": "",
             "item_object": "emZombie_1FEOffice2",
             "parent_object": "16-230-0-0-ID203",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Dark-Haired Zombie",
@@ -201,7 +200,7 @@
             "item_object": "emZombie_2FECorrider",
             "parent_object": "16-255-0-0-ID012",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Second Helicopter Crash Zombie",
@@ -210,7 +209,7 @@
             "item_object": "emZombie_2FECorrider",
             "parent_object": "16-255-0-0-ID216",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Cop in the South Side of the Hallway",
@@ -261,6 +260,7 @@
             "item_object": "Riccer_04",
             "parent_object": "29-272-0-3-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Diamond Key"]
             }
@@ -429,6 +429,7 @@
             "item_object": "emZombie_1FEOffice_Window",
             "parent_object": "16-230-0-0-ID007",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": [
 				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
@@ -527,6 +528,7 @@
             "item_object": "emZombie1FW4Window3rd",
             "parent_object": "16-125-0-0-ID012",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": [
 				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
@@ -540,6 +542,7 @@
             "item_object": "emZombie1FW3Window3rd",
             "parent_object": "16-225-0-0-ID011",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": [
 				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"]
@@ -566,6 +569,7 @@
             "item_object": "emLicker_3FW2-2",
             "parent_object": "16-265-0-3-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": [
 				["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Mechanic Jack Handle", "Heart Key"], ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Diamond Key", "Heart Key"]
@@ -611,7 +615,8 @@
             "original_item": "",
             "item_object": "em0100_Fence_Door",
             "parent_object": "25-406-0-0-ID305",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable"
     },
     {
             "name": "Zombie with plaid shirt",
@@ -619,7 +624,8 @@
             "original_item": "",
             "item_object": "em0100_Fence_01",
             "parent_object": "25-406-0-0-ID014",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable"
     },
     {
             "name": "Misty by the dumpster",
@@ -627,7 +633,8 @@
             "original_item": "",
             "item_object": "em0100_Start_01",
             "parent_object": "25-408-0-1-ID000",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable"
     },
     {
             "name": "Zombie Dog behind fence",
@@ -635,7 +642,8 @@
             "original_item": "",
             "item_object": "em4000_Fence_01",
             "parent_object": "25-408-0-4-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable"
     },
     {
             "name": "Second Dog behind Fence",
@@ -644,6 +652,7 @@
             "item_object": "em0100_Start_01",
             "parent_object": "25-408-0-1-ID000",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
 			"excluded": 1
     },
     {
@@ -652,7 +661,8 @@
             "original_item": "",
             "item_object": "em4000_Start_02",
             "parent_object": "25-408-0-4-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable"
     },
     {
             "name": "Dog having a snack",
@@ -660,7 +670,8 @@
             "original_item": "",
             "item_object": "em4000_Eat_01",
             "parent_object": "25-408-0-4-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable"
     },
     {
             "name": "Action Dog 1 jumping fence",
@@ -668,7 +679,8 @@
             "original_item": "",
             "item_object": "em4000_Court_01",
             "parent_object": "25-408-0-4-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable"
     },
     {
             "name": "Action Dog 2 jumping fence",
@@ -676,7 +688,8 @@
             "original_item": "",
             "item_object": "em4000_Court_02",
             "parent_object": "25-408-0-4-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable"
     },
     {
             "name": "Dog before bus",
@@ -684,7 +697,8 @@
             "original_item": "",
             "item_object": "em4000_Court_03",
             "parent_object": "25-408-0-4-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable"
     },
     {
             "name": "Another one rides the bus",
@@ -692,7 +706,8 @@
             "original_item": "",
             "item_object": "em0000_Bus_02",
             "parent_object": "25-408-0-0-ID000",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable"
     },
     {
             "name": "Dog after bus",
@@ -700,7 +715,8 @@
             "original_item": "",
             "item_object": "em4000_Last_01",
             "parent_object": "25-408-0-4-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable"
     },
     {
             "name": "Short hair zombie",
@@ -797,6 +813,7 @@
             "item_object": "Zombie_Waste02_Fall",
             "parent_object": "17-315-0-2-ID001",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["T-Bar Handle"]
             }
@@ -847,10 +864,7 @@
             "original_item": "",
             "item_object": "Zombie_Waste01_02",
             "parent_object": "17-327-0-0-ID007",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["King Plug"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Sleeping Overweight Zombie",
@@ -859,9 +873,7 @@
             "item_object": "Zombie_WasteGAdultArea_fat01",
             "parent_object": "17-327-0-2-ID008",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["King Plug"]
-            }
+            "category": "missable"
     },
     {
             "name": "Fourth G-Adult before ladder",
@@ -869,10 +881,7 @@
             "original_item": "",
             "item_object": "em6000_Swim",
             "parent_object": "17-325-0-8-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["King Plug"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Blue Jumpsuit Zombie on ledge near entrance ladder",
@@ -880,10 +889,7 @@
             "original_item": "",
             "item_object": "Zombie_WasteGAdultArea_man01",
             "parent_object": "17-325-0-0-ID024",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["King Plug"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "G-Adult upper waterway",
