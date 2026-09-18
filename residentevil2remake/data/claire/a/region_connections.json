@@ -535,9 +535,7 @@
     { 
         "from": "Greenhouse Control Room",
         "to": "Greenhouse",
-        "condition": {
-            "items": ["Dispersal Cartridge - Empty"]
-        }
+        "condition": {}
     },
     { 
         "from": "Greenhouse",

@@ -2134,7 +2134,7 @@
         "original_item": "ID Wristband - Senior Staff",
         "force_item": "ID Wristband - Senior Staff",
         "condition": {
-            "items": ["Signal Modulator"]
+            "items": ["Signal Modulator", "Dispersal Cartridge - Empty"]
         },    
         "item_object": "sm73_434",
         "parent_object": "sm73_434_WristtagUpdater_Lv2",
