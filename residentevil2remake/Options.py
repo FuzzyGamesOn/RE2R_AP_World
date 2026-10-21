@@ -53,6 +53,7 @@ class StartingWeapon(Choice):
     option_grenadelauncher_gm79 = 8
     option_lightninghawk = 9
     option_submachinegun_mq11 = 10
+    option_sparkshot = 11
     default = 0
 
 class StartingHipPouches(NamedRange):
