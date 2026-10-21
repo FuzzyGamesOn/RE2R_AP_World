@@ -828,7 +828,8 @@ class ResidentEvil2Remake(World):
             "shotgun_w870": "W-870",
             "grenadelauncher_gm79": "GM 79",
             "lightninghawk": "Lightning Hawk",
-            "submachinegun_mq11": "MQ 11"
+            "submachinegun_mq11": "MQ 11",
+            "sparkshot": "Spark Shot"
         }
 
         return lookups[self.options.starting_weapon.current_key]
