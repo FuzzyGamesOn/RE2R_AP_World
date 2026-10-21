@@ -1125,7 +1125,8 @@
             "original_item": "",
             "item_object": "Ivy_03",
             "parent_object": "21-134-0-7-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "excluded": 1
     },
     {
             "name": "Ivy 2 after elevator",
@@ -1174,7 +1175,10 @@
             "original_item": "",
             "item_object": "G4",
             "parent_object": "21-421-0-16-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "condition": {
+                "items": ["Joint Plug"]
+            }
     },
     {
             "type": "Boss",
