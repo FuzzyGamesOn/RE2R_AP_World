@@ -144,7 +144,7 @@ class AllowProgressionInLabs(Choice):
 class Killsanity(Choice):
     """When enabled, multiworld items are also placed on the enemies in your world. Killing those enemies gives the item.
 
-    Currently only supports Leon's A (1st) scenario on Assisted / Standard difficulty.
+    Supports all scenarios, regardless of difficulty.
     
     NOTE: Ivys can only be killed with fire. If you don't have a fire weapon/ammo to use against them, YOU COULD BE UNABLE TO GET THESE CHECKS.
 
@@ -156,6 +156,19 @@ class Killsanity(Choice):
     display_name = "Killsanity"
     option_none = 0
     option_all = 1
+    default = 0
+
+class MissableKillLocations(Choice):
+    """When enabled, enemies that are deemed 'missable', like certain window zombies and Claire's RPD Street dogs are removed.
+
+    The available options are:
+
+    False: You decided not to add the enemies that are missable. Good. 
+    True: Every reachable enemy from the beginning of RPD to the end of the game are in the seed.  
+    """
+    display_name = "Missable Kill Locations"
+    option_false = 0
+    option_true = 1
     default = 0
 
 class KillsanityItemPoolAdditions(Choice):
@@ -405,6 +418,7 @@ class RE2ROptions(StartInventoryFromPoolMixin, DeathLinkMixin, PerGameCommonOpti
     early_medallions: EarlyMedallions
     allow_progression_in_labs: AllowProgressionInLabs
     killsanity: Killsanity
+    missable_kill_locations: MissableKillLocations
     killsanity_item_pool_additions: KillsanityItemPoolAdditions
     cross_scenario_weapons: CrossScenarioWeapons
     ammo_pack_modifier: AmmoPackModifier
@@ -442,6 +456,7 @@ RE2ROptionGroups = [
     ]),
     OptionGroup("Enemy Kill Options", [
         Killsanity,
+        MissableKillLocations,
         KillsanityItemPoolAdditions,
     ]),
     OptionGroup("Challenge Options", [

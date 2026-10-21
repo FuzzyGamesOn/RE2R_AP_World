@@ -14,7 +14,7 @@
             "item_object": "emZombie1FE2Window",
             "parent_object": "16-239-0-0-ID017",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Blonde Zombie",
@@ -47,7 +47,7 @@
             "item_object": "emZombie1FW2Window",
             "parent_object": "16-225-0-1-ID002",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Overweight Zombie at Vending Machines",
@@ -88,7 +88,7 @@
             "item_object": "emZombie1FW1Window",
             "parent_object": "16-226-0-0-ID016",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Roaming Zombie on West Stairwell",
@@ -148,7 +148,7 @@
             "item_object": "emZombie_2FECorrider",
 			"parent_object": "16-255-0-0-ID012",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Second Helicopter Crash Zombie",
@@ -157,7 +157,7 @@
             "item_object": "emZombie_2FECorrider",
             "parent_object": "16-255-0-0-ID216",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Second Zombie from Window",
@@ -166,10 +166,10 @@
             "item_object": "emZombie1FE2Window2nd",
             "parent_object": "16-239-0-0-ID003",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
 			      "condition": {
                 "items": ["Maiden Medallion"]
-			},
-			"excluded": 1
+			}
     },
     {
             "name": "Wandering Zombie",
@@ -177,8 +177,7 @@
             "original_item": "",
             "item_object": "emZombie_1FEOffice2",
             "parent_object": "16-230-0-0-ID203",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "First Zombie from Window",
@@ -187,7 +186,7 @@
             "item_object": "emZombie_1FEOffice_Window",
             "parent_object": "16-230-0-0-ID207",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "First Zombie from South Window",   
@@ -196,10 +195,10 @@
             "item_object": "emZombie1FW4Window",
             "parent_object": "16-125-0-0-ID211",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Maiden Medallion"]
-            },
-			"excluded": 1
+            }
     },
     {
             "name": "Roaming Jumpsuit Zombie",
@@ -219,10 +218,10 @@
             "item_object": "emZombie1FW_Knock",
             "parent_object": "16-225-0-1-ID003",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Maiden Medallion"]
-            },
-			"excluded": 1
+            }
     },
     {
             "name": "Roaming High Visibility Zombie",
@@ -242,6 +241,7 @@
             "item_object": "emZombie1FW3Window_BreakIn",
             "parent_object": "16-225-0-1-ID012",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Maiden Medallion"]
             }
@@ -253,6 +253,7 @@
             "item_object": "emZombie1FW1Window2nd",
             "parent_object": "16-226-0-0-ID014",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Maiden Medallion"]
             }
@@ -264,6 +265,7 @@
             "item_object": "FirstLicker",
             "parent_object": "16-253-0-3-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Maiden Medallion"]
             }
@@ -355,7 +357,7 @@
             "item_object": "FenceClimbDog",
             "parent_object": "29-274-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Action Dog under fence outside door",
@@ -364,7 +366,7 @@
             "item_object": "dog_East_twinsBlue1",
             "parent_object": "29-272-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-			"excluded": 1
+            "category": "missable"
     },
     {
             "name": "Action Dog jumping over debris outside doors",
@@ -373,10 +375,10 @@
             "item_object": "BaricadeJumpDog",
             "parent_object": "29-272-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Square Crank"]
-            },
-			"excluded": 1
+            }
     },
     {
             "name": "Action Dog from vent",
@@ -385,10 +387,10 @@
             "item_object": "dog_East_twinsBlue2",
             "parent_object": "29-272-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Square Crank"]
-            },
-			"excluded": 1
+            }
     },
     {
             "name": "Dark Police Zombie",
@@ -520,6 +522,7 @@
             "item_object": "emLicker_3FW2-2",
             "parent_object": "16-265-0-3-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Lion Medallion", "Unicorn Medallion", "Maiden Medallion", "Square Crank"]
             }
@@ -627,6 +630,7 @@
             "item_object": "dog05_parking",
             "parent_object": "29-277-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Square Crank"]
             }
@@ -638,6 +642,7 @@
             "item_object": "dog02_parking",
             "parent_object": "29-277-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Square Crank"]
             }
@@ -649,6 +654,7 @@
             "item_object": "dog01_parking",
             "parent_object": "29-277-0-4-nil",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["Square Crank"]
             }
@@ -773,6 +779,7 @@
             "item_object": "Zombie_Waste02_Fall",
             "parent_object": "17-315-0-2-ID001",
             "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
+            "category": "missable",
             "condition": {
                 "items": ["T-Bar Handle"]
             },
@@ -808,10 +815,7 @@
             "original_item": "",
             "item_object": "Zombie_Waste01_02",
             "parent_object": "17-327-0-0-ID007",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["King Plug"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "name": "Fourth G-Adult before ladder",
@@ -819,10 +823,7 @@
             "original_item": "",
             "item_object": "em6000_Swim",
             "parent_object": "17-325-0-8-nil",
-            "folder_path": "RopewayManagers/TemporaryObjects/Enemy",
-            "condition": {
-                "items": ["King Plug"]
-            }
+            "folder_path": "RopewayManagers/TemporaryObjects/Enemy"
     },
     {
             "type": "Boss",

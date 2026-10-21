@@ -775,6 +775,16 @@ class ResidentEvil2Remake(World):
                 id: loc for id, loc in locations_pool.items() if loc['difficulty'] != 'hardcore'
             }
 
+        # Removes kill locations entirely if the player turns off missable kill checks! - Pablitø
+        missable_kill_locations = self._format_option_text(self.options.missable_kill_locations).lower()
+
+        if not bool(self.options.missable_kill_locations):
+            locations_pool = {
+                id: loc for id, loc in locations_pool.items()
+                if loc.get('category') != 'missable'
+            }
+        # (points upward) simple code, it plucks the enemies deemed missable with my new category flag to prevent stress on the player. - Pablitø
+
         # now that we've factored in hardcore swaps, remove any hardcore locations that were just there for removing unused standard ones
         locations_pool = { id: loc for id, loc in locations_pool.items() if 'remove' not in loc }
         
